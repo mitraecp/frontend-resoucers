@@ -35,7 +35,7 @@
           "url": "https://www.youtube.com/embed/VtQ0qbCzYpQ?si=2psKEvmziF2F0ZQZ",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/database_cadastros.png",
-          "keywords": ["database"]
+          "keywords": []
         },
         {
           "title_pt": "Database: Cubos - Mitra",
@@ -45,7 +45,7 @@
           "url": "https://www.youtube.com/embed/vSG6RYSY_-A?si=uYXjFRXYaXTEnRSK",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/database_cubos.png",
-          "keywords": ["database"]
+          "keywords": []
         },
         {
           "title_pt": "Page Builder - Mitra",
@@ -380,12 +380,7 @@
           "url": "https://www.youtube.com/embed/fGUNoUcIgiI?si=6PoaGKfTDYuU7l-T",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/database.png",
-          "keywords": [
-            "Database: Cadastros - Mitra",
-            "Database: Dimensions - Mitra",
-            "Database: Cubos - Mitra",
-            "Database: Cubes - Mitra"
-          ]
+          "keywords": []
         },
         {
           "title_pt": "Formas de se conectar ao Mitra",
