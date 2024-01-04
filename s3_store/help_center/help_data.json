@@ -198,7 +198,7 @@
           "id": 2.13,
           "url": "https://www.youtube.com/embed/6kQ8jrkNaug?si=S9IqG4E0Nv3Oqpks",
           "embedId": "",
-          "thumbnail": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/calendario.png",
           "keywords": []
         }
       ]
@@ -272,7 +272,7 @@
             "Board - Mitra",
             "Timeline - Mitra",
             "Timeline - Mitra",
-			"Calendário - Mitra",
+            "Calendário - Mitra",
             "Calendar - Mitra"
           ]
         },
@@ -305,7 +305,7 @@
             "Board - Mitra",
             "Timeline - Mitra",
             "Timeline - Mitra",
-			"Calendário - Mitra",
+            "Calendário - Mitra",
             "Calendar - Mitra"
           ]
         },
@@ -338,7 +338,7 @@
             "Board - Mitra",
             "Timeline - Mitra",
             "Timeline - Mitra",
-			"Calendário - Mitra",
+            "Calendário - Mitra",
             "Calendar - Mitra"
           ]
         },
@@ -435,6 +435,16 @@
           "url": "https://www.youtube.com/embed/pcG7aA9FNgc?si=aDNt77B6e71F71jE",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/dre_balanco_dfc.png",
+          "keywords": ["Tabelas - Mitra", "Tables - Mitra"]
+        },
+        {
+          "title_pt": "Formulários - Mitra",
+          "title_en": "Forms - Mitra",
+          "duration": "10:46",
+          "id": 3.14,
+          "url": "https://www.youtube.com/embed/u0T2VaQInn4?si=h0lLEGEFmWFUbKIk",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/forms.png",
           "keywords": ["Tabelas - Mitra", "Tables - Mitra"]
         }
       ]
