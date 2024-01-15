@@ -219,16 +219,6 @@
             "Screen view - Mitra",
             "Entrada de Dados"
           ]
-        },
-        {
-          "title_pt": "Self Service BI - Mitra",
-          "title_en": "Self Service BI - Mitra",
-          "duration": "6:27",
-          "id": 2.16,
-          "url": "https://www.youtube.com/embed/35B2SCEAPW8?si=DPkKhUVL8LHVpn3B",
-          "embedId": "",
-          "thumbnail": "",
-          "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
         }
       ]
     },
@@ -559,6 +549,17 @@
             "Calendário - Mitra",
             "Calendar - Mitra"
           ]
+        },
+
+        {
+          "title_pt": "Self Service BI - Mitra",
+          "title_en": "Self Service BI - Mitra",
+          "duration": "6:27",
+          "id": 3.19,
+          "url": "https://www.youtube.com/embed/35B2SCEAPW8?si=DPkKhUVL8LHVpn3B",
+          "embedId": "",
+          "thumbnail": "",
+          "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
         }
       ]
     },
