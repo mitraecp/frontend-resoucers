@@ -51,7 +51,7 @@
           "title_pt": "Page Builder - Mitra",
           "title_en": "Page Builder - Mitra",
           "duration": "6:00",
-          "id": 1.4,
+          "id": 1.5,
           "url": "https://www.youtube.com/embed/7hkNO6W3GXM?si=yqjYzmjqgcX23z5Z",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/pagebuildera.png",
@@ -84,12 +84,7 @@
           "url": "https://www.youtube.com/embed/8cRKj-o_tuI?si=C_Vvstr4ijz86s-y",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/barras.png",
-          "keywords": [
-            "Gráficos em Pizza - Mitra",
-            "Pie Charts - Mitra",
-            "Tabelas - Mitra",
-            "Tables - Mitra"
-          ]
+          "keywords": []
         },
         {
           "title_pt": "Gráficos em Pizza - Mitra",
@@ -179,7 +174,7 @@
           "url": "https://www.youtube.com/embed/fGR7qIfdJ28?si=myqExbUJldHBoFcS",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/board.png",
-          "keywords": []
+          "keywords": ["kanban"]
         },
         {
           "title_pt": "Timeline - Mitra",
@@ -200,6 +195,36 @@
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/calendario.png",
           "keywords": []
+        },
+        {
+          "title_pt": "Organograma - Mitra",
+          "title_en": "Tree - Mitra",
+          "duration": "4:24",
+          "id": 2.14,
+          "url": "https://www.youtube.com/embed/TFTZC5LH34I?si=dv2TdEj3PMGvqlou",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/organograma.png",
+          "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+        },
+        {
+          "title_pt": "Input - Mitra",
+          "title_en": "Input - Mitra",
+          "duration": "3:12",
+          "id": 2.15,
+          "url": "https://www.youtube.com/embed/OiEZuxl0uDE?si=o23rTNGcqO7s4kmo",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/input.png",
+          "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+        },
+        {
+          "title_pt": "Self Service BI - Mitra",
+          "title_en": "Self Service BI - Mitra",
+          "duration": "6:27",
+          "id": 2.16,
+          "url": "https://www.youtube.com/embed/35B2SCEAPW8?si=DPkKhUVL8LHVpn3B",
+          "embedId": "",
+          "thumbnail": "",
+          "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
         }
       ]
     },
@@ -440,7 +465,96 @@
           "url": "https://www.youtube.com/embed/u0T2VaQInn4?si=h0lLEGEFmWFUbKIk",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/forms.png",
-          "keywords": ["Tabelas - Mitra", "Tables - Mitra"]
+          "keywords": [
+            "Tabelas - Mitra",
+            "Tables - Mitra",
+            "Organograma",
+            "Tree",
+            "Label - Mitra",
+            "Board - Mitra",
+            "Timeline - Mitra",
+            "Calendário - Mitra",
+            "Calendar - Mitra"
+          ]
+        },
+        {
+          "title_pt": "Transparência dinâmica, trancar botões ou entrada de dados em inputs e tabelas dinamicamente - Mitra",
+          "title_en": "Dynamic transparency, lock buttons or data entry into inputs and tables dynamically - Mitra",
+          "duration": "9:20",
+          "id": 3.15,
+          "url": "https://www.youtube.com/embed/7CkM6hKRiQ0?si=MGzjghQ41Z6bmACp",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/transparencia_dinamica.png",
+          "keywords": [
+            "View de tela - Mitra",
+            "Screen view - Mitra",
+            "Label - Mitra",
+            "Tabelas - Mitra",
+            "Tables - Mitra",
+            "Input - Mitra"
+          ]
+        },
+        {
+          "title_pt": "Ações (básico, alterar relacionamento e cálculos) - Mitra",
+          "title_en": "Actions (basic, change relationship and calculations) - Mitra",
+          "duration": "22:53",
+          "id": 3.16,
+          "url": "https://www.youtube.com/embed/3pYqAW1BTL8?si=31r_epd_ZbTB_WJx",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/acoes_basico.png",
+          "keywords": ["Label - Mitra"]
+        },
+        {
+          "title_pt": "Ações (automatizando disparo de e-mails com broadcasting agendado) - Mitra",
+          "title_en": "Actions (automating the sending of emails with scheduled broadcasting) - Mitra",
+          "duration": "8:32",
+          "id": 3.17,
+          "url": "https://www.youtube.com/embed/UGAMfmHNvqM?si=QValY79JSLjF5EoK",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/acoes_automatizando.png",
+          "keywords": ["Label - Mitra"]
+        },
+        {
+          "title_pt": "Interações de navegação: Popup (modal), detalhe, formulário, ir pra tela - Mitra",
+          "title_en": "Navigation interactions: Popup (modal), detail, form, go to screen - Mitra",
+          "duration": "5:09",
+          "id": 3.18,
+          "url": "https://www.youtube.com/embed/dIazwUv1tds?si=QE0wS7b2FqJRxUK_",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/interacoes_navegacao.png",
+          "keywords": [
+            "View de tela - Mitra",
+            "Screen view - Mitra",
+            "Label - Mitra",
+            "Tabelas - Mitra",
+            "Tables - Mitra",
+            "Organograma - Mitra",
+            "Tree - Mitra",
+            "Board - Mitra",
+            "Timeline - Mitra",
+            "Calendário - Mitra",
+            "Calendar - Mitra"
+          ]
+        },
+        {
+          "title_pt": "Modal de Detalhes - Mitra",
+          "title_en": "Details Mod - Mitra",
+          "duration": "7:56",
+          "id": 3.18,
+          "url": "https://www.youtube.com/embed/sAYi463WTpc?si=ZpbR3x_HYxAaSDND",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/modal_detalhes.png",
+          "keywords": [
+            "Label - Mitra",
+            "Tabelas - Mitra",
+            "Tables - Mitra",
+            "Organograma - Mitra",
+            "Tree - Mitra",
+            "Board - Mitra",
+            "Timeline - Mitra",
+            "Calendário - Mitra",
+            "Calendar - Mitra"
+          ]
         }
       ]
     },
