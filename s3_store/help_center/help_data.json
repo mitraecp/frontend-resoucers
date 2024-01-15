@@ -199,7 +199,7 @@
         {
           "title_pt": "Organograma - Mitra",
           "title_en": "Tree - Mitra",
-          "duration": "4:24",
+          "duration": "4:34",
           "id": 2.14,
           "url": "https://www.youtube.com/embed/TFTZC5LH34I?si=dv2TdEj3PMGvqlou",
           "embedId": "",
@@ -214,7 +214,11 @@
           "url": "https://www.youtube.com/embed/OiEZuxl0uDE?si=o23rTNGcqO7s4kmo",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/input.png",
-          "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+          "keywords": [
+            "View de tela - Mitra",
+            "Screen view - Mitra",
+            "Entrada de Dados"
+          ]
         },
         {
           "title_pt": "Self Service BI - Mitra",
