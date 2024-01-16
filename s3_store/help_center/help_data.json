@@ -558,7 +558,7 @@
           "id": 3.19,
           "url": "https://www.youtube.com/embed/35B2SCEAPW8?si=DPkKhUVL8LHVpn3B",
           "embedId": "",
-          "thumbnail": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/self_service_bi.png",
           "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
         }
       ]
