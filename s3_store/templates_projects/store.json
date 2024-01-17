@@ -11,7 +11,7 @@
 			"videoUrl": "https://www.youtube.com/embed/Qkp5AMzwFGU?si=5RoaSXR4CWnuWPIv",
 			"baseUrl_pt": "backup/store/crm/crm.zip",
 			"baseUrl_en": "backup/store/crm/crm.zip",
-			"bucketSource": "mitra-multitenant-qa",
+			"bucketSource": "mitra-multitenant",
 			"types": [
 				{
 					"type_pt": "Comercial",
@@ -69,7 +69,7 @@
 			"videoUrl": "https://www.youtube.com/embed/MSPr6itIaL4?si=Y32N2ex6NXUx7Vl4",
 			"baseUrl_pt": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
 			"baseUrl_en": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
-			"bucketSource": "mitra-multitenant-qa",
+			"bucketSource": "mitra-multitenant",
 			"types": [
 				{
 					"type_pt": "Estratégico",
@@ -105,7 +105,7 @@
 			"videoUrl": "https://www.youtube.com/embed/KLoio8uv9rk?si=2OcDqw8pRhPdCEa_",
 			"baseUrl_pt": "backup/store/biComercial/biComercial.zip",
 			"baseUrl_en": "backup/store/biComercial/biComercial.zip",
-			"bucketSource": "mitra-multitenant-qa",
+			"bucketSource": "mitra-multitenant",
 			"types": [
 				{
 					"type_pt": "BI",
@@ -141,7 +141,7 @@
 			"videoUrl": "",
 			"baseUrl_pt": "backup/store/biFinanceiro/biFinanceiro.zip",
 			"baseUrl_en": "backup/store/biFinanceiro/biFinanceiro.zip",
-			"bucketSource": "mitra-multitenant-qa",
+			"bucketSource": "mitra-multitenant",
 			"types": [
 				{
 					"type_pt": "BI",
