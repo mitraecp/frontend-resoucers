@@ -172,42 +172,6 @@
 					"secundaryColor": "#FFF3FF"
 				}
 			]
-		},
-		{
-			"title_pt": "Orçamentação de Vendas",
-			"title_en": "Sales Budgeting",
-			"image": "https://mitra-multitenant.s3.amazonaws.com/store/pre-venda.png",
-			"shortDescription_pt": "Ferramenta adaptável e robusta, criada para a personalização dos cálculos de precificação de vendas da sua empresa.",
-			"shortDescription_en": "Adaptable and robust tool designed for customizing the sales pricing calculations for your company.",
-			"longDescription_pt": "O módulo de \"Orçamentação de Vendas\" oferece uma abordagem flexível e personalizada na criação de orçamentos, permitindo a inclusão de diversos itens. Cada item é meticulosamente calculado considerando uma variedade de configurações, como o custo da matéria-prima, frete, componentes, insumos, tratamento, entre outros fatores relevantes.\n\nO processo de elaboração de orçamentos é simplificado por meio de um template intuitivo, fornecendo uma estrutura base que facilita a compreensão e personalização conforme as necessidades específicas do caso de negócio de sua empresa. Esse template serve como um guia essencial, permitindo que vocês capturem a essência da estrutura e dos cálculos, adaptando-os de maneira precisa e eficiente para atender às particularidades de sua operação.",
-			"longDescription_en": "The \"Sales Budgeting\" module offers a flexible and customized approach to budget creation, allowing the inclusion of various items. Each item is meticulously calculated, considering a variety of settings such as raw material costs, shipping, components, supplies, processing, among other relevant factors.\n\nThe budgeting process is streamlined through an intuitive template, providing a foundational structure that facilitates understanding and customization according to the specific needs of your company's business case. This template serves as an essential guide, enabling you to capture the essence of the structure and calculations, adapting them precisely and efficiently to meet the particularities of your operation.",
-			"videoUrl": "",
-			"baseUrl_pt": "backup/store/orcamentacaoVendas/orcamentacaoVendas.zip",
-			"baseUrl_en": "backup/store/orcamentacaoVendas/orcamentacaoVendas.zip",
-			"bucketSource": "mitra-multitenant",
-			"types": [
-				{
-					"type_pt": "Comercial",
-					"type_en": "Commercial",
-					"icon": "mdiDomain",
-					"color": "#09A9BD",
-					"secundaryColor": "#EBFCFF"
-				},
-				{
-					"type_pt": "Fluxo de Processos",
-					"type_en": "Process flow",
-					"icon": "mdiSitemap",
-					"color": "#FFB72D",
-					"secundaryColor": "#FFFDEA"
-				},
-				{
-					"type_pt": "CRM",
-					"type_en": "CRM",
-					"icon": "mdiContentPaste",
-					"color": "#F2911E",
-					"secundaryColor": "#FFF9ED"
-				}
-			]
 		}
 	]
 }
