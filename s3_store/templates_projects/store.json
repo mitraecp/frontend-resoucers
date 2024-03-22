@@ -176,7 +176,7 @@
 		{
 		  "title_pt": "Avaliação de Clima para Colaboradores",
 		  "title_en": "Employee satisfaction survey",
-		  "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3884/dynamic-images/Store_scan.png",
+		  "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-fin.png",
 		  "shortDescription_pt": "Aprimore sua gestão de pessoas com uma ferramenta de medição de KPIs de recursos humanos, promovendo uma gestão baseada em dados.",
 		  "shortDescription_en": "Enhance your people management with a human resources KPI measurement tool, fostering data-driven management.",
 		  "longDescription_pt": "Este modelo foi desenvolvido para avaliar os KPIs relacionados à área de recursos humanos, por meio de um questionário enviado mensalmente aos colaboradores. O questionário abrange uma série de perguntas sobre aspectos pessoais e profissionais, permitindo uma gestão baseada em dados. Que por sua vez, são transformados em painéis de controle e enviados aos líderes das equipes, possibilitando o acompanhamento dos feedbacks e tomadas de decisões estratégicas. Elevando o nível da gestão de pessoas em sua empresa.",
