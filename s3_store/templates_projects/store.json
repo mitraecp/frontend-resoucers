@@ -172,6 +172,42 @@
 					"secundaryColor": "#FFF3FF"
 				}
 			]
+		},
+		{
+		  "title_pt": "Avaliação de Clima para Colaboradores",
+		  "title_en": "Employee satisfaction survey",
+		  "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3884/dynamic-images/Store_scan.png",
+		  "shortDescription_pt": "Aprimore sua gestão de pessoas com uma ferramenta de medição de KPIs de recursos humanos, promovendo uma gestão baseada em dados.",
+		  "shortDescription_en": "Enhance your people management with a human resources KPI measurement tool, fostering data-driven management.",
+		  "longDescription_pt": "Este modelo foi desenvolvido para avaliar os KPIs relacionados à área de recursos humanos, por meio de um questionário enviado mensalmente aos colaboradores. O questionário abrange uma série de perguntas sobre aspectos pessoais e profissionais, permitindo uma gestão baseada em dados. Que por sua vez, são transformados em painéis de controle e enviados aos líderes das equipes, possibilitando o acompanhamento dos feedbacks e tomadas de decisões estratégicas. Elevando o nível da gestão de pessoas em sua empresa.",
+		  "longDescription_en": "This template has been developed to assess HR KPIs through a monthly questionnaire sent to employees. The questionnaire covers a series of questions about personal and professional aspects, enabling data-driven management. These data are transformed into dashboards and sent to team leaders, allowing them to track feedback and make strategic decisions, thereby elevating the level of people management in your company.",
+		  "videoUrl": "",
+		  "baseUrl_pt": "backup/store/avaliacaoclimacolabs/avaliacaoclimacolabs.zip",
+		  "baseUrl_en": "backup/store/avaliacaoclimacolabs/avaliacaoclimacolabs.zip",
+		  "bucketSource": "mitra-multitenant-prod",
+		  "types": [
+		    {
+		      "type_pt": "RH",
+		      "type_en": "RH",
+		      "icon": "mdiChartBoxOutline",
+		      "color": "#1570EF",
+		      "secondaryColor": "#EFF8FF"
+		    },
+		    {
+		      "type_pt": "Cultura",
+		      "type_en": "Culture",
+		      "icon": "mdiFinance",
+		      "color": "#12B76A",
+		      "secondaryColor": "#ECFDF3"
+		    },
+		    {
+		      "type_pt": "Estratégico",
+		      "type_en": "Strategic",
+		      "icon": "mdiLightbulbOnOutline",
+		      "color": "#B954BB",
+		      "secondaryColor": "#FFF3FF"
+		    }
+		  ]
 		}
 	]
 }
