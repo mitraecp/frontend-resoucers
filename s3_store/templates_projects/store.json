@@ -208,6 +208,35 @@
 					"secundaryColor": "#FFF3FF"
 				}
 			]
+		},
+		{
+			"title_pt": "ENPS",
+			"title_en": "ENPS",
+			"image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
+			"shortDescription_pt": "Transforme a voz dos seus colaboradores em insights valiosos com nosso template ENPS.",
+			"shortDescription_en": "Turn your employees' voices into valuable insights with our ENPS template.",
+			"longDescription_pt": "Este modelo foi desenvolvido com o intuito de recolher feedbacks dos colaboradores de forma anônima, por meio de um formulário. Com base nas respostas de cada colaborador, é calculada a nota ENPS (Employee Net Promoter Score), que oferece uma análise do engajamento dos seus colaboradores com a empresa. Além disso, nosso painel exibe análises do ENPS juntamente com comentários descritivos de cada respondente anônimo.",
+			"longDescription_en": "This template was developed with the purpose of collecting feedback from employees anonymously, through a form. Based on each employee's responses, the ENPS (Employee Net Promoter Score) is calculated, providing an analysis of your employees' engagement with the company. Additionally, our dashboard displays ENPS analysis alongside descriptive comments from each anonymous respondent.",
+			"videoUrl": "",
+			"baseUrl_pt": "backup/store/enps/enps.zip",
+			"baseUrl_en": "backup/store/enps/enps.zip",
+			"bucketSource": "mitra-multitenant-prod",
+			"types": [
+				{
+					"type_pt": "RH",
+					"type_en": "RH",
+					"icon": "mdiHeadCogOutline",
+					"color": "#085b91",
+					"secundaryColor": "#f1f9fe"
+				},
+				{
+					"type_pt": "Cultura",
+					"type_en": "Culture",
+					"icon": "mdiAccountGroupOutline",
+					"color": "#751d5c",
+					"secundaryColor": "#fcf4fa"
+				}
+			]
 		}
 	]
 }
