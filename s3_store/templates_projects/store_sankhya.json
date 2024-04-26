@@ -7,6 +7,12 @@
       "iconColor": "#09A9BD",
       "price": "R$ 500,00",
       "image": "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
+      "descriptionImageHeader": "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
+      "descriptionImageListOnBody": [
+        "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
+        "https://cdn.discordapp.com/attachments/894690304173686878/1233479164917583943/body.png?ex=662d3e7d&is=662becfd&hm=6431d9feb9c35a9d778bb4623f45562d6bbc3df423bf0117b171b79db503a0ff&",
+        "https://cdn.discordapp.com/attachments/894690304173686878/1233479323172732960/image_19.png?ex=662d3ea3&is=662bed23&hm=dfabb0195021ae8ae4c9f53dde5f95c30cc804399c02fc4041fcad1a917b58ad&"
+      ],
       "shortDescription_pt": "Simplifique sua pré-venda com um CRM focado na otimização de resultados.",
       "shortDescription_en": "Simplify your pre-sales with a CRM focused on optimizing results.",
       "longDescription_pt": "O pacote CRM foi especialmente desenvolvido para empresas que desejam aprimorar seu processo de pré-venda. \n \n Este template permite uma visão clara do funil de vendas, acompanhando os potenciais clientes desde o primeiro contato até o fechamento do negócio. \n\n Integre todos os seus canais de comunicação, gerencie leads, e maximize suas oportunidades com um sistema robusto e fácil de usar. \n\n Comece a transformar seus prospects em clientes fiéis com a eficiência que apenas o nosso CRM pode oferecer.",
@@ -36,6 +42,29 @@
           "icon": "mdiSitemap",
           "color": "#FFB72D",
           "secundaryColor": "#FFFDEA"
+        }
+      ],
+      "descriptionStrips": [
+        {
+          "icon": "mdiAccountSearch",
+          "title_pt": "Expert em Finanças",
+          "title_en": "Expert in Finance",
+          "body_pt": "B.I.A oferece uma visão detalhada da sua agenda financeira, garantindo que você nunca perca prazos importantes. Com análises precisas de fluxo de caixa e uma compreensão profunda das suas receitas e despesas, você pode tomar decisões estratégicas com confiança, impulsionando o crescimento do seu negócio.",
+          "body_en": "B.I.A gives you a detailed view of your financial schedule, ensuring you never miss important deadlines. With accurate cash flow analysis and a deep understanding of your income and expenses, you can make strategic decisions with confidence, driving your business growth."
+        },
+        {
+          "icon": "mdiChartLineVariant",
+          "title_pt": "Operações Optimizadas",
+          "title_en": "Optimized Operations:",
+          "body_pt": "De análises de compras e vendas ao ciclo operacional financeiro, B.I.A fornece insights abrangentes para otimizar suas operações. Identifique oportunidades de maximizar a margem de contribuição e reduzir custos, aumentando a eficiência e a rentabilidade do seu negócio de forma significativa.",
+          "body_en": "From purchasing and sales analytics to the financial operating cycle, B.I.A provides comprehensive insights to optimize your operations. Identify opportunities to maximize contribution margin and reduce costs, significantly increasing the efficiency and profitability of your business."
+        },
+        {
+          "icon": "mdiChartPieOutline",
+          "title_pt": "Titulo 3",
+          "title_en": "3",
+          "body_pt": "aaaa",
+          "body_en": "aaaa in english"
         }
       ]
     },
