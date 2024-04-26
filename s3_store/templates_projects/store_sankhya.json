@@ -7,7 +7,8 @@
       "iconColor": "#09A9BD",
       "price": "R$ 500,00",
       "image": "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
-      "descriptionImageHeader": "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
+      "detailTitle_pt": "Desvenda CRM",
+      "detailTitle_en": "Unravel CRM",
       "descriptionImageListOnBody": [
         "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
         "https://cdn.discordapp.com/attachments/894690304173686878/1233479164917583943/body.png?ex=662d3e7d&is=662becfd&hm=6431d9feb9c35a9d778bb4623f45562d6bbc3df423bf0117b171b79db503a0ff&",
