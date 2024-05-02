@@ -1,0 +1,2196 @@
+{
+	"connectionTemplates": [
+		{
+			"name": "Sankhya",
+			"id": 14,
+			"templates": [
+				{
+					"name": "Análises comerciais",
+					"icon": "mdiDomain",
+					"iconColor": "#09A9BD",
+					"defaultQuery": "SELECT   CAB.DTNEG AS \"Dia\",\n         CAB.NUNOTA AS  \"ID Nunota\",\n         CAB.NUNOTA AS \"Nunota\",\n         NVL(PAR.CODPARC,-999) AS \"ID Parceiro\",\n         NVL(PAR.RAZAOSOCIAL, 'Nulo') AS \"Parceiro\",\n         NVL(TPP.CODTIPPARC ,-999)AS \"ID Perfil\",\n         NVL(TPP.DESCRTIPPARC, 'Nulo') AS \"Perfil\",\n         NVL(CID.CODCID,-999) AS \"ID Cidade\",\n         NVL(CID.NOMECID, 'Nulo') AS \"Cidade\",\n         NVL((CASE WHEN UF.UF = 'EX' OR UF.UF IS NULL THEN TO_CHAR(UF.CODUF) ELSE UF.UF END), -999) AS \"ID Estado\",\n         NVL(UF.DESCRICAO, 'Nulo') AS \"Estado\",\n         NVL(REG.CODREG,-999) AS \"ID Região\",\n         NVL(REG.NOMEREG, 'Nulo') AS \"Região\",\n         NVL(NAT.CODNAT,-999) AS \"ID Natureza NV1\",\n         NVL(NAT.DESCRNAT, 'Nulo') AS \"Natureza NV1\",\n         NVL(NAT2.CODNAT,-999) AS \"ID Natureza NV2\",\n         NVL(NAT2.DESCRNAT, 'Nulo') AS \"Natureza NV2\",\n         NVL(NAT3.CODNAT,-999) AS \"ID Natureza NV3\",\n         NVL(NAT3.DESCRNAT, 'Nulo') AS \"Natureza NV3\",\n         NVL(NAT4.CODNAT,-999) AS \"ID Natureza NV4\",\n         NVL(NAT4.DESCRNAT, 'Nulo') AS \"Natureza NV4\",\n         NVL(PRO.CODPROD,-999) AS \"ID Produto\",\n         NVL(PRO.DESCRPROD, 'Nulo') AS \"Produto\",\n         NVL(PRO.MARCA,-999) AS \"ID Marca\",\n         NVL(PRO.MARCA, 'Nulo') AS \"Marca\",\n         NVL(GRU.CODGRUPOPROD,-999) AS \"ID Grupo de Produtos\",\n         NVL(GRU.DESCRGRUPOPROD, 'Nulo') AS \"Grupo de Produtos\",\n         NVL(CUS.CODCENCUS,-999) AS \"ID Centro de Resultado\",\n         NVL(CUS.DESCRCENCUS, 'Nulo') \"Centro de Resultado\",\n         NVL(CUS2.CODCENCUS,-999) AS \"ID Centro de Resultado Pai\",\n         NVL(CUS2.DESCRCENCUS, 'Nulo') AS \"Centro de Resultado Pai\",\n         NVL(EMP.CODEMP,-999) AS \"ID Empresa\",\n         NVL(EMP.RAZAOSOCIAL, 'Nulo') AS \"Empresa\",\n         NVL(VEN.CODVEND,-999) AS \"ID Vendedor\",\n         NVL(VEN.APELIDO, 'Nulo') AS \"Vendedor\" ,\n         NVL(GER.CODVEND,-999) AS \"ID Gerente de Vendas\",\n         NVL(GER.APELIDO, 'Nulo') AS \"Gerente de Vendas\",\n         NVL(TOP.CODTIPOPER,-999) AS \" ID Tipo de Operação\",\n         NVL(TOP.DESCROPER, 'Nulo') AS \"Tipo de Operação\",\n         NVL(TOP.TIPMOV,-999) AS \"ID Tipo de Movimentação\",\n         NVL(TPM.OPCAO, 'Nulo') AS \"Tipo de Movimentação\",\n         NVL(CAB.CODTIPVENDA,-999) AS \"ID Tipo de Venda\",\n         NVL(TPV.DESCRTIPVENDA, 'Nulo') AS \"Tipo de Venda\",\n         SUM(((ITE.VLRTOT - ITE.VLRDESC)) * CASE WHEN TOP.BONIFICACAO = 'S' THEN 0 ELSE 1 END * TOP.GOLDEV) AS \"Vendas\",\n         SUM(((ITE.QTDNEG) * CASE WHEN TOP.BONIFICACAO = 'S' THEN 0 ELSE 1 END) * TOP.GOLDEV) AS \"Volume Vendas\",\n         0 AS \"Vendas M.A.\",\n         0 AS \"Volume Vendas M.A.\",\n         0 AS \"Vendas A.A.\",\n         0 AS \"Volume Vendas A.A.\"\n  FROM TGFCAB CAB\n  LEFT JOIN TGFITE ITE ON ITE.NUNOTA = CAB.NUNOTA\n  LEFT JOIN TGFPAR PAR ON PAR.CODPARC = CAB.CODPARC\n  LEFT JOIN TGFTPP TPP ON TPP.CODTIPPARC = PAR.CODTIPPARC\n  LEFT JOIN TSICID CID ON CID.CODCID = PAR.CODCID\n  LEFT JOIN TSIUFS UF ON UF.CODUF = CID.UF\n  LEFT JOIN TSIREG REG ON REG.CODREG = PAR.CODREG\n  LEFT JOIN TGFNAT NAT ON NAT.CODNAT = CAB.CODNAT\n  LEFT JOIN TGFNAT NAT2 ON trunc(NAT.CODNAT,-2) = NAT2.CODNAT\n  LEFT JOIN TGFNAT NAT3 ON trunc(NAT.CODNAT,-4) = NAT3.CODNAT\n  LEFT JOIN TGFNAT NAT4 ON trunc(NAT.CODNAT,-5) = NAT4.CODNAT\n  LEFT JOIN TGFPRO PRO ON PRO.CODPROD = ITE.CODPROD\n  LEFT JOIN TGFGRU GRU ON GRU.CODGRUPOPROD = PRO.CODGRUPOPROD\n  LEFT JOIN TSICUS CUS ON CUS.CODCENCUS = CAB.CODCENCUS\n  LEFT JOIN TSICUS CUS2 ON TRUNC(CUS.CODCENCUS,-3) = CUS2.CODCENCUS\n  LEFT JOIN TSIEMP EMP ON EMP.CODEMP = CAB.CODEMP\n  LEFT JOIN TGFVEN VEN ON VEN.CODVEND = CAB.CODVEND\n  LEFT JOIN TGFVEN GER ON VEN.CODGER = GER.CODVEND\n  LEFT JOIN TGFTOP TOP ON TOP.CODTIPOPER = CAB.CODTIPOPER\n  AND CAB.DHTIPOPER = TOP.DHALTER\n  LEFT JOIN TGFTPV TPV ON TPV.CODTIPVENDA = CAB.CODTIPVENDA\n  AND  CAB.DHTIPVENDA = TPV.DHALTER\n  LEFT JOIN\n    (SELECT VALOR, OPCAO FROM TDDOPC WHERE NUCAMPO = 856) TPM ON (TPM.VALOR = TOP.TIPMOV)\n  LEFT JOIN \n   (SELECT MARCA, ROWNUM AS CODMARCA  FROM( SELECT DISTINCT MARCA FROM TGFPRO)A)B ON PRO.MARCA = B.MARCA\nWHERE CAB.STATUSNOTA = 'L' \nAND CAB.TIPMOV = 'V'\nAND TOP.GOLSINAL = -1\n GROUP BY CAB.NUNOTA,\n           CAB.NUNOTA,\n           CAB.DTNEG,\n           PAR.CODPARC,\n           PAR.RAZAOSOCIAL,\n           TPP.CODTIPPARC,\n           CID.CODCID,\n           CID.NOMECID,\n           NVL((CASE WHEN UF.UF = 'EX' OR UF.UF IS NULL THEN TO_CHAR(UF.CODUF) ELSE UF.UF END), -999),\n           UF.DESCRICAO,\n           REG.CODREG,\n           REG.NOMEREG,\n           NAT.CODNAT,\n           NAT.DESCRNAT,\n           NAT2.CODNAT,\n           NAT2.DESCRNAT,\n           NAT3.CODNAT,\n           NAT3.DESCRNAT,\n           NAT4.CODNAT,\n           NAT4.DESCRNAT,\n           PRO.CODPROD,\n           PRO.DESCRPROD,\n           PRO.MARCA,\n           PRO.MARCA,\n           GRU.CODGRUPOPROD,\n           GRU.DESCRGRUPOPROD,\n           CUS.CODCENCUS,\n           CUS.DESCRCENCUS,\n           CUS2.CODCENCUS,\n           CUS2.DESCRCENCUS,\n           EMP.CODEMP,\n           EMP.RAZAOSOCIAL,\n           VEN.CODVEND,\n           VEN.APELIDO,\n           GER.CODVEND,\n           GER.APELIDO,\n           TOP.CODTIPOPER,\n           TOP.DESCROPER,\n           TOP.TIPMOV,\n           TPM.OPCAO,\n           TPP.DESCRTIPPARC,\n           CAB.CODTIPVENDA,\n           TPV.DESCRTIPVENDA \n\nUNION ALL \n\n SELECT   ADD_MONTHS(CAB.DTNEG, 1)AS \"Dia\",\n         CAB.NUNOTA AS  \"ID Nunota\",\n         CAB.NUNOTA AS \"Nunota\",\n         NVL(PAR.CODPARC,-999) AS \"ID Parceiro\",\n         NVL(PAR.RAZAOSOCIAL, 'Nulo') AS \"Parceiro\",\n         NVL(TPP.CODTIPPARC ,-999)AS \"ID Perfil\",\n         NVL(TPP.DESCRTIPPARC, 'Nulo') AS \"Perfil\",\n         NVL(CID.CODCID,-999) AS \"ID Cidade\",\n         NVL(CID.NOMECID, 'Nulo') AS \"Cidade\",\n         NVL((CASE WHEN UF.UF = 'EX' OR UF.UF IS NULL THEN TO_CHAR(UF.CODUF) ELSE UF.UF END), -999) AS \"ID Estado\",\n         NVL(UF.DESCRICAO, 'Nulo') AS \"Estado\",\n         NVL(REG.CODREG,-999) AS \"ID Região\",\n         NVL(REG.NOMEREG, 'Nulo') AS \"Região\",\n         NVL(NAT.CODNAT,-999) AS \"ID Natureza NV1\",\n         NVL(NAT.DESCRNAT, 'Nulo') AS \"Natureza NV1\",\n         NVL(NAT2.CODNAT,-999) AS \"ID Natureza NV2\",\n         NVL(NAT2.DESCRNAT, 'Nulo') AS \"Natureza NV2\",\n         NVL(NAT3.CODNAT,-999) AS \"ID Natureza NV3\",\n         NVL(NAT3.DESCRNAT, 'Nulo') AS \"Natureza NV3\",\n         NVL(NAT4.CODNAT,-999) AS \"ID Natureza NV4\",\n         NVL(NAT4.DESCRNAT, 'Nulo') AS \"Natureza NV4\",\n         NVL(PRO.CODPROD,-999) AS \"ID Produto\",\n         NVL(PRO.DESCRPROD, 'Nulo') AS \"Produto\",\n         NVL(PRO.MARCA,-999) AS \"ID Marca\",\n         NVL(PRO.MARCA, 'Nulo') AS \"Marca\",\n         NVL(GRU.CODGRUPOPROD,-999) AS \"ID Grupo de Produtos\",\n         NVL(GRU.DESCRGRUPOPROD, 'Nulo') AS \"Grupo de Produtos\",\n         NVL(CUS.CODCENCUS,-999) AS \"ID Centro de Resultado\",\n         NVL(CUS.DESCRCENCUS, 'Nulo') \"Centro de Resultado\",\n         NVL(CUS2.CODCENCUS,-999) AS \"ID Centro de Resultado Pai\",\n         NVL(CUS2.DESCRCENCUS, 'Nulo') AS \"Centro de Resultado Pai\",\n         NVL(EMP.CODEMP,-999) AS \"ID Empresa\",\n         NVL(EMP.RAZAOSOCIAL, 'Nulo') AS \"Empresa\",\n         NVL(VEN.CODVEND,-999) AS \"ID Vendedor\",\n         NVL(VEN.APELIDO, 'Nulo') AS \"Vendedor\" ,\n         NVL(GER.CODVEND,-999) AS \"ID Gerente de Vendas\",\n         NVL(GER.APELIDO, 'Nulo') AS \"Gerente de Vendas\",\n         NVL(TOP.CODTIPOPER,-999) AS \" ID Tipo de Operação\",\n         NVL(TOP.DESCROPER, 'Nulo') AS \"Tipo de Operação\",\n         NVL(TOP.TIPMOV,-999) AS \"ID Tipo de Movimentação\",\n         NVL(TPM.OPCAO, 'Nulo') AS \"Tipo de Movimentação\",\n         NVL(CAB.CODTIPVENDA,-999) AS \"ID Tipo de Venda\",\n         NVL(TPV.DESCRTIPVENDA, 'Nulo') AS \"Tipo de Venda\",\n         0 AS \"Vendas\",\n         0 AS \"Volume Vendas\",\n         SUM(((ITE.VLRTOT - ITE.VLRDESC)) * CASE WHEN TOP.BONIFICACAO = 'S' THEN 0 ELSE 1 END * TOP.GOLDEV) AS  \"Vendas M.A.\",\n         SUM(((ITE.QTDNEG) * CASE WHEN TOP.BONIFICACAO = 'S' THEN 0 ELSE 1 END) * TOP.GOLDEV) AS \"Volume Vendas M.A.\",\n         0 AS \"Vendas A.A.\",\n         0 AS \"Volume Vendas A.A.\"\n  FROM TGFCAB CAB\n  LEFT JOIN TGFITE ITE ON ITE.NUNOTA = CAB.NUNOTA\n  LEFT JOIN TGFPAR PAR ON PAR.CODPARC = CAB.CODPARC\n  LEFT JOIN TGFTPP TPP ON TPP.CODTIPPARC = PAR.CODTIPPARC\n  LEFT JOIN TSICID CID ON CID.CODCID = PAR.CODCID\n  LEFT JOIN TSIUFS UF ON UF.CODUF = CID.UF\n  LEFT JOIN TSIREG REG ON REG.CODREG = PAR.CODREG\n  LEFT JOIN TGFNAT NAT ON NAT.CODNAT = CAB.CODNAT\n  LEFT JOIN TGFNAT NAT2 ON trunc(NAT.CODNAT,-2) = NAT2.CODNAT\n  LEFT JOIN TGFNAT NAT3 ON trunc(NAT.CODNAT,-4) = NAT3.CODNAT\n  LEFT JOIN TGFNAT NAT4 ON trunc(NAT.CODNAT,-5) = NAT4.CODNAT\n  LEFT JOIN TGFPRO PRO ON PRO.CODPROD = ITE.CODPROD\n  LEFT JOIN TGFGRU GRU ON GRU.CODGRUPOPROD = PRO.CODGRUPOPROD\n  LEFT JOIN TSICUS CUS ON CUS.CODCENCUS = CAB.CODCENCUS\n  LEFT JOIN TSICUS CUS2 ON TRUNC(CUS.CODCENCUS,-3) = CUS2.CODCENCUS\n  LEFT JOIN TSIEMP EMP ON EMP.CODEMP = CAB.CODEMP\n  LEFT JOIN TGFVEN VEN ON VEN.CODVEND = CAB.CODVEND\n  LEFT JOIN TGFVEN GER ON VEN.CODGER = GER.CODVEND\n  LEFT JOIN TGFTOP TOP ON TOP.CODTIPOPER = CAB.CODTIPOPER\n  AND CAB.DHTIPOPER = TOP.DHALTER\n  LEFT JOIN TGFTPV TPV ON TPV.CODTIPVENDA = CAB.CODTIPVENDA  \n  AND  CAB.DHTIPVENDA = TPV.DHALTER\n  LEFT JOIN\n    (SELECT VALOR, OPCAO FROM TDDOPC WHERE NUCAMPO = 856) TPM ON (TPM.VALOR = TOP.TIPMOV)\n      LEFT JOIN \n    (SELECT MARCA, ROWNUM AS CODMARCA  FROM( SELECT DISTINCT MARCA FROM TGFPRO)A)B ON PRO.MARCA = B.MARCA\nWHERE CAB.STATUSNOTA = 'L' \nAND CAB.TIPMOV = 'V'\nAND TOP.GOLSINAL = -1\n  GROUP BY CAB.NUNOTA,\n           CAB.NUNOTA,\n           CAB.DTNEG,\n           PAR.CODPARC,\n           PAR.RAZAOSOCIAL,\n           TPP.CODTIPPARC,\n           CID.CODCID,\n           CID.NOMECID,\n           NVL((CASE WHEN UF.UF = 'EX' OR UF.UF IS NULL THEN TO_CHAR(UF.CODUF) ELSE UF.UF END), -999),\n           UF.DESCRICAO,\n           REG.CODREG,\n           REG.NOMEREG,\n           NAT.CODNAT,\n           NAT.DESCRNAT,\n           NAT2.CODNAT,\n           NAT2.DESCRNAT,\n           NAT3.CODNAT,\n           NAT3.DESCRNAT,\n           NAT4.CODNAT,\n           NAT4.DESCRNAT,\n           PRO.CODPROD,\n           PRO.DESCRPROD,\n           PRO.MARCA,\n           PRO.MARCA,\n           GRU.CODGRUPOPROD,\n           GRU.DESCRGRUPOPROD,\n           CUS.CODCENCUS,\n           CUS.DESCRCENCUS,\n           CUS2.CODCENCUS,\n           CUS2.DESCRCENCUS,\n           EMP.CODEMP,\n           EMP.RAZAOSOCIAL,\n           VEN.CODVEND,\n           VEN.APELIDO,\n           GER.CODVEND,\n           GER.APELIDO,\n           TOP.CODTIPOPER,\n           TOP.DESCROPER,\n           TOP.TIPMOV,\n           TPM.OPCAO,\n           TPP.DESCRTIPPARC,\n           CAB.CODTIPVENDA,\n           TPV.DESCRTIPVENDA \n\nUNION ALL \n\n SELECT   ADD_MONTHS(CAB.DTNEG, 12 )AS \"Dia\",\n         CAB.NUNOTA AS  \"ID Nunota\",\n         CAB.NUNOTA AS \"Nunota\",\n         NVL(PAR.CODPARC,-999) AS \"ID Parceiro\",\n         NVL(PAR.RAZAOSOCIAL, 'Nulo') AS \"Parceiro\",\n         NVL(TPP.CODTIPPARC ,-999)AS \"ID Perfil\",\n         NVL(TPP.DESCRTIPPARC, 'Nulo') AS \"Perfil\",\n         NVL(CID.CODCID,-999) AS \"ID Cidade\",\n         NVL(CID.NOMECID, 'Nulo') AS \"Cidade\",\n         NVL((CASE WHEN UF.UF = 'EX' OR UF.UF IS NULL THEN TO_CHAR(UF.CODUF) ELSE UF.UF END), -999) AS \"ID Estado\",\n         NVL(UF.DESCRICAO, 'Nulo') AS \"Estado\",\n         NVL(REG.CODREG,-999) AS \"ID Região\",\n         NVL(REG.NOMEREG, 'Nulo') AS \"Região\",\n         NVL(NAT.CODNAT,-999) AS \"ID Natureza NV1\",\n         NVL(NAT.DESCRNAT, 'Nulo') AS \"Natureza NV1\",\n         NVL(NAT2.CODNAT,-999) AS \"ID Natureza NV2\",\n         NVL(NAT2.DESCRNAT, 'Nulo') AS \"Natureza NV2\",\n         NVL(NAT3.CODNAT,-999) AS \"ID Natureza NV3\",\n         NVL(NAT3.DESCRNAT, 'Nulo') AS \"Natureza NV3\",\n         NVL(NAT4.CODNAT,-999) AS \"ID Natureza NV4\",\n         NVL(NAT4.DESCRNAT, 'Nulo') AS \"Natureza NV4\",\n         NVL(PRO.CODPROD,-999) AS \"ID Produto\",\n         NVL(PRO.DESCRPROD, 'Nulo') AS \"Produto\",\n         NVL(PRO.MARCA,-999) AS \"ID Marca\",\n         NVL(PRO.MARCA, 'Nulo') AS \"Marca\",\n         NVL(GRU.CODGRUPOPROD,-999) AS \"ID Grupo de Produtos\",\n         NVL(GRU.DESCRGRUPOPROD, 'Nulo') AS \"Grupo de Produtos\",\n         NVL(CUS.CODCENCUS,-999) AS \"ID Centro de Resultado\",\n         NVL(CUS.DESCRCENCUS, 'Nulo') \"Centro de Resultado\",\n         NVL(CUS2.CODCENCUS,-999) AS \"ID Centro de Resultado Pai\",\n         NVL(CUS2.DESCRCENCUS, 'Nulo') AS \"Centro de Resultado Pai\",\n         NVL(EMP.CODEMP,-999) AS \"ID Empresa\",\n         NVL(EMP.RAZAOSOCIAL, 'Nulo') AS \"Empresa\",\n         NVL(VEN.CODVEND,-999) AS \"ID Vendedor\",\n         NVL(VEN.APELIDO, 'Nulo') AS \"Vendedor\" ,\n         NVL(GER.CODVEND,-999) AS \"ID Gerente de Vendas\",\n         NVL(GER.APELIDO, 'Nulo') AS \"Gerente de Vendas\",\n         NVL(TOP.CODTIPOPER,-999) AS \" ID Tipo de Operação\",\n         NVL(TOP.DESCROPER, 'Nulo') AS \"Tipo de Operação\",\n         NVL(TOP.TIPMOV,-999) AS \"ID Tipo de Movimentação\",\n         NVL(TPM.OPCAO, 'Nulo') AS \"Tipo de Movimentação\",\n         NVL(CAB.CODTIPVENDA,-999) AS \"ID Tipo de Venda\",\n         NVL(TPV.DESCRTIPVENDA, 'Nulo') AS \"Tipo de Venda\",\n         0 AS \"Vendas\",\n         0 AS \"Volume Vendas\",\n         0 AS  \"Vendas M.A.\",\n         0 AS \"Volume Vendas M.A.\",\n         SUM(((ITE.VLRTOT - ITE.VLRDESC)) * CASE WHEN TOP.BONIFICACAO = 'S' THEN 0 ELSE 1 END * TOP.GOLDEV) AS  \"Vendas A.A.\",\n         SUM(((ITE.QTDNEG) * CASE WHEN TOP.BONIFICACAO = 'S' THEN 0 ELSE 1 END) * TOP.GOLDEV) AS \"Volume Vendas A.A.\"\n  FROM TGFCAB CAB\n  LEFT JOIN TGFITE ITE ON ITE.NUNOTA = CAB.NUNOTA\n  LEFT JOIN TGFPAR PAR ON PAR.CODPARC = CAB.CODPARC\n  LEFT JOIN TGFTPP TPP ON TPP.CODTIPPARC = PAR.CODTIPPARC\n  LEFT JOIN TSICID CID ON CID.CODCID = PAR.CODCID\n  LEFT JOIN TSIUFS UF ON UF.CODUF = CID.UF\n  LEFT JOIN TSIREG REG ON REG.CODREG = PAR.CODREG\n  LEFT JOIN TGFNAT NAT ON NAT.CODNAT = CAB.CODNAT\n  LEFT JOIN TGFNAT NAT2 ON trunc(NAT.CODNAT,-2) = NAT2.CODNAT\n  LEFT JOIN TGFNAT NAT3 ON trunc(NAT.CODNAT,-4) = NAT3.CODNAT\n  LEFT JOIN TGFNAT NAT4 ON trunc(NAT.CODNAT,-5) = NAT4.CODNAT\n  LEFT JOIN TGFPRO PRO ON PRO.CODPROD = ITE.CODPROD\n  LEFT JOIN TGFGRU GRU ON GRU.CODGRUPOPROD = PRO.CODGRUPOPROD\n  LEFT JOIN TSICUS CUS ON CUS.CODCENCUS = CAB.CODCENCUS\n  LEFT JOIN TSICUS CUS2 ON TRUNC(CUS.CODCENCUS,-3) = CUS2.CODCENCUS\n  LEFT JOIN TSIEMP EMP ON EMP.CODEMP = CAB.CODEMP\n  LEFT JOIN TGFVEN VEN ON VEN.CODVEND = CAB.CODVEND\n  LEFT JOIN TGFVEN GER ON VEN.CODGER = GER.CODVEND\n  LEFT JOIN TGFTOP TOP ON TOP.CODTIPOPER = CAB.CODTIPOPER\n  AND CAB.DHTIPOPER = TOP.DHALTER\n  LEFT JOIN TGFTPV TPV ON TPV.CODTIPVENDA = CAB.CODTIPVENDA  \n  AND  CAB.DHTIPVENDA = TPV.DHALTER\n  LEFT JOIN\n    (SELECT VALOR, OPCAO FROM TDDOPC WHERE NUCAMPO = 856) TPM ON (TPM.VALOR = TOP.TIPMOV)\n      LEFT JOIN \n    (SELECT MARCA, ROWNUM AS CODMARCA  FROM( SELECT DISTINCT MARCA FROM TGFPRO)A)B ON PRO.MARCA = B.MARCA\nWHERE CAB.STATUSNOTA = 'L' \nAND CAB.TIPMOV = 'V'\nAND TOP.GOLSINAL = -1\n GROUP BY CAB.NUNOTA,\n           CAB.NUNOTA,\n           CAB.DTNEG,\n           PAR.CODPARC,\n           PAR.RAZAOSOCIAL,\n           TPP.CODTIPPARC,\n           CID.CODCID,\n           CID.NOMECID,\n           NVL((CASE WHEN UF.UF = 'EX' OR UF.UF IS NULL THEN TO_CHAR(UF.CODUF) ELSE UF.UF END), -999),\n           UF.DESCRICAO,\n           REG.CODREG,\n           REG.NOMEREG,\n           NAT.CODNAT,\n           NAT.DESCRNAT,\n           NAT2.CODNAT,\n           NAT2.DESCRNAT,\n           NAT3.CODNAT,\n           NAT3.DESCRNAT,\n           NAT4.CODNAT,\n           NAT4.DESCRNAT,\n           PRO.CODPROD,\n           PRO.DESCRPROD,\n           PRO.MARCA,\n           PRO.MARCA,\n           GRU.CODGRUPOPROD,\n           GRU.DESCRGRUPOPROD,\n           CUS.CODCENCUS,\n           CUS.DESCRCENCUS,\n           CUS2.CODCENCUS,\n           CUS2.DESCRCENCUS,\n           EMP.CODEMP,\n           EMP.RAZAOSOCIAL,\n           VEN.CODVEND,\n           VEN.APELIDO,\n           GER.CODVEND,\n           GER.APELIDO,\n           TOP.CODTIPOPER,\n           TOP.DESCROPER,\n           TOP.TIPMOV,\n           TPM.OPCAO,\n           TPP.DESCRTIPPARC,\n           CAB.CODTIPVENDA,\n           TPV.DESCRTIPVENDA ",
+					"perfectMapHeader": [
+						{
+							"name": "Dia",
+							"dimensionName": "Dia",
+							"dimensionId": 1,
+							"columnName": "Dia",
+							"dataType": "DATE",
+							"entityType": "DIMENSION",
+							"dateFormat": "yyyy/MM/dd HH:mm:ss",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Nunota",
+							"dimensionName": "Nunota",
+							"dimensionId": 1001,
+							"columnName": "ID Nunota",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Nunota",
+							"dimensionName": "Nunota",
+							"dimensionId": 1001,
+							"columnName": "Nunota",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Parceiro",
+							"dimensionName": "Parceiro",
+							"dimensionId": 1004,
+							"columnName": "ID Parceiro",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Parceiro",
+							"dimensionName": "Parceiro",
+							"dimensionId": 1004,
+							"columnName": "Parceiro",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Perfil",
+							"dimensionName": "Perfil",
+							"dimensionId": 1018,
+							"columnName": "ID Perfil",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Perfil",
+							"dimensionName": "Perfil",
+							"dimensionId": 1018,
+							"columnName": "Perfil",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Cidade",
+							"dimensionName": "Cidade",
+							"dimensionId": 1005,
+							"columnName": "ID Cidade",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Cidade",
+							"dimensionName": "Cidade",
+							"dimensionId": 1005,
+							"columnName": "Cidade",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Estado",
+							"dimensionName": "Estado",
+							"dimensionId": 1006,
+							"columnName": "ID Estado",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Estado",
+							"dimensionName": "Estado",
+							"dimensionId": 1006,
+							"columnName": "Estado",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Região",
+							"dimensionName": "Região",
+							"dimensionId": 1021,
+							"columnName": "ID Região",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Região",
+							"dimensionName": "Região",
+							"dimensionId": 1021,
+							"columnName": "Região",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Natureza NV1",
+							"dimensionName": "Natureza NV1",
+							"dimensionId": 1007,
+							"columnName": "ID Natureza NV1",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Natureza NV1",
+							"dimensionName": "Natureza NV1",
+							"dimensionId": 1007,
+							"columnName": "Natureza NV1",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Natureza NV2",
+							"dimensionName": "Natureza NV2",
+							"dimensionId": 1008,
+							"columnName": "ID Natureza NV2",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Natureza NV2",
+							"dimensionName": "Natureza NV2",
+							"dimensionId": 1008,
+							"columnName": "Natureza NV2",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Natureza NV3",
+							"dimensionName": "Natureza NV3",
+							"dimensionId": 1016,
+							"columnName": "ID Natureza NV3",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Natureza NV3",
+							"dimensionName": "Natureza NV3",
+							"dimensionId": 1016,
+							"columnName": "Natureza NV3",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Natureza NV4",
+							"dimensionName": "Natureza NV4",
+							"dimensionId": 1017,
+							"columnName": "ID Natureza NV4",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Natureza NV4",
+							"dimensionName": "Natureza NV4",
+							"dimensionId": 1017,
+							"columnName": "Natureza NV4",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Produto",
+							"dimensionName": "Produto",
+							"dimensionId": 1009,
+							"columnName": "ID Produto",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Produto",
+							"dimensionName": "Produto",
+							"dimensionId": 1009,
+							"columnName": "Produto",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Marca",
+							"dimensionName": "Marca",
+							"dimensionId": 1019,
+							"columnName": "ID Marca",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Marca",
+							"dimensionName": "Marca",
+							"dimensionId": 1019,
+							"columnName": "Marca",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Grupo de Produtos",
+							"dimensionName": "Grupo de Produtos",
+							"dimensionId": 1010,
+							"columnName": "ID Grupo de Produtos",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Grupo de Produtos",
+							"dimensionName": "Grupo de Produtos",
+							"dimensionId": 1010,
+							"columnName": "Grupo de Produtos",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Centro de Resultado",
+							"dimensionName": "Centro de Resultado",
+							"dimensionId": 1011,
+							"columnName": "ID Centro de Resultado",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Centro de Resultado",
+							"dimensionName": "Centro de Resultado",
+							"dimensionId": 1011,
+							"columnName": "Centro de Resultado",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Centro de Resultado Pai",
+							"dimensionName": "Centro de Resultado Pai",
+							"dimensionId": 1012,
+							"columnName": "ID Centro de Resultado Pai",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Centro de Resultado Pai",
+							"dimensionName": "Centro de Resultado Pai",
+							"dimensionId": 1012,
+							"columnName": "Centro de Resultado Pai",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Empresa",
+							"dimensionName": "Empresa",
+							"dimensionId": 1013,
+							"columnName": "ID Empresa",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Empresa",
+							"dimensionName": "Empresa",
+							"dimensionId": 1013,
+							"columnName": "Empresa",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Vendedor",
+							"dimensionName": "Vendedor",
+							"dimensionId": 1002,
+							"columnName": "ID Vendedor",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Vendedor",
+							"dimensionName": "Vendedor",
+							"dimensionId": 1002,
+							"columnName": "Vendedor",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Gerente de Vendas",
+							"dimensionName": "Gerente de Vendas",
+							"dimensionId": 1003,
+							"columnName": "ID Gerente de Vendas",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Gerente de Vendas",
+							"dimensionName": "Gerente de Vendas",
+							"dimensionId": 1003,
+							"columnName": "Gerente de Vendas",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Tipo de Operação",
+							"dimensionName": "Tipo de Operação",
+							"dimensionId": 1014,
+							"columnName": " ID Tipo de Operação",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Tipo de Operação",
+							"dimensionName": "Tipo de Operação",
+							"dimensionId": 1014,
+							"columnName": "Tipo de Operação",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Tipo de Movimentação",
+							"dimensionName": "Tipo de Movimentação",
+							"dimensionId": 1015,
+							"columnName": "ID Tipo de Movimentação",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Tipo de Movimentação",
+							"dimensionName": "Tipo de Movimentação",
+							"dimensionId": 1015,
+							"columnName": "Tipo de Movimentação",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Tipo de Venda",
+							"dimensionName": "Tipo de Venda",
+							"dimensionId": 1020,
+							"columnName": "ID Tipo de Venda",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Tipo de Venda",
+							"dimensionName": "Tipo de Venda",
+							"dimensionId": 1020,
+							"columnName": "Tipo de Venda",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Vendas",
+							"cubeId": 7,
+							"columnName": "Vendas",
+							"dataType": "DOUBLE",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "Volume Vendas",
+							"cubeId": 8,
+							"columnName": "Volume Vendas",
+							"dataType": "DOUBLE",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						}
+					],
+					"quickConsultationTypes": [
+						{
+							"name": "Dia",
+							"selected": false
+						},
+						{
+							"name": "ID Nunota",
+							"selected": false
+						},
+						{
+							"name": "Nunota",
+							"selected": false
+						},
+						{
+							"name": "ID Parceiro",
+							"selected": false
+						},
+						{
+							"name": "Parceiro",
+							"selected": false
+						},
+						{
+							"name": "ID Perfil",
+							"selected": false
+						},
+						{
+							"name": "Perfil",
+							"selected": false
+						},
+						{
+							"name": "ID Cidade",
+							"selected": false
+						},
+						{
+							"name": "Cidade",
+							"selected": false
+						},
+						{
+							"name": "ID Estado",
+							"selected": false
+						},
+						{
+							"name": "Estado",
+							"selected": false
+						},
+						{
+							"name": "ID Região",
+							"selected": false
+						},
+						{
+							"name": "Região",
+							"selected": false
+						},
+						{
+							"name": "ID Natureza NV1",
+							"selected": false
+						},
+						{
+							"name": "Natureza NV1",
+							"selected": false
+						},
+						{
+							"name": "ID Natureza NV2",
+							"selected": false
+						},
+						{
+							"name": "Natureza NV2",
+							"selected": false
+						},
+						{
+							"name": "ID Natureza NV3",
+							"selected": false
+						},
+						{
+							"name": "Natureza NV3",
+							"selected": false
+						},
+						{
+							"name": "ID Natureza NV4",
+							"selected": false
+						},
+						{
+							"name": "Natureza NV4",
+							"selected": false
+						},
+						{
+							"name": "ID Produto",
+							"selected": false
+						},
+						{
+							"name": "Produto",
+							"selected": false
+						},
+						{
+							"name": "ID Marca",
+							"selected": false
+						},
+						{
+							"name": "Marca",
+							"selected": false
+						},
+						{
+							"name": "ID Grupo de Produtos",
+							"selected": false
+						},
+						{
+							"name": "Grupo de Produtos",
+							"selected": false
+						},
+						{
+							"name": "ID Centro de Resultado",
+							"selected": false
+						},
+						{
+							"name": "ID Centro de Resultado Pai",
+							"selected": false
+						},
+						{
+							"name": "Centro de Resultado Pai",
+							"selected": false
+						},
+						{
+							"name": "ID Empresa",
+							"selected": false
+						},
+						{
+							"name": "Empresa",
+							"selected": false
+						},
+						{
+							"name": "ID Vendedor",
+							"selected": false
+						},
+						{
+							"name": "Vendedor",
+							"selected": false
+						},
+						{
+							"name": "ID Gerente de Vendas",
+							"selected": false
+						},
+						{
+							"name": "Gerente de Vendas",
+							"selected": false
+						},
+						{
+							"name": "ID Tipo de Operação",
+							"selected": false
+						},
+						{
+							"name": "Tipo de Operação",
+							"selected": false
+						},
+						{
+							"name": "ID Tipo de Movimentação",
+							"selected": false
+						},
+						{
+							"name": "Tipo de Movimentação",
+							"selected": false
+						},
+						{
+							"name": "ID Tipo de Venda",
+							"selected": false
+						},
+						{
+							"name": "Tipo de Venda",
+							"selected": false
+						},
+						{
+							"name": "Vendas",
+							"selected": false
+						},
+						{
+							"name": "Volume Vendas",
+							"selected": false
+						}
+					]
+				},
+				{
+					"name": "Análises financeiras",
+					"icon": "mdiCurrencyUsd",
+					"defaultQuery": "SELECT\nDIA AS \"Data\",\nTO_CHAR(NVL(CODNUFIN,-999)) AS \"ID Nufin\",\nTO_CHAR(NVL(CODNUFIN,-999)) AS \"Nufin\",\nTO_CHAR(NVL(CODPARC,-999)) AS \"ID Parceiro\",\nNVL(PARCEIRO, 'Nulo') \"Parceiro\",\nTO_CHAR(NVL(CODPERFIL,-999)) AS \"ID Perfil\",\nNVL(PERFIL,'Nulo') AS \"Perfil\",\nTO_CHAR(NVL(CODCID,-999)) AS \"ID Cidade\",\nNVL(CIDADE,'Nulo') AS \"Cidade\",\nNVL(CODUF, -999) AS \"ID Estado\",\nNVL(UF,'Nulo') AS \"Estado\",\nTO_CHAR(NVL(CODREG, -999)) AS \"ID Região\",\nNVL(REGIAO,'Nulo') AS \"Região\",\nTO_CHAR(NVL(CODNAT1, -999)) AS \"ID Natureza NV1\",\nNVL(NAT1,'Nulo') AS \"Natureza NV1\",\nTO_CHAR(NVL(CODNAT2, -999)) AS \"ID Natureza NV2\",\nNVL(NAT2,'Nulo')AS \"Natureza NV2\",\nTO_CHAR(NVL(CODNAT3, -999)) AS \"ID Natureza NV3\",\nNVL(NAT3,'Nulo')AS \"Natureza NV3\",\nTO_CHAR(NVL(CODNAT4, -999)) AS \"ID Natureza NV4\",\nNVL(NAT4,'Nulo') AS \"Natureza NV4\",\nTO_CHAR(NVL(CODCENCUS, -999)) AS \"ID Centro de Resultado\",\nNVL(CENCUS,'Nulo') AS \"Centro de Resultado\",\nTO_CHAR(NVL(CODCENCUSPAI, -999)) AS \"ID Centro de Resultado Pai\",\nNVL(CENCUSPAI,'Nulo') AS \"Centro de Resultado Pai\",\nTO_CHAR(NVL(CODEMP, -999)) AS \"ID Empresa\",\nNVL(EMPRESA,'Nulo') AS \"Empresa\",\nTO_CHAR(NVL(CODVEND, -999)) AS \"ID Vendedor\",\nNVL(VENDEDOR,'Nulo') AS \"Vendedor\",\nTO_CHAR(NVL(CODGER, -999)) AS \"ID Gerente de Vendas\",\nNVL(GERENTE,'Nulo') AS \"Gerente de Vendas\",\nTO_CHAR(NVL(CODTIPOPER, -999)) AS \"ID Tipo de Operação\",\nNVL(TOP,'Nulo') AS \"Tipo de Operação\",\nTO_CHAR(NVL(CODTIPMOV, -999)) AS \"ID Tipo de Movimentação\",\nNVL(TIPMOV,'Nulo') AS \"Tipo de Movimentação\",\nTO_CHAR(NVL(CODTIPTIT, -999)) AS \"ID Tipo de Título\",\nNVL(TIPTIT,'Nulo') AS \"Tipo de Título\",\nTO_CHAR(NVL(CODCTABCOINT, -999)) AS \"ID Conta Bancária\",\nNVL(CTABCOINT,'Nulo') AS \"Conta Bancária\",\nTO_CHAR(NVL(CODBCO, -999)) AS \"ID Banco\",\nNVL(BANCO,'Nulo') AS \"Banco\",\nTO_CHAR(NVL(CODCLASSE, -999)) AS \"ID Classe\",\nNVL(CLASSE,'Nulo') AS \"Classe\",\nTO_CHAR(NVL(CODCON, -999)) AS \"ID Contrato\",\nNVL(CONTRATO, -999) AS \"Contrato\",\nNVL(CODPROV, -999) AS \"ID Provisão\",\nNVL(PROVISAO, 'Nulo') AS \"Provisão\",\nTO_CHAR(NVL(CODSTATUS,-999)) AS \"ID Status\",\nNVL(STATUS,'Nulo') AS \"Status\",\nTO_CHAR(NVL(CODTIPOFIN,-999)) AS \"ID Tipo Financeiro\",\nNVL(TIPOFIN,'Nulo') AS \"Tipo Financeiro\",\nTO_CHAR(NVL(CODRECDESP,-999)) AS \"ID Recdesp\",\nNVL(RECDESP, 'Nulo') AS \"Recdesp\",\nNVL(RECEITAS, 0) AS \"Receitas\",\nNVL(DESPESAS, 0) AS \"Despesas\",\nNVL(RECABERTO, 0) AS \"A Receber\",\nNVL(DESPABERTO, 0) AS \"A Pagar\",\nNVL(SALDO, 0) AS \"Saldo Bancario\",\nNVL(DIF, 0) AS \"Divergencias\",\nNVL(FLUXO, 0) AS \"Fluxo de Caixa\"\nFROM\n(SELECT TRUNC(DTVENC) AS DIA,\nNUFIN AS CODNUFIN,\nNUFIN AS NUFIN,\nPAR.CODPARC AS CODPARC,\nPAR.RAZAOSOCIAL AS PARCEIRO,\nTPP.CODTIPPARC AS CODPERFIL,\nTPP.DESCRTIPPARC AS PERFIL,\nCID.CODCID AS CODCID,\nCID.NOMECID AS CIDADE,\nUF.UF AS CODUF,\nUF.DESCRICAO AS UF,\nREG.CODREG AS CODREG,\nREG.NOMEREG AS REGIAO,\nNAT.CODNAT AS CODNAT1,\nNAT.DESCRNAT AS NAT1,\nNAT2.CODNAT AS CODNAT2,\nNAT2.DESCRNAT AS NAT2,\nNAT3.CODNAT AS CODNAT3,\nNAT3.DESCRNAT AS NAT3,\nNAT4.CODNAT AS CODNAT4,\nNAT4.DESCRNAT AS NAT4,\nCUS.CODCENCUS AS CODCENCUS,\nCUS.DESCRCENCUS AS CENCUS,\nCUS2.CODCENCUS AS CODCENCUSPAI,\nCUS2.DESCRCENCUS AS CENCUSPAI,\nEMP.CODEMP AS CODEMP,\nEMP.RAZAOSOCIAL AS EMPRESA,\nVEN.CODVEND AS CODVEND,\nVEN.APELIDO AS VENDEDOR ,\nGER.CODVEND AS CODGER,\nGER.APELIDO AS GERENTE,\nTOP.CODTIPOPER AS CODTIPOPER,\nTOP.DESCROPER AS TOP,\nTOP.TIPMOV AS CODTIPMOV,\nTPV.OPCAO AS TIPMOV,\nTIT.CODTIPTIT AS CODTIPTIT,\nTIT.DESCRTIPTIT AS TIPTIT,\nCTA.CODCTABCOINT AS CODCTABCOINT,\nCTA.DESCRICAO AS CTABCOINT,\nBCO.CODBCO AS CODBCO,\nBCO.ABREVIATURA AS BANCO,\nCLS.VALOR AS CODCLASSE,\nCLS.OPCAO AS CLASSE,\nFIN.NUMCONTRATO AS CODCON,\nFIN.NUMCONTRATO AS CONTRATO,\nFIN.PROVISAO AS CODPROV,\nCASE\nWHEN FIN.PROVISAO = 'N' THEN 'Não'\nELSE 'Sim'\nEND AS PROVISAO,\nCASE\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) >= 0 THEN 1\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) BETWEEN -7 AND -1 THEN 2\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) BETWEEN -15 AND -8 THEN 3\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) BETWEEN -30 AND -16 THEN 4\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) < -30 THEN 5\nEND AS CODSTATUS,\nCASE\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) >= 0 THEN 'Em dia'\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) BETWEEN -7 AND -1 THEN 'Venceu nos últimos 7 dias'\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) BETWEEN -15 AND -8 THEN 'Venceu nos últimos 15 dias'\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) BETWEEN -30 AND -16 THEN 'Venceu nos últimos 30 dias'\nWHEN TRUNC(FIN.DTVENC - SYSDATE, 0) < -30 THEN 'Venceu a mais de 30 dias'\nEND AS STATUS,\nFIN.RECDESP AS CODRECDESP,\nCASE WHEN FIN.RECDESP = 1 THEN 'Receita'\nWHEN FIN.RECDESP = -1 THEN 'Despesa'\nELSE 'N/A' END AS RECDESP,\n0 as RECEITAS,\n0 AS DESPESAS,\n(CASE WHEN RECDESP = 1 THEN VLRDESDOB END) AS RECABERTO,\n(CASE WHEN RECDESP = -1 THEN VLRDESDOB END) AS DESPABERTO,\n1 AS CODTIPOFIN,\n'Títulos em Aberto' as TIPOFIN,\n0 as SALDO,\n0 AS DIF,\n(CASE WHEN FIN.DTVENC >= TRUNC(SYSDATE) THEN VLRDESDOB*RECDESP END) AS FLUXO\nFROM TGFFIN FIN\nLEFT JOIN TGFPAR PAR ON PAR.CODPARC = FIN.CODPARC\nLEFT JOIN TGFTPP TPP ON TPP.CODTIPPARC = PAR.CODTIPPARC\nLEFT JOIN TSICID CID ON CID.CODCID = PAR.CODCID\nLEFT JOIN TSIUFS UF ON UF.CODUF = CID.UF\nLEFT JOIN TSIREG REG ON REG.CODREG = PAR.CODREG\nLEFT JOIN TGFNAT NAT ON NAT.CODNAT = FIN.CODNAT\nLEFT JOIN TGFNAT NAT2 ON trunc(NAT.CODNAT,-2) = NAT2.CODNAT\nLEFT JOIN TGFNAT NAT3 ON trunc(NAT.CODNAT,-4) = NAT3.CODNAT\nLEFT JOIN TGFNAT NAT4 ON trunc(NAT.CODNAT,-5) = NAT4.CODNAT\nLEFT JOIN TSICUS CUS ON CUS.CODCENCUS = FIN.CODCENCUS\nLEFT JOIN TSICUS CUS2 ON TRUNC(CUS.CODCENCUS,-3) = CUS2.CODCENCUS\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = FIN.CODEMP\nLEFT JOIN TGFVEN VEN ON VEN.CODVEND = FIN.CODVEND\nLEFT JOIN TGFVEN GER ON VEN.CODGER = GER.CODVEND\nLEFT JOIN TGFTOP TOP ON TOP.CODTIPOPER = FIN.CODTIPOPER\nAND FIN.DHTIPOPER = TOP.DHALTER\nLEFT JOIN\n  (SELECT VALOR,\n          OPCAO\n   FROM TDDOPC\n   WHERE NUCAMPO = 856) TPV ON (TPV.VALOR = TOP.TIPMOV)\nLEFT JOIN TGFTIT TIT ON TIT.CODTIPTIT = FIN.CODTIPTIT\nLEFT JOIN TSICTA CTA ON CTA.CODCTABCOINT = FIN.CODCTABCOINT\nLEFT JOIN TSIBCO BCO ON BCO.CODBCO = FIN.CODBCO\nLEFT JOIN\n  (SELECT VALOR,\n          OPCAO\n   FROM TDDOPC\n   WHERE NUCAMPO = 1048) CLS ON (CLS.VALOR = CTA.CLASSE)\nWHERE FIN.DHBAIXA IS NULL \n\n/*fim titulos em aberto*/\n\n\nUNION ALL\n\n\n/*inicio baixas*/\n\nSELECT\nTRUNC(DHBAIXA) AS DIA,\nNUFIN AS CODNUFIN,\nNUFIN AS NUFIN,\nPAR.CODPARC AS CODPARC,\nPAR.RAZAOSOCIAL AS PARCEIRO,\nTPP.CODTIPPARC AS CODPERFIL,\nTPP.DESCRTIPPARC AS PERFIL,\nCID.CODCID AS CODCID,\nCID.NOMECID AS CIDADE,\nUF.UF AS CODUF,\nUF.DESCRICAO AS UF,\nREG.CODREG AS CODREG,\nREG.NOMEREG AS REGIAO,\nNAT.CODNAT AS CODNAT1,\nNAT.DESCRNAT AS NAT1,\nNAT2.CODNAT AS CODNAT2,\nNAT2.DESCRNAT AS NAT2,\nNAT3.CODNAT AS CODNAT3,\nNAT3.DESCRNAT AS NAT3,\nNAT4.CODNAT AS CODNAT4,\nNAT4.DESCRNAT AS NAT4,\nCUS.CODCENCUS AS CODCENCUS,\nCUS.DESCRCENCUS CENCUS,\nCUS2.CODCENCUS AS CODCENCUSPAI,\nCUS2.DESCRCENCUS AS CENCUSPAI,\nEMP.CODEMP AS CODEMP,\nEMP.RAZAOSOCIAL AS EMPRESA,\nVEN.CODVEND AS CODVEND,\nVEN.APELIDO AS VENDEDOR ,\nGER.CODVEND AS CODGER,\nGER.APELIDO AS GERENTE,\nTOP.CODTIPOPER AS CODTIPOPER,\nTOP.DESCROPER AS TOP,\nTOP.TIPMOV AS CODTIPMOV,\nTPV.OPCAO AS TIPMOV,\nTIT.CODTIPTIT AS CODTIPTIT,\nTIT.DESCRTIPTIT AS TIPTIT,\nCTA.CODCTABCOINT AS CODCTABCOINT,\nCTA.DESCRICAO AS CTABCOINT,\nBCO.CODBCO AS CODBCO,\nBCO.ABREVIATURA AS BANCO,\nCLS.VALOR AS CODCLASSE,\nCLS.OPCAO AS CLASSE,\nFIN.NUMCONTRATO AS CODCON,\nFIN.NUMCONTRATO AS CONTRATO, \n'N' AS CODPROV,\n'Não' AS PROVISAO,\n\nCASE WHEN TRUNC(FIN.DTVENC) > TRUNC(FIN.DHBAIXA) THEN 6 \n      WHEN TRUNC(FIN.DTVENC) < TRUNC(FIN.DHBAIXA) THEN 7\n      WHEN TRUNC(FIN.DTVENC) = TRUNC(FIN.DHBAIXA)  THEN 8 END AS CODSTATUS,\nCASE WHEN TRUNC(FIN.DTVENC) > TRUNC(FIN.DHBAIXA) THEN 'Atrasada' \n      WHEN TRUNC(FIN.DTVENC) < TRUNC(FIN.DHBAIXA) THEN 'Adiantada'\n      WHEN TRUNC(FIN.DTVENC) = TRUNC(FIN.DHBAIXA)  THEN 'No vencimento' END AS STATUS ,\n\nFIN.RECDESP AS CODRECDESP,\nCASE WHEN FIN.RECDESP = 1 THEN 'Receita'\n      WHEN FIN.RECDESP = -1 THEN 'Despesa'\n      ELSE 'N/A' END AS RECDESP,\n(CASE WHEN RECDESP = 1 THEN VLRBAIXA END)  as RECEITAS,\n(CASE WHEN RECDESP = -1 THEN VLRBAIXA END) AS DESPESAS,\n0 AS RECABERTO, \n0 AS DESPABERTO, \n2 AS CODTIPOFIN,\n'Baixas' as TIPOFIN,\n\n0 as SALDO,\n0 AS DIF,\nVLRBAIXA*RECDESP  AS FLUXO\nFROM\nTGFFIN FIN\nLEFT JOIN TGFPAR PAR ON PAR.CODPARC = FIN.CODPARC\nLEFT JOIN TGFTPP TPP ON TPP.CODTIPPARC = PAR.CODTIPPARC\nLEFT JOIN TSICID CID ON CID.CODCID = PAR.CODCID\nLEFT JOIN TSIUFS UF ON UF.CODUF = CID.UF\nLEFT JOIN TSIREG REG ON REG.CODREG = PAR.CODREG\nLEFT JOIN TGFNAT NAT ON NAT.CODNAT = FIN.CODNAT\nLEFT JOIN TGFNAT NAT2 ON trunc(NAT.CODNAT,-2) = NAT2.CODNAT\nLEFT JOIN TGFNAT NAT3 ON trunc(NAT.CODNAT,-4) = NAT3.CODNAT\nLEFT JOIN TGFNAT NAT4 ON trunc(NAT.CODNAT,-5) = NAT4.CODNAT\nLEFT JOIN TSICUS CUS ON CUS.CODCENCUS = FIN.CODCENCUS\nLEFT JOIN TSICUS CUS2 ON TRUNC(CUS.CODCENCUS,-3) = CUS2.CODCENCUS\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = FIN.CODEMP\nLEFT JOIN TGFVEN VEN ON VEN.CODVEND = FIN.CODVEND\nLEFT JOIN TGFVEN GER ON VEN.CODGER = GER.CODVEND\nLEFT JOIN TGFTOP TOP ON TOP.CODTIPOPER = FIN.CODTIPOPER AND FIN.DHTIPOPER = TOP.DHALTER\nLEFT JOIN\n  (SELECT VALOR, OPCAO FROM TDDOPC WHERE NUCAMPO = 856) TPV ON (TPV.VALOR = TOP.TIPMOV)\nLEFT JOIN TGFTIT TIT ON TIT.CODTIPTIT = FIN.CODTIPTIT\nLEFT JOIN TSICTA CTA ON CTA.CODCTABCOINT = FIN.CODCTABCOINT\nLEFT JOIN TSIBCO BCO ON BCO.CODBCO = FIN.CODBCO\nLEFT JOIN\n (SELECT VALOR, OPCAO FROM TDDOPC WHERE NUCAMPO = 1048) CLS ON (CLS.VALOR = CTA.CLASSE)\nWHERE\n    FIN.DHBAIXA IS NOT NULL\nAND\n    PROVISAO = 'N'\n\n    \n/*fim baixas*/\n\n    \nUNION ALL\n\n\n/*inicio envelope saldo inicial*/\n\n\nSELECT TRUNC(DIA)  AS DIA,\n       -999 AS CODNUFIN,\n       -999 AS NUFIN,\n       -999 AS CODPARC,\n       'Nulo' AS PARCEIRO,\n       -999 AS CODPERFIL,\n       'Nulo' AS PERFIL,\n       -999 AS CODCID,\n       'Nulo' AS CIDADE,\n       '-999' AS CODUF,\n       'Nulo' AS UF,\n       -999 AS CODREG,\n       'Nulo' AS REGIAO,\n       -999 AS CODNAT1,\n       'Nulo' AS NAT1,\n       -999 AS CODNAT2,\n       'Nulo' AS NAT2,\n       -999 AS CODNAT3,\n       'Nulo' AS NAT3,\n       -999 AS CODNAT4,\n       'Nulo' AS NAT4,\n       -999 AS CODCENCUS,\n       'Nulo' AS CENCUS,\n       -999 AS CODCENCUSPAI,\n       'Nulo' AS CENCUSPAI,\n        CODEMP,\n        RAZAOSOCIAL AS EMPRESA,\n       -999 AS CODVEND,\n       'Nulo' AS VENDEDOR,\n       -999 AS CODGER,\n       'Nulo' AS GERENTE,\n       -999 AS CODTIPOPER,\n       'Nulo' AS TOP,\n       '-999' AS CODTIPMOV,\n       'Nulo' AS TIPMOV,\n       -999 AS CODTIPTIT,\n       'Nulo' AS TIPTIT,\n       CODCTABCOINT, \n       CTABCOINT, \n       CODBCO, \n       BANCO, \n       CODCLASSE,\n       CLASSE,\n       -999 AS CODCON,\n       -999 AS CONTRATO,\n       'N' AS CODPROV,\n       'Não' AS PROVISAO,\n       -999 AS CODSTATUS,\n       'Nulo' AS STATUS,\n        -999 AS CODRECDESP,\n        'Nulo' AS RECDESP,\n        0 as RECEITAS,\n        0 AS DESPESAS,\n        0 AS RECABERTO,\n        0 AS DESPABERTO,\n        3 AS CODTIPOFIN,\n        'Saldo Inicial' AS TIPOFIN,\n        SALDO  AS SALDO,\n        0 AS DIF,\n        SALDO  AS FLUXO\nFROM\n(\n\nSELECT \nDIA, \nCODEMP,\nRAZAOSOCIAL,\nCODCTABCOINT, \nCTABCOINT, \nCODBCO, \nBANCO, \nCODCLASSE,  \nCLASSE, SUM(SALDOREAL) AS SALDOREAL, SUM(SALDOPROJ) AS SALDOPROJ,\nCASE WHEN DIA < TRUNC(SYSDATE) -1 THEN (SUM(SALDOREAL)) ELSE\nSUM(CASE WHEN TRUNC(DIA) = TRUNC(SYSDATE,'DD') -1 THEN SUM(SALDOREAL) ELSE 0 END  + SUM(SALDOPROJ)) OVER (PARTITION BY CODEMP, RAZAOSOCIAL, CODCTABCOINT, CTABCOINT, CODBCO, BANCO, CODCLASSE, CLASSE  ORDER BY DIA) END AS SALDO\nFROM (\n\n/*inicio saldo inicial PROJETADO<<<<<<<< AQUI ESTA O PROBLEMA*/\n\nSELECT TRUNC(B.DIA) AS DIA,\n             EMP.CODEMP AS CODEMP,\n             EMP.RAZAOSOCIAL,\n             CTA.CODCTABCOINT AS CODCTABCOINT,\n             CTA.DESCRICAO AS CTABCOINT,\n             BCO.CODBCO AS CODBCO,\n             BCO.ABREVIATURA AS BANCO,\n             CLS.VALOR AS CODCLASSE,\n             CLS.OPCAO AS CLASSE,\n             0 AS SALDOREAL,\n             NVL(B.SALDOPROJ1,0) + NVL(B.SALDOPROJ2, 0) AS SALDOPROJ,\n             0 AS FLUXO\n      FROM\n        (SELECT PRONOV.DIA,\n                CTA.CODCTABCOINT,\n                CTA.CODEMP,\n\n           (SELECT SUM(VLRDESDOB*RECDESP)\n            FROM TGFFIN FIN\n            WHERE TRUNC(FIN.DTVENC,'DD')= TRUNC(PRONOV.DIA,'DD')\n              AND FIN.CODCTABCOINT = CTA.CODCTABCOINT\n              AND FIN.CODEMP=CTA.CODEMP\n              AND DHBAIXA IS NULL\n            \n              --AND PROVISAO='N'\n              AND TRUNC(FIN.DTVENC) >= TRUNC(SYSDATE)) AS SALDOPROJ1, \n              (SELECT SUM(VLRBAIXA*RECDESP)\n            FROM TGFFIN FIN\n            WHERE TRUNC(FIN.DHBAIXA,'DD')= TRUNC(PRONOV.DIA,'DD')\n              AND FIN.CODCTABCOINT = CTA.CODCTABCOINT\n              AND FIN.CODEMP=CTA.CODEMP\n              AND PROVISAO='N'\n              AND TRUNC(FIN.DHBAIXA) >= TRUNC(SYSDATE)\n              \n\n              ) AS SALDOPROJ2\n         FROM\n           (SELECT ULTIMO - ROWNUM + 1 AS DIA,\n                   ROWNUM,\n                   QUANTIDADE\n            FROM\n              (SELECT SYSDATE + 90 AS ULTIMO,\n                      91 AS QUANTIDADE\n               FROM DUAL) CONNECT BY ROWNUM <= QUANTIDADE) PRONOV,\n                                                           TSICTA CTA\n         WHERE \n            CTA.ATIVA = 'S')B\n      LEFT JOIN TSIEMP EMP ON B.CODEMP = EMP.CODEMP\n      LEFT JOIN TSICTA CTA ON CTA.CODCTABCOINT = B.CODCTABCOINT\n      LEFT JOIN TSIBCO BCO ON BCO.CODBCO = CTA.CODBCO\n      LEFT JOIN\n        (SELECT VALOR,\n                OPCAO\n         FROM TDDOPC\n         WHERE NUCAMPO = 1048) CLS ON (CLS.VALOR = CTA.CLASSE)\n\n\n/*fim saldo inicial PROJETADO*/\n\n\nUNION ALL\n\n/*inicio saldo inicial real*/\n\n\nSELECT TRUNC(DIA)  AS DIA, CTA.CODEMP,\n       EMP.RAZAOSOCIAL,\n       CTA.CODCTABCOINT AS CODCTABCOINT,\n       CTA.DESCRICAO AS CTABCOINT,\n       BCO.CODBCO AS CODBCO,\n       BCO.ABREVIATURA AS BANCO,\n       CLS.VALOR AS CODCLASSE, \n       CLS.OPCAO AS CLASSE,\n       SALDO + MOVIMENTO AS SALDOREAL, \n       0 AS SALDOPROJ,\n       SALDO + MOVIMENTO AS FLUXO\nFROM\n  (SELECT DIAS.DIA,\n          C.DESCRICAO,\n          C.CODCTABCOINT,\n          C.CODEMP,\n          NVL(SUM(S.SALDOREAL),0) AS SALDO,\n          NVL(SUM(\n                    (SELECT SUM(M.VLRLANC*M.RECDESP)\n                     FROM TGFMBC M\n                     WHERE M.CODCTABCOINT = S.CODCTABCOINT\n                       AND TO_CHAR(M.DTLANC,'MMYYYY') = TO_CHAR(DIAS.DIA, 'MMYYYY')\n                       AND TRUNC(M.DTLANC) <= DIAS.DIA)),0) AS MOVIMENTO\n                       \n   FROM TGFSBC S\n   INNER JOIN TSICTA C ON S.CODCTABCOINT = C.CODCTABCOINT,\n     (SELECT ULTIMO - ROWNUM + 1 AS DIA,\n             ROWNUM,\n             QUANTIDADE\n      FROM\n        (SELECT SYSDATE AS ULTIMO,\n                SYSDATE - TRUNC(SYSDATE, 'YEAR') + 1 AS QUANTIDADE\n         FROM DUAL) CONNECT BY ROWNUM <= QUANTIDADE) DIAS\n   WHERE S.REFERENCIA =\n       (SELECT MAX(REFERENCIA)\n        FROM TGFSBC SBC\n        WHERE SBC.CODCTABCOINT = S.CODCTABCOINT\n          AND REFERENCIA <= DIAS.DIA)\n     AND DESCRICAO NOT LIKE 'INATIVA%'\n     AND DESCRICAO NOT LIKE 'INATVA%' \n     AND  C.ATIVA = 'S'\n   GROUP BY C.DESCRICAO,\n            C.CODCTABCOINT,\n            C.CODEMP,\n            DIAS.DIA) A\nLEFT JOIN TSICTA CTA ON CTA.CODCTABCOINT = A.CODCTABCOINT\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = A.CODEMP\nLEFT JOIN TSIBCO BCO ON BCO.CODBCO = CTA.CODBCO\nLEFT JOIN\n  (SELECT VALOR,\n          OPCAO\n   FROM TDDOPC\n   WHERE NUCAMPO = 1048) CLS ON (CLS.VALOR = CTA.CLASSE)\n   )\nGROUP BY\nDIA, \nCODEMP,\nRAZAOSOCIAL,\nCODCTABCOINT, \nCTABCOINT, \nCODBCO, \nBANCO, \nCODCLASSE, \nCLASSE\n) \n\n/*fim saldo inicial real*/\n\n\nUNION ALL\n\n/*início variação mov fin*/\n\n\nSELECT TRUNC(DIA) AS DIA,\n       -999 AS CODNUFIN,\n       -999 AS NUFIN,\n       -999 AS CODPARC,\n       'Nulo' AS PARCEIRO,\n       -999 AS CODPERFIL,\n       'Nulo' AS PERFIL,\n       -999 AS CODCID,\n       'Nulo' AS CIDADE,\n       '-999' AS CODUF,\n       'Nulo' AS UF,\n       -999 AS CODREG,\n       'Nulo' AS REGIAO,\n       -999 AS CODNAT1,\n       'Nulo' AS NAT1,\n       -999 AS CODNAT2,\n       'Nulo' AS NAT2,\n       -999 AS CODNAT3,\n       'Nulo' AS NAT3,\n       -999 AS CODNAT4,\n       'Nulo' AS NAT4,\n       -999 AS CODCENCUS,\n       'Nulo' AS CENCUS,\n       -999 AS CODCENCUSPAI,\n       'Nulo' AS CENCUSPAI,\n        CODEMP,\n        RAZAOSOCIAL AS EMPRESA,\n       -999 AS CODVEND,\n       'Nulo' AS VENDEDOR,\n       -999 AS CODGER,\n       'Nulo' AS GERENTE,\n       -999 AS CODTIPOPER,\n       'Nulo' AS TOP,\n       '-999' AS CODTIPMOV,\n       'Nulo' AS TIPMOV,\n       -999 AS CODTIPTIT,\n       'Nulo' AS TIPTIT,\n       CODCTABCOINT AS CODCTABCOINT,\n       DESCRICAO AS CTABCOINT,\n       CODBCO AS CODBCO,\n       ABREVIATURA AS BANCO,\n       VALOR AS CODCLASSE,\n       OPCAO AS CLASSE,\n       -999 AS CODCON,\n       -999 AS CONTRATO,\n       'N' AS CODPROV,\n       'Não' AS PROVISAO,\n       -999 AS CODSTATUS,\n       'Nulo' AS STATUS,\n       -999 AS CODRECDESP,\n        'Nulo' AS RECDESP,\n        0 as RECEITAS,\n        0 AS DESPESAS,\n        0 AS RECABERTO,\n        0 AS DESPABERTO,\n        4 AS CODTIPOFIN,\n        'Diferença' AS TIPOFIN,\n        0 AS SALDO,\n        DIF*-1 AS DIF,\n        DIF*-1 AS FLUXO\n\nFROM\n(SELECT TRUNC(FIN.DHBAIXA) AS DIA,\n        CTA.CODCTABCOINT,\n        CTA.DESCRICAO,\n        BCO.CODBCO,\n        EMP.CODEMP,\n        EMP.RAZAOSOCIAL,\n        BCO.ABREVIATURA,\n        CLS.VALOR,\n        CLS.OPCAO,\n        SUM(FIN.VLRBAIXA*FIN.RECDESP) AS DIF\nFROM TGFFIN FIN\nLEFT JOIN TSICTA CTA ON CTA.CODCTABCOINT = FIN.CODCTABCOINT\nLEFT JOIN TSIBCO BCO ON BCO.CODBCO = FIN.CODBCO\nLEFT JOIN (SELECT VALOR, OPCAO FROM TDDOPC WHERE NUCAMPO = 1048) CLS ON (CLS.VALOR = CTA.CLASSE)\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = FIN.CODEMP\nWHERE PROVISAO = 'N'\nAND TRUNC(DHBAIXA) <= SYSDATE\n\nGROUP BY FIN.DHBAIXA,\n         CTA.CODCTABCOINT,\n         CTA.DESCRICAO,\n         BCO.CODBCO,\n         BCO.ABREVIATURA,\n         CLS.VALOR,\n         EMP.CODEMP,\n         EMP.RAZAOSOCIAL,\n         CLS.OPCAO\n         \nUNION ALL\n\nSELECT TRUNC(MBC.DTLANC) AS DIA,\n       CTA.CODCTABCOINT,\n       CTA.DESCRICAO,\n       BCO.CODBCO,\n       EMP.CODEMP,\n       EMP.RAZAOSOCIAL,\n       BCO.ABREVIATURA,\n       CLS.VALOR,\n       CLS.OPCAO,\n       SUM(MBC.VLRLANC*MBC.RECDESP*-1) AS DIF\nFROM TGFMBC MBC\nLEFT JOIN TSICTA CTA ON CTA.CODCTABCOINT = MBC.CODCTABCOINT\nLEFT JOIN TSIBCO BCO ON BCO.CODBCO = CTA.CODBCO\nLEFT JOIN (SELECT VALOR, OPCAO FROM TDDOPC  WHERE NUCAMPO = 1048) CLS ON (CLS.VALOR = CTA.CLASSE)\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = CTA.CODEMP\nWHERE TRUNC(MBC.DTLANC) <= SYSDATE \n\nGROUP BY MBC.DTLANC,\n         CTA.CODCTABCOINT,\n         CTA.DESCRICAO,\n         BCO.CODBCO,\n         BCO.ABREVIATURA,\n         CLS.VALOR,\n         EMP.CODEMP,\n         EMP.RAZAOSOCIAL,\n         CLS.OPCAO )) \n         \n         /*fim variação mov fin*/",
+					"iconColor": "#12B76A",
+					"perfectMapHeader": [
+						{
+							"name": "Dia",
+							"dimensionName": "Dia",
+							"dimensionId": 1,
+							"columnName": "Data",
+							"dataType": "DATE",
+							"entityType": "DIMENSION",
+							"dateFormat": "yyyy/MM/dd HH:mm:ss",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Nufin",
+							"dimensionName": "Nufin",
+							"dimensionId": 1025,
+							"columnName": "ID Nufin",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionIDColumnForm"
+						},
+						{
+							"name": "Nufin",
+							"dimensionName": "Nufin",
+							"dimensionId": 1025,
+							"columnName": "Nufin",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"mainDimension": false,
+							"typeColumnForm": "connectionDescrColumnForm"
+						},
+						{
+							"name": "Parceiro",
+							"dimensionName": "Parceiro",
+							"dimensionId": 1001,
+							"columnName": "ID Parceiro",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Parceiro",
+							"dimensionName": "Parceiro",
+							"dimensionId": 1001,
+							"columnName": "Parceiro",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Perfil",
+							"dimensionName": "Perfil",
+							"dimensionId": 1002,
+							"columnName": "ID Perfil",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Perfil",
+							"dimensionName": "Perfil",
+							"dimensionId": 1002,
+							"columnName": "Perfil",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Cidade",
+							"dimensionName": "Cidade",
+							"dimensionId": 1003,
+							"columnName": "ID Cidade",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Cidade",
+							"dimensionName": "Cidade",
+							"dimensionId": 1003,
+							"columnName": "Cidade",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Estado",
+							"dimensionName": "Estado",
+							"dimensionId": 1004,
+							"columnName": "ID Estado",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Estado",
+							"dimensionName": "Estado",
+							"dimensionId": 1004,
+							"columnName": "Estado",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Região",
+							"dimensionName": "Região",
+							"dimensionId": 1005,
+							"columnName": "ID Região",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Região",
+							"dimensionName": "Região",
+							"dimensionId": 1005,
+							"columnName": "Região",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Natureza NV1",
+							"dimensionName": "Natureza NV1",
+							"dimensionId": 1006,
+							"columnName": "ID Natureza NV1",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Natureza NV1",
+							"dimensionName": "Natureza NV1",
+							"dimensionId": 1006,
+							"columnName": "Natureza NV1",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Natureza NV2",
+							"dimensionName": "Natureza NV2",
+							"dimensionId": 1007,
+							"columnName": "ID Natureza NV2",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Natureza NV2",
+							"dimensionName": "Natureza NV2",
+							"dimensionId": 1007,
+							"columnName": "Natureza NV2",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Natureza NV3",
+							"dimensionName": "Natureza NV3",
+							"dimensionId": 1008,
+							"columnName": "ID Natureza NV3",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Natureza NV3",
+							"dimensionName": "Natureza NV3",
+							"dimensionId": 1008,
+							"columnName": "Natureza NV3",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Natureza NV4",
+							"dimensionName": "Natureza NV4",
+							"dimensionId": 1009,
+							"columnName": "ID Natureza NV4",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Natureza NV4",
+							"dimensionName": "Natureza NV4",
+							"dimensionId": 1009,
+							"columnName": "Natureza NV4",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Centro de Resultado",
+							"dimensionName": "Centro de Resultado",
+							"dimensionId": 1010,
+							"columnName": "ID Centro de Resultado",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Centro de Resultado",
+							"dimensionName": "Centro de Resultado",
+							"dimensionId": 1010,
+							"columnName": "Centro de Resultado",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Centro de Resultado Pai",
+							"dimensionName": "Centro de Resultado Pai",
+							"dimensionId": 1011,
+							"columnName": "ID Centro de Resultado Pai",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Centro de Resultado Pai",
+							"dimensionName": "Centro de Resultado Pai",
+							"dimensionId": 1011,
+							"columnName": "Centro de Resultado Pai",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Empresa",
+							"dimensionName": "Empresa",
+							"dimensionId": 1012,
+							"columnName": "ID Empresa",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Empresa",
+							"dimensionName": "Empresa",
+							"dimensionId": 1012,
+							"columnName": "Empresa",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Vendedor",
+							"dimensionName": "Vendedor",
+							"dimensionId": 1013,
+							"columnName": "ID Vendedor",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Vendedor",
+							"dimensionName": "Vendedor",
+							"dimensionId": 1013,
+							"columnName": "Vendedor",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Gerente de Vendas",
+							"dimensionName": "Gerente de Vendas",
+							"dimensionId": 1014,
+							"columnName": "ID Gerente de Vendas",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Gerente de Vendas",
+							"dimensionName": "Gerente de Vendas",
+							"dimensionId": 1014,
+							"columnName": "Gerente de Vendas",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Tipo de Operação",
+							"dimensionName": "Tipo de Operação",
+							"dimensionId": 1015,
+							"columnName": "ID Tipo de Operação",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Tipo de Operação",
+							"dimensionName": "Tipo de Operação",
+							"dimensionId": 1015,
+							"columnName": "Tipo de Operação",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Tipo de Movimentação",
+							"dimensionName": "Tipo de Movimentação",
+							"dimensionId": 1016,
+							"columnName": "ID Tipo de Movimentação",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Tipo de Movimentação",
+							"dimensionName": "Tipo de Movimentação",
+							"dimensionId": 1016,
+							"columnName": "Tipo de Movimentação",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Tipo de Título",
+							"dimensionName": "Tipo de Título",
+							"dimensionId": 1017,
+							"columnName": "ID Tipo de Título",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Tipo de Título",
+							"dimensionName": "Tipo de Título",
+							"dimensionId": 1017,
+							"columnName": "Tipo de Título",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Conta Bancária",
+							"dimensionName": "Conta Bancária",
+							"dimensionId": 1018,
+							"columnName": "ID Conta Bancária",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Conta Bancária",
+							"dimensionName": "Conta Bancária",
+							"dimensionId": 1018,
+							"columnName": "Conta Bancária",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Banco",
+							"dimensionName": "Banco",
+							"dimensionId": 1019,
+							"columnName": "ID Banco",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Banco",
+							"dimensionName": "Banco",
+							"dimensionId": 1019,
+							"columnName": "Banco",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Classe",
+							"dimensionName": "Classe",
+							"dimensionId": 1020,
+							"columnName": "ID Classe",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Classe",
+							"dimensionName": "Classe",
+							"dimensionId": 1020,
+							"columnName": "Classe",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Contrato",
+							"dimensionName": "Contrato",
+							"dimensionId": 1026,
+							"columnName": "ID Contrato",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Contrato",
+							"dimensionName": "Contrato",
+							"dimensionId": 1026,
+							"columnName": "Contrato",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Provisão",
+							"dimensionName": "Provisão",
+							"dimensionId": 1021,
+							"columnName": "ID Provisão",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Provisão",
+							"dimensionName": "Provisão",
+							"dimensionId": 1021,
+							"columnName": "Provisão",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Status",
+							"dimensionName": "Status",
+							"dimensionId": 1022,
+							"columnName": "ID Status",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Status",
+							"dimensionName": "Status",
+							"dimensionId": 1022,
+							"columnName": "Status",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Tipo Financeiro",
+							"dimensionName": "Tipo Financeiro",
+							"dimensionId": 1023,
+							"columnName": "ID Tipo Financeiro",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Tipo Financeiro",
+							"dimensionName": "Tipo Financeiro",
+							"dimensionId": 1023,
+							"columnName": "Tipo Financeiro",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Recdesp",
+							"dimensionName": "Recdesp",
+							"dimensionId": 1024,
+							"columnName": "ID Recdesp",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Recdesp",
+							"dimensionName": "Recdesp",
+							"dimensionId": 1024,
+							"columnName": "Recdesp",
+							"dataType": "VARCHAR",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Receitas",
+							"columnName": "Receitas",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "Despesas",
+							"columnName": "Despesas",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "A Receber",
+							"columnName": "A Receber",
+							"dataType": "DOUBLE",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "A Pagar",
+							"columnName": "A Pagar",
+							"dataType": "DOUBLE",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "Saldo Bancário",
+							"columnName": "Saldo Bancário",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "Divergencias",
+							"columnName": "Divergencias",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "Fluxo de Caixa",
+							"columnName": "Fluxo de Caixa",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						}
+					],
+					"quickConsultationTypes": [
+						{
+							"name": "Data",
+							"selected": false
+						},
+						{
+							"name": "ID Nufin",
+							"selected": false
+						},
+						{
+							"name": "Nufin",
+							"selected": false
+						},
+						{
+							"name": "ID Parceiro",
+							"selected": false
+						},
+						{
+							"name": "Parceiro",
+							"selected": false
+						},
+						{
+							"name": "ID Perfil",
+							"selected": false
+						},
+						{
+							"name": "Perfil",
+							"selected": false
+						},
+						{
+							"name": "ID Cidade",
+							"selected": false
+						},
+						{
+							"name": "Cidade",
+							"selected": false
+						},
+						{
+							"name": "ID Estado",
+							"selected": false
+						},
+						{
+							"name": "Estado",
+							"selected": false
+						},
+						{
+							"name": "ID Região",
+							"selected": false
+						},
+						{
+							"name": "Região",
+							"selected": false
+						},
+						{
+							"name": "ID Natureza NV1",
+							"selected": false
+						},
+						{
+							"name": "Natureza NV1",
+							"selected": false
+						},
+						{
+							"name": "ID Natureza NV2",
+							"selected": false
+						},
+						{
+							"name": "Natureza NV2",
+							"selected": false
+						},
+						{
+							"name": "ID Natureza NV3",
+							"selected": false
+						},
+						{
+							"name": "Natureza NV3",
+							"selected": false
+						},
+						{
+							"name": "ID Natureza NV4",
+							"selected": false
+						},
+						{
+							"name": "Natureza NV4",
+							"selected": false
+						},
+						{
+							"name": "ID Centro de Resultado",
+							"selected": false
+						},
+						{
+							"name": "Centro de Resultado",
+							"selected": false
+						},
+						{
+							"name": "ID Centro de Resultado Pai",
+							"selected": false
+						},
+						{
+							"name": "Centro de Resultado Pai",
+							"selected": false
+						},
+						{
+							"name": "ID Empresa",
+							"selected": false
+						},
+						{
+							"name": "Empresa",
+							"selected": false
+						},
+						{
+							"name": "ID Vendedor",
+							"selected": false
+						},
+						{
+							"name": "Vendedor",
+							"selected": false
+						},
+						{
+							"name": "ID Gerente de Vendas",
+							"selected": false
+						},
+						{
+							"name": "Gerente de Vendas",
+							"selected": false
+						},
+						{
+							"name": "ID Tipo de Operação",
+							"selected": false
+						},
+						{
+							"name": "Tipo de Operação",
+							"selected": false
+						},
+						{
+							"name": "ID Tipo de Movimentação",
+							"selected": false
+						},
+						{
+							"name": "Tipo de Movimentação",
+							"selected": false
+						},
+						{
+							"name": "ID Tipo de Título",
+							"selected": false
+						},
+						{
+							"name": "Tipo de Título",
+							"selected": false
+						},
+						{
+							"name": "ID Conta Bancária",
+							"selected": false
+						},
+						{
+							"name": "Conta Bancária",
+							"selected": false
+						},
+						{
+							"name": "ID Banco",
+							"selected": false
+						},
+						{
+							"name": "Banco",
+							"selected": false
+						},
+						{
+							"name": "ID Classe",
+							"selected": false
+						},
+						{
+							"name": "Classe",
+							"selected": false
+						},
+						{
+							"name": "ID Contrato",
+							"selected": false
+						},
+						{
+							"name": "Contrato",
+							"selected": false
+						},
+						{
+							"name": "ID Provisão",
+							"selected": false
+						},
+						{
+							"name": "Provisão",
+							"selected": false
+						},
+						{
+							"name": "ID Status",
+							"selected": false
+						},
+						{
+							"name": "Status",
+							"selected": false
+						},
+						{
+							"name": "ID Tipo Financeiro",
+							"selected": false
+						},
+						{
+							"name": "Tipo Financeiro",
+							"selected": false
+						},
+						{
+							"name": "ID Recdesp",
+							"selected": false
+						},
+						{
+							"name": "Recdesp",
+							"selected": false
+						},
+						{
+							"name": "Receitas",
+							"selected": false
+						},
+						{
+							"name": "Despesas",
+							"selected": false
+						},
+						{
+							"name": "A Receber",
+							"selected": false
+						},
+						{
+							"name": "A Pagar",
+							"selected": false
+						},
+						{
+							"name": "Saldo Bancario",
+							"selected": false
+						},
+						{
+							"name": "Divergencias",
+							"selected": false
+						},
+						{
+							"name": "Fluxo de Caixa",
+							"selected": false
+						}
+					]
+				},
+				{
+					"name": "Análises de folha de pagamento",
+					"icon": "mdiCashClock",
+					"iconColor": "#F2911E",
+					"defaultQuery": "SELECT\n    TO_CHAR(REFERENCIA, 'MM/YYYY') AS \"Mes\",\n    HFU.CODEMP AS \"ID Empresa\",\n    EMP.RAZAOSOCIAL AS \"Empresa\",\n    DEP.CODDEP AS \"ID Departamento\",\n    DEP.DESCRDEP AS \"Departamento\",\n    CUS.CODCENCUS AS \"ID Centro de Resultado\",\n    CUS.DESCRCENCUS AS \"Centro de Resultado\",\n    CAR.CODCARGO AS \"ID Cargo\",\n    CAR.DESCRCARGO AS \"Cargo\",\n    FCO.CODFUNCAO AS \"ID Função\",\n    FCO.DESCRFUNCAO AS \"Função\",\n    -999 AS \"ID Evento\",\n    'Nulo' AS \"Evento\",\n    FUN.CODFUNC AS \"ID Colaborador\",\n    FUN.NOMEFUNC AS \"Colaborador\",\n    COUNT(DISTINCT HFU.CODFUNC) AS \"Headcount\",\n    0 AS \"Quantidade Admissões\",\n    0 AS \"Quantidade Demissões\",\n    0 AS \"Folha de Pagamento\"\nFROM\n    TFPHFU HFU\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = HFU.CODEMP\nLEFT JOIN TFPFCO FCO ON FCO.CODFUNCAO = HFU.CODFUNCAO\nLEFT JOIN TFPCAR CAR ON HFU.CODCARGO = CAR.CODCARGO\nLEFT JOIN TFPDEP DEP ON DEP.CODDEP = HFU.CODDEP\nLEFT JOIN TSICUS CUS ON CUS.CODCENCUS = DEP.CODCENCUS\nLEFT JOIN TFPFUN FUN ON HFU.CODFUNC = FUN.CODFUNC\nWHERE HFU.SITUACAO <> 0\nGROUP BY \n    TO_CHAR(REFERENCIA, 'MM/YYYY'),\n    DEP.CODDEP,\n    CAR.CODCARGO,\n    FCO.CODFUNCAO,\n    DEP.DESCRDEP,\n    CUS.CODCENCUS,\n    CUS.DESCRCENCUS,\n    CAR.CODCARGO,\n    CAR.DESCRCARGO,\n    FCO.CODFUNCAO ,\n    FCO.DESCRFUNCAO,\n    HFU.CODEMP,\n    EMP.RAZAOSOCIAL,\n    FUN.CODFUNC,\n    FUN.NOMEFUNC\nUNION ALL\nSELECT\n    TO_CHAR(DTADM, 'MM/YYYY') AS \"Mes\",\n    EMP.CODEMP AS \"ID Empresa\",\n    EMP.RAZAOSOCIAL AS \"Empresa\",\n    DEP.CODDEP AS \"ID Departamento\",\n    DEP.DESCRDEP AS \"Departamento\",\n    CUS.CODCENCUS AS \"ID Centro de Resultado\",\n    CUS.DESCRCENCUS AS \"Centro de Resultado\",\n    CAR.CODCARGO AS \"ID Cargo\",\n    CAR.DESCRCARGO AS \"Cargo\",\n    FCO.CODFUNCAO AS \"ID Função\",\n    FCO.DESCRFUNCAO AS \"Função\",\n    -999 AS \"ID Evento\",\n    'Nulo' AS \"Evento\",\n    FUN.CODFUNC AS \"ID Colaborador\",\n    FUN.NOMEFUNC AS \"Colaborador\",\n    0 AS \"Headcount\",\n    COUNT(DISTINCT CODFUNC) AS \"Quantidade Admissões\",\n    0 AS \"Quantidade Demissões\",\n    0 AS \"Folha de Pagamento\"\nFROM\n        TFPFUN FUN\nLEFT JOIN TFPFCO FCO ON FCO.CODFUNCAO = FUN.CODFUNCAO\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = FUN.CODEMP\nLEFT JOIN TFPCAR CAR ON FUN.CODCARGO = CAR.CODCARGO\nLEFT JOIN TFPDEP DEP ON DEP.CODDEP = FUN.CODDEP\nLEFT JOIN TSICUS CUS ON CUS.CODCENCUS = DEP.CODCENCUS\nGROUP BY\n    TO_CHAR(DTADM, 'MM/YYYY'),\n    DEP.CODDEP,\n    CAR.CODCARGO,\n    FCO.CODFUNCAO,\n    DEP.DESCRDEP,\n    CUS.CODCENCUS,\n    CUS.DESCRCENCUS,\n    CAR.CODCARGO,\n    CAR.DESCRCARGO,\n    FCO.CODFUNCAO ,\n    FCO.DESCRFUNCAO,\n    EMP.CODEMP,\n    EMP.RAZAOSOCIAL,\n    FUN.CODFUNC,\n    FUN.NOMEFUNC\nUNION ALL\nSELECT\n    TO_CHAR(DTDEM, 'MM/YYYY') AS \"Mes\",\n    EMP.CODEMP AS \"ID Empresa\",\n    EMP.RAZAOSOCIAL AS \"Empresa\",\n    DEP.CODDEP AS \"ID Departamento\",\n    DEP.DESCRDEP AS \"Departamento\",\n    CUS.CODCENCUS AS \"ID Centro de Resultado\",\n    CUS.DESCRCENCUS AS \"Centro de Resultado\",\n    CAR.CODCARGO AS \"ID Cargo\",\n    CAR.DESCRCARGO AS \"Cargo\",\n    FCO.CODFUNCAO AS \"ID Função\",\n    FCO.DESCRFUNCAO AS \"Função\",\n    -999 AS \"ID Evento\",\n    'Nulo' AS \"Evento\",\n    FUN.CODFUNC AS \"ID Colaborador\",\n    FUN.NOMEFUNC AS \"Colaborador\",\n    0 AS \"Headcount\",\n    0 AS \"Quantidade Admissões\",\n    COUNT(DISTINCT CODFUNC) AS \"Quantidade Demissões\",\n    0 AS \"Folha de Pagamento\"\nFROM\n        TFPFUN FUN\nLEFT JOIN TFPFCO FCO ON FCO.CODFUNCAO = FUN.CODFUNCAO\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = FUN.CODEMP\nLEFT JOIN TFPCAR CAR ON FUN.CODCARGO = CAR.CODCARGO\nLEFT JOIN TFPDEP DEP ON DEP.CODDEP = FUN.CODDEP\nLEFT JOIN TSICUS CUS ON CUS.CODCENCUS = DEP.CODCENCUS\nWHERE DTDEM IS NOT NULL\nGROUP BY\n    TO_CHAR(DTDEM, 'MM/YYYY'),\n    DEP.CODDEP,\n    CAR.CODCARGO,\n    FCO.CODFUNCAO,\n    DEP.DESCRDEP,\n    CUS.CODCENCUS,\n    CUS.DESCRCENCUS,\n    CAR.CODCARGO,\n    CAR.DESCRCARGO,\n    FCO.CODFUNCAO ,\n    FCO.DESCRFUNCAO,\n    EMP.CODEMP,\n    EMP.RAZAOSOCIAL,\n    FUN.CODFUNC,\n    FUN.NOMEFUNC\nUNION ALL\nSELECT\n       TO_CHAR(FOL.REFERENCIA, 'MM/YYYY') AS \"Mes\",\n       HFU.CODEMP AS \"ID Empresa\",\n       EMP.RAZAOSOCIAL AS \"Empresa\",\n       DEP.CODDEP AS \"ID Departamento\",\n       DEP.DESCRDEP AS \"Departamento\",\n       CUS.CODCENCUS AS \"ID Centro de Resultado\",\n       CUS.DESCRCENCUS AS \"Centro de Resultado\",\n       CAR.CODCARGO AS \"ID Cargo\",\n       CAR.DESCRCARGO AS \"Cargo\",\n       FCO.CODFUNCAO AS \"ID Função\",\n       FCO.DESCRFUNCAO AS \"Função\",\n       FOL.CODEVENTO AS \"ID Evento\",\n       EVE.DESCREVENTO AS \"Evento\",\n       FUN.CODFUNC AS \"ID Colaborador\",\n       FUN.NOMEFUNC AS \"Colaborador\",\n       0 AS \"Headcount\",\n       0 AS \"Quantidade Admissões\",\n       0 AS \"Quantidade Demissões\",\n       SUM(FOL.VLREVENTO) AS \"Folha de Pagamento\"\nFROM TFPFOL FOL\nLEFT JOIN TFPHFU HFU ON HFU.CODFUNC = FOL.CODFUNC\nAND HFU.REFERENCIA = FOL.REFERENCIA\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = HFU.CODEMP\nLEFT JOIN TFPFCO FCO ON FCO.CODFUNCAO = HFU.CODFUNCAO\nLEFT JOIN TFPCAR CAR ON HFU.CODCARGO = CAR.CODCARGO\nLEFT JOIN TFPDEP DEP ON DEP.CODDEP = HFU.CODDEP\nLEFT JOIN TSICUS CUS ON CUS.CODCENCUS = DEP.CODCENCUS\nLEFT JOIN TFPFUN FUN ON FUN.CODFUNC = FOL.CODFUNC\nLEFT JOIN TFPEVE EVE ON EVE.CODEVENTO = FOL.CODEVENTO\nLEFT JOIN (SELECT VALOR,OPCAO FROM TDDOPC WHERE NUCAMPO = 1847) SIT ON (SIT.VALOR = HFU.SITUACAO)\nGROUP BY HFU.CODEMP,\n         FCO.CODFUNCAO,\n         EMP.RAZAOSOCIAL,\n         FCO.DESCRFUNCAO,\n         CAR.CODCARGO,\n         CAR.DESCRCARGO,\n         TO_CHAR(FOL.REFERENCIA, 'MM/YYYY'),\n         DEP.CODDEP,\n         DEP.DESCRDEP,\n         CUS.CODCENCUS,\n         CUS.DESCRCENCUS,\n         EVE.DESCREVENTO,\n         FOL.CODEVENTO,\n         FUN.CODFUNC,\n         FUN.NOMEFUNC",
+					"perfectMapHeader": [
+						{
+							"name": "Mês",
+							"dimensionId": 2,
+							"dimensionName": "Mês",
+							"columnName": "Mes",
+							"dataType": "DATE",
+							"entityType": "DIMENSION",
+							"dateFormat": "MM/yyyy",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Empresa",
+							"dimensionName": "Empresa",
+							"dimensionId": 1013,
+							"columnName": "ID Empresa",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"cubeId": 50,
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Empresa",
+							"dimensionName": "Empresa",
+							"dimensionId": 1013,
+							"columnName": "Empresa",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Departamento",
+							"dimensionName": "Departamento",
+							"dimensionId": 1004,
+							"columnName": "ID Departamento",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"cubeId": 51,
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Departamento",
+							"dimensionName": "Departamento",
+							"dimensionId": 1004,
+							"columnName": "Departamento",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Centro de Resultado",
+							"dimensionName": "Centro de Resultado",
+							"dimensionId": 1011,
+							"columnName": "ID Centro de Resultado",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"cubeId": 52,
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Centro de Resultado",
+							"dimensionName": "Centro de Resultado",
+							"dimensionId": 1011,
+							"columnName": "Centro de Resultado",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Cargo",
+							"dimensionName": "Cargo",
+							"dimensionId": 1006,
+							"columnName": "ID Cargo",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"typeColumnForm": "connectionIDColumnForm",
+							"cubeId": 53,
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "Cargo",
+							"dimensionName": "Cargo",
+							"dimensionId": 1006,
+							"columnName": "Cargo",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Função",
+							"dimensionName": "Função",
+							"dimensionId": 1007,
+							"columnName": "ID Função",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"cubeId": 54,
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Função",
+							"dimensionName": "Função",
+							"dimensionId": 1007,
+							"columnName": "Função",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Evento",
+							"dimensionName": "Evento",
+							"dimensionId": 1008,
+							"columnName": "ID Evento",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"cubeId": 55,
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Evento",
+							"dimensionName": "Evento",
+							"dimensionId": 1008,
+							"columnName": "Evento",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Colaborador",
+							"dimensionName": "Colaborador",
+							"dimensionId": 1009,
+							"columnName": "ID Colaborador",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "DIMENSION",
+							"cubeId": 56,
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Colaborador",
+							"dimensionName": "Colaborador",
+							"dimensionId": 1009,
+							"columnName": "Colaborador",
+							"dataType": "VARCHAR",
+							"idDataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Headcount",
+							"columnName": "Headcount",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "CUBE",
+							"cubeId": 57,
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "Quantidade Admissões",
+							"columnName": "Quantidade Admissões",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "CUBE",
+							"cubeId": 58,
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "Quantidade Demissões",
+							"columnName": "Quantidade Demissões",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "CUBE",
+							"cubeId": 59,
+							"suggestion": true,
+							"mainDimension": false
+						},
+						{
+							"name": "Folha de Pagamento",
+							"columnName": "Folha de Pagamento",
+							"dataType": "INT",
+							"idDataType": "INT",
+							"entityType": "CUBE",
+							"cubeId": 60,
+							"suggestion": true,
+							"mainDimension": false
+						}
+					],
+					"quickConsultationTypes": [
+						{
+							"name": "Mes",
+							"selected": false
+						},
+						{
+							"name": "ID Empresa",
+							"selected": false
+						},
+						{
+							"name": "Empresa",
+							"selected": false
+						},
+						{
+							"name": "ID Departamento",
+							"selected": false
+						},
+						{
+							"name": "Departamento",
+							"selected": false
+						},
+						{
+							"name": "ID Centro de Resultado",
+							"selected": false
+						},
+						{
+							"name": "Centro de Resultado",
+							"selected": false
+						},
+						{
+							"name": "ID Cargo",
+							"selected": false
+						},
+						{
+							"name": "Cargo",
+							"selected": false
+						},
+						{
+							"name": "ID Função",
+							"selected": false
+						},
+						{
+							"name": "Função",
+							"selected": false
+						},
+						{
+							"name": "ID Evento",
+							"selected": false
+						},
+						{
+							"name": "Evento",
+							"selected": false
+						},
+						{
+							"name": "ID Colaborador",
+							"selected": false
+						},
+						{
+							"name": "Colaborador",
+							"selected": false
+						},
+						{
+							"name": "Headcount",
+							"selected": false
+						},
+						{
+							"name": "Quantidade Admissões",
+							"selected": false
+						},
+						{
+							"name": "Quantidade Demissões",
+							"selected": false
+						},
+						{
+							"name": "Folha de Pagamento",
+							"selected": false
+						}
+					]
+				},
+				{
+					"name": "Análises contábeis",
+					"icon": "mdiCalculatorVariantOutline",
+					"iconColor": "#DE3C76",
+					"defaultQuery": "SELECT\nREFERENCIA AS DATA,\nTO_NUMBER(CODEMP) AS CODEMP,\nEMPRESA,\nTO_NUMBER(CODCENCUS) AS CODCENCUS,\nCENCUS,\nTO_NUMBER(CODCENCUSPAI) AS CODCENCUSPAI,\nCENCUSPAI,\nCODCTANV1,\nDESCRCTANV1,\nCODCTANV2,\nDESCRCTANV2,\nCODCTANV3,\nDESCRCTANV3,\nCODCTANV4,\nDESCRCTANV4,\nSUM(VALOR) AS RESULT\n\nFROM\n(\nSELECT LAN.REFERENCIA,\nNVL(LAN.CODEMP, -999) AS CODEMP,\nNVL(EMP.RAZAOSOCIAL, 'Nulo') AS EMPRESA,\nNVL(CUS.CODCENCUS, -999) AS CODCENCUS,\nNVL(CUS.DESCRCENCUS, 'Nulo') AS CENCUS,\nNVL(CUS2.CODCENCUS, -999) AS CODCENCUSPAI,\nNVL(CUS2.DESCRCENCUS, 'Nulo') AS CENCUSPAI,\nNVL(PLA.CTACTB, -999) AS CODCTANV1,\nNVL(PLA.DESCRCTA,'Nulo') AS DESCRCTANV1,\nNVL(PAI.CTACTB, -999) AS CODCTANV2,\nNVL(PAI.DESCRCTA,'Nulo') AS DESCRCTANV2,\nNVL(AVO.CTACTB, -999)  AS CODCTANV3,\nNVL(AVO.DESCRCTA,'Nulo') AS DESCRCTANV3,\nNVL(BIS.CTACTB, -999) AS CODCTANV4,\nNVL(BIS.DESCRCTA,'Nulo') AS DESCRCTANV4,\nSUM(CASE WHEN LAN.TIPLANC = 'R' THEN LAN.VLRLANC ELSE LAN.VLRLANC * -1 END) AS VALOR\n\nFROM TCBLAN LAN\nLEFT JOIN TCBPLA PLA ON PLA.CODCTACTB = LAN.CODCTACTB\nLEFT JOIN TCBPLA PAI ON PAI.CODCTACTB = PLA.CODCTACTBPAI\nLEFT JOIN TCBPLA AVO ON AVO.CODCTACTB = PAI.CODCTACTBPAI\nLEFT JOIN TCBPLA BIS ON BIS.CODCTACTB = AVO.CODCTACTBPAI\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = LAN.CODEMP\nLEFT JOIN TSICUS CUS ON CUS.CODCENCUS = LAN.CODCENCUS\nLEFT JOIN TSICUS CUS2 ON TRUNC(CUS.CODCENCUS,-3) = CUS2.CODCENCUS\n\nWHERE LAN.REFERENCIA <= SYSDATE\n  AND (PLA.CTACTB LIKE '3.%'\n       OR PLA.CTACTB LIKE '4.%'\n       OR PLA.CTACTB LIKE '5.%')\n\nGROUP BY \nREFERENCIA,\nLAN.CODEMP,\nPLA.CTACTB,\nPLA.DESCRCTA,\nPAI.CTACTB,\nPAI.DESCRCTA,\nAVO.CTACTB,\nAVO.DESCRCTA,\nBIS.CTACTB,\nBIS.DESCRCTA,\nEMP.RAZAOSOCIAL,\nCUS.CODCENCUS,\nCUS.DESCRCENCUS,\nCUS2.CODCENCUS,\nCUS2.DESCRCENCUS\n\nUNION ALL\n\nSELECT LAN.REFERENCIA,\nNVL(LAN.CODEMP, -999) AS CODEMP,\nNVL(EMP.RAZAOSOCIAL, 'Nulo') AS EMPRESA,\nNVL(CUS.CODCENCUS, -999) AS CODCENCUS,\nNVL(CUS.DESCRCENCUS, 'Nulo') AS CENCUS,\nNVL(CUS2.CODCENCUS, -999) AS CODCENCUSPAI,\nNVL(CUS2.DESCRCENCUS, 'Nulo') AS CENCUSPAI,\nNVL(PLA.CTACTB, -999) AS CODCTANV1,\nNVL(PLA.DESCRCTA,'Nulo') AS DESCRCTANV1,\nNVL(PAI.CTACTB, -999) AS CODCTANV2,\nNVL(PAI.DESCRCTA,'Nulo') AS DESCRCTANV2,\nNVL(AVO.CTACTB, -999)  AS CODCTANV3,\nNVL(AVO.DESCRCTA,'Nulo') AS DESCRCTANV3,\nNVL(BIS.CTACTB, -999) AS CODCTANV4,\nNVL(BIS.DESCRCTA,'Nulo') AS DESCRCTANV4,\nSUM(CASE WHEN LAN.TIPLANC = 'R' THEN LAN.VLRLANC ELSE LAN.VLRLANC * -1 END) AS VALOR\n\nFROM TCBLAN LAN\nLEFT JOIN TCBPLA PLA ON PLA.CODCTACTB = LAN.CODCTACTB\nLEFT JOIN TCBPLA PAI ON PAI.CODCTACTB = PLA.CODCTACTBPAI\nLEFT JOIN TCBPLA AVO ON AVO.CODCTACTB = PAI.CODCTACTBPAI\nLEFT JOIN TCBPLA BIS ON BIS.CODCTACTB = AVO.CODCTACTBPAI\nLEFT JOIN TSIEMP EMP ON EMP.CODEMP = LAN.CODEMP\nLEFT JOIN TSICUS CUS ON CUS.CODCENCUS = LAN.CODCENCUS\nLEFT JOIN TSICUS CUS2 ON TRUNC(CUS.CODCENCUS,-3) = CUS2.CODCENCUS\n\nWHERE LAN.REFERENCIA <= SYSDATE\n  AND (PLA.CTACTB LIKE '3.%'\n       OR PLA.CTACTB LIKE '4.%'\n       OR PLA.CTACTB LIKE '5.%')\nAND LAN.CODCTACTB IN   (SELECT E.CODCTACTBENCRES FROM TCBEMP E)\n\nGROUP BY \nREFERENCIA,\nLAN.CODEMP,\nPLA.CTACTB,\nPLA.DESCRCTA,\nPAI.CTACTB,\nPAI.DESCRCTA,\nAVO.CTACTB,\nAVO.DESCRCTA,\nBIS.CTACTB,\nBIS.DESCRCTA,\nEMP.RAZAOSOCIAL,\nCUS.CODCENCUS,\nCUS.DESCRCENCUS,\nCUS2.CODCENCUS,\nCUS2.DESCRCENCUS\n    ) \n    \n\nGROUP BY\nREFERENCIA,\nCODEMP,\nEMPRESA,\nCODCENCUS,\nCODCTANV1,\nDESCRCTANV1,\nCODCTANV2,\nDESCRCTANV2,\nCODCTANV3,\nDESCRCTANV3,\nCODCTANV4,\nDESCRCTANV4,\nCENCUS,\nCENCUSPAI,\nCODCENCUSPAI",
+					"perfectMapHeader": [
+						{
+							"name": "Dia",
+							"dimensionId": 1,
+							"dimensionName": "Dia",
+							"columnName": "Data",
+							"dataType": "DATE",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"dateFormat": "yyyy/MM/dd HH:mm:ss",
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Empresa",
+							"dimensionName": "Empresa",
+							"dimensionId": -680337,
+							"columnName": "CODEMP",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Empresa",
+							"dimensionName": "Empresa",
+							"dimensionId": -680337,
+							"columnName": "EMPRESA",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Cencus",
+							"dimensionName": "Cencus",
+							"dimensionId": -151507,
+							"columnName": "CODCENCUS",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Cencus",
+							"dimensionName": "Cencus",
+							"dimensionId": -151507,
+							"columnName": "CENCUS",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Cencus Pai",
+							"dimensionName": "Cencus Pai",
+							"dimensionId": -163899,
+							"columnName": "CODCENCUSPAI",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "Cencus Pai",
+							"dimensionName": "Cencus Pai",
+							"dimensionId": -163899,
+							"columnName": "CENCUSPAI",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "CTA NV1",
+							"dimensionName": "CTA NV1",
+							"dimensionId": -547337,
+							"columnName": "CODCTANV1",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "CTA NV1",
+							"dimensionName": "CTA NV1",
+							"dimensionId": -547337,
+							"columnName": "DESCRCTANV1",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "CTA NV2",
+							"dimensionName": "CTA NV2",
+							"dimensionId": -293297,
+							"columnName": "CODCTANV2",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "CTA NV2",
+							"dimensionName": "CTA NV2",
+							"dimensionId": -293297,
+							"columnName": "DESCRCTANV2",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "CTA NV3",
+							"dimensionName": "CTA NV3",
+							"dimensionId": -624473,
+							"columnName": "CODCTANV3",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "CTA NV3",
+							"dimensionName": "CTA NV3",
+							"dimensionId": -624473,
+							"columnName": "DESCRCTANV3",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "CTA NV4",
+							"dimensionName": "CTA NV4",
+							"dimensionId": -552486,
+							"columnName": "CODCTANV4",
+							"dataType": "INT",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionIDColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "CTA NV4",
+							"dimensionName": "CTA NV4",
+							"dimensionId": -552486,
+							"columnName": "DESCRCTANV4",
+							"dataType": "VARCHAR",
+							"entityType": "DIMENSION",
+							"suggestion": true,
+							"typeColumnForm": "connectionDescrColumnForm",
+							"mainDimension": false
+						},
+						{
+							"name": "RESULT",
+							"columnName": "RESULT",
+							"dataType": "DOUBLE",
+							"entityType": "CUBE",
+							"suggestion": true,
+							"mainDimension": false
+						}
+					],
+					"quickConsultationTypes": [
+						{
+							"name": "DATA",
+							"selected": false
+						},
+						{
+							"name": "CODEMP",
+							"selected": false
+						},
+						{
+							"name": "EMPRESA",
+							"selected": false
+						},
+						{
+							"name": "CODCENCUS",
+							"selected": false
+						},
+						{
+							"name": "CENCUS",
+							"selected": false
+						},
+						{
+							"name": "CODCENCUSPAI",
+							"selected": false
+						},
+						{
+							"name": "CENCUSPAI",
+							"selected": false
+						},
+						{
+							"name": "CODCTANV1",
+							"selected": false
+						},
+						{
+							"name": "DESCRCTANV1",
+							"selected": false
+						},
+						{
+							"name": "CODCTANV2",
+							"selected": false
+						},
+						{
+							"name": "DESCRCTANV2",
+							"selected": false
+						},
+						{
+							"name": "CODCTANV3",
+							"selected": false
+						},
+						{
+							"name": "DESCRCTANV3",
+							"selected": false
+						},
+						{
+							"name": "CODCTANV4",
+							"selected": false
+						},
+						{
+							"name": "DESCRCTANV4",
+							"selected": false
+						},
+						{
+							"name": "RESULT",
+							"selected": false
+						}
+					]
+				}
+			]
+		}
+	]
+}
