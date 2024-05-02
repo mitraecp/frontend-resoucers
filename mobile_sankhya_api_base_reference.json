@@ -1,0 +1,18 @@
+{
+    "currentBaseUrl": "https://api0.mitraecp.com:2406/",
+    "listOfBaseUrl": [
+      {
+        "name": "qa",
+        "link": "https://api0.mitraecp.com:2406/"
+      },
+      {
+        "name": "master",
+        "link": "https://api.mitrasheet.com:4028/"
+      },
+      {
+        "name": "websummit",
+        "link": "https://api.mitrasheet.com:4128/"
+      }
+    ]
+  }
+  
