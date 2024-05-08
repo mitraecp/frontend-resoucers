@@ -1,8 +1,8 @@
 {
   "templateList": [
     {
-      "title_pt": "Copiloto Pessoal",
-      "title_en": "Personal Copilot",
+      "title_pt": "Pessoal",
+      "title_en": "Personal",
       "icon": "mdiDomain",
       "iconColor": "#09A9BD",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
@@ -11,8 +11,8 @@
       "longDescription_pt": "Este modelo foi desenvolvido com o intuito de recolher feedbacks dos colaboradores de forma anônima, por meio de um formulário. Com base nas respostas de cada colaborador, é calculada a nota ENPS (Employee Net Promoter Score), que oferece uma análise do engajamento dos seus colaboradores com a empresa. Além disso, nosso painel exibe análises do ENPS juntamente com comentários descritivos de cada respondente anônimo.",
       "longDescription_en": "This template was developed with the purpose of collecting feedback from employees anonymously, through a form. Based on each employee's responses, the ENPS (Employee Net Promoter Score) is calculated, providing an analysis of your employees' engagement with the company. Additionally, our dashboard displays ENPS analysis alongside descriptive comments from each anonymous respondent.",
       "videoUrl": "",
-      "baseUrl_pt": "backup/store/copilotoPessoal/",
-      "baseUrl_en": "backup/store/copilotoPessoal/",
+      "baseUrl_pt": "backup/store/copilotoPessoal/copilotoPessoal.zip",
+      "baseUrl_en": "backup/store/copilotoPessoal/copilotoPessoal.zip",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
@@ -32,8 +32,8 @@
       ]
     },
     {
-      "title_pt": "Copiloto Vendas",
-      "title_en": "Copiloto Vendas",
+      "title_pt": "Vendas",
+      "title_en": "Vendas",
       "icon": "mdiSitemap",
       "iconColor": "#FFB72D",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
@@ -42,8 +42,8 @@
       "longDescription_pt": "Teste",
       "longDescription_en": "Teste",
       "videoUrl": "",
-      "baseUrl_pt": "backup/store/analiseDeVendas/",
-      "baseUrl_en": "backup/store/analiseDeVendas/",
+      "baseUrl_pt": "backup/store/analiseDeVendas/analiseDeVendas.zip",
+      "baseUrl_en": "backup/store/analiseDeVendas/analiseDeVendas.zip",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
@@ -63,8 +63,8 @@
       ]
     },
     {
-      "title_pt": "Copiloto Financeiro",
-      "title_en": "Copiloto Financeiro",
+      "title_pt": "Financeiro",
+      "title_en": "Financeiro",
       "icon": "mdiLightbulbOnOutline",
       "iconColor": "#B954BB",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
@@ -73,8 +73,8 @@
       "longDescription_pt": "Teste",
       "longDescription_en": "Teste",
       "videoUrl": "",
-      "baseUrl_pt": "backup/store/copilotoFinanceiro/",
-      "baseUrl_en": "backup/store/copilotoFinanceiro/",
+      "baseUrl_pt": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
+      "baseUrl_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
