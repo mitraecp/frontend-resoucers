@@ -1,181 +1,95 @@
 {
   "templateList": [
     {
-      "title_pt": "CRM",
-      "title_en": "CRM",
+      "title_pt": "Copiloto Pessoal",
+      "title_en": "Personal Copilot",
       "icon": "mdiDomain",
       "iconColor": "#09A9BD",
-      "price": "R$ 500,00",
-      "image": "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
-      "detailTitle_pt": "Desvenda CRM",
-      "detailTitle_en": "Unravel CRM",
-      "descriptionImageListOnBody": [
-        "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
-        "https://cdn.discordapp.com/attachments/894690304173686878/1233479164917583943/body.png?ex=662d3e7d&is=662becfd&hm=6431d9feb9c35a9d778bb4623f45562d6bbc3df423bf0117b171b79db503a0ff&",
-        "https://cdn.discordapp.com/attachments/894690304173686878/1233479323172732960/image_19.png?ex=662d3ea3&is=662bed23&hm=dfabb0195021ae8ae4c9f53dde5f95c30cc804399c02fc4041fcad1a917b58ad&"
-      ],
-      "shortDescription_pt": "Simplifique sua pré-venda com um CRM focado na otimização de resultados.",
-      "shortDescription_en": "Simplify your pre-sales with a CRM focused on optimizing results.",
-      "longDescription_pt": "O pacote CRM foi especialmente desenvolvido para empresas que desejam aprimorar seu processo de pré-venda. \n \n Este template permite uma visão clara do funil de vendas, acompanhando os potenciais clientes desde o primeiro contato até o fechamento do negócio. \n\n Integre todos os seus canais de comunicação, gerencie leads, e maximize suas oportunidades com um sistema robusto e fácil de usar. \n\n Comece a transformar seus prospects em clientes fiéis com a eficiência que apenas o nosso CRM pode oferecer.",
-      "longDescription_en": "The CRM package was specially developed for companies that want to improve their pre-sales process. \n \n This template allows a clear view of the sales funnel, monitoring potential customers from the first contact to closing the deal. \n\n Integrate all your communication channels, manage leads, and maximize your opportunities with a robust and easy-to-use system. \n\n Start turning your prospects into loyal customers with the efficiency that only our CRM can offer.",
-      "videoUrl": "https://www.youtube.com/embed/Qkp5AMzwFGU?si=5RoaSXR4CWnuWPIv",
-      "baseUrl_pt": "backup/store/crm/crm.zip",
-      "baseUrl_en": "backup/store/crm/crm.zip",
+      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
+      "shortDescription_pt": "Transforme a voz dos seus colaboradores em insights valiosos com nosso template ENPS.",
+      "shortDescription_en": "Turn your employees' voices into valuable insights with our ENPS template.",
+      "longDescription_pt": "Este modelo foi desenvolvido com o intuito de recolher feedbacks dos colaboradores de forma anônima, por meio de um formulário. Com base nas respostas de cada colaborador, é calculada a nota ENPS (Employee Net Promoter Score), que oferece uma análise do engajamento dos seus colaboradores com a empresa. Além disso, nosso painel exibe análises do ENPS juntamente com comentários descritivos de cada respondente anônimo.",
+      "longDescription_en": "This template was developed with the purpose of collecting feedback from employees anonymously, through a form. Based on each employee's responses, the ENPS (Employee Net Promoter Score) is calculated, providing an analysis of your employees' engagement with the company. Additionally, our dashboard displays ENPS analysis alongside descriptive comments from each anonymous respondent.",
+      "videoUrl": "",
+      "baseUrl_pt": "backup/store/copilotoPessoal/",
+      "baseUrl_en": "backup/store/copilotoPessoal/",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
-          "type_pt": "Comercial",
-          "type_en": "Commercial",
+          "type_pt": "RH",
+          "type_en": "RH",
           "icon": "mdiDomain",
           "color": "#09A9BD",
           "secundaryColor": "#EBFCFF"
         },
         {
-          "type_pt": "CRM",
-          "type_en": "CRM",
+          "type_pt": "Cultura",
+          "type_en": "Culture",
           "icon": "mdiContentPaste",
           "color": "#F2911E",
           "secundaryColor": "#FFF9ED"
-        },
-        {
-          "type_pt": "Fluxo de Processos",
-          "type_en": "Process flow",
-          "icon": "mdiSitemap",
-          "color": "#FFB72D",
-          "secundaryColor": "#FFFDEA"
-        }
-      ],
-      "descriptionStrips": [
-        {
-          "icon": "mdiAccountSearch",
-          "title_pt": "Expert em Finanças",
-          "title_en": "Expert in Finance",
-          "body_pt": "B.I.A oferece uma visão detalhada da sua agenda financeira, garantindo que você nunca perca prazos importantes. Com análises precisas de fluxo de caixa e uma compreensão profunda das suas receitas e despesas, você pode tomar decisões estratégicas com confiança, impulsionando o crescimento do seu negócio.",
-          "body_en": "B.I.A gives you a detailed view of your financial schedule, ensuring you never miss important deadlines. With accurate cash flow analysis and a deep understanding of your income and expenses, you can make strategic decisions with confidence, driving your business growth."
-        },
-        {
-          "icon": "mdiChartLineVariant",
-          "title_pt": "Operações Optimizadas",
-          "title_en": "Optimized Operations:",
-          "body_pt": "De análises de compras e vendas ao ciclo operacional financeiro, B.I.A fornece insights abrangentes para otimizar suas operações. Identifique oportunidades de maximizar a margem de contribuição e reduzir custos, aumentando a eficiência e a rentabilidade do seu negócio de forma significativa.",
-          "body_en": "From purchasing and sales analytics to the financial operating cycle, B.I.A provides comprehensive insights to optimize your operations. Identify opportunities to maximize contribution margin and reduce costs, significantly increasing the efficiency and profitability of your business."
-        },
-        {
-          "icon": "mdiChartPieOutline",
-          "title_pt": "Titulo 3",
-          "title_en": "3",
-          "body_pt": "aaaa",
-          "body_en": "aaaa in english"
         }
       ]
     },
     {
-      "title_pt": "Gestão de Projetos",
-      "title_en": "Project management",
+      "title_pt": "Copiloto Vendas",
+      "title_en": "Copiloto Vendas",
       "icon": "mdiSitemap",
       "iconColor": "#FFB72D",
-      "price": "R$ 500,00",
-      "image": "https://mitra-multitenant.s3.amazonaws.com/store/gestao-projetos.png",
-      "shortDescription_pt": "Orquestre seus projetos com precisão e eficácia, tudo em uma única plataforma.",
-      "shortDescription_en": "Orchestrate your projects with precision and effectiveness, all on a single platform.",
-      "longDescription_pt": "O pacote Gestão de Projetos foi concebido para organizar todas as etapas do projeto, desde o planejamento até a conclusão. \n Este template oferece recursos para atribuição de tarefas, monitoramento de progresso, e comunicação eficaz entre as equipes. Seja para pequenas equipes ou grandes corporações, nossa solução adapta-se às suas necessidades, garantindo que prazos sejam cumpridos e que cada detalhe seja meticulosamente gerenciado. \n Mergulhe em dashboards intuitivos, integre feedback em tempo real e eleve seus projetos a um novo patamar com nosso template.",
-      "longDescription_en": "The Project Management package was designed to organize all stages of the project, from planning to completion. \n This template offers features for assigning tasks, monitoring progress, and effective communication between teams. Whether for small teams or large corporations, our solution adapts to your needs, ensuring that deadlines are met and that every detail is meticulously managed. \nImmerse yourself in intuitive dashboards, integrate real-time feedback and take your projects to a new level with our template.",
-      "videoUrl": "https://www.youtube.com/embed/cwhXCcadF5k?si=b0Lo14BVcAtgs8vq",
-      "baseUrl_pt": "backup/store/gestaoDeTarefas/gestaoDeTarefas.zip",
-      "baseUrl_en": "backup/store/gestaoDeTarefas/gestaoDeTarefas.zip",
+      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
+      "shortDescription_pt": "Teste.",
+      "shortDescription_en": "Teste.",
+      "longDescription_pt": "Teste",
+      "longDescription_en": "Teste",
+      "videoUrl": "",
+      "baseUrl_pt": "backup/store/analiseDeVendas/",
+      "baseUrl_en": "backup/store/analiseDeVendas/",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
-        {
-          "type_pt": "Fluxo de Processos",
-          "type_en": "Process flow",
-          "icon": "mdiSitemap",
-          "color": "#FFB72D",
-          "secundaryColor": "#FFFDEA"
-        }
-      ]
-    },
-    {
-      "title_pt": "Planejamento Orçamentário",
-      "title_en": "Budget planning",
-      "icon": "mdiLightbulbOnOutline",
-      "iconColor": "#B954BB",
-      "price": "R$ 500,00",
-      "image": "https://mitra-multitenant.s3.amazonaws.com/store/plan-orc.png",
-      "shortDescription_pt": "Diga adeus às planilhas e automatize seu orçamento mantendo toda a flexibilidade necessária.",
-      "shortDescription_en": "Say goodbye to spreadsheets and automate your budget while maintaining all the flexibility you need.",
-      "longDescription_pt": "Este template é a solução definitiva para quem busca modernizar o processo de planejamento orçamentário sem perder a essência da personalização. \n Sabemos o quão trabalhoso pode ser gerenciar orçamentos em planilhas, e o quão frustrante é ficar preso à rigidez de softwares convencionais. Por isso, criamos uma plataforma que combina o melhor dos dois mundos: elimina a necessidade de trabalho manual, mas ainda oferece toda a flexibilidade que você precisa para adaptar-se a qualquer cenário. \n Com nosso template, o planejamento orçamentário se torna um processo fluido, preciso e altamente eficaz, permitindo que você se concentre no que realmente importa: tomar decisões estratégicas baseadas em dados confiáveis.",
-      "longDescription_en": "This template is the definitive solution for those looking to modernize the budget planning process without losing the essence of customization. \n We know how hard it can be to manage budgets in spreadsheets, and how frustrating it is to be stuck in the rigidity of conventional software. That's why we created a platform that combines the best of both worlds: it eliminates the need for manual work, but still offers all the flexibility you need to adapt to any scenario. \n With our template, budget planning becomes a fluid, accurate and highly effective process, allowing you to focus on what really matters: making strategic decisions based on reliable data.",
-      "videoUrl": "https://www.youtube.com/embed/MSPr6itIaL4?si=Y32N2ex6NXUx7Vl4",
-      "baseUrl_pt": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
-      "baseUrl_en": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
-      "bucketSource": "mitra-multitenant-prod",
-      "types": [
-        {
-          "type_pt": "Estratégico",
-          "type_en": "Strategic",
-          "icon": "mdiLightbulbOnOutline",
-          "color": "#B954BB",
-          "secundaryColor": "#FFF3FF"
-        },
-        {
-          "type_pt": "Fluxo de Processos",
-          "type_en": "Process flow",
-          "icon": "mdiSitemap",
-          "color": "#FFB72D",
-          "secundaryColor": "#FFFDEA"
-        },
-        {
-          "type_pt": "Financeiro",
-          "type_en": "Financial",
-          "icon": "mdiFinance",
-          "color": "#12B76A",
-          "secundaryColor": "#ECFDF3"
-        },
-        {
-          "type_pt": "Fluxo de Processos",
-          "type_en": "Process flow",
-          "icon": "mdiSitemap",
-          "color": "#FFB72D",
-          "secundaryColor": "#FFFDEA"
-        }
-      ]
-    },
-    {
-      "title_pt": "Análise de Vendas",
-      "title_en": "Sales Analysis",
-      "icon": "mdiChartBoxOutline",
-      "iconColor": "#1570EF",
-      "price": "R$ 500,00",
-      "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-com.png",
-      "shortDescription_pt": "Analise suas vendas por várias perspectivas, classifique seus clientes e compare com períodos anteriores para identificar oportunidades.",
-      "shortDescription_en": "Analyze your sales from multiple perspectives, classify your customers and compare with previous periods to identify opportunities.",
-      "longDescription_pt": "Este template de BI comercial oferece três dashboards essenciais para otimizar as operações e o crescimento do seu negócio. \n O primeiro dashboard destaca as vendas sob várias perspectivas, além de classificar os clientes em novos, recorrentes e perdidos. \n O segundo dashboard permite uma comparação detalhada entre dois períodos, identificando oportunidades nos dados. \n O terceiro dashboard se concentra na análise dos clientes perdidos, ajudando a melhorar a retenção. \n Esses painéis interativos fornecem insights cruciais para impulsionar a estratégia e o desempenho do seu negócio.",
-      "longDescription_en": "This commercial BI template offers three essential dashboards to optimize your business operations and growth. \nThe first dashboard highlights sales from various perspectives, in addition to classifying customers as new, returning and lost. \nThe second dashboard allows a detailed comparison between two periods, identifying opportunities in the data. \nThe third dashboard focuses on analyzing lost customers, helping to improve retention. \nThese interactive dashboards provide crucial insights to drive your business strategy and performance.",
-      "videoUrl": "https://www.youtube.com/embed/KLoio8uv9rk?si=2OcDqw8pRhPdCEa_",
-      "baseUrl_pt": "backup/store/biComercial/biComercial.zip",
-      "baseUrl_en": "backup/store/biComercial/biComercial.zip",
-      "bucketSource": "mitra-multitenant-prod",
-      "types": [
-        {
-          "type_pt": "BI",
-          "type_en": "BI",
-          "icon": "mdiChartBoxOutline",
-          "color": "#1570EF",
-          "secundaryColor": "#EFF8FF"
-        },
         {
           "type_pt": "Comercial",
-          "type_en": "Commercial",
+          "type_en": "Comercial",
           "icon": "mdiDomain",
           "color": "#09A9BD",
           "secundaryColor": "#EBFCFF"
         },
         {
-          "type_pt": "Estratégico",
-          "type_en": "Strategic",
-          "icon": "mdiLightbulbOnOutline",
-          "color": "#B954BB",
-          "secundaryColor": "#FFF3FF"
+          "type_pt": "BI",
+          "type_en": "BI",
+          "icon": "mdiContentPaste",
+          "color": "#F2911E",
+          "secundaryColor": "#FFF9ED"
+        }
+      ]
+    },
+    {
+      "title_pt": "Copiloto Financeiro",
+      "title_en": "Copiloto Financeiro",
+      "icon": "mdiLightbulbOnOutline",
+      "iconColor": "#B954BB",
+      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
+      "shortDescription_pt": "Teste.",
+      "shortDescription_en": "Teste.",
+      "longDescription_pt": "Teste",
+      "longDescription_en": "Teste",
+      "videoUrl": "",
+      "baseUrl_pt": "backup/store/copilotoFinanceiro/",
+      "baseUrl_en": "backup/store/copilotoFinanceiro/",
+      "bucketSource": "mitra-multitenant-prod",
+      "types": [
+        {
+          "type_pt": "Financeiro",
+          "type_en": "Financeiro",
+          "icon": "mdiDomain",
+          "color": "#09A9BD",
+          "secundaryColor": "#EBFCFF"
+        },
+        {
+          "type_pt": "BI",
+          "type_en": "BI",
+          "icon": "mdiContentPaste",
+          "color": "#F2911E",
+          "secundaryColor": "#FFF9ED"
         }
       ]
     }
