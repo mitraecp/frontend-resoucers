@@ -1,10 +1,10 @@
 {
   "templateList": [
     {
-      "title_pt": "Pessoal",
-      "title_en": "Personal",
-      "icon": "mdiDomain",
-      "iconColor": "#09A9BD",
+      "title_pt": "Pessoas",
+      "title_en": "People",
+      "icon": "mdiAccountGroup",
+      "iconColor": "#2E90FA",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
       "shortDescription_pt": "Transforme a voz dos seus colaboradores em insights valiosos com nosso template ENPS.",
       "shortDescription_en": "Turn your employees' voices into valuable insights with our ENPS template.",
@@ -16,26 +16,26 @@
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
-          "type_pt": "RH",
-          "type_en": "RH",
+          "type_pt": "Pessoal",
+          "type_en": "People",
           "icon": "mdiDomain",
-          "color": "#09A9BD",
-          "secundaryColor": "#EBFCFF"
+          "color": "#0198B7",
+          "secundaryColor": "#76E7FE"
         },
         {
-          "type_pt": "Cultura",
-          "type_en": "Culture",
+          "type_pt": "Folha de pagamento",
+          "type_en": "Payroll",
           "icon": "mdiContentPaste",
-          "color": "#F2911E",
-          "secundaryColor": "#FFF9ED"
+          "color": "#7839EE",
+          "secundaryColor": "#DDD6FE"
         }
       ]
     },
     {
       "title_pt": "Vendas",
-      "title_en": "Vendas",
-      "icon": "mdiSitemap",
-      "iconColor": "#FFB72D",
+      "title_en": "Sales",
+      "icon": "mdiShopping",
+      "iconColor": "#5720B7",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
       "shortDescription_pt": "Teste.",
       "shortDescription_en": "Teste.",
@@ -47,26 +47,19 @@
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
-          "type_pt": "Comercial",
-          "type_en": "Comercial",
+          "type_pt": "Vendas",
+          "type_en": "Sales",
           "icon": "mdiDomain",
-          "color": "#09A9BD",
-          "secundaryColor": "#EBFCFF"
-        },
-        {
-          "type_pt": "BI",
-          "type_en": "BI",
-          "icon": "mdiContentPaste",
-          "color": "#F2911E",
-          "secundaryColor": "#FFF9ED"
+          "color": "#FF186B",
+          "secundaryColor": "#FFC2D8"
         }
       ]
     },
     {
       "title_pt": "Financeiro",
-      "title_en": "Financeiro",
+      "title_en": "Financial",
       "icon": "mdiLightbulbOnOutline",
-      "iconColor": "#B954BB",
+      "iconColor": "#12B76A",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
       "shortDescription_pt": "Teste.",
       "shortDescription_en": "Teste.",
@@ -78,18 +71,11 @@
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
-          "type_pt": "Financeiro",
-          "type_en": "Financeiro",
+          "type_pt": "Finanças",
+          "type_en": "Finance",
           "icon": "mdiDomain",
-          "color": "#09A9BD",
-          "secundaryColor": "#EBFCFF"
-        },
-        {
-          "type_pt": "BI",
-          "type_en": "BI",
-          "icon": "mdiContentPaste",
-          "color": "#F2911E",
-          "secundaryColor": "#FFF9ED"
+          "color": "#039855",
+          "secundaryColor": "#A6F4C5"
         }
       ]
     }
