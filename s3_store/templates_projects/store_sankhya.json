@@ -58,7 +58,7 @@
     {
       "title_pt": "Financeiro",
       "title_en": "Financial",
-      "icon": "mdiLightbulbOnOutline",
+      "icon": "mdiCurrencyUsd",
       "iconColor": "#12B76A",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
       "shortDescription_pt": "Teste.",
