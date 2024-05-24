@@ -1,5 +1,5 @@
 {
-    "currentBaseUrl": "https://api0.mitraecp.com:2406/",
+    "currentBaseUrl": "https://api.mitrasheet.com:4128/",
     "listOfBaseUrl": [
       {
         "name": "qa",
@@ -10,7 +10,7 @@
         "link": "https://api.mitrasheet.com:4028/"
       },
       {
-        "name": "websummit",
+        "name": "Sankhya",
         "link": "https://api.mitrasheet.com:4128/"
       }
     ]
