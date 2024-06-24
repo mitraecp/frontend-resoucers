@@ -78,6 +78,36 @@
           "secundaryColor": "#A6F4C5"
         }
       ]
+    },
+    {
+      "title_pt": "Resumo Contábil",
+      "title_en": "Resumo Contábil",
+      "icon": "mdiContentPaste",
+      "iconColor": "#F2911E",
+      "image": " ",
+      "shortDescription_pt": "",
+      "longDescription_en": "",
+      "videoUrl": "",
+      "baseUrl_pt": "backup/store/skcontabil/skcontabil.zip",
+      "baseUrl_en": "backup/store/skcontabil/skcontabil.zip",
+      "bucketSource": "mitra-multitenant-prod",
+      "types": [
+        {
+          "type_pt": "Contábil",
+          "type_en": "Contábil",
+          "icon": "mdiFinance",
+          "color": "#12B76A",
+          "secundaryColor": "#ECFDF3"
+        },
+        {
+          "type_pt": "Estratégico",
+          "type_en": "Estratégico",
+          "icon": "mdiLightbulbOnOutline",
+          "color": "#B954BB",
+          "secundaryColor": "#FFF3FF"
+        },
+        {}
+      ]
     }
   ]
 }
