@@ -13,6 +13,8 @@
       "videoUrl": "",
       "baseUrl_pt": "backup/store/copilotoPessoal/copilotoPessoal.zip",
       "baseUrl_en": "backup/store/copilotoPessoal/copilotoPessoal.zip",
+      "baseUrlWithData_en": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
+      "baseUrlWithData_pt": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
@@ -44,6 +46,8 @@
       "videoUrl": "",
       "baseUrl_pt": "backup/store/analiseDeVendas/analiseDeVendas.zip",
       "baseUrl_en": "backup/store/analiseDeVendas/analiseDeVendas.zip",
+      "baseUrlWithData_en": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
+      "baseUrlWithData_pt": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
@@ -68,6 +72,8 @@
       "videoUrl": "",
       "baseUrl_pt": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
       "baseUrl_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
+      "baseUrlWithData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
+      "baseUrlWithData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
@@ -90,6 +96,8 @@
       "videoUrl": "",
       "baseUrl_pt": "backup/store/skcontabil/skcontabil.zip",
       "baseUrl_en": "backup/store/skcontabil/skcontabil.zip",
+      "baseUrlWithData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
+      "baseUrlWithData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
@@ -111,4 +119,3 @@
     }
   ]
 }
-
