@@ -13,5 +13,15 @@
       "name": "websummit",
       "link": "https://api.mitrasheet.com:4128/"
     }
+  ],
+  "listAiFrontLink": [
+    {
+      "name": "qa",
+      "link": "https://qa.mitralab.io"
+    },
+    {
+      "name": "master",
+      "link": "https://app.mitralab.io"
+    }
   ]
 }
