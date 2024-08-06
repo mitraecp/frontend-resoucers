@@ -23,5 +23,15 @@
       "name": "master",
       "link": "https://app.mitralab.io"
     }
+  ],
+  "listIframe1Dot0FrontLink": [
+    {
+      "name": "qa",
+      "link": "https://mergeqa.mitralab.io/"
+    },
+    {
+      "name": "master",
+      "link": "https://merge.mitralab.io/"
+    }
   ]
 }
