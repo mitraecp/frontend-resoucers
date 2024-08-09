@@ -22,6 +22,10 @@
     {
       "name": "master",
       "link": "https://skw.mitralab.io"
+    },
+    {
+      "name": "beta",
+      "link": "https://beta.mitralab.io"
     }
   ],
   "listIframe1Dot0FrontLink": [
@@ -32,6 +36,10 @@
     {
       "name": "master",
       "link": "https://merge.mitralab.io/"
+    },
+    {
+      "name": "beta",
+      "link": "https://mergebeta.mitralab.io/"
     }
   ]
 }
