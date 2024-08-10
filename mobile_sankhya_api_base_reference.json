@@ -10,7 +10,11 @@
       "link": "https://api.mitrasheet.com:4028/"
     },
     {
-      "name": "Sankhya",
+      "name": "release",
+      "link": "https://api.mitrasheet.com:4128/"
+    },
+    {
+      "name": "beta",
       "link": "https://api.mitrasheet.com:4128/"
     }
   ],
