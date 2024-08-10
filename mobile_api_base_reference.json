@@ -1,5 +1,6 @@
 {
   "currentBaseUrl": "https://api.mitrasheet.com:4128/",
+  "currentBaseNameUrl": "beta",
   "listOfBaseUrl": [
     {
       "name": "qa",
@@ -10,7 +11,11 @@
       "link": "https://api.mitrasheet.com:4028/"
     },
     {
-      "name": "websummit",
+      "name": "release",
+      "link": "https://api.mitrasheet.com:4128/"
+    },
+    {
+      "name": "beta",
       "link": "https://api.mitrasheet.com:4128/"
     }
   ],
