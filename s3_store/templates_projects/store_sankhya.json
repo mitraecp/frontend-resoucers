@@ -1,140 +1,148 @@
 {
-	"templateList": [
-		{
-			"title_pt": "Pessoas",
-			"title_en": "People",
-			"icon": "mdiAccountGroup",
-			"projectType": 12,
-			"iconColor": "#2E90FA",
-			"image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
-			"shortDescription_pt": "Transforme a voz dos seus colaboradores em insights valiosos com nosso template ENPS.",
-			"shortDescription_en": "Turn your employees' voices into valuable insights with our ENPS template.",
-			"longDescription_pt": "Este modelo foi desenvolvido com o intuito de recolher feedbacks dos colaboradores de forma anônima, por meio de um formulário. Com base nas respostas de cada colaborador, é calculada a nota ENPS (Employee Net Promoter Score), que oferece uma análise do engajamento dos seus colaboradores com a empresa. Além disso, nosso painel exibe análises do ENPS juntamente com comentários descritivos de cada respondente anônimo.",
-			"longDescription_en": "This template was developed with the purpose of collecting feedback from employees anonymously, through a form. Based on each employee's responses, the ENPS (Employee Net Promoter Score) is calculated, providing an analysis of your employees' engagement with the company. Additionally, our dashboard displays ENPS analysis alongside descriptive comments from each anonymous respondent.",
-			"videoUrl": "",
-			"baseUrl_pt": "backup/store/copilotoPessoal/copilotoPessoal.zip",
-			"baseUrl_en": "backup/store/copilotoPessoal/copilotoPessoal.zip",
-			"baseUrl_withData_en": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
-			"baseUrl_withData_pt": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
-			"baseUrl_sql_pt": "backup/store/copilotoPessoal/copilotoPessoal.zip",
-			"baseUrl_sql_en": "backup/store/copilotoPessoal/copilotoPessoal.zip",
-			"baseUrl_sql_withData_en": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
-			"baseUrl_sql_whitData_pt": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
-			"bucketSource": "mitra-multitenant",
-			"types": [
-				{
-					"type_pt": "Pessoal",
-					"type_en": "People",
-					"icon": "mdiDomain",
-					"color": "#0198B7",
-					"secundaryColor": "#76E7FE"
-				},
-				{
-					"type_pt": "Folha de pagamento",
-					"type_en": "Payroll",
-					"icon": "mdiContentPaste",
-					"color": "#7839EE",
-					"secundaryColor": "#DDD6FE"
-				}
-			]
-		},
-		{
-			"title_pt": "Vendas",
-			"title_en": "Sales",
-			"icon": "mdiShopping",
-			"iconColor": "#5720B7",
-			"projectType": 10,
-			"image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
-			"shortDescription_pt": "Teste.",
-			"shortDescription_en": "Teste.",
-			"longDescription_pt": "Teste",
-			"longDescription_en": "Teste",
-			"videoUrl": "",
-			"baseUrl_pt": "backup/store/analiseDeVendas/analiseDeVendas.zip",
-			"baseUrl_en": "backup/store/analiseDeVendas/analiseDeVendas.zip",
-			"baseUrl_withData_en": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
-			"baseUrl_withData_pt": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
-			"baseUrl_sql_pt": "backup/store/analiseDeVendas/analiseDeVendas.zip",
-			"baseUrl_sql_en": "backup/store/analiseDeVendas/analiseDeVendas.zip",
-			"baseUrl_sql_withData_en": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
-			"baseUrl_sql_whitData_pt": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
-			"bucketSource": "mitra-multitenant",
-			"types": [
-				{
-					"type_pt": "Vendas",
-					"type_en": "Sales",
-					"icon": "mdiDomain",
-					"color": "#FF186B",
-					"secundaryColor": "#FFC2D8"
-				}
-			]
-		},
-		{
-			"title_pt": "Financeiro",
-			"title_en": "Financial",
-			"icon": "mdiCurrencyUsd",
-			"iconColor": "#12B76A",
-			"projectType": 11,
-			"image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
-			"shortDescription_pt": "Teste.",
-			"shortDescription_en": "Teste.",
-			"longDescription_pt": "Teste",
-			"longDescription_en": "Teste",
-			"videoUrl": "",
-			"baseUrl_pt": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
-			"baseUrl_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
-			"baseUrl_withData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
-			"baseUrl_withData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
-			"baseUrl_sql_pt": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
-			"baseUrl_sql_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
-			"baseUrl_sql_withData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
-			"baseUrl_sql_whitData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
-			"bucketSource": "mitra-multitenant",
-			"types": [
-				{
-					"type_pt": "Finanças",
-					"type_en": "Finance",
-					"icon": "mdiDomain",
-					"color": "#039855",
-					"secundaryColor": "#A6F4C5"
-				}
-			]
-		},
-		{
-			"title_pt": "Resumo Contábil",
-			"title_en": "Resumo Contábil",
-			"icon": "mdiContentPaste",
-			"iconColor": "#F2911E",
-			"projectType": 13,
-			"image": " ",
-			"shortDescription_pt": "",
-			"longDescription_en": "",
-			"videoUrl": "",
-			"baseUrl_pt": "backup/store/skcontabil/skcontabil.zip",
-			"baseUrl_en": "backup/store/skcontabil/skcontabil.zip",
-			"baseUrl_withData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
-			"baseUrl_withData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
-			"baseUrl_sql_pt": "backup/store/skcontabil/skcontabil.zip",
-			"baseUrl_sql_en": "backup/store/skcontabil/skcontabil.zip",
-			"baseUrl_sql_withData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
-			"baseUrl_sql_whitData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
-			"bucketSource": "mitra-multitenant",
-			"types": [
-				{
-					"type_pt": "Contábil",
-					"type_en": "Contábil",
-					"icon": "mdiFinance",
-					"color": "#F45E00",
-					"secundaryColor": "#F4A971"
-				},
-				{
-					"type_pt": "Estratégico",
-					"type_en": "Estratégico",
-					"icon": "mdiLightbulbOnOutline",
-					"color": "#B046BD",
-					"secundaryColor": "#BD9DB7"
-				}
-			]
-		}
-	]
+  "templateList": [
+    {
+      "title_pt": "Pessoas",
+      "title_en": "People",
+      "icon": "mdiAccountGroup",
+      "projectType": 12,
+      "iconColor": "#2E90FA",
+      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
+      "shortDescription_pt": "Transforme a voz dos seus colaboradores em insights valiosos com nosso template ENPS.",
+      "shortDescription_en": "Turn your employees' voices into valuable insights with our ENPS template.",
+      "longDescription_pt": "Este modelo foi desenvolvido com o intuito de recolher feedbacks dos colaboradores de forma anônima, por meio de um formulário. Com base nas respostas de cada colaborador, é calculada a nota ENPS (Employee Net Promoter Score), que oferece uma análise do engajamento dos seus colaboradores com a empresa. Além disso, nosso painel exibe análises do ENPS juntamente com comentários descritivos de cada respondente anônimo.",
+      "longDescription_en": "This template was developed with the purpose of collecting feedback from employees anonymously, through a form. Based on each employee's responses, the ENPS (Employee Net Promoter Score) is calculated, providing an analysis of your employees' engagement with the company. Additionally, our dashboard displays ENPS analysis alongside descriptive comments from each anonymous respondent.",
+      "videoUrl": "",
+      "baseUrlWithData_en": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
+      "baseUrlWithData_pt": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
+      "baseUrl_pt": "backup/store/copilotoPessoal/copilotoPessoal.zip",
+      "baseUrl_en": "backup/store/copilotoPessoal/copilotoPessoal.zip",
+      "baseUrl_withData_en": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
+      "baseUrl_withData_pt": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
+      "baseUrl_sql_pt": "backup/store/copilotoPessoal/copilotoPessoal.zip",
+      "baseUrl_sql_en": "backup/store/copilotoPessoal/copilotoPessoal.zip",
+      "baseUrl_sql_withData_en": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
+      "baseUrl_sql_whitData_pt": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
+      "bucketSource": "mitra-multitenant",
+      "types": [
+        {
+          "type_pt": "Pessoal",
+          "type_en": "People",
+          "icon": "mdiDomain",
+          "color": "#0198B7",
+          "secundaryColor": "#76E7FE"
+        },
+        {
+          "type_pt": "Folha de pagamento",
+          "type_en": "Payroll",
+          "icon": "mdiContentPaste",
+          "color": "#7839EE",
+          "secundaryColor": "#DDD6FE"
+        }
+      ]
+    },
+    {
+      "title_pt": "Vendas",
+      "title_en": "Sales",
+      "icon": "mdiShopping",
+      "iconColor": "#5720B7",
+      "projectType": 10,
+      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
+      "shortDescription_pt": "Teste.",
+      "shortDescription_en": "Teste.",
+      "longDescription_pt": "Teste",
+      "longDescription_en": "Teste",
+      "videoUrl": "",
+      "baseUrlWithData_en": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
+      "baseUrlWithData_pt": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
+      "baseUrl_pt": "backup/store/analiseDeVendas/analiseDeVendas.zip",
+      "baseUrl_en": "backup/store/analiseDeVendas/analiseDeVendas.zip",
+      "baseUrl_withData_en": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
+      "baseUrl_withData_pt": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
+      "baseUrl_sql_pt": "backup/store/analiseDeVendas/analiseDeVendas.zip",
+      "baseUrl_sql_en": "backup/store/analiseDeVendas/analiseDeVendas.zip",
+      "baseUrl_sql_withData_en": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
+      "baseUrl_sql_whitData_pt": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
+      "bucketSource": "mitra-multitenant",
+      "types": [
+        {
+          "type_pt": "Vendas",
+          "type_en": "Sales",
+          "icon": "mdiDomain",
+          "color": "#FF186B",
+          "secundaryColor": "#FFC2D8"
+        }
+      ]
+    },
+    {
+      "title_pt": "Financeiro",
+      "title_en": "Financial",
+      "icon": "mdiCurrencyUsd",
+      "iconColor": "#12B76A",
+      "projectType": 11,
+      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
+      "shortDescription_pt": "Teste.",
+      "shortDescription_en": "Teste.",
+      "longDescription_pt": "Teste",
+      "longDescription_en": "Teste",
+      "videoUrl": "",
+      "baseUrlWithData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
+      "baseUrlWithData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
+      "baseUrl_pt": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
+      "baseUrl_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
+      "baseUrl_withData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
+      "baseUrl_withData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
+      "baseUrl_sql_pt": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
+      "baseUrl_sql_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
+      "baseUrl_sql_withData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
+      "baseUrl_sql_whitData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
+      "bucketSource": "mitra-multitenant",
+      "types": [
+        {
+          "type_pt": "Finanças",
+          "type_en": "Finance",
+          "icon": "mdiDomain",
+          "color": "#039855",
+          "secundaryColor": "#A6F4C5"
+        }
+      ]
+    },
+    {
+      "title_pt": "Resumo Contábil",
+      "title_en": "Resumo Contábil",
+      "icon": "mdiContentPaste",
+      "iconColor": "#F2911E",
+      "projectType": 13,
+      "image": " ",
+      "shortDescription_pt": "",
+      "longDescription_en": "",
+      "videoUrl": "",
+      "baseUrl_pt": "backup/store/skcontabil/skcontabil.zip",
+      "baseUrl_en": "backup/store/skcontabil/skcontabil.zip",
+      "baseUrl_withData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
+      "baseUrlWithData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
+      "baseUrlWithData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
+      "baseUrl_withData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
+      "baseUrl_sql_pt": "backup/store/skcontabil/skcontabil.zip",
+      "baseUrl_sql_en": "backup/store/skcontabil/skcontabil.zip",
+      "baseUrl_sql_withData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
+      "baseUrl_sql_whitData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
+      "bucketSource": "mitra-multitenant",
+      "types": [
+        {
+          "type_pt": "Contábil",
+          "type_en": "Contábil",
+          "icon": "mdiFinance",
+          "color": "#F45E00",
+          "secundaryColor": "#F4A971"
+        },
+        {
+          "type_pt": "Estratégico",
+          "type_en": "Estratégico",
+          "icon": "mdiLightbulbOnOutline",
+          "color": "#B046BD",
+          "secundaryColor": "#BD9DB7"
+        }
+      ]
+    }
+  ]
 }
