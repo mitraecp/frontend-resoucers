@@ -83,7 +83,7 @@
       "title_pt": "Financeiro",
       "title_en": "Financial",
       "icon": "mdiCurrencyUsd",
-      "iconColor": "#B13F4D",
+      "iconColor": "#7BBA3B",
       "identifier": {
         "key": "11",
         "11": "SKILL_FUNANCEIRO"
@@ -100,8 +100,8 @@
       "baseUrl_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
       "baseUrl_withData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
       "baseUrl_withData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
-      "baseUrl_sql_pt": "backup/store/mssqlcopilotofinanceiro/mssqlcopilotofinanceiro.zip",
-      "baseUrl_sql_en": "backup/store/mssqlcopilotofinanceiro/mssqlcopilotofinanceiro.zip",
+      "baseUrl_sql_pt": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
+      "baseUrl_sql_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
       "baseUrl_sql_withData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
       "baseUrl_sql_whitData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
       "bucketSource": "mitra-multitenant-prod",
@@ -119,7 +119,7 @@
       "title_pt": "Resumo Contábil",
       "title_en": "Resumo Contábil",
       "icon": "mdiContentPaste",
-      "iconColor": "#84C59A",
+      "iconColor": "#B13F4D",
       "identifier": {
         "key": "13",
         "13": "SKILL_RESUMO_CONTABIL"
@@ -134,8 +134,8 @@
       "baseUrlWithData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
       "baseUrlWithData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
       "baseUrl_withData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
-      "baseUrl_sql_pt": "backup/store/mssqlskcontabil/mssqlskcontabil.zip",
-      "baseUrl_sql_en": "backup/store/mssqlskcontabil/mssqlskcontabil.zip",
+      "baseUrl_sql_pt": "backup/store/skcontabil/skcontabil.zip",
+      "baseUrl_sql_en": "backup/store/skcontabil/skcontabil.zip",
       "baseUrl_sql_withData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
       "baseUrl_sql_whitData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
       "bucketSource": "mitra-multitenant-prod",
