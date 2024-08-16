@@ -4,7 +4,7 @@
       "title_pt": "Pessoas",
       "title_en": "People",
       "icon": "mdiAccountGroup",
-      "indentifier": {
+      "identifier": {
         "key": "12",
         "12": "SKILL_PESSOAS"
       },
@@ -48,7 +48,7 @@
       "title_en": "Sales",
       "icon": "mdiShopping",
       "iconColor": "#5720B7",
-      "indentifier": {
+      "identifier": {
         "key": "10",
         "10": "SKILL_VENDAS"
       },
@@ -84,7 +84,7 @@
       "title_en": "Financial",
       "icon": "mdiCurrencyUsd",
       "iconColor": "#12B76A",
-      "indentifier": {
+      "identifier": {
         "key": "11",
         "11": "SKILL_FUNANCEIRO"
       },
@@ -120,7 +120,7 @@
       "title_en": "Resumo Contábil",
       "icon": "mdiContentPaste",
       "iconColor": "#F2911E",
-      "indentifier": {
+      "identifier": {
         "key": "13",
         "13": "SKILL_RESUMO_CONTABIL"
       },
