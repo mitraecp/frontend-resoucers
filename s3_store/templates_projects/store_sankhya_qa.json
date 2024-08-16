@@ -4,7 +4,10 @@
       "title_pt": "Pessoas",
       "title_en": "People",
       "icon": "mdiAccountGroup",
-      "projectType": 12,
+      "indentifier": {
+        "key": "12",
+        "12": "SKILL_PESSOAS"
+      },
       "iconColor": "#2E90FA",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
       "shortDescription_pt": "Transforme a voz dos seus colaboradores em insights valiosos com nosso template ENPS.",
@@ -45,7 +48,10 @@
       "title_en": "Sales",
       "icon": "mdiShopping",
       "iconColor": "#5720B7",
-      "projectType": 10,
+      "indentifier": {
+        "key": "10",
+        "10": "SKILL_VENDAS"
+      },
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
       "shortDescription_pt": "Teste.",
       "shortDescription_en": "Teste.",
@@ -78,7 +84,10 @@
       "title_en": "Financial",
       "icon": "mdiCurrencyUsd",
       "iconColor": "#12B76A",
-      "projectType": 11,
+      "indentifier": {
+        "key": "11",
+        "11": "SKILL_FUNANCEIRO"
+      },
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
       "shortDescription_pt": "Teste.",
       "shortDescription_en": "Teste.",
@@ -111,7 +120,10 @@
       "title_en": "Resumo Contábil",
       "icon": "mdiContentPaste",
       "iconColor": "#F2911E",
-      "projectType": 13,
+      "indentifier": {
+        "key": "13",
+        "13": "SKILL_RESUMO_CONTABIL"
+      },
       "image": " ",
       "shortDescription_pt": "",
       "longDescription_en": "",
