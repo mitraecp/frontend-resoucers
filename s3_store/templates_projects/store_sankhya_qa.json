@@ -79,7 +79,7 @@
       "title_pt": "Financeiro",
       "title_en": "Financial",
       "icon": "mdiCurrencyUsd",
-      "iconColor": "#B13F4D",
+      "iconColor": "#7BBA3B",
       "identifier": {
         "key": "11",
         "11": "SKILL_FUNANCEIRO"
@@ -113,7 +113,7 @@
       "title_pt": "Resumo Contábil",
       "title_en": "Resumo Contábil",
       "icon": "mdiContentPaste",
-      "iconColor": "#84C59A",
+      "iconColor": "#B13F4D",
       "identifier": {
         "key": "13",
         "13": "SKILL_RESUMO_CONTABIL"
