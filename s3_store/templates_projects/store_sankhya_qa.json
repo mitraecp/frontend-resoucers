@@ -8,7 +8,7 @@
         "key": "12",
         "12": "SKILL_PESSOAS"
       },
-      "iconColor": "#2E90FA",
+      "iconColor": "#7E79B8",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
       "shortDescription_pt": "Transforme a voz dos seus colaboradores em insights valiosos com nosso template ENPS.",
       "shortDescription_en": "Turn your employees' voices into valuable insights with our ENPS template.",
@@ -45,7 +45,7 @@
       "title_pt": "Vendas",
       "title_en": "Sales",
       "icon": "mdiShopping",
-      "iconColor": "#5720B7",
+      "iconColor": "#9870AF",
       "identifier": {
         "key": "10",
         "10": "SKILL_VENDAS"
@@ -79,7 +79,7 @@
       "title_pt": "Financeiro",
       "title_en": "Financial",
       "icon": "mdiCurrencyUsd",
-      "iconColor": "#12B76A",
+      "iconColor": "#B13F4D",
       "identifier": {
         "key": "11",
         "11": "SKILL_FUNANCEIRO"
@@ -113,7 +113,7 @@
       "title_pt": "Resumo Contábil",
       "title_en": "Resumo Contábil",
       "icon": "mdiContentPaste",
-      "iconColor": "#F2911E",
+      "iconColor": "#84C59A",
       "identifier": {
         "key": "13",
         "13": "SKILL_RESUMO_CONTABIL"
