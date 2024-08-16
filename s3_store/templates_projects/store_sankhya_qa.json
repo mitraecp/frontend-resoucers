@@ -68,7 +68,7 @@
       "baseUrl_sql_en": "backup/store/analiseDeVendas/analiseDeVendas.zip",
       "baseUrl_sql_withData_en": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
       "baseUrl_sql_whitData_pt": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
-      "bucketSource": "mitra-multitenant",
+      "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
           "type_pt": "Vendas",
