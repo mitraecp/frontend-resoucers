@@ -25,7 +25,7 @@
       "baseUrl_sql_en": "backup/store/copilotoPessoal/copilotoPessoal.zip",
       "baseUrl_sql_withData_en": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
       "baseUrl_sql_whitData_pt": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
-      "bucketSource": "mitra-multitenant",
+      "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
           "type_pt": "Pessoal",
@@ -104,7 +104,7 @@
       "baseUrl_sql_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
       "baseUrl_sql_withData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
       "baseUrl_sql_whitData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
-      "bucketSource": "mitra-multitenant",
+      "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
           "type_pt": "Finanças",
@@ -138,7 +138,7 @@
       "baseUrl_sql_en": "backup/store/skcontabil/skcontabil.zip",
       "baseUrl_sql_withData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
       "baseUrl_sql_whitData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
-      "bucketSource": "mitra-multitenant",
+      "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
           "type_pt": "Contábil",
