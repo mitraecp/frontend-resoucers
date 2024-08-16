@@ -3,6 +3,10 @@
     {
       "title_pt": "CRM",
       "title_en": "CRM",
+      "identifier": {
+        "key": "4",
+        "4": "CRM"
+      },
       "image": "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
       "shortDescription_pt": "Simplifique sua pré-venda com um CRM focado na otimização de resultados.",
       "shortDescription_en": "Simplify your pre-sales with a CRM focused on optimizing results.",
@@ -48,6 +52,10 @@
       "baseUrl_pt": "backup/store/gestaoDeTarefas/gestaoDeTarefas.zip",
       "baseUrl_en": "backup/store/gestaoDeTarefas/gestaoDeTarefas.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "5",
+        "5": "GESTAO_DE_PROJETOS"
+      },
       "types": [
         {
           "type_pt": "Fluxo de Processos",
@@ -70,6 +78,10 @@
       "baseUrl_pt": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
       "baseUrl_en": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "6",
+        "6": "PLANEJAMENTO_ORCAMENTARIO"
+      },
       "types": [
         {
           "type_pt": "Estratégico",
@@ -106,6 +118,10 @@
       "baseUrl_pt": "backup/store/biComercial/biComercial.zip",
       "baseUrl_en": "backup/store/biComercial/biComercial.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "7",
+        "7": "ANALISE_DE_VENDAS"
+      },
       "types": [
         {
           "type_pt": "BI",
@@ -142,6 +158,10 @@
       "baseUrl_pt": "backup/store/biFinanceiro/biFinanceiro.zip",
       "baseUrl_en": "backup/store/biFinanceiro/biFinanceiro.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "8",
+        "8": "FLUXO_DE_CAIXA"
+      },
       "types": [
         {
           "type_pt": "BI",
@@ -178,6 +198,10 @@
       "baseUrl_pt": "backup/store/avaliacaoclimacolabs/avaliacaoclimacolabs.zip",
       "baseUrl_en": "backup/store/avaliacaoclimacolabs/avaliacaoclimacolabs.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "3",
+        "3": "OUTRo"
+      },
       "types": [
         {
           "type_pt": "RH",
@@ -214,6 +238,10 @@
       "baseUrl_pt": "backup/store/enps/enps.zip",
       "baseUrl_en": "backup/store/enps/enps.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "3",
+        "3": "OUTRo"
+      },
       "types": [
         {
           "type_pt": "RH",
@@ -243,6 +271,10 @@
       "baseUrl_pt": "backup/store/contabil/contabil.zip",
       "baseUrl_en": "",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "3",
+        "3": "OUTRo"
+      },
       "types": [
         {
           "type_pt": "Financeiro",
