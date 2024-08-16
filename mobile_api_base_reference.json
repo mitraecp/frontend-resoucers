@@ -1,6 +1,6 @@
 {
   "currentBaseUrl": "https://api.mitrasheet.com:4128/",
-  "currentBaseNameUrl": "beta",
+  "currentBaseNameUrl": "release",
   "listOfBaseUrl": [
     {
       "name": "qa",
