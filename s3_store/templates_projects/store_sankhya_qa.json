@@ -25,7 +25,7 @@
       "baseUrl_sql_en": "backup/store/copilotoPessoal/copilotoPessoal.zip",
       "baseUrl_sql_withData_en": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
       "baseUrl_sql_whitData_pt": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
-      "bucketSource": "mitra-multitenant",
+      "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
           "type_pt": "Pessoal",
@@ -100,11 +100,11 @@
       "baseUrl_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
       "baseUrl_withData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
       "baseUrl_withData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
-      "baseUrl_sql_pt": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
-      "baseUrl_sql_en": "backup/store/copilotoFinanceiro/copilotoFinanceiro.zip",
+      "baseUrl_sql_pt": "backup/store/mssqlcopilotofinanceiro/mssqlcopilotofinanceiro.zip",
+      "baseUrl_sql_en": "backup/store/mssqlcopilotofinanceiro/mssqlcopilotofinanceiro.zip",
       "baseUrl_sql_withData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
       "baseUrl_sql_whitData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
-      "bucketSource": "mitra-multitenant",
+      "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
           "type_pt": "Finanças",
@@ -134,11 +134,11 @@
       "baseUrlWithData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
       "baseUrlWithData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
       "baseUrl_withData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
-      "baseUrl_sql_pt": "backup/store/skcontabil/skcontabil.zip",
-      "baseUrl_sql_en": "backup/store/skcontabil/skcontabil.zip",
+      "baseUrl_sql_pt": "backup/store/mssqlskcontabil/mssqlskcontabil.zip",
+      "baseUrl_sql_en": "backup/store/mssqlskcontabil/mssqlskcontabil.zip",
       "baseUrl_sql_withData_en": "backup/store/skcontabilComDados/skcontabilComDados.zip",
       "baseUrl_sql_whitData_pt": "backup/store/skcontabilComDados/skcontabilComDados.zip",
-      "bucketSource": "mitra-multitenant",
+      "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
           "type_pt": "Contábil",
