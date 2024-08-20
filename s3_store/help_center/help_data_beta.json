@@ -161,23 +161,6 @@
                 {
                   "title_pt": "Alterar Relacionamento",
                   "title_en": "Change relationship",
-                  "id": "4.2.1",
-                  "isVideo": false,
-                  "url": "https://www.mitralab.io/pt/blog/alterar-relacionamento",
-                  "embedId": "",
-                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
-                  "keywords": []
-                }
-              ]
-            },
-            {
-              "title_pt": "Ações",
-              "title_en": "Actions",
-              "id": "4.4",
-              "content": [
-                {
-                  "title_pt": "Alterar Relacionamento",
-                  "title_en": "Change relationship",
                   "id": "4.4.1",
                   "isVideo": false,
                   "url": "https://www.mitralab.io/pt/blog/alterar-relacionamento",
