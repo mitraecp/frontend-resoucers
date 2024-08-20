@@ -85,28 +85,199 @@
       ],
       "groups": [
         {
-          "title_pt": "Interações",
-          "title_en": "Interactions",
-          "id": "4.2",
+          "title_pt": "Views",
+          "title_en": "Views",
+          "id": "4.1",
           "content": [
             {
-              "title_pt": "Construindo um BI do zero com Mitra",
-              "title_en": "Building a BI from scratch with Mitra",
-              "content": [],
-              "id": "4.2.1"
+              "title_pt": "View SQL",
+              "title_en": "View SQL",
+              "id": "4.1.2",
+              "isVideo": false,
+              "url": "https://www.mitralab.io/pt/blog/configurando-componentes",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+              "keywords": []
+            },
+            {
+              "title_pt": "View Análise de Dados",
+              "title_en": "View SQL",
+              "id": "4.1.3",
+              "isVideo": false,
+              "url": "https://www.mitralab.io/pt/blog/configurando-componentes",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+              "keywords": []
+            },
+            {
+              "title_pt": "View Cadastros",
+              "title_en": "View SQL",
+              "id": "4.1.4",
+              "isVideo": false,
+              "url": "https://www.mitralab.io/pt/blog/configurando-componentes",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+              "keywords": []
+            },
+            {
+              "title_pt": "Relatório Formatado",
+              "title_en": "View SQL",
+              "id": "4.1.5",
+              "isVideo": false,
+              "url": "https://www.mitralab.io/pt/blog/configurando-componentes",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+              "keywords": []
             }
           ]
         },
         {
-          "title_pt": "VIEWs",
-          "title_en": "VIEWs",
-          "id": "4.3",
+          "title_pt": "Componentes",
+          "title_en": "Components",
+          "id": "4.2",
           "content": [
             {
-              "title_pt": "Construindo um BI do zero com Mitra",
-              "title_en": "Building a BI from scratch with Mitra",
-              "content": [],
-              "id": "4.3.1"
+              "title_pt": "Tabela",
+              "title_en": "Table",
+              "id": "4.2.1",
+              "isVideo": false,
+              "url": "https://www.mitralab.io/pt/blog/configurando-componentes",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "title_pt": "Interações",
+          "title_en": "Interactions",
+          "id": "4.3",
+          "groups": [
+            {
+              "title_pt": "Ações",
+              "title_en": "Actions",
+              "id": "4.4",
+              "content": [
+                {
+                  "title_pt": "Alterar Relacionamento",
+                  "title_en": "Change relationship",
+                  "id": "4.2.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/alterar-relacionamento",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                }
+              ]
+            },
+            {
+              "title_pt": "Ações",
+              "title_en": "Actions",
+              "id": "4.4",
+              "content": [
+                {
+                  "title_pt": "Alterar Relacionamento",
+                  "title_en": "Change relationship",
+                  "id": "4.4.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/alterar-relacionamento",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                },
+                {
+                  "title_pt": "Modal de Detalhes",
+                  "title_en": "Change relationship",
+                  "id": "4.4.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/modal-de-detalhes/",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                },
+                {
+                  "title_pt": "Filtrar outros componentes",
+                  "title_en": "Change relationship",
+                  "id": "4.4.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/filtrar-outros-componentes/",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                },
+                {
+                  "title_pt": "Outra interações",
+                  "title_en": "Change relationship",
+                  "id": "4.4.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/outras-interacoes/",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                },
+                {
+                  "title_pt": "Entrada de dados",
+                  "title_en": "Change relationship",
+                  "id": "4.4.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/entrada-de-dados/",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                },
+                {
+                  "title_pt": "Reatividade",
+                  "title_en": "Change relationship",
+                  "id": "4.4.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/reatividade/",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                },
+                {
+                  "title_pt": "Layout de Componentes",
+                  "title_en": "Change relationship",
+                  "id": "4.4.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/layouts-de-tela/",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                },
+                {
+                  "title_pt": "Responsividade",
+                  "title_en": "Change relationship",
+                  "id": "4.4.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/responsividade/",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                },
+                {
+                  "title_pt": "Barra de Filtros",
+                  "title_en": "Change relationship",
+                  "id": "4.4.1",
+                  "isVideo": false,
+                  "url": "https://www.mitralab.io/pt/blog/barra-de-filtro/",
+                  "embedId": "",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+                  "keywords": []
+                }
+              ]
+            }
+          ],
+          "content": [
+            {
+              "title_pt": "Configurando Componentes",
+              "title_en": "Components Setup",
+              "id": "4.3.1",
+              "isVideo": false,
+              "url": "https://www.mitralab.io/pt/blog/configurando-componentes",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+              "keywords": []
             }
           ]
         }
