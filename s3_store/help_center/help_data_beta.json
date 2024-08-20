@@ -1,0 +1,619 @@
+{
+    "data": [
+      {
+        "title_pt": "Básico",
+        "title_en": "Basic",
+        "subtitle_pt": "Conheça o básico da plataforma",
+        "subtitle_en": "Learn the basics of the platform",
+        "id": 1,
+        "content": [
+          {
+            "title_pt": "Mitra X - Introdução à plataforma",
+            "title_en": "Mitra X - Introduction to the platform",
+            "duration": "11:19",
+            "id": 1.1,
+            "url": "https://www.youtube.com/embed/4lhhst_i5Ls?si=Uo-ng7YRIxdWOxHI",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/mitra_x.png",
+            "keywords": ["intro"]
+          },
+          {
+            "title_pt": "Navegação Básica - Mitra",
+            "title_en": "Basic Navigation - Mitra",
+            "duration": "5:12",
+            "id": 1.2,
+            "url": "https://www.youtube.com/embed/U6GYNv9_48g?si=HY7-gz-mj0d_JMOn",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/navegacao_basica.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Database: Cadastros - Mitra",
+            "title_en": "Database: Dimensions - Mitra",
+            "duration": "4:36",
+            "id": 1.3,
+            "url": "https://www.youtube.com/embed/VtQ0qbCzYpQ?si=2psKEvmziF2F0ZQZ",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/database_cadastros.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Database: Cubos - Mitra",
+            "title_en": "Database: Cubes - Mitra",
+            "duration": "6:00",
+            "id": 1.4,
+            "url": "https://www.youtube.com/embed/vSG6RYSY_-A?si=uYXjFRXYaXTEnRSK",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/database_cubos.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Page Builder - Mitra",
+            "title_en": "Page Builder - Mitra",
+            "duration": "6:00",
+            "id": 1.5,
+            "url": "https://www.youtube.com/embed/7hkNO6W3GXM?si=yqjYzmjqgcX23z5Z",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/pagebuildera.png",
+            "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+          }
+        ]
+      },
+      {
+        "title_pt": "Componentes",
+        "title_en": "Components",
+        "subtitle_pt": "Conheça as ferramentas do sistema",
+        "subtitle_en": "Know the system tools",
+        "id": 2,
+        "content": [
+          {
+            "title_pt": "Tabelas - Mitra",
+            "title_en": "Tables - Mitra",
+            "duration": "19:12",
+            "id": 2.1,
+            "url": "https://www.youtube.com/embed/V3LZoeOj-_E?si=Y08Hsv95jaGi9FTs",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/tabelas.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Barras - Mitra",
+            "title_en": "Bars - Mitra",
+            "duration": "11:00",
+            "id": 2.2,
+            "url": "https://www.youtube.com/embed/8cRKj-o_tuI?si=C_Vvstr4ijz86s-y",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/barras.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Gráficos em Pizza - Mitra",
+            "title_en": "Pie Charts - Mitra",
+            "duration": "6:07",
+            "id": 2.3,
+            "url": "https://www.youtube.com/embed/oxz1d6eT0Eg?si=INF6ygrrOPRYu0eG",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/pizza.png",
+            "keywords": ["Barras - Mitra", "Bars - Mitra"]
+          },
+          {
+            "title_pt": "Label - Mitra",
+            "title_en": "Label - Mitra",
+            "duration": "8:28",
+            "id": 2.4,
+            "url": "https://www.youtube.com/embed/_RGSQrKQ8sY?si=3kinrVjUOW98qqfv",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/label_cards.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Seletor - Mitra",
+            "title_en": "Selector - Mitra",
+            "duration": "5:48",
+            "id": 2.5,
+            "url": "https://www.youtube.com/embed/1hRCUAydgdQ?si=RXILrbE7wBGtewFj",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/seletor.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Mapas - Mitra",
+            "title_en": "Maps - Mitra",
+            "duration": "6:42",
+            "id": 2.6,
+            "url": "https://www.youtube.com/embed/9yM0Ge-sRIk?si=iAq7nS190EznBbsJ",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/mapas.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Velocímetro - Mitra",
+            "title_en": "Speedometer - Mitra",
+            "duration": "4:55",
+            "id": 2.7,
+            "url": "https://www.youtube.com/embed/RTzCTqm0oEM?si=IR9fvH20_vUMgLcd",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/velocimetro.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Funil - Mitra",
+            "title_en": "Funnel - Mitra",
+            "duration": "5:00",
+            "id": 2.8,
+            "url": "https://www.youtube.com/embed/FmzPpJ9ahIc?si=o-Sxn75OYkPrb9Ki",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/funil.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Progresso - Mitra",
+            "title_en": "Progress - Mitra",
+            "duration": "3:19",
+            "id": 2.9,
+            "url": "https://www.youtube.com/embed/jZOAOX2oWcc?si=IyX6XCb3t8oYE-gE",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/progresso.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Abas e Stepper - Mitra",
+            "title_en": "Tabs and Stepper - Mitra",
+            "duration": "4:09",
+            "id": 2.1,
+            "url": "https://www.youtube.com/embed/-8-AAXPx1iQ?si=zH6Sn0tlJkSz1ZOH",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/abas_stepper.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Board - Mitra",
+            "title_en": "Board - Mitra",
+            "duration": "11:06",
+            "id": 2.11,
+            "url": "https://www.youtube.com/embed/fGR7qIfdJ28?si=myqExbUJldHBoFcS",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/board.png",
+            "keywords": ["kanban"]
+          },
+          {
+            "title_pt": "Timeline - Mitra",
+            "title_en": "Timeline - Mitra",
+            "duration": "4:50",
+            "id": 2.12,
+            "url": "https://www.youtube.com/embed/UKFRWUE9taQ?si=cYnbvHr7Dw99Y9B_",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/timeline.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Calendário - Mitra",
+            "title_en": "Calendar - Mitra",
+            "duration": "5:25",
+            "id": 2.13,
+            "url": "https://www.youtube.com/embed/6kQ8jrkNaug?si=S9IqG4E0Nv3Oqpks",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/calendario.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Organograma - Mitra",
+            "title_en": "Tree - Mitra",
+            "duration": "4:34",
+            "id": 2.14,
+            "url": "https://www.youtube.com/embed/TFTZC5LH34I?si=dv2TdEj3PMGvqlou",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/organograma.png",
+            "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+          },
+          {
+            "title_pt": "Input - Mitra",
+            "title_en": "Input - Mitra",
+            "duration": "3:12",
+            "id": 2.15,
+            "url": "https://www.youtube.com/embed/OiEZuxl0uDE?si=o23rTNGcqO7s4kmo",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/input.png",
+            "keywords": [
+              "Entrada de Dados"
+            ]
+          }
+        ]
+      },
+      {
+        "title_pt": "Funcionalidades",
+        "title_en": "Functionalities",
+        "subtitle_pt": "Explore as funcionalidades do Mitra",
+        "subtitle_en": "Explore Mitra's features",
+        "id": 3,
+        "content": [
+          {
+            "title_pt": "Entendendo a \"View\" no Mitra",
+            "title_en": "Understanding the \"View\" in Mitra",
+            "duration": "5:28",
+            "id": 3.1,
+            "url": "https://www.youtube.com/embed/6t6weOhWYGs?si=NO1j-MwlaNhV4g97",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/view.png",
+            "keywords": [
+              "Label - Mitra",
+              "Label - Mitra",
+              "Barras - Mitra",
+              "Bars - Mitra",
+              "Gráficos em Pizza - Mitra",
+              "Pie Charts - Mitra",
+              "Tabelas - Mitra",
+              "Tables - Mitra",
+              "Funil - Mitra",
+              "Funnel - Mitra",
+              "Mapas - Mitra",
+              "Maps - Mitra",
+              "Velocímetro - Mitra",
+              "Speedometer - Mitra",
+              "Progresso - Mitra",
+              "Progress - Mitra",
+              "Board - Mitra",
+              "Board - Mitra",
+              "Timeline - Mitra",
+              "Timeline - Mitra",
+              "Calendário - Mitra",
+              "Calendar - Mitra",
+              "Input - Mitra"
+            ]
+          },
+          {
+            "title_pt": "View: Dado do tipo cubo - Mitra",
+            "title_en": "View: Cube data - Mitra",
+            "duration": "12:12",
+            "id": 3.2,
+            "url": "https://www.youtube.com/embed/eba-9Y7-hLY?si=4fQYnECgYsgfdcuU",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/view_cubos.png",
+            "keywords": [
+              "Label - Mitra",
+              "Label - Mitra",
+              "Barras - Mitra",
+              "Bars - Mitra",
+              "Gráficos em Pizza - Mitra",
+              "Pie Charts - Mitra",
+              "Tabelas - Mitra",
+              "Tables - Mitra",
+              "Funil - Mitra",
+              "Funnel - Mitra",
+              "Mapas - Mitra",
+              "Maps - Mitra",
+              "Velocímetro - Mitra",
+              "Speedometer - Mitra",
+              "Progresso - Mitra",
+              "Progress - Mitra",
+              "Board - Mitra",
+              "Board - Mitra",
+              "Timeline - Mitra",
+              "Timeline - Mitra",
+              "Calendário - Mitra",
+              "Calendar - Mitra",
+              "Input - Mitra"
+            ]
+          },
+          {
+            "title_pt": "View: dado do tipo função - Mitra",
+            "title_en": "View: function type data - Mitra",
+            "duration": "9:46",
+            "id": 3.3,
+            "url": "https://www.youtube.com/embed/xWjL7uZd2QI?si=r45gV-r81-4WgIyr",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/view_funcao.png",
+            "keywords": [
+              "Label - Mitra",
+              "Label - Mitra",
+              "Barras - Mitra",
+              "Bars - Mitra",
+              "Gráficos em Pizza - Mitra",
+              "Pie Charts - Mitra",
+              "Tabelas - Mitra",
+              "Tables - Mitra",
+              "Funil - Mitra",
+              "Funnel - Mitra",
+              "Mapas - Mitra",
+              "Maps - Mitra",
+              "Velocímetro - Mitra",
+              "Speedometer - Mitra",
+              "Progresso - Mitra",
+              "Progress - Mitra",
+              "Board - Mitra",
+              "Board - Mitra",
+              "Timeline - Mitra",
+              "Timeline - Mitra",
+              "Calendário - Mitra",
+              "Calendar - Mitra",
+              "Input - Mitra"
+            ]
+          },
+          {
+            "title_pt": "View: Dado do tipo Relacionamento - Mitra",
+            "title_en": "View: Relationship type data - Mitra",
+            "duration": "6:21",
+            "id": 3.4,
+            "url": "https://www.youtube.com/embed/2_u4Dd_NYcw?si=_j-LW_mhxyzDykjR",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/view_relacionamento.png",
+            "keywords": [
+              "Label - Mitra",
+              "Label - Mitra",
+              "Barras - Mitra",
+              "Bars - Mitra",
+              "Gráficos em Pizza - Mitra",
+              "Pie Charts - Mitra",
+              "Tabelas - Mitra",
+              "Tables - Mitra",
+              "Funil - Mitra",
+              "Funnel - Mitra",
+              "Mapas - Mitra",
+              "Maps - Mitra",
+              "Velocímetro - Mitra",
+              "Speedometer - Mitra",
+              "Progresso - Mitra",
+              "Progress - Mitra",
+              "Board - Mitra",
+              "Board - Mitra",
+              "Timeline - Mitra",
+              "Timeline - Mitra",
+              "Calendário - Mitra",
+              "Calendar - Mitra",
+              "Input - Mitra"
+            ]
+          },
+          {
+            "title_pt": "View de tela - Mitra",
+            "title_en": "Screen view - Mitra",
+            "duration": "2:39",
+            "id": 3.5,
+            "url": "https://www.youtube.com/embed/iawcFCoZYYM?si=CkEg7YSe_gOe8olh",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/view_tela.png",
+            "keywords": ["Label - Mitra", "Label - Mitra"]
+          },
+          {
+            "title_pt": "Pagebuilder e Dashboards com o Mitra",
+            "title_en": "Pagebuilder and Dashboards with Mitra",
+            "duration": "6:07",
+            "id": 3.6,
+            "url": "https://www.youtube.com/embed/asgNQRz5xjM?si=2JmJWzarpjN4cAes",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/pagebuilder_dashboard.png",
+            "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+          },
+          {
+            "title_pt": "Criando \"Conexões\" no Mitra",
+            "title_en": "Creating \"Connections\" in Mitra",
+            "duration": "8:01",
+            "id": 3.7,
+            "url": "https://www.youtube.com/embed/8vYBPPMZ3G8?si=YooUbeaULsD98jEx",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/conexoes.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Database no Mitra",
+            "title_en": "Database on Mitra",
+            "duration": "3:36",
+            "id": 3.8,
+            "url": "https://www.youtube.com/embed/fGUNoUcIgiI?si=6PoaGKfTDYuU7l-T",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/database.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Formas de se conectar ao Mitra",
+            "title_en": "Ways to connect to Mitra",
+            "duration": "4:13",
+            "id": 3.9,
+            "url": "https://www.youtube.com/embed/c5o9glgOzjU?si=zDHhrWZ3_CHCsl7Z",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/forma_conectar_mitra.png",
+            "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+          },
+          {
+            "title_pt": "Extensão Sankhya - Mitra",
+            "title_en": "Sankhya Extension - Mitra",
+            "duration": "5:12",
+            "id": 3.1,
+            "url": "https://www.youtube.com/embed/BKLhdpe-jPM?si=BJ5KE1P875ZV7BIR",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/extensao_sankhya.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Conexões complexas - Mitra",
+            "title_en": "Complex connections - Mitra",
+            "duration": "14:19",
+            "id": 3.11,
+            "url": "https://www.youtube.com/embed/5Mm7MsZQPrM?si=A2ff0lWKhVaXOlfz",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/conexoes_complexas.png",
+            "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+          },
+          {
+            "title_pt": "Liberando para Usuários Finais - Mitra",
+            "title_en": "Releasing to End Users - Mitra",
+            "duration": "4:41",
+            "id": 3.12,
+            "url": "https://www.youtube.com/embed/ltklCnPp_9I?si=jlO2GQ6fK-5bSN5g",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/usuariosfinais.png",
+            "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+          },
+          {
+            "title_pt": "DRE, Balanço, DFC (Template de dimensão) - Mitra",
+            "title_en": "DRE, Balance Sheet, DFC (Dimension Template) - Mitra",
+            "duration": "8:04",
+            "id": 3.13,
+            "url": "https://www.youtube.com/embed/pcG7aA9FNgc?si=aDNt77B6e71F71jE",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/dre_balanco_dfc.png",
+            "keywords": ["Tabelas - Mitra", "Tables - Mitra"]
+          },
+          {
+            "title_pt": "Formulários - Mitra",
+            "title_en": "Forms - Mitra",
+            "duration": "10:46",
+            "id": 3.14,
+            "url": "https://www.youtube.com/embed/u0T2VaQInn4?si=h0lLEGEFmWFUbKIk",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/forms.png",
+            "keywords": [
+              "Tabelas - Mitra",
+              "Tables - Mitra",
+              "Organograma",
+              "Tree",
+              "Label - Mitra",
+              "Board - Mitra",
+              "Timeline - Mitra",
+              "Calendário - Mitra",
+              "Calendar - Mitra"
+            ]
+          },
+          {
+            "title_pt": "Transparência dinâmica, trancar botões ou entrada de dados em inputs e tabelas dinamicamente - Mitra",
+            "title_en": "Dynamic transparency, lock buttons or data entry into inputs and tables dynamically - Mitra",
+            "duration": "9:20",
+            "id": 3.15,
+            "url": "https://www.youtube.com/embed/7CkM6hKRiQ0?si=MGzjghQ41Z6bmACp",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/transparencia_dinamica.png",
+            "keywords": [
+              "View de tela - Mitra",
+              "Screen view - Mitra",
+              "Label - Mitra",
+              "Tabelas - Mitra",
+              "Tables - Mitra",
+              "Input - Mitra"
+            ]
+          },
+          {
+            "title_pt": "Ações (básico, alterar relacionamento e cálculos) - Mitra",
+            "title_en": "Actions (basic, change relationship and calculations) - Mitra",
+            "duration": "22:53",
+            "id": 3.16,
+            "url": "https://www.youtube.com/embed/3pYqAW1BTL8?si=31r_epd_ZbTB_WJx",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/acoes_basico.png",
+            "keywords": ["Label - Mitra"]
+          },
+          {
+            "title_pt": "Ações (automatizando disparo de e-mails com broadcasting agendado) - Mitra",
+            "title_en": "Actions (automating the sending of emails with scheduled broadcasting) - Mitra",
+            "duration": "8:32",
+            "id": 3.17,
+            "url": "https://www.youtube.com/embed/UGAMfmHNvqM?si=QValY79JSLjF5EoK",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/acoes_automatizando.png",
+            "keywords": ["Label - Mitra"]
+          },
+          {
+            "title_pt": "Interações de navegação: Popup (modal), detalhe, formulário, ir pra tela - Mitra",
+            "title_en": "Navigation interactions: Popup (modal), detail, form, go to screen - Mitra",
+            "duration": "5:09",
+            "id": 3.18,
+            "url": "https://www.youtube.com/embed/dIazwUv1tds?si=QE0wS7b2FqJRxUK_",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/interacoes_navegacao.png",
+            "keywords": [
+              "View de tela - Mitra",
+              "Screen view - Mitra",
+              "Label - Mitra",
+              "Tabelas - Mitra",
+              "Tables - Mitra",
+              "Organograma - Mitra",
+              "Tree - Mitra",
+              "Board - Mitra",
+              "Timeline - Mitra",
+              "Calendário - Mitra",
+              "Calendar - Mitra"
+            ]
+          },
+          {
+            "title_pt": "Modal de Detalhes - Mitra",
+            "title_en": "Details Mod - Mitra",
+            "duration": "7:56",
+            "id": 3.18,
+            "url": "https://www.youtube.com/embed/sAYi463WTpc?si=ZpbR3x_HYxAaSDND",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/modal_detalhes.png",
+            "keywords": [
+              "Label - Mitra",
+              "Tabelas - Mitra",
+              "Tables - Mitra",
+              "Organograma - Mitra",
+              "Tree - Mitra",
+              "Board - Mitra",
+              "Timeline - Mitra",
+              "Calendário - Mitra",
+              "Calendar - Mitra"
+            ]
+          },
+  
+          {
+            "title_pt": "Self Service BI - Mitra",
+            "title_en": "Self Service BI - Mitra",
+            "duration": "6:27",
+            "id": 3.19,
+            "url": "https://www.youtube.com/embed/35B2SCEAPW8?si=DPkKhUVL8LHVpn3B",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/self_service_bi.png",
+            "keywords": ["View de tela - Mitra", "Screen view - Mitra"]
+          }
+        ]
+      },
+      {
+        "title_pt": "Criando com o Mitra",
+        "title_en": "Creating with Mitra",
+        "subtitle_pt": "Conheça a plataforma praticando em conjunto",
+        "subtitle_en": "Know the platform by practicing together",
+        "id": 4,
+        "content": [
+          {
+            "title_pt": "Construindo um BI do zero com Mitra",
+            "title_en": "Building a BI from scratch with Mitra",
+            "duration": "7:16",
+            "id": 4.1,
+            "url": "https://www.youtube.com/embed/Fyul1sT5AK8?si=qd-BbKZSOmdE-ILz",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Fluxos de Processos do zero com o Mitra - Básico",
+            "title_en": "Process Flows from scratch with Mitra - Basic",
+            "duration": "6:13",
+            "id": 4.2,
+            "url": "https://www.youtube.com/embed/OKDFwmVVAXU?si=WtsBSFbgVB-cgoME",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxos_processo_basico.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 1)",
+            "title_en": "Process Flows from scratch with Mitra - Advanced (Part 1)",
+            "duration": "7:33",
+            "id": 4.3,
+            "url": "https://www.youtube.com/embed/IX7eMReMJM4?si=MT5GciTz_5u529DT",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_process_av_1.png",
+            "keywords": []
+          },
+          {
+            "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 2)",
+            "title_en": "Process Flows from scratch with Mitra - Advanced (Part 2)",
+            "duration": "15:41",
+            "id": 4.4,
+            "url": "https://www.youtube.com/embed/5HLXY3QjX9U?si=LlHgdmRaPmKb3pd9",
+            "embedId": "",
+            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_processos_av_2.png",
+            "keywords": []
+          }
+        ]
+      }
+    ]
+  }
+  
