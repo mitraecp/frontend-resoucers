@@ -89,56 +89,6 @@
           ]
         }
       ]
-    },
-
-    {
-      "title_pt": "Interações / Lógica",
-      "title_en": "Interactions / Logic",
-      "subtitle_pt": "Crie interações para seus componentes",
-      "subtitle_en": "Create interactions for your components",
-      "id": 6,
-      "content": [
-        {
-          "title_pt": "Construindo um BI do zero com Mitra",
-          "title_en": "Building a BI from scratch with Mitra",
-          "duration": "7:16",
-          "id": 6.1,
-          "url": "https://www.youtube.com/embed/Fyul1sT5AK8?si=qd-BbKZSOmdE-ILz",
-          "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
-          "keywords": []
-        },
-        {
-          "title_pt": "Fluxos de Processos do zero com o Mitra - Básico",
-          "title_en": "Process Flows from scratch with Mitra - Basic",
-          "duration": "6:13",
-          "id": 6.2,
-          "url": "https://www.youtube.com/embed/OKDFwmVVAXU?si=WtsBSFbgVB-cgoME",
-          "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxos_processo_basico.png",
-          "keywords": []
-        },
-        {
-          "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 1)",
-          "title_en": "Process Flows from scratch with Mitra - Advanced (Part 1)",
-          "duration": "7:33",
-          "id": 6.3,
-          "url": "https://www.youtube.com/embed/IX7eMReMJM4?si=MT5GciTz_5u529DT",
-          "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_process_av_1.png",
-          "keywords": []
-        },
-        {
-          "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 2)",
-          "title_en": "Process Flows from scratch with Mitra - Advanced (Part 2)",
-          "duration": "15:41",
-          "id": 6.4,
-          "url": "https://www.youtube.com/embed/5HLXY3QjX9U?si=LlHgdmRaPmKb3pd9",
-          "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_processos_av_2.png",
-          "keywords": []
-        }
-      ]
     }
   ]
 }
