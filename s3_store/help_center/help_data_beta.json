@@ -63,17 +63,28 @@
       "id": 4,
       "content": [
         {
+          "title_pt": "Construindo um BI do zero com Mitra",
+          "title_en": "Building a BI from scratch with Mitra",
+          "id": "4.1",
+          "url": "https://www.youtube.com/embed/Fyul1sT5AK8?si=qd-BbKZSOmdE-ILz",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+          "keywords": []
+        }
+      ],
+      "groups": [
+        {
           "title_pt": "VIEWs",
           "title_en": "VIEWs",
           "subtitle_pt": "Conecte seus dados aos seus componentes",
           "subtitle_en": "Connect your data to your components",
-          "id": 4.1,
-          "groups": [
+          "id": "4.2",
+          "content": [
             {
               "title_pt": "Construindo um BI do zero com Mitra",
               "title_en": "Building a BI from scratch with Mitra",
               "content": [],
-              "id": "4.1.1"
+              "id": "4.2.1"
             }
           ]
         }
