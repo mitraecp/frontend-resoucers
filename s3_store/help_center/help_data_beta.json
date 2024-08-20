@@ -78,36 +78,6 @@
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/view_sql.png",
               "keywords": []
-            },
-            {
-              "title_pt": "View Análise de Dados",
-              "title_en": "View SQL",
-              "id": "4.1.3",
-              "isVideo": false,
-              "url": "",
-              "embedId": "",
-              "thumbnail": "",
-              "keywords": []
-            },
-            {
-              "title_pt": "View Cadastros",
-              "title_en": "View SQL",
-              "id": "4.1.4",
-              "isVideo": false,
-              "url": "",
-              "embedId": "",
-              "thumbnail": "",
-              "keywords": []
-            },
-            {
-              "title_pt": "Relatório Formatado",
-              "title_en": "View SQL",
-              "id": "4.1.5",
-              "isVideo": false,
-              "url": "",
-              "embedId": "",
-              "thumbnail": "",
-              "keywords": []
             }
           ]
         },
