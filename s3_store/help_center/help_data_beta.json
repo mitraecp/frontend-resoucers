@@ -63,10 +63,21 @@
       "id": 4,
       "content": [
         {
-          "title_pt": "Construindo um BI do zero com Mitra",
-          "title_en": "Building a BI from scratch with Mitra",
+          "title_pt": "Page Builder",
+          "title_en": "Page Builder",
           "id": "4.1",
-          "url": "https://www.youtube.com/embed/Fyul1sT5AK8?si=qd-BbKZSOmdE-ILz",
+          "isVideo": false,
+          "url": "https://www.mitralab.io/pt/blog/page-builder",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Configurando Componentes",
+          "title_en": "Components Setup",
+          "id": "4.12",
+          "isVideo": false,
+          "url": "https://www.mitralab.io/pt/blog/configurando-componentes",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
           "keywords": []
@@ -74,10 +85,8 @@
       ],
       "groups": [
         {
-          "title_pt": "VIEWs",
-          "title_en": "VIEWs",
-          "subtitle_pt": "Conecte seus dados aos seus componentes",
-          "subtitle_en": "Connect your data to your components",
+          "title_pt": "Interações",
+          "title_en": "Interactions",
           "id": "4.2",
           "content": [
             {
@@ -85,6 +94,19 @@
               "title_en": "Building a BI from scratch with Mitra",
               "content": [],
               "id": "4.2.1"
+            }
+          ]
+        },
+        {
+          "title_pt": "VIEWs",
+          "title_en": "VIEWs",
+          "id": "4.3",
+          "content": [
+            {
+              "title_pt": "Construindo um BI do zero com Mitra",
+              "title_en": "Building a BI from scratch with Mitra",
+              "content": [],
+              "id": "4.3.1"
             }
           ]
         }
