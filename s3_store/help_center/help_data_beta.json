@@ -1,168 +1,167 @@
 {
-    "data": [
-      {
-        "title_pt": "Criando com Mitra",
-        "title_en": "Creating with Mitra",
-        "subtitle_pt": "Aprenda Mitra na prática",
-        "subtitle_en": "Learn Mitra in practice",
-        "id": 1,
-        "content": [
-          {
-            "title_pt": "Criando a primeira aplicação com SQL e NO CODE (parte 1)",
-            "title_en": "Create your first application with SQL and NO CODE (part 1)",
-            "duration": "11:19",
-            "id": 1.1,
-            "url": "https://www.youtube.com/embed/4lhhst_i5Ls?si=Uo-ng7YRIxdWOxHI",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/mitra_x.png",
-            "keywords": ["intro"]
-          },
-          {
-            "title_pt": "Criando a primeira aplicação com SQL e NO CODE(parte 2)",
-            "title_en": "Create your first application with SQL and NO CODE (part 2)",
-            "duration": "5:12",
-            "id": 1.2,
-            "url": "https://www.youtube.com/embed/U6GYNv9_48g?si=HY7-gz-mj0d_JMOn",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/navegacao_basica.png",
-            "keywords": []
-          },
-          {
-            "title_pt": "Criando a primeira aplicação com SQL e NO CODE (Parte 3)",
-            "title_en": "Create your first application with SQL and NO CODE (Part 3)",
-            "duration": "4:36",
-            "id": 1.3,
-            "url": "https://www.youtube.com/embed/VtQ0qbCzYpQ?si=2psKEvmziF2F0ZQZ",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/database_cadastros.png",
-            "keywords": []
-          }
-        ]
-      },
-      {
-        "title_pt": "Overview",
-        "title_en": "Overview",
-        "subtitle_pt": "Conheça o básico da plataforma",
-        "subtitle_en": "Get to know the platform basics",
-        "id": 2,
-        "content": [
-          
-        ]
-      },
-      {
-        "title_pt": "Database",
-        "title_en": "Database",
-        "subtitle_pt": "Crie e manipule seus dados",
-        "subtitle_en": "Create and manage your data",
-        "id": 3,
-        "content": []
-      },
-      {
-        "title_pt": "Interface / Componentes",
-        "title_en": "Interface / Components",
-        "subtitle_pt": "Construa suas interfaces",
-        "subtitle_en": "Build your interfaces",
-        "id": 4,
-        "content": []
-      },
-      {
-        "title_pt": "VIEWs",
-        "title_en": "VIEWs",
-        "subtitle_pt": "Conecte seus dados aos seus componentes",
-        "subtitle_en": "Connect your data to your components",
-        "id": 5,
-        "content": [
-          {
-            "title_pt": "Construindo um BI do zero com Mitra",
-            "title_en": "Building a BI from scratch with Mitra",
-            "duration": "7:16",
-            "id": 5.1,
-            "url": "https://www.youtube.com/embed/Fyul1sT5AK8?si=qd-BbKZSOmdE-ILz",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
-            "keywords": []
-          },
-          {
-            "title_pt": "Fluxos de Processos do zero com o Mitra - Básico",
-            "title_en": "Process Flows from scratch with Mitra - Basic",
-            "duration": "6:13",
-            "id": 5.2,
-            "url": "https://www.youtube.com/embed/OKDFwmVVAXU?si=WtsBSFbgVB-cgoME",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxos_processo_basico.png",
-            "keywords": []
-          },
-          {
-            "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 1)",
-            "title_en": "Process Flows from scratch with Mitra - Advanced (Part 1)",
-            "duration": "7:33",
-            "id": 5.3,
-            "url": "https://www.youtube.com/embed/IX7eMReMJM4?si=MT5GciTz_5u529DT",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_process_av_1.png",
-            "keywords": []
-          },
-          {
-            "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 2)",
-            "title_en": "Process Flows from scratch with Mitra - Advanced (Part 2)",
-            "duration": "15:41",
-            "id": 5.4,
-            "url": "https://www.youtube.com/embed/5HLXY3QjX9U?si=LlHgdmRaPmKb3pd9",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_processos_av_2.png",
-            "keywords": []
-          }
-        ]
-      },
-      {
-        "title_pt": "Interações / Lógica",
-        "title_en": "Interactions / Logic",
-        "subtitle_pt": "Crie interações para seus componentes",
-        "subtitle_en": "Create interactions for your components",
-        "id": 6,
-        "content": [
-          {
-            "title_pt": "Construindo um BI do zero com Mitra",
-            "title_en": "Building a BI from scratch with Mitra",
-            "duration": "7:16",
-            "id": 6.1,
-            "url": "https://www.youtube.com/embed/Fyul1sT5AK8?si=qd-BbKZSOmdE-ILz",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
-            "keywords": []
-          },
-          {
-            "title_pt": "Fluxos de Processos do zero com o Mitra - Básico",
-            "title_en": "Process Flows from scratch with Mitra - Basic",
-            "duration": "6:13",
-            "id": 6.2,
-            "url": "https://www.youtube.com/embed/OKDFwmVVAXU?si=WtsBSFbgVB-cgoME",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxos_processo_basico.png",
-            "keywords": []
-          },
-          {
-            "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 1)",
-            "title_en": "Process Flows from scratch with Mitra - Advanced (Part 1)",
-            "duration": "7:33",
-            "id": 6.3,
-            "url": "https://www.youtube.com/embed/IX7eMReMJM4?si=MT5GciTz_5u529DT",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_process_av_1.png",
-            "keywords": []
-          },
-          {
-            "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 2)",
-            "title_en": "Process Flows from scratch with Mitra - Advanced (Part 2)",
-            "duration": "15:41",
-            "id": 6.4,
-            "url": "https://www.youtube.com/embed/5HLXY3QjX9U?si=LlHgdmRaPmKb3pd9",
-            "embedId": "",
-            "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_processos_av_2.png",
-            "keywords": []
-          }
-        ]
-      }
-    ]
-  }
-  
+  "data": [
+    {
+      "title_pt": "Criando com Mitra",
+      "title_en": "Creating with Mitra",
+      "subtitle_pt": "Aprenda Mitra na prática",
+      "subtitle_en": "Learn Mitra in practice",
+      "id": 1,
+      "content": [
+        {
+          "title_pt": "Criando a primeira aplicação com SQL e NO CODE (parte 1)",
+          "title_en": "Create your first application with SQL and NO CODE (part 1)",
+          "duration": "11:19",
+          "id": 1.1,
+          "url": "https://www.youtube.com/embed/4lhhst_i5Ls?si=Uo-ng7YRIxdWOxHI",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/mitra_x.png",
+          "keywords": ["intro"]
+        },
+        {
+          "title_pt": "Criando a primeira aplicação com SQL e NO CODE(parte 2)",
+          "title_en": "Create your first application with SQL and NO CODE (part 2)",
+          "duration": "5:12",
+          "id": 1.2,
+          "url": "https://www.youtube.com/embed/U6GYNv9_48g?si=HY7-gz-mj0d_JMOn",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/navegacao_basica.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Criando a primeira aplicação com SQL e NO CODE (Parte 3)",
+          "title_en": "Create your first application with SQL and NO CODE (Part 3)",
+          "duration": "4:36",
+          "id": 1.3,
+          "url": "https://www.youtube.com/embed/VtQ0qbCzYpQ?si=2psKEvmziF2F0ZQZ",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/database_cadastros.png",
+          "keywords": []
+        }
+      ]
+    },
+    {
+      "title_pt": "Overview",
+      "title_en": "Overview",
+      "subtitle_pt": "Conheça o básico da plataforma",
+      "subtitle_en": "Get to know the platform basics",
+      "id": 2,
+      "content": []
+    },
+    {
+      "title_pt": "Database",
+      "title_en": "Database",
+      "subtitle_pt": "Crie e manipule seus dados",
+      "subtitle_en": "Create and manage your data",
+      "id": 3,
+      "content": []
+    },
+    {
+      "title_pt": "Interface / Componentes",
+      "title_en": "Interface / Components",
+      "subtitle_pt": "Construa suas interfaces",
+      "subtitle_en": "Build your interfaces",
+      "id": 4,
+      "content": [
+        {
+          "title_pt": "VIEWs",
+          "title_en": "VIEWs",
+          "subtitle_pt": "Conecte seus dados aos seus componentes",
+          "subtitle_en": "Connect your data to your components",
+          "id": 5,
+          "content": [
+            {
+              "title_pt": "Construindo um BI do zero com Mitra",
+              "title_en": "Building a BI from scratch with Mitra",
+              "duration": "7:16",
+              "id": 5.1,
+              "url": "https://www.youtube.com/embed/Fyul1sT5AK8?si=qd-BbKZSOmdE-ILz",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+              "keywords": []
+            },
+            {
+              "title_pt": "Fluxos de Processos do zero com o Mitra - Básico",
+              "title_en": "Process Flows from scratch with Mitra - Basic",
+              "duration": "6:13",
+              "id": 5.2,
+              "url": "https://www.youtube.com/embed/OKDFwmVVAXU?si=WtsBSFbgVB-cgoME",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxos_processo_basico.png",
+              "keywords": []
+            },
+            {
+              "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 1)",
+              "title_en": "Process Flows from scratch with Mitra - Advanced (Part 1)",
+              "duration": "7:33",
+              "id": 5.3,
+              "url": "https://www.youtube.com/embed/IX7eMReMJM4?si=MT5GciTz_5u529DT",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_process_av_1.png",
+              "keywords": []
+            },
+            {
+              "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 2)",
+              "title_en": "Process Flows from scratch with Mitra - Advanced (Part 2)",
+              "duration": "15:41",
+              "id": 5.4,
+              "url": "https://www.youtube.com/embed/5HLXY3QjX9U?si=LlHgdmRaPmKb3pd9",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_processos_av_2.png",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "title_pt": "Interações / Lógica",
+      "title_en": "Interactions / Logic",
+      "subtitle_pt": "Crie interações para seus componentes",
+      "subtitle_en": "Create interactions for your components",
+      "id": 6,
+      "content": [
+        {
+          "title_pt": "Construindo um BI do zero com Mitra",
+          "title_en": "Building a BI from scratch with Mitra",
+          "duration": "7:16",
+          "id": 6.1,
+          "url": "https://www.youtube.com/embed/Fyul1sT5AK8?si=qd-BbKZSOmdE-ILz",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/bi_do_zero.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Fluxos de Processos do zero com o Mitra - Básico",
+          "title_en": "Process Flows from scratch with Mitra - Basic",
+          "duration": "6:13",
+          "id": 6.2,
+          "url": "https://www.youtube.com/embed/OKDFwmVVAXU?si=WtsBSFbgVB-cgoME",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxos_processo_basico.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 1)",
+          "title_en": "Process Flows from scratch with Mitra - Advanced (Part 1)",
+          "duration": "7:33",
+          "id": 6.3,
+          "url": "https://www.youtube.com/embed/IX7eMReMJM4?si=MT5GciTz_5u529DT",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_process_av_1.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Fluxos de Processos do zero com o Mitra - Avançado (Parte 2)",
+          "title_en": "Process Flows from scratch with Mitra - Advanced (Part 2)",
+          "duration": "15:41",
+          "id": 6.4,
+          "url": "https://www.youtube.com/embed/5HLXY3QjX9U?si=LlHgdmRaPmKb3pd9",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/gc/s3_store/help_center/images/fluxo_processos_av_2.png",
+          "keywords": []
+        }
+      ]
+    }
+  ]
+}
