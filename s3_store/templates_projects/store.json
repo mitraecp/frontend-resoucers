@@ -294,8 +294,8 @@
       ]
     },
     {
-      "title_pt": "Financeiro",
-      "title_en": "Financeiro",
+      "title_pt": "BI Financeiro",
+      "title_en": "BI Financeiro",
       "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-fin.png",
       "shortDescription_pt": "Painéis que oferecem análise de fluxo de caixa, comparação entre períodos e monitoramento de inadimplência para uma gestão financeira eficaz.",
       "shortDescription_en": "Panels that offer cash flow analysis, comparison between periods and default monitoring for effective financial management.",
