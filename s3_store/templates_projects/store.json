@@ -200,7 +200,7 @@
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
         "key": "3",
-        "3": "OUTRo"
+        "3": "OUTRO"
       },
       "types": [
         {
@@ -240,7 +240,7 @@
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
         "key": "3",
-        "3": "OUTRo"
+        "3": "OUTRO"
       },
       "types": [
         {
@@ -273,7 +273,7 @@
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
         "key": "3",
-        "3": "OUTRo"
+        "3": "OUTRO"
       },
       "types": [
         {
@@ -308,7 +308,7 @@
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
         "key": "3",
-        "3": "OUTRo"
+        "3": "OUTRO"
       },
       "types": [
         {
@@ -342,7 +342,7 @@
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
         "key": "3",
-        "3": "OUTRo"
+        "3": "OUTRO"
       },
       "types": [
         {
@@ -358,8 +358,7 @@
           "icon": "mdiLightbulbOnOutline",
           "color": "#B954BB",
           "secundaryColor": "#FFF3FF"
-        },
-        {}
+        }
       ]
     },
     {
