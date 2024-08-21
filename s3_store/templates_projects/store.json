@@ -361,6 +361,88 @@
         },
         {}
       ]
+    },
+    {
+      "title_pt": "CRM",
+      "title_en": "CRM",
+      "identifier": {
+        "key": "4",
+        "4": "CRM"
+      },
+      "isBeta": true,
+      "image": "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
+      "shortDescription_pt": "Simplifique sua pré-venda com um CRM focado na otimização de resultados.",
+      "shortDescription_en": "Simplify your pre-sales with a CRM focused on optimizing results.",
+      "longDescription_pt": "O pacote CRM foi especialmente desenvolvido para empresas que desejam aprimorar seu processo de pré-venda. \n \n Este template permite uma visão clara do funil de vendas, acompanhando os potenciais clientes desde o primeiro contato até o fechamento do negócio. \n\n Integre todos os seus canais de comunicação, gerencie leads, e maximize suas oportunidades com um sistema robusto e fácil de usar. \n\n Comece a transformar seus prospects em clientes fiéis com a eficiência que apenas o nosso CRM pode oferecer.",
+      "longDescription_en": "The CRM package was specially developed for companies that want to improve their pre-sales process. \n \n This template allows a clear view of the sales funnel, monitoring potential customers from the first contact to closing the deal. \n\n Integrate all your communication channels, manage leads, and maximize your opportunities with a robust and easy-to-use system. \n\n Start turning your prospects into loyal customers with the efficiency that only our CRM can offer.",
+      "videoUrl": "https://www.youtube.com/embed/Qkp5AMzwFGU?si=5RoaSXR4CWnuWPIv",
+      "baseUrl_pt": "backup/store/crm/crm.zip",
+      "baseUrl_en": "backup/store/crm/crm.zip",
+      "bucketSource": "mitra-multitenant-prod",
+      "types": [
+        {
+          "type_pt": "Comercial",
+          "type_en": "Commercial",
+          "icon": "mdiDomain",
+          "color": "#09A9BD",
+          "secundaryColor": "#EBFCFF"
+        },
+        {
+          "type_pt": "CRM",
+          "type_en": "CRM",
+          "icon": "mdiContentPaste",
+          "color": "#F2911E",
+          "secundaryColor": "#FFF9ED"
+        },
+        {
+          "type_pt": "Fluxo de Processos",
+          "type_en": "Process flow",
+          "icon": "mdiSitemap",
+          "color": "#FFB72D",
+          "secundaryColor": "#FFFDEA"
+        }
+      ]
+    },
+    {
+      "title_pt": "Planejamento Orçamentário",
+      "title_en": "Budget planning",
+      "image": "https://mitra-multitenant.s3.amazonaws.com/store/plan-orc.png",
+      "shortDescription_pt": "Diga adeus às planilhas e automatize seu orçamento mantendo toda a flexibilidade necessária.",
+      "shortDescription_en": "Say goodbye to spreadsheets and automate your budget while maintaining all the flexibility you need.",
+      "longDescription_pt": "Este template é a solução definitiva para quem busca modernizar o processo de planejamento orçamentário sem perder a essência da personalização. \n Sabemos o quão trabalhoso pode ser gerenciar orçamentos em planilhas, e o quão frustrante é ficar preso à rigidez de softwares convencionais. Por isso, criamos uma plataforma que combina o melhor dos dois mundos: elimina a necessidade de trabalho manual, mas ainda oferece toda a flexibilidade que você precisa para adaptar-se a qualquer cenário. \n Com nosso template, o planejamento orçamentário se torna um processo fluido, preciso e altamente eficaz, permitindo que você se concentre no que realmente importa: tomar decisões estratégicas baseadas em dados confiáveis.",
+      "longDescription_en": "This template is the definitive solution for those looking to modernize the budget planning process without losing the essence of customization. \n We know how hard it can be to manage budgets in spreadsheets, and how frustrating it is to be stuck in the rigidity of conventional software. That's why we created a platform that combines the best of both worlds: it eliminates the need for manual work, but still offers all the flexibility you need to adapt to any scenario. \n With our template, budget planning becomes a fluid, accurate and highly effective process, allowing you to focus on what really matters: making strategic decisions based on reliable data.",
+      "videoUrl": "https://www.youtube.com/embed/MSPr6itIaL4?si=Y32N2ex6NXUx7Vl4",
+      "baseUrl_pt": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
+      "baseUrl_en": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
+      "bucketSource": "mitra-multitenant-prod",
+      "isBeta": true,
+      "identifier": {
+        "key": "6",
+        "6": "PLANEJAMENTO_ORCAMENTARIO"
+      },
+      "types": [
+        {
+          "type_pt": "Estratégico",
+          "type_en": "Strategic",
+          "icon": "mdiLightbulbOnOutline",
+          "color": "#B954BB",
+          "secundaryColor": "#FFF3FF"
+        },
+        {
+          "type_pt": "Fluxo de Processos",
+          "type_en": "Process flow",
+          "icon": "mdiSitemap",
+          "color": "#FFB72D",
+          "secundaryColor": "#FFFDEA"
+        },
+        {
+          "type_pt": "Financeiro",
+          "type_en": "Financial",
+          "icon": "mdiFinance",
+          "color": "#12B76A",
+          "secundaryColor": "#ECFDF3"
+        }
+      ]
     }
   ]
 }
