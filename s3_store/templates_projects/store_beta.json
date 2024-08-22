@@ -222,7 +222,7 @@
         "3": "OUTRO"
       },
       "types": [
-          {
+        {
           "type_pt": "Estratégico",
           "type_en": "Strategic",
           "icon": "mdiLightbulbOnOutline",
