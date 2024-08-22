@@ -42,7 +42,7 @@
       "longDescription_pt": "Transforme a gestão contábil da sua empresa com nosso template completo e fácil de usar. Ele foi projetado para proporcionar uma visão clara e detalhada de sua contabilidade. Nosso template inclui DRE (Demonstração do Resultado do Exercício),  para analisar detalhadamente as receitas, despesas e lucros, facilitando a compreensão do desempenho financeiro da empresa. Balançete, que oferece uma visão consolidada das contas e saldos, auxiliando no controle e na análise contábil. índices contábeis, que calculam automaticamente os principais índices financeiros, como liquidez, rentabilidade e endividamento, para ajudar na tomada de decisões estratégicas. E por fim DMPL (Demonstração das Mutações do Patrimônio Líquido), para acompanhar as variações no patrimônio líquido ao longo do tempo, fornecendo uma visão completa da saúde financeira da empresa. Ideal para contadores, gerentes financeiros e empresários, nosso template é a ferramenta perfeita para otimizar sua contabilidade e garantir uma gestão eficiente e precisa. Alavanque sua gestão contábil agora mesmo!",
       "longDescription_en": "Transform your company's accounting management with our comprehensive and easy-to-use template. It is designed to provide a clear and detailed view of your accounting. Our template includes an Income Statement (DRE) to analyze revenues, expenses, and profits in detail, making it easier to understand the company's financial performance. A trial balance, which offers a consolidated view of accounts and balances, assisting in control and accounting analysis. Financial ratios, which automatically calculate key financial ratios such as liquidity, profitability, and debt, to help in strategic decision-making. And finally, the Statement of Changes in Equity (DMPL), to track changes in equity over time, providing a complete view of the company's financial health. Ideal for accountants, financial managers, and business owners, our template is the perfect tool to optimize your accounting and ensure efficient and accurate management. Boost your accounting management today! ",
       "videoUrl": "",
-      "baseUrl_pt": "ackup/store/betacontabil/betacontabil.zip",
+      "baseUrl_pt": "backup/store/betacontabil/betacontabil.zip",
       "baseUrl_en": "",
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
@@ -169,6 +169,39 @@
           "icon": "mdiDomain",
           "color": "#FF186B",
           "secundaryColor": "#FFC2D8"
+        }
+      ]
+    },
+    {
+      "title_pt": "BI Gestão de Pessoas",
+      "title_en": "BI Gestão de Pessoas",
+      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/bi%20gestao%20people.png.png",
+      "shortDescription_pt": "Acompanhe turnover, folha de pagamento e custo por setor com análises profundas.",
+      "shortDescription_en": "",
+      "longDescription_pt": "Nosso pacote pessoal oferece uma visão detalhada e automatizada da gestão de recursos humanos. Ele analisa o turnover com dados sobre entradas, saídas e total de colaboradores, além de monitorar o histórico da folha de pagamento. Com ele, você também pode realizar análises aprofundadas, como faturamento per capita, e comparar o custo percentual de cada setor com o faturamento da empresa, destacando as evoluções ao longo do tempo.",
+      "longDescription_en": "",
+      "videoUrl": "",
+      "baseUrl_pt": "backup/store/betapessoas/betapessoas.zip",
+      "baseUrl_en": "",
+      "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "3",
+        "3": "OUTRO"
+      },
+      "types": [
+        {
+          "type_pt": "RH",
+          "type_en": "RH",
+          "icon": "mdiHeadCogOutline",
+          "color": "#085b91",
+          "secundaryColor": "#f1f9fe"
+        },
+        {
+          "type_pt": "Cultura",
+          "type_en": "Culture",
+          "icon": "mdiAccountGroupOutline",
+          "color": "#751d5c",
+          "secundaryColor": "#fcf4fa"
         }
       ]
     }
