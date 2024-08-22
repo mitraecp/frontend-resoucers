@@ -453,7 +453,7 @@
       "longDescription_en": "",
       "videoUrl": "",
       "isBeta": true,
-      "baseUrl_pt": "bbackup/store/betavendas/betavendas.zip",
+      "baseUrl_pt": "backup/store/betavendas/betavendas.zip",
       "baseUrl_en": "",
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
