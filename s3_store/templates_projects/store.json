@@ -442,6 +442,33 @@
           "secundaryColor": "#ECFDF3"
         }
       ]
+    },
+    {
+      "title_pt": "Análise de Vendas",
+      "title_en": "Análise de Vendas",
+      "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-com.png",
+      "shortDescription_pt": "Analise suas vendas, metas, margem, ticket médio e volume de forma prática e automática.",
+      "shortDescription_en": ".",
+      "longDescription_pt": "Nosso pacote de BI para vendas oferece uma análise abrangente e automatizada dos seus resultados comerciais. Ele compara as vendas realizadas com as metas estabelecidas, calcula a margem de contribuição, e fornece dados precisos sobre o ticket médio e o volume de vendas. Com essa ferramenta, você terá insights claros para ajustar estratégias e maximizar os resultados.",
+      "longDescription_en": "",
+      "videoUrl": "",
+      "isBeta": true,
+      "baseUrl_pt": "bbackup/store/betavendas/betavendas.zip",
+      "baseUrl_en": "",
+      "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "3",
+        "3": "OUTRo"
+      },
+      "types": [
+        {
+          "type_pt": "Vendas",
+          "type_en": "Vendas",
+          "icon": "mdiDomain",
+          "color": "#FF186B",
+          "secundaryColor": "#FFC2D8"
+        }
+      ]
     }
   ]
 }
