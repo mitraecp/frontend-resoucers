@@ -85,8 +85,8 @@
       "longDescription_pt": "O pacote CRM foi especialmente desenvolvido para empresas que desejam aprimorar seu processo de pré-venda. \n \n Este template permite uma visão clara do funil de vendas, acompanhando os potenciais clientes desde o primeiro contato até o fechamento do negócio. \n\n Integre todos os seus canais de comunicação, gerencie leads, e maximize suas oportunidades com um sistema robusto e fácil de usar. \n\n Comece a transformar seus prospects em clientes fiéis com a eficiência que apenas o nosso CRM pode oferecer.",
       "longDescription_en": "The CRM package was specially developed for companies that want to improve their pre-sales process. \n \n This template allows a clear view of the sales funnel, monitoring potential customers from the first contact to closing the deal. \n\n Integrate all your communication channels, manage leads, and maximize your opportunities with a robust and easy-to-use system. \n\n Start turning your prospects into loyal customers with the efficiency that only our CRM can offer.",
       "videoUrl": "https://www.youtube.com/embed/Qkp5AMzwFGU?si=5RoaSXR4CWnuWPIv",
-      "baseUrl_pt": "backup/store/crm/crm.zip",
-      "baseUrl_en": "backup/store/crm/crm.zip",
+      "baseUrl_pt": "backup/store/betaCrm/betaCrm.zip",
+      "baseUrl_en": "backup/store/betaCrm/betaCrm.zip",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
@@ -123,8 +123,8 @@
       "longDescription_pt": "Este template é a solução definitiva para quem busca modernizar o processo de planejamento orçamentário sem perder a essência da personalização. \n Sabemos o quão trabalhoso pode ser gerenciar orçamentos em planilhas, e o quão frustrante é ficar preso à rigidez de softwares convencionais. Por isso, criamos uma plataforma que combina o melhor dos dois mundos: elimina a necessidade de trabalho manual, mas ainda oferece toda a flexibilidade que você precisa para adaptar-se a qualquer cenário. \n Com nosso template, o planejamento orçamentário se torna um processo fluido, preciso e altamente eficaz, permitindo que você se concentre no que realmente importa: tomar decisões estratégicas baseadas em dados confiáveis.",
       "longDescription_en": "This template is the definitive solution for those looking to modernize the budget planning process without losing the essence of customization. \n We know how hard it can be to manage budgets in spreadsheets, and how frustrating it is to be stuck in the rigidity of conventional software. That's why we created a platform that combines the best of both worlds: it eliminates the need for manual work, but still offers all the flexibility you need to adapt to any scenario. \n With our template, budget planning becomes a fluid, accurate and highly effective process, allowing you to focus on what really matters: making strategic decisions based on reliable data.",
       "videoUrl": "https://www.youtube.com/embed/MSPr6itIaL4?si=Y32N2ex6NXUx7Vl4",
-      "baseUrl_pt": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
-      "baseUrl_en": "backup/store/planejamentoOrcamentario/planejamentoOrcamentario.zip",
+      "baseUrl_pt": "backup/store/betaplanorcamentario/betaplanorcamentario.zip",
+      "baseUrl_en": "backup/store/betaplanorcamentario/betaplanorcamentario.zip",
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
         "key": "6",
@@ -185,7 +185,7 @@
     {
       "title_pt": "BI Gestão de Pessoas",
       "title_en": "BI Gestão de Pessoas",
-      "project_icon": "mdiAccountGroup ",
+      "project_icon": "mdiAccountGroup",
       "project_color": "#7839EE",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/bi%20gestao%20people.png.png",
       "shortDescription_pt": "Acompanhe turnover, folha de pagamento e custo por setor com análises profundas.",
