@@ -46,8 +46,18 @@
       "subtitle_pt": "Conheça o básico da plataforma",
       "subtitle_en": "Get to know the platform basics",
       "id": 2,
-      "url": "https://www.mitralab.io/pt/docs/",
-      "content": []
+      "content": [
+        {
+          "title_pt": "Overview",
+          "title_en": "Overview",
+          "id": "4.1",
+          "isVideo": false,
+          "url": "https://www.mitralab.io/pt/docs/",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/page_builder.png",
+          "keywords": []
+        }
+      ]
     },
     {
       "title_pt": "Database",
