@@ -244,6 +244,34 @@
           "secundaryColor": "#FFF3FF"
         }
       ]
+    },
+    {
+      "title_pt": "Gestão de Projetos",
+      "title_en": "Project management",
+      "project_icon": "mdiContentPaste",
+      "project_color": "#FFB72D",
+      "image": "https://mitra-multitenant.s3.amazonaws.com/store/gestao-projetos.png",
+      "shortDescription_pt": "Orquestre seus projetos com precisão e eficácia, tudo em uma única plataforma.",
+      "shortDescription_en": "Orchestrate your projects with precision and effectiveness, all on a single platform.",
+      "longDescription_pt": "O pacote Gestão de Projetos foi concebido para organizar todas as etapas do projeto, desde o planejamento até a conclusão. \n Este template oferece recursos para atribuição de tarefas, monitoramento de progresso, e comunicação eficaz entre as equipes. Seja para pequenas equipes ou grandes corporações, nossa solução adapta-se às suas necessidades, garantindo que prazos sejam cumpridos e que cada detalhe seja meticulosamente gerenciado. \n Mergulhe em dashboards intuitivos, integre feedback em tempo real e eleve seus projetos a um novo patamar com nosso template.",
+      "longDescription_en": "The Project Management package was designed to organize all stages of the project, from planning to completion. \n This template offers features for assigning tasks, monitoring progress, and effective communication between teams. Whether for small teams or large corporations, our solution adapts to your needs, ensuring that deadlines are met and that every detail is meticulously managed. \nImmerse yourself in intuitive dashboards, integrate real-time feedback and take your projects to a new level with our template.",
+      "videoUrl": "https://www.youtube.com/embed/cwhXCcadF5k?si=b0Lo14BVcAtgs8vq",
+      "baseUrl_pt": "backup/store/betaGestaoProjetos/betaGestaoProjetos.zip",
+      "baseUrl_en": "backup/store/betaGestaoProjetos/betaGestaoProjetos.zip",
+      "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "5",
+        "5": "GESTAO_DE_PROJETOS"
+      },
+      "types": [
+        {
+          "type_pt": "Fluxo de Processos",
+          "type_en": "Process flow",
+          "icon": "mdiSitemap",
+          "color": "#FFB72D",
+          "secundaryColor": "#FFFDEA"
+        }
+      ]
     }
   ]
 }
