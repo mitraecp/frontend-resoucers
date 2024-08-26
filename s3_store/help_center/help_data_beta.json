@@ -54,7 +54,7 @@
           "isVideo": false,
           "url": "https://www.mitralab.io/pt/docs/",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/page_builder.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pagebuilder_help.png",
           "keywords": []
         }
       ]
@@ -73,7 +73,7 @@
           "isVideo": false,
           "url": "https://www.mitralab.io/pt/blog/database/",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/database_01.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/database_help.png",
           "keywords": []
         }
       ]
@@ -92,7 +92,7 @@
           "isVideo": false,
           "url": "https://www.mitralab.io/pt/blog/page-builder",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/page_builder.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pagebuilder_help.png",
           "keywords": []
         },
         {
@@ -102,7 +102,7 @@
           "isVideo": false,
           "url": "https://www.mitralab.io/pt/blog/configurando-componentes",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/configurando_componentes.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/configurando_componentes_help.png",
           "keywords": []
         }
       ],
@@ -119,7 +119,7 @@
               "isVideo": false,
               "url": "https://www.mitralab.io/pt/blog/view-sql",
               "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/view_sql.png",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/view_sql_help.png",
               "keywords": []
             }
           ]
@@ -147,7 +147,7 @@
                   "isVideo": false,
                   "url": "https://www.mitralab.io/pt/blog/alterar-relacionamento",
                   "embedId": "",
-                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/acao_alterar_relacionamento.png",
+                  "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/alterar_relacionamento_help.png",
                   "keywords": []
                 }
               ]
@@ -161,7 +161,7 @@
               "isVideo": false,
               "url": "https://www.mitralab.io/pt/blog/modal-de-detalhes/",
               "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/modal_de_detalhes.png",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/modal_detalhes_help.png",
               "keywords": []
             },
             {
@@ -171,7 +171,7 @@
               "isVideo": false,
               "url": "https://www.mitralab.io/pt/blog/filtrar-outros-componentes/",
               "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/filtrar_outros_componentes.png",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/filtrar_componentes_help.png",
               "keywords": []
             },
             {
@@ -181,7 +181,7 @@
               "isVideo": false,
               "url": "https://www.mitralab.io/pt/blog/outras-interacoes/",
               "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/outras_interacoes.png",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/outras_interacoes_help.png",
               "keywords": []
             },
             {
@@ -191,7 +191,7 @@
               "isVideo": false,
               "url": "https://www.mitralab.io/pt/blog/entrada-de-dados/",
               "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/entrada_de_dados.png",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/entrada_de_dados_help.png",
               "keywords": []
             },
             {
@@ -211,7 +211,7 @@
               "isVideo": false,
               "url": "https://www.mitralab.io/pt/blog/layouts-de-tela/",
               "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/layouts_componentes.png",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/layouts_componentes_help.png",
               "keywords": []
             },
             {
@@ -231,7 +231,7 @@
               "isVideo": false,
               "url": "https://www.mitralab.io/pt/blog/barra-de-filtro/",
               "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/barra_de_filtros.png",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/barra_filtros_help.png",
               "keywords": []
             }
           ]
