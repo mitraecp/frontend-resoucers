@@ -57,7 +57,7 @@
           "isVideo": false,
           "url": "https://www.mitralab.io/pt/docs/",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pagebuilder_help.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/overview_help.png",
           "keywords": []
         }
       ]
@@ -204,7 +204,7 @@
               "isVideo": false,
               "url": "https://www.mitralab.io/pt/blog/reatividade/",
               "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/reatividade.png",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/reatividade_help.png",
               "keywords": []
             },
             {
