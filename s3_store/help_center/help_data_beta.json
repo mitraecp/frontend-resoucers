@@ -137,11 +137,12 @@
           "title_pt": "Interações",
           "title_en": "Interactions",
           "id": "4.3",
-          "groups": [
+          "content": [
             {
               "title_pt": "Ações",
               "title_en": "Actions",
               "id": "4.4",
+              "asGroup": true,
               "content": [
                 {
                   "title_pt": "Alterar Relacionamento",
@@ -154,9 +155,7 @@
                   "keywords": []
                 }
               ]
-            }
-          ],
-          "content": [
+            },
             {
               "title_pt": "Modal de Detalhes",
               "title_en": "Change relationship",
