@@ -13,7 +13,7 @@
           "duration": "11:43",
           "id": 1.1,
           "isVideo": true,
-          "url": "https://www.youtube.com/watch?v=M6-uEu9r9ec",
+          "url": "https://www.youtube.com/embed/M6-uEu9r9ec",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_com_mitra_01_help.png",
           "keywords": []
@@ -24,7 +24,7 @@
           "duration": "21:29",
           "id": 1.2,
           "isVideo": true,
-          "url": "https://www.youtube.com/watch?v=xoq_1itUDAE",
+          "url": "https://www.youtube.com/embed/xoq_1itUDAE",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_com_mitra_02_help.png",
           "keywords": []
@@ -35,7 +35,7 @@
           "duration": "10:47",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://www.youtube.com/watch?v=7vtIkMBywPI",
+          "url": "https://www.youtube.com/embed/7vtIkMBywPI",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_com_mitra_03_help.png",
           "keywords": []
