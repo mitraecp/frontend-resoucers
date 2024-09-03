@@ -46,7 +46,7 @@
           "duration": "10:43",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://youtu.be/LwwwpFxYryE?si=CZwStL4Gn_6bX6o1",
+          "url": "https://youtu.be/embed/LwwwpFxYryE?si=CZwStL4Gn_6bX6o1",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/cadastro_de_bandas_01_help.png",
           "keywords": []
@@ -57,7 +57,7 @@
           "duration": "21:53",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://youtu.be/dBW-a5iyz-s?si=khR_FuAAbgBHtf-4",
+          "url": "https://youtu.be/embed/dBW-a5iyz-s?si=khR_FuAAbgBHtf-4",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/cadastro_de_bandas_02_help.png",
           "keywords": []
@@ -68,7 +68,7 @@
           "duration": "10:57",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://youtu.be/eY1x8YN2DgA?si=F4ecFLXIeDMJG_qV",
+          "url": "https://youtu.be/embed/eY1x8YN2DgA?si=F4ecFLXIeDMJG_qV",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/cadastro_de_bandas_03_help.png",
           "keywords": []
@@ -79,7 +79,7 @@
           "duration": "16:52",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://youtu.be/81eKNy089nw?si=NbJRrBLDFyG6D7c-",
+          "url": "https://youtu.be/embed/81eKNy089nw?si=NbJRrBLDFyG6D7c-",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_crm_01_help.png",
           "keywords": []
@@ -90,7 +90,7 @@
           "duration": "12:13",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://youtu.be/tHzvGCfUrQg?si=n7pu9r4d2LnyIiw8",
+          "url": "https://youtu.be/embed/tHzvGCfUrQg?si=n7pu9r4d2LnyIiw8",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_crm_02_help.png",
           "keywords": []
@@ -101,7 +101,7 @@
           "duration": "07:25",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://youtu.be/QXt1Uyv2lik?si=q5Xj6H2_zQsMhCKS",
+          "url": "https://youtu.be/embed/QXt1Uyv2lik?si=q5Xj6H2_zQsMhCKS",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_crm_03_help.png",
           "keywords": []
@@ -112,7 +112,7 @@
           "duration": "21:14",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://youtu.be/h9lPrPNNRrQ?si=5cchj0pa-FSnoSvx",
+          "url": "https://youtu.be/embed/h9lPrPNNRrQ?si=5cchj0pa-FSnoSvx",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_satisfacao_01_help.png",
           "keywords": []
@@ -123,7 +123,7 @@
           "duration": "12:45",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://youtu.be/7wZoN2KLuyY?si=jYeRtQsFpn35TBcd",
+          "url": "https://youtu.be/embed/7wZoN2KLuyY?si=jYeRtQsFpn35TBcd",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_satisfacao_02_help.png",
           "keywords": []
@@ -134,7 +134,7 @@
           "duration": "17:44",
           "id": 1.3,
           "isVideo": true,
-          "url": "https://youtu.be/YQFg4rXn68g?si=-aXZE-zAM02RcFwd",
+          "url": "https://youtu.be/embed/YQFg4rXn68g?si=-aXZE-zAM02RcFwd",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_satisfacao_03_help.png",
           "keywords": []
