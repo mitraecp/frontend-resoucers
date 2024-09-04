@@ -92,7 +92,7 @@
           "isVideo": true,
           "url": "https://youtu.be/embed/7wZoN2KLuyY?si=jYeRtQsFpn35TBcd",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_satisfacao_02_help.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_de_satisfacao_02_help.png",
           "keywords": []
         },
         {
@@ -103,7 +103,7 @@
           "isVideo": true,
           "url": "https://youtu.be/embed/YQFg4rXn68g?si=-aXZE-zAM02RcFwd",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_satisfacao_03_help.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_de_satisfacao_03_help.png",
           "keywords": []
         }
       ]
