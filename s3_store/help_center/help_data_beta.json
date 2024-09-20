@@ -121,7 +121,7 @@
           "title_en": "Overview",
           "id": "4.1",
           "isVideo": false,
-          "url": "https://www.mitralab.io/pt/docs/",
+          "url": "https://mitralab.io/docs",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/overview_help.png",
           "keywords": []
@@ -140,7 +140,7 @@
           "title_en": "Database",
           "id": "3.1",
           "isVideo": false,
-          "url": "https://www.mitralab.io/pt/blog/database/",
+          "url": "https://mitralab.io/docs/database",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/database_help.png",
           "keywords": []
@@ -150,7 +150,7 @@
           "title_en": "Conexões",
           "id": "3.1",
           "isVideo": false,
-          "url": "https://www.mitralab.io/pt/blog/conexoes/",
+          "url": "https://mitralab.io/docs/conexoes",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/conexoes_help.png",
           "keywords": []
@@ -169,7 +169,7 @@
           "title_en": "Page Builder",
           "id": "4.1",
           "isVideo": false,
-          "url": "https://www.mitralab.io/pt/blog/page-builder",
+          "url": "https://mitralab.io/docs/page-builder",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pagebuilder_help.png",
           "keywords": []
@@ -179,7 +179,7 @@
           "title_en": "Components Setup",
           "id": "4.12",
           "isVideo": false,
-          "url": "https://www.mitralab.io/pt/blog/configurando-componentes",
+          "url": "https://mitralab.io/docs/configurando-componentes",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/configurando_componentes_help.png",
           "keywords": []
@@ -192,11 +192,41 @@
           "id": "4.1",
           "content": [
             {
-              "title_pt": "View SQL",
-              "title_en": "View SQL",
+              "title_pt": "View de SQL",
+              "title_en": "View de SQL",
               "id": "4.1.2",
               "isVideo": false,
-              "url": "https://www.mitralab.io/pt/blog/view-sql",
+              "url": "https://mitralab.io/docs/view-de-sql",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/view_sql_help.png",
+              "keywords": []
+            },
+            {
+              "title_pt": "VIEW de Análise de Dados",
+              "title_en": "VIEW de Análise de Dados",
+              "id": "4.1.3",
+              "isVideo": false,
+              "url": "https://mitralab.io/docs/view-de-analise-de-dados",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/view_sql_help.png",
+              "keywords": []
+            },
+            {
+              "title_pt": "VIEW de Cadastro",
+              "title_en": "VIEW de Cadastro",
+              "id": "4.1.4",
+              "isVideo": false,
+              "url": "https://mitralab.io/docs/view-de-cadastro",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/view_sql_help.png",
+              "keywords": []
+            },
+            {
+              "title_pt": "Relatório Formatado",
+              "title_en": "Relatório Formatado",
+              "id": "4.1.5",
+              "isVideo": false,
+              "url": "https://mitralab.io/docs/relatorio-formatado",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/view_sql_help.png",
               "keywords": []
@@ -225,7 +255,7 @@
                   "title_en": "Change relationship",
                   "id": "4.4.1",
                   "isVideo": false,
-                  "url": "https://www.mitralab.io/pt/blog/alterar-relacionamento",
+                  "url": "https://mitralab.io/docs/alterar-relacionamento",
                   "embedId": "",
                   "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/alterar_relacionamento_help.png",
                   "keywords": []
@@ -237,7 +267,7 @@
               "title_en": "Change relationship",
               "id": "4.4.1",
               "isVideo": false,
-              "url": "https://www.mitralab.io/pt/blog/modal-de-detalhes/",
+              "url": "https://mitralab.io/docs/modal-de-detalhes",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/modal_detalhes_help.png",
               "keywords": []
@@ -247,7 +277,7 @@
               "title_en": "Change relationship",
               "id": "4.4.1",
               "isVideo": false,
-              "url": "https://www.mitralab.io/pt/blog/filtrar-outros-componentes/",
+              "url": "https://mitralab.io/docs/filtrar-outros-componentes/",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/filtrar_componentes_help.png",
               "keywords": []
@@ -257,7 +287,7 @@
               "title_en": "Change relationship",
               "id": "4.4.1",
               "isVideo": false,
-              "url": "https://www.mitralab.io/pt/blog/outras-interacoes/",
+              "url": "https://mitralab.io/docs/outras-interacoes/",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/outras_interaçoes_help.png",
               "keywords": []
@@ -267,7 +297,7 @@
               "title_en": "Change relationship",
               "id": "4.4.1",
               "isVideo": false,
-              "url": "https://www.mitralab.io/pt/blog/entrada-de-dados/",
+              "url": "https://mitralab.io/docs/entrada-de-dados/",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/entrada_de_dados_help.png",
               "keywords": []
@@ -277,7 +307,7 @@
               "title_en": "Change relationship",
               "id": "4.4.1",
               "isVideo": false,
-              "url": "https://www.mitralab.io/pt/blog/reatividade/",
+              "url": "https://mitralab.io/docs/reatividade/",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/reatividade_help.png",
               "keywords": []
@@ -287,7 +317,7 @@
               "title_en": "Change relationship",
               "id": "4.4.1",
               "isVideo": false,
-              "url": "https://www.mitralab.io/pt/blog/layouts-de-tela/",
+              "url": "https://mitralab.io/docs/layouts-de-tela/",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/layouts_componentes_help.png",
               "keywords": []
@@ -297,7 +327,7 @@
               "title_en": "Change relationship",
               "id": "4.4.1",
               "isVideo": false,
-              "url": "https://www.mitralab.io/pt/blog/responsividade/",
+              "url": "https://mitralab.io/docs/responsividade/",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/responsividade_help.png",
               "keywords": []
@@ -307,7 +337,7 @@
               "title_en": "Change relationship",
               "id": "4.4.1",
               "isVideo": false,
-              "url": "https://www.mitralab.io/pt/blog/barra-de-filtro/",
+              "url": "https://mitralab.io/docs/barra-de-filtro/",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/barra_filtros_help.png",
               "keywords": []
