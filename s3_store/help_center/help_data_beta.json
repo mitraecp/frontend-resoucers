@@ -386,45 +386,45 @@
               "keywords": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "title_pt": "Lógica",
+      "title_en": "Logic",
+      "id": "5",
+      "subtitle_pt": "Potencialize seus apps com lógica avançada",
+      "subtitle_en": "Potencialize seus apps com lógica avançada",
+      "content": [
+        {
+          "title_pt": "Ações",
+          "title_en": "Ações",
+          "id": "5.1",
+          "isVideo": false,
+          "url": "https://mitralab.io/docs/acoes",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/acoes_help.png",
+          "keywords": []
         },
         {
-          "title_pt": "Lógica",
-          "title_en": "Logic",
-          "id": "4.4",
-          "subtitle_pt": "Potencialize seus apps com lógica avançada",
-          "subtitle_en": "Potencialize seus apps com lógica avançada",
-          "content": [
-            {
-              "title_pt": "Ações",
-              "title_en": "Ações",
-              "id": "4.4.1",
-              "isVideo": false,
-              "url": "https://mitralab.io/docs/acoes",
-              "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/acoes_help.png",
-              "keywords": []
-            },
-            {
-              "title_pt": "Criar/Alterar Registro",
-              "title_en": "Criar/Alterar Registro",
-              "id": "4.4.2",
-              "isVideo": false,
-              "url": "https://mitralab.io/docs/criar-alterar-registro",
-              "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criar_alterar_registro_help.png",
-              "keywords": []
-            },
-            {
-              "title_pt": "Enviar E-mails",
-              "title_en": "Enviar E-mails",
-              "id": "4.4.3",
-              "isVideo": false,
-              "url": "https://mitralab.io/docs/enviar-e-mails",
-              "embedId": "",
-              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/enviar_emails_help.png",
-              "keywords": []
-            }
-          ]
+          "title_pt": "Criar/Alterar Registro",
+          "title_en": "Criar/Alterar Registro",
+          "id": "5.2",
+          "isVideo": false,
+          "url": "https://mitralab.io/docs/criar-alterar-registro",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criar_alterar_registro_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Enviar E-mails",
+          "title_en": "Enviar E-mails",
+          "id": "5.3",
+          "isVideo": false,
+          "url": "https://mitralab.io/docs/enviar-e-mails",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/enviar_emails_help.png",
+          "keywords": []
         }
       ]
     }
