@@ -426,6 +426,35 @@
           "keywords": []
         }
       ]
+    },
+    {
+      "title_pt": "Integração",
+      "title_en": "Integration",
+      "id": 6,
+      "subtitle_pt": "Integre o Mitra com qualquer coisa",
+      "subtitle_en": "Integre o Mitra com qualquer coisa",
+      "content": [
+        {
+          "title_pt": "API",
+          "title_en": "API",
+          "id": "6.1",
+          "isVideo": false,
+          "url": "https://mitralab.io/docs/api",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/api_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Chamar API",
+          "title_en": "API Call",
+          "id": "6.2",
+          "isVideo": false,
+          "url": "https://mitralab.io/docs/chamar-api",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/chamar_api_help.png",
+          "keywords": []
+        }
+      ]
     }
   ]
 }
