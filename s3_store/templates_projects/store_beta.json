@@ -218,34 +218,6 @@
       ]
     },
     {
-      "title_pt": "Planejamento Estratégico",
-      "title_en": "Strategic Planning",
-      "project_icon": "mdiFinance",
-      "project_color": "#1570EF",
-      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/PlanEstrategico.png.png",
-      "shortDescription_pt": "Alinhar objetivos, definir metas e traçar caminhos para o sucesso organizacional.",
-      "shortDescription_en": ".",
-      "longDescription_pt": "Transforme sua estratégia com nosso microSaaS de planejamento estratégico 2H5W. Simplifique a criação e execução de planos estratégicos com uma abordagem estruturada que responde a 'Como', 'Quando', 'Por que', 'O quê', 'Onde', 'Quem' e 'Quanto'. Ideal para equipes que buscam agilidade e precisão, nossa ferramenta permite que você alinhe objetivos, defina metas e visualize o progresso em tempo real. Com recursos de colaboração e automação integrados, garanta que sua organização esteja sempre um passo à frente, pronta para enfrentar desafios e aproveitar oportunidades.",
-      "longDescription_en": "",
-      "videoUrl": "",
-      "baseUrl_pt": "backup/store/betaPlanejamentoEstrategico/betaPlanejamentoEstrategico.zip",
-      "baseUrl_en": "",
-      "bucketSource": "mitra-multitenant-prod",
-      "identifier": {
-        "key": "3",
-        "3": "OUTRO"
-      },
-      "types": [
-        {
-          "type_pt": "Estratégico",
-          "type_en": "Strategic",
-          "icon": "mdiLightbulbOnOutline",
-          "color": "#B954BB",
-          "secundaryColor": "#FFF3FF"
-        }
-      ]
-    },
-    {
       "title_pt": "Gestão de Projetos",
       "title_en": "Project management",
       "project_icon": "mdiContentPaste",
