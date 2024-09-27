@@ -1,5 +1,5 @@
 {
-  "currentBaseUrl": "https://api.mitrasheet.com:4128/",
+  "currentBaseUrl": "https://api.mitrasheet.com:4129/",
   "currentBaseNameUrl": "release",
   "listOfBaseUrl": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "release",
-      "link": "https://api.mitrasheet.com:4128/"
+      "link": "https://api.mitrasheet.com:4129/"
     }
   ],
   "listAiFrontLink": [
@@ -22,6 +22,10 @@
     },
     {
       "name": "master",
+      "link": "https://app.mitralab.io"
+    },
+    {
+      "name": "release",
       "link": "https://app.mitralab.io"
     }
   ],
@@ -33,6 +37,10 @@
     {
       "name": "master",
       "link": "https://merge.mitralab.io/"
+    },
+    {
+      "name": "release",
+      "link": "https://mergerelease.mitralab.io/"
     }
   ]
 }
