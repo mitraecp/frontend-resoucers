@@ -369,7 +369,7 @@
               "title_en": "Change relationship",
               "id": "4.3.6",
               "isVideo": false,
-              "url": "https://mitralab.io/docs/layouts-de-tela/",
+              "url": "https://mitralab.io/docs/layout-de-componentes",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/layouts_componentes_help.png",
               "keywords": []
@@ -472,6 +472,25 @@
           "url": "https://mitralab.io/docs/chamar-api",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/chamar_api_help.png",
+          "keywords": []
+        }
+      ]
+    },
+    {
+      "title_pt": "Lançamento",
+      "title_en": "Lauch",
+      "id": 7,
+      "subtitle_pt": "Integre o Mitra com qualquer coisa",
+      "subtitle_en": "Integre o Mitra com qualquer coisa",
+      "content": [
+        {
+          "title_pt": "Lançamento",
+          "title_en": "Lançamento",
+          "id": "7.1",
+          "isVideo": false,
+          "url": "https://mitralab.io/docs/lancamentos",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/lancamento_help.png",
           "keywords": []
         }
       ]
