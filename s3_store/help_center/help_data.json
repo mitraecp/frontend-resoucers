@@ -305,9 +305,19 @@
           "id": "4.3",
           "content": [
             {
+              "title_pt": "Formulário",
+              "title_en": "Change relationship",
+              "id": "4.3.9",
+              "isVideo": false,
+              "url": "https://mitralab.io/docs/formulario",
+              "embedId": "",
+              "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/formulario_help.png",
+              "keywords": []
+            },
+            {
               "title_pt": "Modal de Detalhes",
               "title_en": "Change relationship",
-              "id": "4.4.1",
+              "id": "4.3.1",
               "isVideo": false,
               "url": "https://mitralab.io/docs/modal-de-detalhes",
               "embedId": "",
@@ -317,7 +327,7 @@
             {
               "title_pt": "Filtrar outros componentes",
               "title_en": "Change relationship",
-              "id": "4.4.1",
+              "id": "4.3.2",
               "isVideo": false,
               "url": "https://mitralab.io/docs/filtrar-outros-componentes/",
               "embedId": "",
@@ -327,7 +337,7 @@
             {
               "title_pt": "Outra interações",
               "title_en": "Change relationship",
-              "id": "4.4.1",
+              "id": "4.3.3",
               "isVideo": false,
               "url": "https://mitralab.io/docs/outras-interacoes/",
               "embedId": "",
@@ -337,7 +347,7 @@
             {
               "title_pt": "Entrada de dados",
               "title_en": "Change relationship",
-              "id": "4.4.1",
+              "id": "4.3.4",
               "isVideo": false,
               "url": "https://mitralab.io/docs/entrada-de-dados/",
               "embedId": "",
@@ -347,7 +357,7 @@
             {
               "title_pt": "Reatividade",
               "title_en": "Change relationship",
-              "id": "4.4.1",
+              "id": "4.3.5",
               "isVideo": false,
               "url": "https://mitralab.io/docs/reatividade/",
               "embedId": "",
@@ -357,7 +367,7 @@
             {
               "title_pt": "Layout de Componentes",
               "title_en": "Change relationship",
-              "id": "4.4.1",
+              "id": "4.3.6",
               "isVideo": false,
               "url": "https://mitralab.io/docs/layouts-de-tela/",
               "embedId": "",
@@ -367,7 +377,7 @@
             {
               "title_pt": "Responsividade",
               "title_en": "Change relationship",
-              "id": "4.4.1",
+              "id": "4.3.7",
               "isVideo": false,
               "url": "https://mitralab.io/docs/responsividade/",
               "embedId": "",
@@ -377,9 +387,9 @@
             {
               "title_pt": "Barra de Filtros",
               "title_en": "Change relationship",
-              "id": "4.4.1",
+              "id": "4.3.8",
               "isVideo": false,
-              "url": "https://mitralab.io/docs/barra-de-filtro/",
+              "url": "https://mitralab.io/docs/barra-de-filtros/",
               "embedId": "",
               "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/barra_filtros_help.png",
               "keywords": []
@@ -403,6 +413,16 @@
           "url": "https://mitralab.io/docs/acoes",
           "embedId": "",
           "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/acoes_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Ação de database",
+          "title_en": "Change relationship",
+          "id": "5.2",
+          "isVideo": false,
+          "url": "https://mitralab.io/docs/acao-de-database",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/acoes_de_database.png",
           "keywords": []
         },
         {
