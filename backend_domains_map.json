@@ -12,6 +12,7 @@
     "https://analytics2homologacao.mitrasheet.com",
     "https://api.mitrasheet.com:4088",
     "https://analytics2demo.mitrasheet.com:4331",
-    "https://castronaves.mitrasheet.com:8080"
+    "https://castronaves.mitrasheet.com:8080",
+    "https://api0.mitraecp.com:12360"
   ]
 }
