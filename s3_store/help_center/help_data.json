@@ -455,6 +455,16 @@
       "subtitle_en": "Integre o Mitra com qualquer coisa",
       "content": [
         {
+          "title_pt": "Integrações",
+          "title_en": "Integrations",
+          "id": "6.3",
+          "isVideo": false,
+          "url": "https://mitralab.io/docs/integracoes",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/integracoes_help.png",
+          "keywords": []
+        },
+        {
           "title_pt": "API",
           "title_en": "API",
           "id": "6.1",
