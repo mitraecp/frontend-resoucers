@@ -4,7 +4,7 @@
   "listOfBaseUrl": [
     {
       "name": "qa",
-      "link": "https://api0.mitraecp.com:2406/"
+      "link": "https://api.mitrasheet.com:4129/"
     },
     {
       "name": "master",
@@ -18,7 +18,7 @@
   "listAiFrontLink": [
     {
       "name": "qa",
-      "link": "https://skwqa.mitralab.io"
+      "link": "https://skw-homolog.mitralab.io/"
     },
     {
       "name": "master",
@@ -28,7 +28,7 @@
   "listIframe1Dot0FrontLink": [
     {
       "name": "qa",
-      "link": "https://mergeqa.mitralab.io/"
+      "link": "https://mergeskw.mitralab.io/"
     },
     {
       "name": "master",
