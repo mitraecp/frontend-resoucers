@@ -117,7 +117,7 @@
     },
     {
       "title_pt": "Resumo Contábil",
-      "title_en": "Resumo Contábil",
+      "title_en": "Accounting Summary",
       "icon": "mdiContentPaste",
       "iconColor": "#B13F4D",
       "identifier": {
@@ -149,7 +149,7 @@
         },
         {
           "type_pt": "Estratégico",
-          "type_en": "Estratégico",
+          "type_en": "Strategic",
           "icon": "mdiLightbulbOnOutline",
           "color": "#B046BD",
           "secundaryColor": "#BD9DB7"

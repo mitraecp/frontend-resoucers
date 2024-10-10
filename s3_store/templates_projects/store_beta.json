@@ -2,7 +2,7 @@
   "templateList": [
     {
       "title_pt": "BI Financeiro",
-      "title_en": "BI Financeiro",
+      "title_en": "Financial BI",
       "project_icon": "mdiChartBar",
       "project_color": "#12B76A",
       "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-fin.png",
@@ -21,14 +21,14 @@
       "types": [
         {
           "type_pt": "Financeiro",
-          "type_en": "Financeiro",
+          "type_en": "Financial",
           "icon": "mdiFinance",
           "color": "#12B76A",
           "secundaryColor": "#ECFDF3"
         },
         {
           "type_pt": "Estratégico",
-          "type_en": "Estratégico",
+          "type_en": "Strategic",
           "icon": "mdiLightbulbOnOutline",
           "color": "#B954BB",
           "secundaryColor": "#FFF3FF"
@@ -37,7 +37,7 @@
     },
     {
       "title_pt": "Resumo Contábil",
-      "title_en": "Resumo Contábil",
+      "title_en": "Accounting Summary",
       "project_icon": "mdiReceiptTextOutline",
       "project_color": "#DD5226",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/contabilfachada.png",
@@ -56,14 +56,14 @@
       "types": [
         {
           "type_pt": "Financeiro",
-          "type_en": "Financeiro",
+          "type_en": "Financial",
           "icon": "mdiFinance",
           "color": "#12B76A",
           "secundaryColor": "#ECFDF3"
         },
         {
           "type_pt": "Estratégico",
-          "type_en": "Estratégico",
+          "type_en": "Strategic",
           "icon": "mdiLightbulbOnOutline",
           "color": "#B954BB",
           "secundaryColor": "#FFF3FF"
@@ -156,7 +156,7 @@
     },
     {
       "title_pt": "Análise de Vendas",
-      "title_en": "Análise de Vendas",
+      "title_en": "Sales Analysis",
       "project_icon": "mdiPointOfSale",
       "project_color": "#B954BB",
       "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-com.png",
@@ -175,7 +175,7 @@
       "types": [
         {
           "type_pt": "Vendas",
-          "type_en": "Vendas",
+          "type_en": "Sales",
           "icon": "mdiDomain",
           "color": "#FF186B",
           "secundaryColor": "#FFC2D8"
@@ -184,17 +184,17 @@
     },
     {
       "title_pt": "BI Gestão de Pessoas",
-      "title_en": "BI Gestão de Pessoas",
+      "title_en": "BI People Management",
       "project_icon": "mdiAccountGroup",
       "project_color": "#7839EE",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/bi%20gestao%20people.png.png",
       "shortDescription_pt": "Acompanhe turnover, folha de pagamento e custo por setor com análises profundas.",
-      "shortDescription_en": "",
+      "shortDescription_en": "Track turnover, payroll and cost by sector with in-depth analysis.",
       "longDescription_pt": "Nosso pacote pessoal oferece uma visão detalhada e automatizada da gestão de recursos humanos. Ele analisa o turnover com dados sobre entradas, saídas e total de colaboradores, além de monitorar o histórico da folha de pagamento. Com ele, você também pode realizar análises aprofundadas, como faturamento per capita, e comparar o custo percentual de cada setor com o faturamento da empresa, destacando as evoluções ao longo do tempo.",
-      "longDescription_en": "",
+      "longDescription_en": "Our personal package offers a detailed and automated view of human resources management. It analyzes turnover with data on incoming, outgoing and total employees, in addition to monitoring payroll history. With it, you can also perform in-depth analyses, such as per capita revenue, and compare the percentage cost of each sector with the company's revenue, highlighting changes over time.",
       "videoUrl": "",
       "baseUrl_pt": "backup/store/betapessoas/betapessoas.zip",
-      "baseUrl_en": "",
+      "baseUrl_en": "backup/store/betapessoas/betapessoas.zip",
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
         "key": "3",
