@@ -4,7 +4,7 @@
   "listOfBaseUrl": [
     {
       "name": "qa",
-      "link": "https://api.mitrasheet.com:4129/"
+      "link": "https://api0.mitraecp.com:2406/"
     },
     {
       "name": "master",
@@ -18,7 +18,7 @@
   "listAiFrontLink": [
     {
       "name": "qa",
-      "link": "https://skw-homolog.mitralab.io/"
+      "link": "https://skwqa.mitralab.io"
     },
     {
       "name": "master",
