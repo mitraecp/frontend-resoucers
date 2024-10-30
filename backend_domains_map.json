@@ -16,6 +16,7 @@
     "https://api0.mitraecp.com:12360",
     "https://analytics2.mitrasheet.com:4433",
     "https://prod2.mitrasheet.com:8080",
-    "https://prod2.mitrasheet.com"
+    "https://prod2.mitrasheet.com",
+    "https://vmtest.mitrasheet.com"
   ]
 }
