@@ -17,6 +17,7 @@
     "https://analytics2.mitrasheet.com:4433",
     "https://prod2.mitrasheet.com:8080",
     "https://prod2.mitrasheet.com",
-    "https://vmtest.mitrasheet.com"
+    "https://vmtest.mitrasheet.com",
+    "https://api.mitrasheet.com:7500"
   ]
 }
