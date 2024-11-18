@@ -18,6 +18,7 @@
     "https://prod2.mitrasheet.com:8080",
     "https://prod2.mitrasheet.com",
     "https://vmtest.mitrasheet.com",
-    "https://api.mitrasheet.com:7500"
+    "https://api.mitrasheet.com:7500",
+    "https://castronaves.mitrasheet.com"
   ]
 }
