@@ -66,27 +66,6 @@
     },
     {
       "is_developer_item": true,
-      "title_pt": "Cadastro Básico",
-      "title_en": "Basic Registration",
-      "project_icon": "",
-      "project_color": "",
-      "image": "",
-      "shortDescription_pt": "",
-      "shortDescription_en": "",
-      "longDescription_pt": "Exemplo de tabela CRUD com tela personalizada de edição.",
-      "longDescription_en": "Example of a table with CRUD and a customized edit screen.",
-      "videoUrl": "",
-      "baseUrl_pt": "",
-      "baseUrl_en": "",
-      "bucketSource": "mitra-multitenant-prod",
-      "identifier": {
-        "key": "3",
-        "3": "OUTRO"
-      },
-      "types": []
-    },
-    {
-      "is_developer_item": true,
       "title_pt": "Fluxo de Processos",
       "title_en": "Process Flow",
       "project_icon": "",
