@@ -38,8 +38,8 @@
       "baseUrl_en": "backup/store/cadastroSimples/cadastroSimples.zip",
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
-        "key": "3",
-        "3": "OUTRO"
+        "key": "14",
+        "14": "CADASTRO_BASICO"
       },
       "types": []
     },
@@ -59,8 +59,8 @@
       "baseUrl_en": "backup/store/cadastroComDetalhes/cadastroComDetalhes.zip",
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
-        "key": "3",
-        "3": "OUTRO"
+        "key": "15",
+        "15": "CADASTRO_COM_DETALHES"
       },
       "types": []
     },
@@ -80,8 +80,8 @@
       "baseUrl_en": "backup/store/fluxoDeProcessos/fluxoDeProcessos.zip",
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
-        "key": "3",
-        "3": "OUTRO"
+        "key": "1",
+        "1": "FLUXO_DE_PROCESSOS"
       },
       "types": []
     },
@@ -101,8 +101,8 @@
       "baseUrl_en": "backup/store/pesquisaSatisfação/pesquisaSatisfação.zip",
       "bucketSource": "mitra-multitenant-prod",
       "identifier": {
-        "key": "3",
-        "3": "OUTRO"
+        "key": "16",
+        "16": "PESQUISA_BASICA"
       },
       "types": []
     }
