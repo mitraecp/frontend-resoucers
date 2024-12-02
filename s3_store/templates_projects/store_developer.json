@@ -2,6 +2,27 @@
   "templateList": [
     {
       "is_developer_item": true,
+      "title_pt": "Sem Template",
+      "title_en": "No Template",
+      "project_icon": "",
+      "project_color": "",
+      "image": "",
+      "shortDescription_pt": "",
+      "shortDescription_en": "",
+      "longDescription_pt": "Crie sua aplicação do zero, sem modelo predefinido.",
+      "longDescription_en": "Create your application from scratch, without a predefined template.",
+      "videoUrl": "",
+      "baseUrl_pt": "",
+      "baseUrl_en": "",
+      "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "3",
+        "3": "OUTRO"
+      },
+      "types": []
+    },
+    {
+      "is_developer_item": true,
       "title_pt": "Cadastro Básico",
       "title_en": "Basic Registration",
       "project_icon": "",
