@@ -1,6 +1,7 @@
 {
   "templateList": [
     {
+      "empty_template": true,
       "is_developer_item": true,
       "title_pt": "Sem Template",
       "title_en": "No Template",
