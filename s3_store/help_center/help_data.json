@@ -48,7 +48,7 @@
           "isVideo": true,
           "url": "https://youtube.com/embed/81eKNy089nw?si=NbJRrBLDFyG6D7c-",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_crm_01_help.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_crm_01a_help.png",
           "keywords": []
         },
         {
@@ -59,7 +59,7 @@
           "isVideo": true,
           "url": "https://youtube.com/embed/tHzvGCfUrQg?si=n7pu9r4d2LnyIiw8",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_crm_02_help.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_crm_02a_help.png",
           "keywords": []
         },
         {
@@ -70,7 +70,7 @@
           "isVideo": true,
           "url": "https://youtube.com/embed/QXt1Uyv2lik?si=q5Xj6H2_zQsMhCKS",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_crm_03_help.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/criando_crm_03a_help.png",
           "keywords": []
         },
         {
@@ -81,7 +81,7 @@
           "isVideo": true,
           "url": "https://youtube.com/embed/h9lPrPNNRrQ?si=5cchj0pa-FSnoSvx",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_de_satisfacao_01_help.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_de_satisfacao_01a_help.png",
           "keywords": []
         },
         {
@@ -92,7 +92,7 @@
           "isVideo": true,
           "url": "https://youtube.com/embed/7wZoN2KLuyY?si=jYeRtQsFpn35TBcd",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_de_satisfacao_02_help.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_de_satisfacao_02a_help.png",
           "keywords": []
         },
         {
@@ -103,7 +103,106 @@
           "isVideo": true,
           "url": "https://youtube.com/embed/YQFg4rXn68g?si=-aXZE-zAM02RcFwd",
           "embedId": "",
-          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_de_satisfacao_03_help.png",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/pesquisa_de_satisfacao_03a_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "NO CODE + SQL: App Fitness em menos de 3h - Parte 1",
+          "title_en": "Developing a Fitness App: with Mitra - Part 1",
+          "duration": "03:26",
+          "id": 1.4,
+          "isVideo": true,
+          "url": "https://www.youtube.com/embed/JWGAeo743b0?list=PLmJl24dxhXiV7HF9xOnaSS5SvBFq1WioX",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/desafio_fitness_01_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "NO CODE + SQL: App Fitness em menos de 3h - Parte 2",
+          "title_en": "Developing a Fitness App: with Mitra - Part 2",
+          "duration": "22:36",
+          "id": 1.4,
+          "isVideo": true,
+          "url": "https://www.youtube.com/embed/Ns67InGUmUU?list=PLmJl24dxhXiV7HF9xOnaSS5SvBFq1WioX",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/desafio_fitness_02_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "NO CODE + SQL: App Fitness em menos de 3h - Parte 3",
+          "title_en": "Developing a Fitness App: with Mitra - Part 3",
+          "duration": "36:07",
+          "id": 1.4,
+          "isVideo": true,
+          "url": "https://www.youtube.com/embed/i9Mv2BK5-ro?list=PLmJl24dxhXiV7HF9xOnaSS5SvBFq1WioX",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/desafio_fitness_03_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "NO CODE + SQL: App Fitness em menos de 3h - Parte 4",
+          "title_en": "Developing a Fitness App: with Mitra - Part 4",
+          "duration": "25:18",
+          "id": 1.4,
+          "isVideo": true,
+          "url": "https://www.youtube.com/embed/9M9y7d7vHt0?list=PLmJl24dxhXiV7HF9xOnaSS5SvBFq1WioX",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/desafio_fitness_04_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "NO CODE + SQL: App Fitness em menos de 3h - Parte 5",
+          "title_en": "Developing a Fitness App: with Mitra - Part 5",
+          "duration": "30:19",
+          "id": 1.4,
+          "isVideo": true,
+          "url": "https://www.youtube.com/embed/9M9y7d7vHt0?list=PLmJl24dxhXiV7HF9xOnaSS5SvBFq1WioX",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/desafio_fitness_05_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Construindo um Design Atrativo para o Aplicativo Fitness Mitra - Parte 1",
+          "title_en": "Creating an Attractive Design for the Mitra Fitness App - Part 1",
+          "duration": "17:04",
+          "id": 1.4,
+          "isVideo": true,
+          "url": "https://www.youtube.com/embed/N2k9acIJnTw?list=PLmJl24dxhXiV7HF9xOnaSS5SvBFq1WioX",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/design_atrativo_01_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Construindo um Design Atrativo para o Aplicativo Fitness Mitra - Parte 2",
+          "title_en": "Creating an Attractive Design for the Mitra Fitness App - Part 2",
+          "duration": "11:25",
+          "id": 1.4,
+          "isVideo": true,
+          "url": "https://www.youtube.com/embed/AAyw9OLIGPI?list=PLmJl24dxhXiV7HF9xOnaSS5SvBFq1WioX",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/design_atrativo_02_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Construindo um Design Atrativo para o Aplicativo Fitness Mitra - Parte 3",
+          "title_en": "Creating an Attractive Design for the Mitra Fitness App - Part 3",
+          "duration": "18:32",
+          "id": 1.4,
+          "isVideo": true,
+          "url": "https://www.youtube.com/embed/_Q6PZ8or0wg?list=PLmJl24dxhXiV7HF9xOnaSS5SvBFq1WioX",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/design_atrativo_03_help.png",
+          "keywords": []
+        },
+        {
+          "title_pt": "Construindo um Design Atrativo para o Aplicativo Fitness Mitra - Parte 4",
+          "title_en": "Creating an Attractive Design for the Mitra Fitness App - Part 4",
+          "duration": "26:34",
+          "id": 1.4,
+          "isVideo": true,
+          "url": "https://www.youtube.com/embed/UC56lPn5zs0?list=PLmJl24dxhXiV7HF9xOnaSS5SvBFq1WioX",
+          "embedId": "",
+          "thumbnail": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/help_center/images/design_atrativo_04_help.png",
           "keywords": []
         }
       ]
