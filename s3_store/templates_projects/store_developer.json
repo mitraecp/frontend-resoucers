@@ -105,6 +105,27 @@
         "16": "PESQUISA_BASICA"
       },
       "types": []
+    },
+    {
+      "is_developer_item": true,
+      "title_pt": "App Mobile Fitness",
+      "title_en": "App Mobile Fitness",
+      "project_icon": "",
+      "project_color": "",
+      "image": "",
+      "shortDescription_pt": "",
+      "shortDescription_en": "",
+      "longDescription_pt": "Exemplo de app fitness com área de administrador para controle de conteúdo.",
+      "longDescription_en": "Example of a fitness app with an admin area for content control.",
+      "videoUrl": "",
+      "baseUrl_pt": "backup/store/mobileFitness/mobileFitness.zip",
+      "baseUrl_en": "backup/store/mobileFitness/mobileFitness.zip",
+      "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "17",
+        "17": "MOBILE_FITNESS"
+      },
+      "types": []
     }
   ]
 }
