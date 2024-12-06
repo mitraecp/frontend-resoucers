@@ -28,7 +28,7 @@
       "title_en": "Basic Registration",
       "project_icon": "",
       "project_color": "",
-      "image": "",
+      "image": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/template_projects/images/waginSon.png",
       "shortDescription_pt": "",
       "shortDescription_en": "",
       "longDescription_pt": "Exemplo de tabela com CRUD (leitura, edição, deleção e adição).",
