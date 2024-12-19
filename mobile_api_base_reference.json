@@ -13,6 +13,10 @@
     {
       "name": "release",
       "link": "https://api.mitrasheet.com:4129/"
+    },
+    {
+      "name": "preview",
+      "link": "https://api.mitrasheet.com:5148/"
     }
   ],
   "listAiFrontLink": [
@@ -27,6 +31,10 @@
     {
       "name": "release",
       "link": "https://app.mitralab.io"
+    },
+    {
+      "name": "preview",
+      "link": "https://preview.mitralab.io"
     }
   ],
   "listIframe1Dot0FrontLink": [
@@ -41,6 +49,10 @@
     {
       "name": "release",
       "link": "https://mergerelease.mitralab.io/"
+    },
+    {
+      "name": "preview",
+      "link": "https://mergepreview.mitralab.io"
     }
   ]
 }
