@@ -16,6 +16,11 @@
     "https://api0.mitraecp.com:12360",
     "https://analytics2.mitrasheet.com:4433",
     "https://prod2.mitrasheet.com:8080",
-    "https://prod2.mitrasheet.com"
-  ]
+    "https://prod2.mitrasheet.com",
+    "https://vmtest.mitrasheet.com",
+    "https://api.mitrasheet.com:7500",
+    "https://castronaves.mitrasheet.com",
+    "https://analytics2demo.mitrasheet.com:4430"
+  ], 
+  "preview": ["https://api.mitrasheet.com:5541"]
 }
