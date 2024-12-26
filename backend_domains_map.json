@@ -20,7 +20,8 @@
     "https://vmtest.mitrasheet.com",
     "https://api.mitrasheet.com:7500",
     "https://castronaves.mitrasheet.com",
-    "https://analytics2demo.mitrasheet.com:4430"
+    "https://analytics2demo.mitrasheet.com:4430",
+    "https://juncomultitenant.mitrasheet.com:8080"
   ], 
   "preview": ["https://api.mitrasheet.com:5541"]
 }
