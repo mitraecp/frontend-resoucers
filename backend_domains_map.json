@@ -23,5 +23,6 @@
     "https://analytics2demo.mitrasheet.com:4430",
     "https://juncomultitenant.mitrasheet.com:8080"
   ], 
-  "preview": ["https://api.mitrasheet.com:5541"]
+  "preview": ["https://api.mitrasheet.com:5541"],
+  "validacao": ["https://api0.mitraecp.com:1005/"]
 }
