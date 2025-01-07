@@ -1,0 +1,320 @@
+{
+    "templateList": [
+      {
+        "title_pt": "BI Financeiro (by Rhitos)",
+        "title_en": "Financial BI",
+        "project_icon": "mdiChartBar",
+        "project_color": "#12B76A",
+        "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-fin.png",
+        "shortDescription_pt": "Painéis que oferecem análise de fluxo de caixa, comparação entre períodos e monitoramento de inadimplência para uma gestão financeira eficaz.",
+        "shortDescription_en": "Panels that offer cash flow analysis, comparison between periods and default monitoring for effective financial management.",
+        "longDescription_pt": "Este template de BI financeiro oferece três dashboards essenciais para uma gestão financeira eficaz. O primeiro painel concentra-se no fluxo de caixa, fornecendo análises detalhadas dos saldos bancários, baixas, títulos em aberto e projeções de saldo a curto prazo. Isso permite uma visão precisa e em tempo real da saúde financeira da empresa. O segundo dashboard permite uma análise comparativa entre dois períodos, destacando receitas e despesas. Isso ajuda na identificação de tendências financeiras ao longo do tempo e na avaliação do desempenho financeiro. Por fim, o terceiro dashboard concentra-se na inadimplência, rastreando pagamentos em atraso. Com esses painéis interativos, sua equipe financeira terá insights valiosos para tomar decisões informadas e garantir a estabilidade financeira da sua organização.",
+        "longDescription_en": "This financial BI template offers three essential dashboards for effective financial management. The first dashboard focuses on cash flow, providing detailed analysis of bank balances, write-offs, outstanding bonds, and short-term balance projections. This allows for an accurate, real-time view of the company's financial health. \nThe second dashboard allows a comparative analysis between two periods, highlighting income and expenses. This helps in identifying financial trends over time and evaluating financial performance. \nFinally, the third dashboard focuses on delinquency, tracking late payments. \nWith these interactive dashboards, your finance team will have valuable insights to make informed decisions and ensure your organization's financial stability. ",
+        "videoUrl": "",
+        "baseUrl_pt": "backup/store/previewfinanceiro/previewfinanceiro.zip",
+        "baseUrl_en": "backup/store/previewfinanceiro/previewfinanceiro.zip",
+        "bucketSource": "mitra-multitenant-prod",
+        "identifier": {
+          "key": "3",
+          "3": "OUTRO"
+        },
+        "types": [
+          {
+            "type_pt": "Financeiro",
+            "type_en": "Financial",
+            "icon": "mdiFinance",
+            "color": "#12B76A",
+            "secundaryColor": "#ECFDF3"
+          },
+          {
+            "type_pt": "Estratégico",
+            "type_en": "Strategic",
+            "icon": "mdiLightbulbOnOutline",
+            "color": "#B954BB",
+            "secundaryColor": "#FFF3FF"
+          }
+        ]
+      },
+      {
+        "title_pt": "Resumo Contábil (by Rhitos)",
+        "title_en": "Accounting Summary",
+        "project_icon": "mdiReceiptTextOutline",
+        "project_color": "#DD5226",
+        "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/contabilfachada.png",
+        "shortDescription_pt": "Alavanque sua Gestão Contábil com nosso template que contempla os principais indicadores contábeis: DRE, balançete, índices contábeis e DMPL.",
+        "shortDescription_en": "Boost your Accounting Management with our template featuring key accounting indicators Income Statement Financial Ratios and Statement of Changes in Equity.",
+        "longDescription_pt": "Transforme a gestão contábil da sua empresa com nosso template completo e fácil de usar. Ele foi projetado para proporcionar uma visão clara e detalhada de sua contabilidade. Nosso template inclui DRE (Demonstração do Resultado do Exercício),  para analisar detalhadamente as receitas, despesas e lucros, facilitando a compreensão do desempenho financeiro da empresa. Balançete, que oferece uma visão consolidada das contas e saldos, auxiliando no controle e na análise contábil. índices contábeis, que calculam automaticamente os principais índices financeiros, como liquidez, rentabilidade e endividamento, para ajudar na tomada de decisões estratégicas. E por fim DMPL (Demonstração das Mutações do Patrimônio Líquido), para acompanhar as variações no patrimônio líquido ao longo do tempo, fornecendo uma visão completa da saúde financeira da empresa. Ideal para contadores, gerentes financeiros e empresários, nosso template é a ferramenta perfeita para otimizar sua contabilidade e garantir uma gestão eficiente e precisa. Alavanque sua gestão contábil agora mesmo!",
+        "longDescription_en": "Transform your company's accounting management with our comprehensive and easy-to-use template. It is designed to provide a clear and detailed view of your accounting. Our template includes an Income Statement (DRE) to analyze revenues, expenses, and profits in detail, making it easier to understand the company's financial performance. A trial balance, which offers a consolidated view of accounts and balances, assisting in control and accounting analysis. Financial ratios, which automatically calculate key financial ratios such as liquidity, profitability, and debt, to help in strategic decision-making. And finally, the Statement of Changes in Equity (DMPL), to track changes in equity over time, providing a complete view of the company's financial health. Ideal for accountants, financial managers, and business owners, our template is the perfect tool to optimize your accounting and ensure efficient and accurate management. Boost your accounting management today! ",
+        "videoUrl": "",
+        "baseUrl_pt": "backup/store/previewcontabil/previewcontabil.zip",
+        "baseUrl_en": "backup/store/previewcontabil/previewcontabil.zip",
+        "bucketSource": "mitra-multitenant-prod",
+        "identifier": {
+          "key": "3",
+          "3": "OUTRO"
+        },
+        "types": [
+          {
+            "type_pt": "Financeiro",
+            "type_en": "Financial",
+            "icon": "mdiFinance",
+            "color": "#12B76A",
+            "secundaryColor": "#ECFDF3"
+          },
+          {
+            "type_pt": "Estratégico",
+            "type_en": "Strategic",
+            "icon": "mdiLightbulbOnOutline",
+            "color": "#B954BB",
+            "secundaryColor": "#FFF3FF"
+          }
+        ]
+      },
+      {
+        "title_pt": "CRM (by Rhitos)",
+        "title_en": "CRM",
+        "project_icon": "mdiBriefcaseVariant",
+        "project_color": "#DE3C76",
+        "identifier": {
+          "key": "4",
+          "4": "CRM"
+        },
+        "image": "https://mitra-multitenant.s3.amazonaws.com/store/crm.png",
+        "shortDescription_pt": "Simplifique sua pré-venda com um CRM focado na otimização de resultados.",
+        "shortDescription_en": "Simplify your pre-sales with a CRM focused on optimizing results.",
+        "longDescription_pt": "O pacote CRM foi especialmente desenvolvido para empresas que desejam aprimorar seu processo de pré-venda. \n \n Este template permite uma visão clara do funil de vendas, acompanhando os potenciais clientes desde o primeiro contato até o fechamento do negócio. \n\n Integre todos os seus canais de comunicação, gerencie leads, e maximize suas oportunidades com um sistema robusto e fácil de usar. \n\n Comece a transformar seus prospects em clientes fiéis com a eficiência que apenas o nosso CRM pode oferecer.",
+        "longDescription_en": "The CRM package was specially developed for companies that want to improve their pre-sales process. \n \n This template allows a clear view of the sales funnel, monitoring potential customers from the first contact to closing the deal. \n\n Integrate all your communication channels, manage leads, and maximize your opportunities with a robust and easy-to-use system. \n\n Start turning your prospects into loyal customers with the efficiency that only our CRM can offer.",
+        "videoUrl": "https://www.youtube.com/embed/Qkp5AMzwFGU?si=5RoaSXR4CWnuWPIv",
+        "baseUrl_pt": "backup/store/previewcrm/previewcrm.zip",
+        "baseUrl_en": "backup/store/previewcrm/previewcrm.zip",
+        "bucketSource": "mitra-multitenant-prod",
+        "types": [
+          {
+            "type_pt": "Comercial",
+            "type_en": "Commercial",
+            "icon": "mdiDomain",
+            "color": "#09A9BD",
+            "secundaryColor": "#EBFCFF"
+          },
+          {
+            "type_pt": "CRM",
+            "type_en": "CRM",
+            "icon": "mdiContentPaste",
+            "color": "#F2911E",
+            "secundaryColor": "#FFF9ED"
+          },
+          {
+            "type_pt": "Fluxo de Processos",
+            "type_en": "Process flow",
+            "icon": "mdiSitemap",
+            "color": "#FFB72D",
+            "secundaryColor": "#FFFDEA"
+          }
+        ]
+      },
+      {
+        "title_pt": "Planejamento Orçamentário (by Rhitos)",
+        "title_en": "Budget planning",
+        "project_icon": "mdiCurrencyUsd",
+        "project_color": "#09A9BD",
+        "image": "https://mitra-multitenant.s3.amazonaws.com/store/plan-orc.png",
+        "shortDescription_pt": "Diga adeus às planilhas e automatize seu orçamento mantendo toda a flexibilidade necessária.",
+        "shortDescription_en": "Say goodbye to spreadsheets and automate your budget while maintaining all the flexibility you need.",
+        "longDescription_pt": "Este template é a solução definitiva para quem busca modernizar o processo de planejamento orçamentário sem perder a essência da personalização. \n Sabemos o quão trabalhoso pode ser gerenciar orçamentos em planilhas, e o quão frustrante é ficar preso à rigidez de softwares convencionais. Por isso, criamos uma plataforma que combina o melhor dos dois mundos: elimina a necessidade de trabalho manual, mas ainda oferece toda a flexibilidade que você precisa para adaptar-se a qualquer cenário. \n Com nosso template, o planejamento orçamentário se torna um processo fluido, preciso e altamente eficaz, permitindo que você se concentre no que realmente importa: tomar decisões estratégicas baseadas em dados confiáveis.",
+        "longDescription_en": "This template is the definitive solution for those looking to modernize the budget planning process without losing the essence of customization. \n We know how hard it can be to manage budgets in spreadsheets, and how frustrating it is to be stuck in the rigidity of conventional software. That's why we created a platform that combines the best of both worlds: it eliminates the need for manual work, but still offers all the flexibility you need to adapt to any scenario. \n With our template, budget planning becomes a fluid, accurate and highly effective process, allowing you to focus on what really matters: making strategic decisions based on reliable data.",
+        "videoUrl": "https://www.youtube.com/embed/MSPr6itIaL4?si=Y32N2ex6NXUx7Vl4",
+        "baseUrl_pt": "backup/store/previewplanorcamentario/previewplanorcamentario.zip",
+        "baseUrl_en": "backup/store/previewplanorcamentario/previewplanorcamentario.zip",
+        "bucketSource": "mitra-multitenant-prod",
+        "identifier": {
+          "key": "6",
+          "6": "PLANEJAMENTO_ORCAMENTARIO"
+        },
+        "types": [
+          {
+            "type_pt": "Estratégico",
+            "type_en": "Strategic",
+            "icon": "mdiLightbulbOnOutline",
+            "color": "#B954BB",
+            "secundaryColor": "#FFF3FF"
+          },
+          {
+            "type_pt": "Fluxo de Processos",
+            "type_en": "Process flow",
+            "icon": "mdiSitemap",
+            "color": "#FFB72D",
+            "secundaryColor": "#FFFDEA"
+          },
+          {
+            "type_pt": "Financeiro",
+            "type_en": "Financial",
+            "icon": "mdiFinance",
+            "color": "#12B76A",
+            "secundaryColor": "#ECFDF3"
+          }
+        ]
+      },
+      {
+        "title_pt": "Análise de Vendas (by Rhitos)",
+        "title_en": "Sales Analysis",
+        "project_icon": "mdiPointOfSale",
+        "project_color": "#B954BB",
+        "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-com.png",
+        "shortDescription_pt": "Analise suas vendas, metas, margem, ticket médio e volume de forma prática e automática.",
+        "shortDescription_en": "Analyze your sales, targets, margin, average ticket and volume in a practical and automatic way.",
+        "longDescription_pt": "Nosso pacote de BI para vendas oferece uma análise abrangente e automatizada dos seus resultados comerciais. Ele compara as vendas realizadas com as metas estabelecidas, calcula a margem de contribuição, e fornece dados precisos sobre o ticket médio e o volume de vendas. Com essa ferramenta, você terá insights claros para ajustar estratégias e maximizar os resultados.",
+        "longDescription_en": "Our sales BI package offers comprehensive and automated analysis of your sales results. It compares sales made with established targets, calculates the contribution margin, and provides accurate data on the average ticket and sales volume. With this tool, you will have clear insights to adjust strategies and maximize results.",
+        "videoUrl": "",
+        "baseUrl_pt": "backup/store/previewvendas/previewvendas.zip",
+        "baseUrl_en": "backup/store/previewvendas/previewvendas.zip",
+        "bucketSource": "mitra-multitenant-prod",
+        "identifier": {
+          "key": "3",
+          "3": "OUTRO"
+        },
+        "types": [
+          {
+            "type_pt": "Vendas",
+            "type_en": "Sales",
+            "icon": "mdiDomain",
+            "color": "#FF186B",
+            "secundaryColor": "#FFC2D8"
+          }
+        ]
+      },
+      {
+        "title_pt": "BI Gestão de Pessoas",
+        "title_en": "BI People Management",
+        "project_icon": "mdiAccountGroup",
+        "project_color": "#7839EE",
+        "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/bi%20gestao%20people.png.png",
+        "shortDescription_pt": "Acompanhe turnover, folha de pagamento e custo por setor com análises profundas.",
+        "shortDescription_en": "Track turnover, payroll and cost by sector with in-depth analysis.",
+        "longDescription_pt": "Nosso pacote pessoal oferece uma visão detalhada e automatizada da gestão de recursos humanos. Ele analisa o turnover com dados sobre entradas, saídas e total de colaboradores, além de monitorar o histórico da folha de pagamento. Com ele, você também pode realizar análises aprofundadas, como faturamento per capita, e comparar o custo percentual de cada setor com o faturamento da empresa, destacando as evoluções ao longo do tempo.",
+        "longDescription_en": "Our personal package offers a detailed and automated view of human resources management. It analyzes turnover with data on incoming, outgoing and total employees, in addition to monitoring payroll history. With it, you can also perform in-depth analyses, such as per capita revenue, and compare the percentage cost of each sector with the company's revenue, highlighting changes over time.",
+        "videoUrl": "",
+        "baseUrl_pt": "backup/store/previewpessoas/previewpessoas.zip",
+        "baseUrl_en": "backup/store/previewpessoas/previewpessoas.zip",
+        "bucketSource": "mitra-multitenant-prod",
+        "identifier": {
+          "key": "3",
+          "3": "OUTRO"
+        },
+        "types": [
+          {
+            "type_pt": "RH",
+            "type_en": "RH",
+            "icon": "mdiHeadCogOutline",
+            "color": "#085b91",
+            "secundaryColor": "#f1f9fe"
+          },
+          {
+            "type_pt": "Cultura",
+            "type_en": "Culture",
+            "icon": "mdiAccountGroupOutline",
+            "color": "#751d5c",
+            "secundaryColor": "#fcf4fa"
+          }
+        ]
+      },
+      {
+        "title_pt": "Gestão de Projetos",
+        "title_en": "Project management",
+        "project_icon": "mdiContentPaste",
+        "project_color": "#FFB72D",
+        "image": "https://mitra-multitenant.s3.amazonaws.com/store/gestao-projetos.png",
+        "shortDescription_pt": "Orquestre seus projetos com precisão e eficácia, tudo em uma única plataforma.",
+        "shortDescription_en": "Orchestrate your projects with precision and effectiveness, all on a single platform.",
+        "longDescription_pt": "O pacote Gestão de Projetos foi concebido para organizar todas as etapas do projeto, desde o planejamento até a conclusão. \n Este template oferece recursos para atribuição de tarefas, monitoramento de progresso, e comunicação eficaz entre as equipes. Seja para pequenas equipes ou grandes corporações, nossa solução adapta-se às suas necessidades, garantindo que prazos sejam cumpridos e que cada detalhe seja meticulosamente gerenciado. \n Mergulhe em dashboards intuitivos, integre feedback em tempo real e eleve seus projetos a um novo patamar com nosso template.",
+        "longDescription_en": "The Project Management package was designed to organize all stages of the project, from planning to completion. \n This template offers features for assigning tasks, monitoring progress, and effective communication between teams. Whether for small teams or large corporations, our solution adapts to your needs, ensuring that deadlines are met and that every detail is meticulously managed. \nImmerse yourself in intuitive dashboards, integrate real-time feedback and take your projects to a new level with our template.",
+        "videoUrl": "https://www.youtube.com/embed/cwhXCcadF5k?si=b0Lo14BVcAtgs8vq",
+        "baseUrl_pt": "backup/store/previewgestaoprojetos/previewgestaoprojetos.zip",
+        "baseUrl_en": "backup/store/previewgestaoprojetos/previewgestaoprojetos.zip",
+        "bucketSource": "mitra-multitenant-prod",
+        "identifier": {
+          "key": "5",
+          "5": "GESTAO_DE_PROJETOS"
+        },
+        "types": [
+          {
+            "type_pt": "Fluxo de Processos",
+            "type_en": "Process flow",
+            "icon": "mdiSitemap",
+            "color": "#FFB72D",
+            "secundaryColor": "#FFFDEA"
+          }
+        ]
+      },
+      {
+        "title_pt": "Avaliação de Clima para Colaboradores",
+        "title_en": "Employee satisfaction survey",
+        "project_icon": "mdiFileDocumentCheckOutline",
+        "project_color": "#F2911E",
+        "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3884/dynamic-images/Store_scan.png",
+        "shortDescription_pt": "Aprimore sua gestão de pessoas com uma ferramenta de medição de KPIs de recursos humanos, promovendo uma gestão baseada em dados.",
+        "shortDescription_en": "Enhance your people management with a human resources KPI measurement tool, fostering data-driven management.",
+        "longDescription_pt": "Este modelo foi desenvolvido para avaliar os KPIs relacionados à área de recursos humanos, por meio de um questionário enviado mensalmente aos colaboradores. O questionário abrange uma série de perguntas sobre aspectos pessoais e profissionais, permitindo uma gestão baseada em dados. Que por sua vez, são transformados em painéis de controle e enviados aos líderes das equipes, possibilitando o acompanhamento dos feedbacks e tomadas de decisões estratégicas. Elevando o nível da gestão de pessoas em sua empresa.",
+        "longDescription_en": "This template has been developed to assess HR KPIs through a monthly questionnaire sent to employees. The questionnaire covers a series of questions about personal and professional aspects, enabling data-driven management. These data are transformed into dashboards and sent to team leaders, allowing them to track feedback and make strategic decisions, thereby elevating the level of people management in your company.",
+        "videoUrl": "",
+        "baseUrl_pt": "backup/store/previewavaliacaoclima/previewavaliacaoclima.zip",
+        "baseUrl_en": "backup/store/previewavaliacaoclima/previewavaliacaoclima.zip",
+        "bucketSource": "mitra-multitenant-prod",
+        "identifier": {
+          "key": "3",
+          "3": "OUTRO"
+        },
+        "types": [
+          {
+            "type_pt": "RH",
+            "type_en": "RH",
+            "icon": "mdiHeadCogOutline",
+            "color": "#085b91",
+            "secundaryColor": "#f1f9fe"
+          },
+          {
+            "type_pt": "Cultura",
+            "type_en": "Culture",
+            "icon": "mdiAccountGroupOutline",
+            "color": "#751d5c",
+            "secundaryColor": "#fcf4fa"
+          }
+        ]
+      },
+      {
+        "title_pt": "ENPS",
+        "title_en": "ENPS",
+        "project_icon": "mdiFormSelect",
+        "project_color": "#97DB4F",
+        "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
+        "shortDescription_pt": "Transforme a voz dos seus colaboradores em insights valiosos com nosso template ENPS.",
+        "shortDescription_en": "Turn your employees' voices into valuable insights with our ENPS template.",
+        "longDescription_pt": "Este modelo foi desenvolvido com o intuito de recolher feedbacks dos colaboradores de forma anônima, por meio de um formulário. Com base nas respostas de cada colaborador, é calculada a nota ENPS (Employee Net Promoter Score), que oferece uma análise do engajamento dos seus colaboradores com a empresa. Além disso, nosso painel exibe análises do ENPS juntamente com comentários descritivos de cada respondente anônimo.",
+        "longDescription_en": "This template was developed with the purpose of collecting feedback from employees anonymously, through a form. Based on each employee's responses, the ENPS (Employee Net Promoter Score) is calculated, providing an analysis of your employees' engagement with the company. Additionally, our dashboard displays ENPS analysis alongside descriptive comments from each anonymous respondent.",
+        "videoUrl": "",
+        "baseUrl_pt": "backup/store/previewenps/previewenps.zip",
+        "baseUrl_en": "backup/store/previewenps/previewenps.zip",
+        "bucketSource": "mitra-multitenant-prod",
+        "identifier": {
+          "key": "3",
+          "3": "OUTRO"
+        },
+        "types": [
+          {
+            "type_pt": "RH",
+            "type_en": "RH",
+            "icon": "mdiHeadCogOutline",
+            "color": "#085b91",
+            "secundaryColor": "#f1f9fe"
+          },
+          {
+            "type_pt": "Cultura",
+            "type_en": "Culture",
+            "icon": "mdiAccountGroupOutline",
+            "color": "#751d5c",
+            "secundaryColor": "#fcf4fa"
+          }
+        ]
+      }
+    ]
+  }
+  

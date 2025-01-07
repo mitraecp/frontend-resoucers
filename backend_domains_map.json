@@ -20,7 +20,13 @@
     "https://vmtest.mitrasheet.com",
     "https://api.mitrasheet.com:7500",
     "https://castronaves.mitrasheet.com",
-    "https://analytics2demo.mitrasheet.com:4430"
-  ], 
-  "preview": ["https://api.mitrasheet.com:5541"]
+    "https://analytics2demo.mitrasheet.com:4430",
+    "https://juncomultitenant.mitrasheet.com:8080",
+    "https://analytics2.mitrasheet.com:4434"
+  ],
+  "preview": ["https://api.mitrasheet.com:5541"],
+  "validacao": [
+    "https://api0.mitraecp.com:1005",
+    "https://api0.mitraecp.com:1004"
+  ]
 }
