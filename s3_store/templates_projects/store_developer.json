@@ -36,7 +36,7 @@
       "videoUrl": "",
       "baseUrl_pt": "backup/store/miniERP/miniERP.zip",
       "baseUrl_en": "backup/store/miniERP/miniERP.zip",
-      "bucketSource": "mitra-multitenant",
+      "bucketSource": "mitra-multitenant-prod",
       "identifier": {
         "key": "18",
         "18": "CADASTRO_BASICO"
