@@ -24,6 +24,27 @@
     },
     {
       "is_developer_item": true,
+      "title_pt": "Mini ERP",
+      "title_en": "Mini ERP",
+      "project_icon": "",
+      "project_color": "",
+      "image": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/templates_projects/images/Icon-6.svg",
+      "shortDescription_pt": "",
+      "shortDescription_en": "",
+      "longDescription_pt": "Exemplo de um Mini ERP com cadastros, movimentos e BI",
+      "longDescription_en": "Exemplo de um Mini ERP com cadastros, movimentos e BI",
+      "videoUrl": "",
+      "baseUrl_pt": "backup/store/miniERP/miniERP.zip",
+      "baseUrl_en": "backup/store/miniERP/miniERP.zip",
+      "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "18",
+        "18": "CADASTRO_BASICO"
+      },
+      "types": []
+    },
+    {
+      "is_developer_item": true,
       "title_pt": "Cadastro Básico",
       "title_en": "Basic Registration",
       "project_icon": "",
