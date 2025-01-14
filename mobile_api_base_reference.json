@@ -17,6 +17,10 @@
     {
       "name": "preview",
       "link": "https://api.mitrasheet.com:5148/"
+    },
+    {
+      "name": "validacao",
+      "link": "https://api0.mitraecp.com:1005/"
     }
   ],
   "listAiFrontLink": [
@@ -35,6 +39,10 @@
     {
       "name": "preview",
       "link": "https://preview.mitralab.io"
+    },
+    {
+      "name": "validacao",
+      "link": "https://validacao.mitralab.io"
     }
   ],
   "listIframe1Dot0FrontLink": [
@@ -53,6 +61,10 @@
     {
       "name": "preview",
       "link": "https://mergepreview.mitralab.io"
+    },
+    {
+      "name": "validacao",
+      "link": "https://mergevalidacao.web.app"
     }
   ]
 }
