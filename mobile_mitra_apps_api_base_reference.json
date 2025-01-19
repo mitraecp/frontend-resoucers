@@ -1,6 +1,6 @@
 {
-    "currentBaseUrl": "https://api.mitrasheet.com:5148/",
-    "currentBaseNameUrl": "preview",
+    "currentBaseUrl": "https://api0.mitraecp.com:1005/",
+    "currentBaseNameUrl": "validacao",
     "listOfBaseUrl": [
       {
         "name": "qa",
