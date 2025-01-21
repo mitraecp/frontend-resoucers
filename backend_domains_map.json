@@ -22,7 +22,8 @@
     "https://castronaves.mitrasheet.com",
     "https://analytics2demo.mitrasheet.com:4430",
     "https://juncomultitenant.mitrasheet.com:8080",
-    "https://analytics2.mitrasheet.com:4434"
+    "https://analytics2.mitrasheet.com:4434",
+    "https://melquilocal.mitrasheet.com:4088"
   ],
   "preview": ["https://api.mitrasheet.com:5541"],
   "validacao": [
