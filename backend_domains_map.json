@@ -28,6 +28,7 @@
   "preview": ["https://api.mitrasheet.com:5541"],
   "validacao": [
     "https://api0.mitraecp.com:1005",
-    "https://api0.mitraecp.com:1004"
+    "https://api0.mitraecp.com:1004",
+    "https://melquilocal.mitrasheet.com:4088"
   ]
 }
