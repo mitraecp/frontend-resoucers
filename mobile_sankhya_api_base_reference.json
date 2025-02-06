@@ -30,7 +30,7 @@
     },
     {
       "name": "validacao",
-      "link": "https://mergevalidacao.mitralab.io"
+      "link": "https://skw-homologation.mitralab.io/"
     }
   ],
   "listIframe1Dot0FrontLink": [
@@ -44,7 +44,7 @@
     },
     {
       "name": "validacao",
-      "link": "https://skw-homologation.mitralab.io/"
+      "link": "https://mergevalidacao.mitralab.io"
     }
   ]
 }
