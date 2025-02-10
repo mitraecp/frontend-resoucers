@@ -147,15 +147,15 @@
           "type_pt": "Contábil",
           "type_en": "Contábil",
           "icon": "mdiFinance",
-          "color": "#F79009",
-          "secundaryColor": "#93370D"
+          "color": "#93370D",
+          "secundaryColor": "#F79009"
         },
         {
           "type_pt": "Estratégico",
           "type_en": "Strategic",
           "icon": "mdiLightbulbOnOutline",
-          "color": "#F04438",
-          "secundaryColor": "#912018"
+          "color": "#912018",
+          "secundaryColor": "#F04438"
         }
       ]
     }
