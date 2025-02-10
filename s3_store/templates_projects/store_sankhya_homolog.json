@@ -3,12 +3,12 @@
     {
       "title_pt": "Pessoas",
       "title_en": "People",
-      "icon": "mdiAccountGroup",
+      "project_icon": "mdiAccountGroup",
       "identifier": {
         "key": "12",
         "12": "SKILL_PESSOAS"
       },
-      "iconColor": "#7E79B8",
+      "project_color": "#7E79B8",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/bi%20gestao%20people.png.png",
       "shortDescription_pt": "Acompanhe turnover, folha de pagamento e custo por setor com análises profundas.",
       "shortDescription_en": "Track turnover, payroll and cost by sector with in-depth analysis.",
@@ -46,8 +46,8 @@
     {
       "title_pt": "Vendas",
       "title_en": "Sales",
-      "icon": "mdiShopping",
-      "iconColor": "#9870AF",
+      "project_icon": "mdiShopping",
+      "project_color": "#9870AF",
       "identifier": {
         "key": "10",
         "10": "SKILL_VENDAS"
@@ -82,8 +82,8 @@
     {
       "title_pt": "Financeiro",
       "title_en": "Financial",
-      "icon": "mdiCurrencyUsd",
-      "iconColor": "#7BBA3B",
+      "project_icon": "mdiCurrencyUsd",
+      "project_color": "#7BBA3B",
       "identifier": {
         "key": "11",
         "11": "SKILL_FINANCEIRO"
