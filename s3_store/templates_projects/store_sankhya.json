@@ -118,10 +118,10 @@
     {
       "title_pt": "Resumo Contábil",
       "title_en": "Accounting Summary",
-      "project_icon": "mdiReceiptTextOutline",
       "project_color": "#DD5226",
-      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/contabilfachada.png",
+      "icon": "mdiReceiptTextOutline",
       "iconColor": "#B13F4D",
+      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/contabilfachada.png",
       "identifier": {
         "key": "13",
         "13": "SKILL_RESUMO_CONTABIL"
