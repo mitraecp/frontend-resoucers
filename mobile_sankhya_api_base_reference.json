@@ -15,8 +15,8 @@
       "link": "https://api.mitrasheet.com:4128/"
     },
     {
-      "name": "validacao",
-      "link": "https://api0.mitraecp.com:1005/"
+      "name": "preview",
+      "link": "https://api.mitrasheet.com:5148/"
     }
   ],
   "listAiFrontLink": [
@@ -29,8 +29,8 @@
       "link": "https://skw.mitralab.io"
     },
     {
-      "name": "validacao",
-      "link": "https://skw-homologation.mitralab.io/"
+      "name": "preview",
+      "link": "https://sankhya-preview.mitralab.io/"
     }
   ],
   "listIframe1Dot0FrontLink": [
@@ -43,8 +43,8 @@
       "link": "https://merge.mitralab.io/"
     },
     {
-      "name": "validacao",
-      "link": "https://mergevalidacao.mitralab.io"
+      "name": "preview",
+      "link": "https://merge-skw-homologation.mitralab.io/"
     }
   ]
 }
