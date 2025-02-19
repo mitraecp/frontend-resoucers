@@ -38,7 +38,7 @@
     },
     {
       "name": "preview",
-      "link": "https://sankhya-preview.mitralab.io/"
+      "link": "https://skw-preview.mitralab.io/"
     }
   ],
   "listIframe1Dot0FrontLink": [
@@ -56,7 +56,7 @@
     },
     {
       "name": "preview",
-      "link": "https://merge-skw-homologation.mitralab.io/"
+      "link": "https://mergepreview.mitralab.io"
     }
   ]
 }
