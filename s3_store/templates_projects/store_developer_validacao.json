@@ -16,6 +16,10 @@
       "baseUrl_pt": "",
       "baseUrl_en": "",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "3",
+        "3": "OUTRO"
+      },
       "types": []
     },
     {
@@ -24,7 +28,7 @@
       "title_en": "Mitra + AI",
       "project_icon": "",
       "project_color": "",
-      "image": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/templates_projects/images/Icon-5.svg",
+      "image": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/templates_projects/images/mitra_ai_template_icon.png",
       "shortDescription_pt": "",
       "shortDescription_en": "",
       "longDescription_pt": "Projeto de criação de eventos baseado em IA",
@@ -34,6 +38,10 @@
       "baseUrl_en": "backup/store/mitra_ia/mitra_ia.zip",
       "bucketSource": "mitra-multitenant",
       "new_content": true,
+      "identifier": {
+        "key": "19",
+        "18": "OUTRO"
+      },
       "types": []
     },
     {
@@ -51,6 +59,10 @@
       "baseUrl_pt": "backup/store/miniERP/miniERP.zip",
       "baseUrl_en": "backup/store/miniERP/miniERP.zip",
       "bucketSource": "mitra-multitenant",
+      "identifier": {
+        "key": "18",
+        "18": "OUTRO"
+      },
       "types": []
     },
     {
@@ -68,6 +80,10 @@
       "baseUrl_pt": "backup/store/cadastroSimples/cadastroSimples.zip",
       "baseUrl_en": "backup/store/cadastroSimples/cadastroSimples.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "14",
+        "14": "CADASTRO_BASICO"
+      },
       "types": []
     },
     {
@@ -85,6 +101,10 @@
       "baseUrl_pt": "backup/store/cadastroComDetalhes/cadastroComDetalhes.zip",
       "baseUrl_en": "backup/store/cadastroComDetalhes/cadastroComDetalhes.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "15",
+        "15": "CADASTRO_COM_DETALHES"
+      },
       "types": []
     },
     {
@@ -102,6 +122,11 @@
       "baseUrl_pt": "backup/store/fluxoDeProcessos/fluxoDeProcessos.zip",
       "baseUrl_en": "backup/store/fluxoDeProcessos/fluxoDeProcessos.zip",
       "bucketSource": "mitra-multitenant-prod",
+
+      "identifier": {
+        "key": "1",
+        "1": "FLUXO_DE_PROCESSOS"
+      },
       "types": []
     },
     {
@@ -119,6 +144,10 @@
       "baseUrl_pt": "backup/store/pesquisaSatisfação/pesquisaSatisfação.zip",
       "baseUrl_en": "backup/store/pesquisaSatisfação/pesquisaSatisfação.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "16",
+        "16": "PESQUISA_BASICA"
+      },
       "types": []
     },
     {
@@ -136,6 +165,10 @@
       "baseUrl_pt": "backup/store/mobileFitness/mobileFitness.zip",
       "baseUrl_en": "backup/store/mobileFitness/mobileFitness.zip",
       "bucketSource": "mitra-multitenant-prod",
+      "identifier": {
+        "key": "17",
+        "17": "MOBILE_FITNESS"
+      },
       "types": []
     }
   ]
