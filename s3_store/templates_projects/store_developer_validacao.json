@@ -24,11 +24,33 @@
     },
     {
       "is_developer_item": true,
+      "title_pt": "Mitra + IA",
+      "title_en": "Mitra + AI",
+      "project_icon": "",
+      "project_color": "",
+      "image": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/templates_projects/images/mitra_ai_template_icon.png",
+      "shortDescription_pt": "",
+      "shortDescription_en": "",
+      "longDescription_pt": "Projeto de criação de eventos baseado em IA",
+      "longDescription_en": "Project for creating events based on AI",
+      "videoUrl": "",
+      "baseUrl_pt": "backup/store/mitra_ia/mitra_ia.zip",
+      "baseUrl_en": "backup/store/mitra_ia/mitra_ia.zip",
+      "bucketSource": "mitra-multitenant",
+      "new_content": true,
+      "identifier": {
+        "key": "19",
+        "18": "OUTRO"
+      },
+      "types": []
+    },
+    {
+      "is_developer_item": true,
       "title_pt": "Mini ERP",
       "title_en": "Mini ERP",
       "project_icon": "",
       "project_color": "",
-      "image": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/templates_projects/images/Icon-6.svg",
+      "image": "https://raw.githubusercontent.com/mitraecp/frontend-resoucers/master/s3_store/templates_projects/images/mini_erp_template_icon.svg",
       "shortDescription_pt": "",
       "shortDescription_en": "",
       "longDescription_pt": "Exemplo de um Mini ERP com cadastros, movimentos e BI",
@@ -39,7 +61,7 @@
       "bucketSource": "mitra-multitenant",
       "identifier": {
         "key": "18",
-        "18": "CADASTRO_BASICO"
+        "18": "OUTRO"
       },
       "types": []
     },
@@ -100,6 +122,7 @@
       "baseUrl_pt": "backup/store/fluxoDeProcessos/fluxoDeProcessos.zip",
       "baseUrl_en": "backup/store/fluxoDeProcessos/fluxoDeProcessos.zip",
       "bucketSource": "mitra-multitenant-prod",
+
       "identifier": {
         "key": "1",
         "1": "FLUXO_DE_PROCESSOS"
