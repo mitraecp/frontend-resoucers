@@ -25,7 +25,8 @@
     "https://analytics2.mitrasheet.com:4434",
     "https://melquilocal.mitrasheet.com:4088",
     "https://cpd1.mitraecp.com:6517",
-    "https://devlocal.mitrasheet.com:4088"
+    "https://devlocal.mitrasheet.com:4088",
+    "https://api.mitrasheet.com:5541"
   ],
   "preview": ["https://api.mitrasheet.com:5541"],
   "validacao": [
