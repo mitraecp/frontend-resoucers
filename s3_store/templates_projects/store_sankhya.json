@@ -3,17 +3,17 @@
     {
       "title_pt": "Pessoas",
       "title_en": "People",
-      "icon": "mdiAccountGroup",
+      "project_icon": "mdiAccountGroup",
       "identifier": {
         "key": "12",
         "12": "SKILL_PESSOAS"
       },
-      "iconColor": "#7E79B8",
-      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
-      "shortDescription_pt": "Transforme a voz dos seus colaboradores em insights valiosos com nosso template ENPS.",
-      "shortDescription_en": "Turn your employees' voices into valuable insights with our ENPS template.",
-      "longDescription_pt": "Este modelo foi desenvolvido com o intuito de recolher feedbacks dos colaboradores de forma anônima, por meio de um formulário. Com base nas respostas de cada colaborador, é calculada a nota ENPS (Employee Net Promoter Score), que oferece uma análise do engajamento dos seus colaboradores com a empresa. Além disso, nosso painel exibe análises do ENPS juntamente com comentários descritivos de cada respondente anônimo.",
-      "longDescription_en": "This template was developed with the purpose of collecting feedback from employees anonymously, through a form. Based on each employee's responses, the ENPS (Employee Net Promoter Score) is calculated, providing an analysis of your employees' engagement with the company. Additionally, our dashboard displays ENPS analysis alongside descriptive comments from each anonymous respondent.",
+      "project_color": "#7E79B8",
+      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/bi%20gestao%20people.png.png",
+      "shortDescription_pt": "Acompanhe turnover, folha de pagamento e custo por setor com análises profundas.",
+      "shortDescription_en": "Track turnover, payroll and cost by sector with in-depth analysis.",
+      "longDescription_pt": "Nosso pacote pessoal oferece uma visão detalhada e automatizada da gestão de recursos humanos. Ele analisa o turnover com dados sobre entradas, saídas e total de colaboradores, além de monitorar o histórico da folha de pagamento. Com ele, você também pode realizar análises aprofundadas, como faturamento per capita, e comparar o custo percentual de cada setor com o faturamento da empresa, destacando as evoluções ao longo do tempo.",
+      "longDescription_en": "Our personal package offers a detailed and automated view of human resources management. It analyzes turnover with data on incoming, outgoing and total employees, in addition to monitoring payroll history. With it, you can also perform in-depth analyses, such as per capita revenue, and compare the percentage cost of each sector with the company's revenue, highlighting changes over time.",
       "videoUrl": "",
       "baseUrlWithData_en": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
       "baseUrlWithData_pt": "backup/store/copilotoPessoalComDados/copilotoPessoalComDados.zip",
@@ -46,17 +46,17 @@
     {
       "title_pt": "Vendas",
       "title_en": "Sales",
-      "icon": "mdiShopping",
-      "iconColor": "#9870AF",
+      "project_icon": "mdiShopping",
+      "project_color": "#9870AF",
       "identifier": {
         "key": "10",
         "10": "SKILL_VENDAS"
       },
-      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
+      "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-com.png",
       "shortDescription_pt": "Analise suas vendas, metas, margem, ticket médio e volume de forma prática e automática.",
-      "shortDescription_en": "Analise suas vendas, metas, margem, ticket médio e volume de forma prática e automática.",
+      "shortDescription_en": "Analyze your sales, targets, margin, average ticket and volume in a practical and automatic way.",
       "longDescription_pt": "Nosso pacote de BI para vendas oferece uma análise abrangente e automatizada dos seus resultados comerciais. Ele compara as vendas realizadas com as metas estabelecidas, calcula a margem de contribuição, e fornece dados precisos sobre o ticket médio e o volume de vendas. Com essa ferramenta, você terá insights claros para ajustar estratégias e maximizar os resultados.",
-      "longDescription_en": "Nosso pacote de BI para vendas oferece uma análise abrangente e automatizada dos seus resultados comerciais. Ele compara as vendas realizadas com as metas estabelecidas, calcula a margem de contribuição, e fornece dados precisos sobre o ticket médio e o volume de vendas. Com essa ferramenta, você terá insights claros para ajustar estratégias e maximizar os resultados.",
+      "longDescription_en": "Our sales BI package offers comprehensive and automated analysis of your sales results. It compares sales made with established targets, calculates the contribution margin, and provides accurate data on the average ticket and sales volume. With this tool, you will have clear insights to adjust strategies and maximize results.",
       "videoUrl": "",
       "baseUrlWithData_en": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
       "baseUrlWithData_pt": "backup/store/analiseDeVendasComDados/analiseDeVendasComDados.zip",
@@ -82,17 +82,17 @@
     {
       "title_pt": "Financeiro",
       "title_en": "Financial",
-      "icon": "mdiCurrencyUsd",
-      "iconColor": "#7BBA3B",
+      "project_icon": "mdiCurrencyUsd",
+      "project_color": "#7BBA3B",
       "identifier": {
         "key": "11",
         "11": "SKILL_FINANCEIRO"
       },
-      "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_3883/dynamic-images/ENPS.png",
-      "shortDescription_pt": "Teste.",
-      "shortDescription_en": "Teste.",
-      "longDescription_pt": "Teste",
-      "longDescription_en": "Teste",
+      "image": "https://mitra-multitenant.s3.amazonaws.com/store/bi-fin.png",
+      "shortDescription_pt": "Painéis que oferecem análise de fluxo de caixa, comparação entre períodos e monitoramento de inadimplência para uma gestão financeira eficaz.",
+      "shortDescription_en": "Panels that offer cash flow analysis, comparison between periods and default monitoring for effective financial management.",
+      "longDescription_pt": "Este template de BI financeiro oferece três dashboards essenciais para uma gestão financeira eficaz. O primeiro painel concentra-se no fluxo de caixa, fornecendo análises detalhadas dos saldos bancários, baixas, títulos em aberto e projeções de saldo a curto prazo. Isso permite uma visão precisa e em tempo real da saúde financeira da empresa. O segundo dashboard permite uma análise comparativa entre dois períodos, destacando receitas e despesas. Isso ajuda na identificação de tendências financeiras ao longo do tempo e na avaliação do desempenho financeiro. Por fim, o terceiro dashboard concentra-se na inadimplência, rastreando pagamentos em atraso. Com esses painéis interativos, sua equipe financeira terá insights valiosos para tomar decisões informadas e garantir a estabilidade financeira da sua organização.",
+      "longDescription_en": "This financial BI template offers three essential dashboards for effective financial management. The first dashboard focuses on cash flow, providing detailed analysis of bank balances, write-offs, outstanding bonds, and short-term balance projections. This allows for an accurate, real-time view of the company's financial health. \nThe second dashboard allows a comparative analysis between two periods, highlighting income and expenses. This helps in identifying financial trends over time and evaluating financial performance. \nFinally, the third dashboard focuses on delinquency, tracking late payments. \nWith these interactive dashboards, your finance team will have valuable insights to make informed decisions and ensure your organization's financial stability. ",
       "videoUrl": "",
       "baseUrlWithData_en": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
       "baseUrlWithData_pt": "backup/store/copilotoFinanceiroComDados/copilotoFinanceiroComDados.zip",
@@ -118,10 +118,10 @@
     {
       "title_pt": "Resumo Contábil",
       "title_en": "Accounting Summary",
+      "project_icon": "mdiReceiptTextOutline",
       "project_color": "#DD5226",
-      "icon": "mdiReceiptTextOutline",
-      "iconColor": "#B13F4D",
       "image": "https://mitra-multitenant-prod.s3.amazonaws.com/tenant_5350/label-images/contabilfachada.png",
+      "iconColor": "#B13F4D",
       "identifier": {
         "key": "13",
         "13": "SKILL_RESUMO_CONTABIL"
@@ -147,15 +147,15 @@
           "type_pt": "Contábil",
           "type_en": "Contábil",
           "icon": "mdiFinance",
-          "color": "#F45E00",
-          "secundaryColor": "#F4A971"
+          "color": "#93370D",
+          "secundaryColor": "#F79009"
         },
         {
           "type_pt": "Estratégico",
           "type_en": "Strategic",
           "icon": "mdiLightbulbOnOutline",
-          "color": "#B046BD",
-          "secundaryColor": "#BD9DB7"
+          "color": "#912018",
+          "secundaryColor": "#F04438"
         }
       ]
     }
