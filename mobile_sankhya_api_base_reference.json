@@ -7,20 +7,16 @@
       "link": "https://api0.mitraecp.com:2406/"
     },
     {
+      "name": "validacao",
+      "link": "https://api0.mitraecp.com:1005/"
+    },
+    {
       "name": "master",
       "link": "https://api.mitrasheet.com:4028/"
     },
     {
       "name": "release",
       "link": "https://api.mitrasheet.com:4128/"
-    },
-    {
-      "name": "validacao",
-      "link": "https://api0.mitraecp.com:1005/"
-    },
-    {
-      "name": "preview",
-      "link": "https://api.mitrasheet.com:5148/"
     }
   ],
   "listAiFrontLink": [
@@ -35,10 +31,6 @@
     {
       "name": "validacao",
       "link": "https://skw-homologation.mitralab.io/"
-    },
-    {
-      "name": "preview",
-      "link": "https://skw-preview.mitralab.io/"
     }
   ],
   "listIframe1Dot0FrontLink": [
@@ -53,10 +45,6 @@
     {
       "name": "validacao",
       "link": "https://mergevalidacao.mitralab.io"
-    },
-    {
-      "name": "preview",
-      "link": "https://mergepreview.mitralab.io"
     }
   ]
 }
