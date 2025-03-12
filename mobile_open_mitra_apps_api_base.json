@@ -1,6 +1,6 @@
 {
-    "currentBaseUrl": "https://api0.mitraecp.com:1005/",
-    "currentBaseNameUrl": "validacao",
+    "currentBaseUrl": "https://api.mitrasheet.com:4129/",
+    "currentBaseNameUrl": "release",
     "listOfBaseUrl": [
       {
         "name": "qa",
@@ -13,10 +13,6 @@
       {
         "name": "release",
         "link": "https://api.mitrasheet.com:4129/"
-      },
-      {
-        "name": "preview",
-        "link": "https://api.mitrasheet.com:5148/"
       },
       {
         "name": "validacao",
@@ -35,10 +31,6 @@
       {
         "name": "release",
         "link": "https://mergerelease.mitralab.io/"
-      },
-      {
-        "name": "preview",
-        "link": "https://mergepreview.mitralab.io"
       },
       {
         "name": "validacao",
