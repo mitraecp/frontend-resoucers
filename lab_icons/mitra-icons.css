@@ -2,11 +2,17 @@
 
 /* Style: stroke-rounded */
 @charset "UTF-8";
+
 @font-face {
   font-family: "hgi-stroke-rounded";
-  src: url("https://use.hugeicons.com/icon-font/hgi-stroke-rounded.eot?t=1736938783408"); /* IE9*/
-  src: url("https://use.hugeicons.com/icon-font/hgi-stroke-rounded.eot?t=1736938783408#iefix") format("embedded-opentype"), url("https://use.hugeicons.com/icon-font/hgi-stroke-rounded.woff2?t=1736938783408") format("woff2"), url("https://use.hugeicons.com/icon-font/hgi-stroke-rounded.woff?t=1736938783408") format("woff"), url("https://use.hugeicons.com/icon-font/hgi-stroke-rounded.ttf?t=1736938783408") format("truetype"), url("https://use.hugeicons.com/icon-font/hgi-stroke-rounded.svg?t=1736938783408#hgi-stroke-rounded") format("svg"); /* iOS 4.1- */
+  src: url("https://cdn.jsdelivr.net/gh/mitraecp/frontend-resoucers@master/lab_icons/hgi-stroke-rounded.eot"); /* IE9*/
+  src: url("https://cdn.jsdelivr.net/gh/mitraecp/frontend-resoucers@master/lab_icons/hgi-stroke-rounded.eot#iefix") format("embedded-opentype"), 
+       url("https://cdn.jsdelivr.net/gh/mitraecp/frontend-resoucers@master/lab_icons/hgi-stroke-rounded.woff2") format("woff2"), 
+       url("https://cdn.jsdelivr.net/gh/mitraecp/frontend-resoucers@master/lab_icons/hgi-stroke-rounded.woff") format("woff"), 
+       url("https://cdn.jsdelivr.net/gh/mitraecp/frontend-resoucers@master/lab_icons/hgi-stroke-rounded.ttf") format("truetype"), 
+       url("https://cdn.jsdelivr.net/gh/mitraecp/frontend-resoucers@master/lab_icons/hgi-stroke-rounded.svg#hgi-stroke-rounded") format("svg"); /* iOS 4.1- */
 }
+
 .hgi-stroke {
   font-family: "hgi-stroke-rounded" !important;
   font-style: normal;
