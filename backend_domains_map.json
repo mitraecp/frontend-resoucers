@@ -36,5 +36,5 @@
     "https://melquilocal.mitrasheet.com:4088",
     "https://devlocal.mitrasheet.com:4088"
   ],
-  "validacao2" ["https://api.mitrasheet.com:1001"]
+  "validacao2": ["https://api.mitrasheet.com:1001"]
 }
