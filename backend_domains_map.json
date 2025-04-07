@@ -27,7 +27,9 @@
     "https://cpd1.mitraecp.com:6517",
     "https://devlocal.mitrasheet.com:4088",
     "https://api.mitrasheet.com:5541",
-    "https://api.mitrasheet.com:1001"
+    "https://api.mitrasheet.com:1001",
+    "https://analytics2.mitrasheet.com:4435",
+    "https://analytics2.mitrasheet.com:4436"
   ],
   "preview": ["https://api.mitrasheet.com:5541"],
   "validacao": [
