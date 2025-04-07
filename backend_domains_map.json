@@ -26,7 +26,10 @@
     "https://melquilocal.mitrasheet.com:4088",
     "https://cpd1.mitraecp.com:6517",
     "https://devlocal.mitrasheet.com:4088",
-    "https://api.mitrasheet.com:5541"
+    "https://api.mitrasheet.com:5541",
+    "https://api.mitrasheet.com:1001",
+    "https://analytics2.mitrasheet.com:4435",
+    "https://analytics2.mitrasheet.com:4436"
   ],
   "preview": ["https://api.mitrasheet.com:5541"],
   "validacao": [
@@ -34,5 +37,6 @@
     "https://api0.mitraecp.com:1004",
     "https://melquilocal.mitrasheet.com:4088",
     "https://devlocal.mitrasheet.com:4088"
-  ]
+  ],
+  "validacao2": ["https://api.mitrasheet.com:1001"]
 }
