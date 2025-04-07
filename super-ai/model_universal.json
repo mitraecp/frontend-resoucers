@@ -162,7 +162,8 @@
 				{
 					"name": "string",
 					"type": "SCREEN",
-					"referenceId": "number"
+					"referenceId": "number",
+					"screenName": "string"
 				}
 			],
 			"fields": [
@@ -182,7 +183,8 @@
 				{
 					"name": "string",
 					"type": "SCREEN",
-					"referenceId": "number"
+					"referenceId": "number",
+					"screenName": "string"
 				}
 			],
 			"fields": [
@@ -292,6 +294,7 @@
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"screenName": "string",
 				"variables": [
 					{
 						"name": "string",
@@ -305,6 +308,7 @@
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"screenName": "string",
 				"variables": [
 					{
 						"name": "string",
@@ -331,6 +335,7 @@
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"screenName": "string",
 				"variables": [
 					{
 						"name": "string",
@@ -344,6 +349,7 @@
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"screenName": "string",
 				"variables": [
 					{
 						"name": "string",
@@ -417,6 +423,7 @@
 			"interactionForm": {
 				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION",
 				"id": "string",
+				"screenName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number"
 			}
@@ -439,6 +446,7 @@
 			"interactionForm": {
 				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION",
 				"id": "string",
+				"screenName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number"
 			}
