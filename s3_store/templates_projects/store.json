@@ -308,7 +308,7 @@
         },
         {
           "type_pt": "Vendas",
-          "type_en": "Vendas",
+          "type_en": "Sales",
           "icon": "mdiDomain",
           "color": "#FF186B",
           "secundaryColor": "#FFC2D8"
