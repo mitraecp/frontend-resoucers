@@ -129,7 +129,9 @@
 				},
 				{
 					"type": "DB_ACTION",
-					"dbAcionId": "number"
+					"dmlActionsIds": [
+					  "number"
+				  ]
 				}
 			]
 		}
@@ -148,7 +150,9 @@
 				},
 				{
 					"type": "DB_ACTION",
-					"dbAcionId": "number"
+					"dmlActionsIds": [
+					  "number"
+					]
 				}
 			]
 		}
