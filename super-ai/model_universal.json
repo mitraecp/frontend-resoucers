@@ -202,7 +202,7 @@
 	"DELETE_DETAILS_MODAL": [{ "id": "number" }],
 	"DELETE_TAB_DETAILS_MODAL": [{ "id": "number" }],
 
-	"DELETE_COMPONENT": [{ "id": "number" }],
+	"DELETE_COMPONENT": [{ "id": "number", "typeComponent": "BUTTON | LABEL | IMAGE | IMAGEM | TABLE | GRAPH | CRUD_LIST | LIST | KANBAN | INPUT | SELECTOR | HTML | CONTAINER" }],
 	"ADD_COMPONENT_TABLE": [
 		{
 			"query": "string",
