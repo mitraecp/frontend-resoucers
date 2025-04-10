@@ -103,7 +103,7 @@
 					"maskType": "DEFAULT | CPF | PHONE | CNPJ | CEP | TIME",
 					"prefix": "string",
 					"suffix": "string",
-					"criteria": "string
+					"criteria": "string"
 				}
 			]
 		}
