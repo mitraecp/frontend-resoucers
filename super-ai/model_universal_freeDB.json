@@ -1,0 +1,643 @@
+{
+	"RUN_DML": [{ "statement": "string" }],
+
+	"ADD_VARIAVEIS": [
+		{
+			"name": "string"
+		}
+	],
+	"DELETE_VARIAVEIS": [
+		{
+			"name": "string"
+		}
+	],
+
+	"ADD_TELAS": [
+		{
+			"name": "string",
+			"isMobile": "true | false"
+		}
+	],
+	"ALT_TELAS": [
+		{
+			"id": "number",
+			"name": "string",
+			"isMobile": "true | false",
+			"isPublish": "true | false"
+		}
+	],
+	"DELETE_TELAS": [
+		{
+			"id": "number"
+		}
+	],
+
+	"ADD_FORMS": [
+		{
+			"name": "string",
+			"tableOrEntityName": "string"
+		}
+	],
+
+	"ALT_FORMS": [
+		{
+			"id": "number",
+			"name": "string",
+			"fields": [
+				{
+					"name": "string",
+					"type": "string",
+					"alias": "string",
+					"visibility": "EDIT | BLOCK | MANDATORY | HIDDEN",
+					"fillType": "FIXED | SEARCH",
+					"fixDefaultValue": "string",
+					"maskType": "DEFAULT | CPF | PHONE | CNPJ | CEP | TIME",
+					"prefix": "string",
+					"suffix": "string",
+					"criteria": "string"
+				}
+			]
+		}
+	],
+	"DELETE_FORMS": [{ "id": "number" }],
+
+	"ADD_DBACTIONS": [
+		{
+			"name": "string",
+			"statement": "string"
+		}
+	],
+	"DELETE_DBACTIONS": [{ "id": "number" }],
+
+	"ADD_ACTIONS": [
+		{
+			"name": "string",
+			"steps": [
+				{
+					"type": "GOTO_SCREEN",
+					"screenName": "string"
+				},
+				{
+					"type": "REFRESH_SCREEN"
+				},
+				{
+					"type": "DB_ACTION",
+					"dmlActionsIds": [
+					  "number"
+				  ]
+				}
+			]
+		}
+	],
+	"ALT_ACTIONS": [
+		{
+			"id": "number",
+			"name": "string",
+			"steps": [
+				{
+					"type": "GOTO_SCREEN",
+					"screenName": "string"
+				},
+				{
+					"type": "REFRESH_SCREEN"
+				},
+				{
+					"type": "DB_ACTION",
+					"dmlActionsIds": [
+					  "number"
+					]
+				}
+			]
+		}
+	],
+
+	"ADD_DETAILS_MODAL": [
+		{
+			"name": "string",
+			"tableOrEntityName": "string",
+			"tabs": [
+				{
+					"name": "string",
+					"type": "SCREEN",
+					"referenceId": "number",
+					"screenName": "string"
+				}
+			],
+			"fields": [
+				{
+					"name": "string",
+					"alias": "string"
+				}
+			]
+		}
+	],
+	"ALT_DETAILS_MODAL": [
+		{
+			"id": "number",
+			"name": "string",
+			"tableOrEntityName": "string",
+			"tabs": [
+				{
+					"name": "string",
+					"type": "SCREEN",
+					"referenceId": "number",
+					"screenName": "string"
+				}
+			],
+			"fields": [
+				{
+					"name": "string",
+					"alias": "string"
+				}
+			]
+		}
+	],
+	"DELETE_DETAILS_MODAL": [{ "id": "number" }],
+	"DELETE_TAB_DETAILS_MODAL": [{ "id": "number" }],
+
+	"DELETE_COMPONENT": [{ "id": "number", "name": "BUTTON | LABEL | IMAGE | IMAGEM | TABLE | GRAPH | CRUD_LIST | LIST | KANBAN | INPUT | SELECTOR | HTML | CONTAINER" }],
+	"ADD_COMPONENT_TABLE": [
+		{
+			"query": "string",
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"interaction": {
+				"screenName": "string",
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			}
+		}
+	],
+	"ALT_COMPONENT_TABLE": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"query": "string",
+			"interaction": {
+				"screenName": "string",
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			}
+		}
+	],
+	"ADD_COMPONENT_GRAPH": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"query": "string",
+			"chartType": "PIE | BAR",
+			"enableSlider": "boolean",
+			"enableLegend": "boolean"
+		}
+	],
+	"ALT_COMPONENT_GRAPH": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"query": "string",
+			"chartType": "PIE | BAR",
+			"enableSlider": "boolean",
+			"enableLegend": "boolean"
+		}
+	],
+	"ADD_COMPONENT_CRUD_LIST": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"query": "string",
+			"keyField": "string",
+			"cellKeyField": "string",
+			"deleteInteraction": {
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"screenName": "string",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			},
+			"editInteraction": {
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"screenName": "string",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			}
+		}
+	],
+	"ALT_COMPONENT_CRUD_LIST": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"query": "string",
+			"keyField": "string",
+			"cellKeyField": "string",
+			"deleteInteraction": {
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"screenName": "string",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			},
+			"editInteraction": {
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"screenName": "string",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			}
+		}
+	],
+	"ADD_COMPONENT_LABEL": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"text": "string",
+			"fontSize": "number",
+			"query": "string",
+			"fontColor": "string",
+			"backgroundColor": "string",
+			"verticalAlignment": "TOP | CENTER | BOTTOM",
+			"horizontalAlignment": "LEFT | CENTER | RIGHT",
+			"enableHover": "boolean",
+			"borderRadius": {
+				"topLeft": "number",
+				"topRight": "number",
+				"bottomLeft": "number",
+				"bottomRight": "number"
+			}
+		}
+	],
+	"ALT_COMPONENT_LABEL": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"text": "string",
+			"fontSize": "number",
+			"query": "string",
+			"fontColor": "string",
+			"backgroundColor": "string",
+			"verticalAlignment": "TOP | CENTER | BOTTOM",
+			"horizontalAlignment": "LEFT | CENTER | RIGHT",
+			"enableHover": "boolean",
+			"borderRadius": {
+				"topLeft": "number",
+				"topRight": "number",
+				"bottomLeft": "number",
+				"bottomRight": "number"
+			}
+		}
+	],
+	"ADD_COMPONENT_BUTTON": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"text": "string",
+			"fontSize": "number",
+			"backgroundColor": "string",
+			"icon": "string",
+			"fontColor": "string",
+			"interactionForm": {
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"screenName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number"
+			}
+		}
+	],
+	"ALT_COMPONENT_BUTTON": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"text": "string",
+			"fontSize": "number",
+			"textAlign": "string",
+			"backgroundColor": "string",
+			"icon": "string",
+			"fontColor": "string",
+			"interactionForm": {
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"screenName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number"
+			}
+		}
+	],
+	"ADD_COMPONENT_CONTAINER": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"title": "string",
+			"fontSize": "number"
+		}
+	],
+	"ALT_COMPONENT_CONTAINER": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"title": "string",
+			"fontSize": "number"
+		}
+	],
+	"ADD_COMPONENT_IMAGEM": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"image": "string",
+			"query": "string",
+			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES"
+		}
+	],
+	"ALT_COMPONENT_IMAGEM": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"image": "string",
+			"query": "string",
+			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES"
+		}
+	],
+	"ADD_COMPONENT_KANBAN": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"itemQuery": "string",
+			"itemKeyField": "string",
+			"itemKeyTable": "string",
+			"columnKeyField": "string",
+			"columnFilterQuery": "string",
+			"interaction": {
+				"screenName": "string",
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			}
+		}
+	],
+	"ALT_COMPONENT_KANBAN": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"itemQuery": "string",
+			"itemKeyField": "string",
+			"itemKeyTable": "string",
+			"columnKeyField": "string",
+			"columnFilterQuery": "string",
+			"interaction": {
+				"screenName": "string",
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			}
+		}
+	],
+	"ADD_COMPONENT_INPUT": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"title": "string",
+			"initialContentQuery": "string",
+			"contentQuery": "string",
+			"placeHolder": "string",
+			"inputType": "TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT",
+			"dmlInteraction": {
+				"type": "DBACTION",
+				"id": "string"
+			}
+		}
+	],
+	"ALT_COMPONENT_INPUT": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"title": "string",
+			"initialContentQuery": "string",
+			"contentQuery": "string",
+			"placeHolder": "string",
+			"inputType": "TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT",
+			"dmlInteraction": {
+				"type": "DBACTION",
+				"id": "string"
+			}
+		}
+	],
+	"ADD_COMPONENT_HTML": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"html": "string"
+		}
+	],
+	"ALT_COMPONENT_HTML": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"html": "string"
+		}
+	],
+
+	"ADD_COMPONENT_SELECTOR": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"tableOrEntityName": "string",
+			"selectorType": "SINGLE | MULTIPLE"
+		}
+	],
+	"ALT_COMPONENT_SELECTOR": [
+		{
+			"screenComponentId": "number",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"tableOrEntityName": "string",
+			"selectorType": "SINGLE | MULTIPLE"
+		}
+	],
+	"ADD_COMPONENT_LIST": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"query": "string",
+			"keyField": "string",
+			"cellHeight": "number",
+			"components": [
+				{
+					"x": "number",
+					"y": "number",
+					"z": "number",
+					"w": "number",
+					"h": "number",
+					"type": "LABEL | IMAGE | BUTTON",
+					"text": "string",
+					"interaction": {
+						"screenName": "string",
+						"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+						"id": "string",
+						"keyColumnName": "string",
+						"modalWidth": "number",
+						"modalHeight": "number",
+						"variables": [
+							{
+								"name": "string",
+								"columnName": "string"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

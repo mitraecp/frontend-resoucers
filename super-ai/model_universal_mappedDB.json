@@ -98,7 +98,7 @@
 					"type": "string",
 					"alias": "string",
 					"visibility": "EDIT | BLOCK | MANDATORY | HIDDEN",
-					"fillType": "FIXED | SELECTION | SEARCH",
+					"fillType": "FIXED | SEARCH",
 					"fixDefaultValue": "string",
 					"maskType": "DEFAULT | CPF | PHONE | CNPJ | CEP | TIME",
 					"prefix": "string",
