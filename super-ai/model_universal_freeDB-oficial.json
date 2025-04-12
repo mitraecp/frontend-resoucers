@@ -1,5 +1,6 @@
 {
 	"RUN_DML": [{ "statement": "string" }],
+	"RUN_DDL": [{ "statement": "string" }],
 
 	"ADD_VARIAVEIS": [
 		{
