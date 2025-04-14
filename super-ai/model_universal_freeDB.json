@@ -33,8 +33,6 @@
 		}
 	],
 
-	"DELETE_FORMS": [{ "id": "number" }],
-
 	"ADD_DBACTIONS": [
 		{
 			"name": "string",
@@ -84,8 +82,6 @@
 			]
 		}
 	],
-	"DELETE_DETAILS_MODAL": [{ "id": "number" }],
-	"DELETE_TAB_DETAILS_MODAL": [{ "id": "number" }],
 
 	"DELETE_COMPONENT": [{ "id": "number", "name": "BUTTON | LABEL | IMAGE | IMAGEM | TABLE | GRAPH | CRUD_LIST | LIST | INPUT | SELECTOR | HTML | CONTAINER" }],
 	"ADD_COMPONENT_TABLE": [
@@ -99,7 +95,7 @@
 			"h": "number",
 			"interaction": {
 				"screenName": "string",
-				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
 				"id": "string",
 				"keyColumnName": "string",
 				"modalWidth": "number",
@@ -124,7 +120,7 @@
 			"query": "string",
 			"interaction": {
 				"screenName": "string",
-				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
 				"id": "string",
 				"keyColumnName": "string",
 				"modalWidth": "number",
@@ -178,7 +174,7 @@
 			"keyField": "string",
 			"cellKeyField": "string",
 			"deleteInteraction": {
-				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
 				"id": "string",
 				"keyColumnName": "string",
 				"modalWidth": "number",
@@ -192,7 +188,7 @@
 				]
 			},
 			"editInteraction": {
-				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
 				"id": "string",
 				"keyColumnName": "string",
 				"modalWidth": "number",
@@ -219,7 +215,7 @@
 			"keyField": "string",
 			"cellKeyField": "string",
 			"deleteInteraction": {
-				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
 				"id": "string",
 				"keyColumnName": "string",
 				"modalWidth": "number",
@@ -233,7 +229,7 @@
 				]
 			},
 			"editInteraction": {
-				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
 				"id": "string",
 				"keyColumnName": "string",
 				"modalWidth": "number",
@@ -310,7 +306,7 @@
 			"icon": "string",
 			"fontColor": "string",
 			"interactionForm": {
-				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
 				"id": "string",
 				"screenName": "string",
 				"modalWidth": "number",
@@ -333,7 +329,7 @@
 			"icon": "string",
 			"fontColor": "string",
 			"interactionForm": {
-				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
 				"id": "string",
 				"screenName": "string",
 				"modalWidth": "number",
@@ -498,7 +494,7 @@
 					"text": "string",
 					"interaction": {
 						"screenName": "string",
-						"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+						"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
 						"id": "string",
 						"keyColumnName": "string",
 						"modalWidth": "number",
