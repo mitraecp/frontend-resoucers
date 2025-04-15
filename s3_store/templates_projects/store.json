@@ -295,8 +295,8 @@
       "longDescription_pt": "Transforme a maneira como você gerencia sua empresa e abandone a complexidade de analisar dados isolados de cada setor. Este template foi desenhado para ser o seu centro de comando definitivo, unificando as informações vitais das áreas Comercial, Financeira, Estoque, Contábil e Compras em uma visão coesa e poderosa. Imagine ter acesso instantâneo ao desempenho de toda a sua operação, atualizado em tempo real.",
       "longDescription_en": "Transform the way you manage your business and leave behind the complexity of analyzing isolated data from each department. This template is designed to be your definitive command center, unifying vital information from the Sales, Financial, Inventory, Accounting, and Purchasing areas into a cohesive and powerful view. Imagine having instant access to the performance of your entire operation, updated in real-time. ",
       "videoUrl": "",
-      "baseUrl_sql_pt": "backup/store/s3demoskilluniversal/s3demoskilluniversal.zip",
-      "baseUrl_sql_en": "backup/store/s3demoskilluniversal/s3demoskilluniversal.zip",
+      "baseUrl_pt": "backup/store/s3demoskilluniversal/s3demoskilluniversal.zip",
+      "baseUrl_en": "backup/store/s3demoskilluniversal/s3demoskilluniversal.zip",
       "bucketSource": "mitra-multitenant-prod",
       "types": [
         {
