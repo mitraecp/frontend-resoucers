@@ -663,7 +663,7 @@
 			"keyField": "string",
 			"cellHeight": "number",
 			"cellWidth": "number",
-			"orientation": "HORIZONTAL | VERTICAL | GRID"
+			"orientation": "HORIZONTAL | VERTICAL | GRID",
 			"components": [
 				{
 					"x": "number",
