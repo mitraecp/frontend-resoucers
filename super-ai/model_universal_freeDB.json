@@ -481,7 +481,6 @@
 			"w": "number",
 			"h": "number",
 			"query": "string",
-			"keyField": "string",
 			"cellHeight": "number",
 			"cellWidth": "number",
 			"orientation": "HORIZONTAL | VERTICAL | GRID",
