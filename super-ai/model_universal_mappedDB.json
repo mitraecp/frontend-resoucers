@@ -77,7 +77,8 @@
 	],
 	"DELETE_TELAS": [
 		{
-			"id": "number"
+			"id": "number",
+			"name": "string"
 		}
 	],
 
@@ -116,7 +117,7 @@
 			"statement": "string"
 		}
 	],
-	"DELETE_DBACTIONS": [{ "id": "number" }],
+	"DELETE_DBACTIONS": [{ "id": "number", "name": "string" }],
 
 	"ADD_ACTIONS": [
 		{
