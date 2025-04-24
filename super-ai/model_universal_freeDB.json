@@ -16,7 +16,9 @@
 	"ADD_TELAS": [
 		{
 			"name": "string",
-			"isMobile": "true | false"
+			"isMobile": "true | false", 
+			"isHtml": "true | false",
+			"html": "string"
 		}
 	],
 	"ALT_TELAS": [
@@ -24,7 +26,9 @@
 			"id": "number",
 			"name": "string",
 			"isMobile": "true | false",
-			"isPublish": "true | false"
+			"isPublish": "true | false",
+			"isHtml": "true | false",
+			"html": "string"
 		}
 	],
 	"DELETE_TELAS": [
