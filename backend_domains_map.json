@@ -29,9 +29,10 @@
     "https://api.mitrasheet.com:5541",
     "https://api.mitrasheet.com:1001",
     "https://analytics2.mitrasheet.com:4435",
-    "https://analytics2.mitrasheet.com:4436"
+    "https://analytics2.mitrasheet.com:4436",
+    "https://prod3.mitrasheet.com"
   ],
-  "preview": ["https://api.mitrasheet.com:5541"],
+  "preview": ["https://prod3.mitrasheet.com"],
   "validacao": [
     "https://api0.mitraecp.com:1005",
     "https://api0.mitraecp.com:1004",
