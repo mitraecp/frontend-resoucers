@@ -88,7 +88,7 @@
 		}
 	],
 
-	"DELETE_COMPONENT": [{ "id": "number", "name": "BUTTON | LABEL | IMAGE | IMAGEM | TABLE | GRAPH | CRUD_LIST | LIST | INPUT | SELECTOR | HTML | CONTAINER" }],
+	"DELETE_COMPONENT": [{ "id": "number", "name": "BUTTON | LABEL | IMAGE | IMAGEM | TABLE | GRAPH | CRUD_LIST | LIST | KANBAN | INPUT | SELECTOR | HTML | CONTAINER" }],
 	"ADD_COMPONENT_TABLE": [
 		{
 			"query": "string",
@@ -390,6 +390,64 @@
 			"image": "string",
 			"query": "string",
 			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES"
+		}
+	],
+	"ADD_COMPONENT_KANBAN": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"itemQuery": "string",
+			"itemKeyField": "string",
+			"itemKeyTable": "string",
+			"columnKeyField": "string",
+			"columnFilterQuery": "string",
+			"interaction": {
+				"screenName": "string",
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			}
+		}
+	],
+	"ALT_COMPONENT_KANBAN": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"itemQuery": "string",
+			"itemKeyField": "string",
+			"itemKeyTable": "string",
+			"columnKeyField": "string",
+			"columnFilterQuery": "string",
+			"interaction": {
+				"screenName": "string",
+				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
+				"id": "string",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
+			}
 		}
 	],
 	"ADD_COMPONENT_INPUT": [
