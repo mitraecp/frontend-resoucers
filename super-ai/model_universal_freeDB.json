@@ -118,7 +118,7 @@
 			"interaction": {
 				"screenName": "string",
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
@@ -143,7 +143,7 @@
 			"interaction": {
 				"screenName": "string",
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
@@ -197,7 +197,7 @@
 			"cellKeyField": "string",
 			"deleteInteraction": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
@@ -211,7 +211,7 @@
 			},
 			"editInteraction": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
@@ -238,7 +238,7 @@
 			"cellKeyField": "string",
 			"deleteInteraction": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
@@ -252,7 +252,7 @@
 			},
 			"editInteraction": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
@@ -425,7 +425,7 @@
 			"interaction": {
 				"screenName": "string",
 				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
@@ -454,7 +454,7 @@
 			"interaction": {
 				"screenName": "string",
 				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
@@ -576,7 +576,7 @@
 					"interaction": {
 						"screenName": "string",
 						"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-						"id": "string",
+						"id": "number",
 						"keyColumnName": "string",
 						"modalWidth": "number",
 						"modalHeight": "number",
