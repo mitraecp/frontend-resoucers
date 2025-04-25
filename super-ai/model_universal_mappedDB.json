@@ -64,7 +64,11 @@
 	"ADD_TELAS": [
 		{
 			"name": "string",
-			"isMobile": "true | false"
+			"isMobile": "true | false", 
+			"isHtml": "true | false",
+			"html": "string", 
+			"isPublish": "true | false",
+			"isHomeScreen": "true | false"
 		}
 	],
 	"ALT_TELAS": [
@@ -72,12 +76,16 @@
 			"id": "number",
 			"name": "string",
 			"isMobile": "true | false",
-			"isPublish": "true | false"
+			"isPublish": "true | false",
+			"isHtml": "true | false",
+			"html": "string", 
+			"isHomeScreen": "true | false"
 		}
 	],
 	"DELETE_TELAS": [
 		{
-			"id": "number"
+			"id": "number",
+			"name": "string"
 		}
 	],
 
@@ -91,17 +99,19 @@
 	"ALT_FORMS": [
 		{
 			"id": "number",
+			"name": "string",
 			"fields": [
 				{
 					"name": "string",
 					"type": "string",
 					"alias": "string",
 					"visibility": "EDIT | BLOCK | MANDATORY | HIDDEN",
-					"fillType": "FIXED | SELECTION | SEARCH",
+					"fillType": "FIXED | SEARCH",
 					"fixDefaultValue": "string",
 					"maskType": "DEFAULT | CPF | PHONE | CNPJ | CEP | TIME",
 					"prefix": "string",
-					"suffix": "string"
+					"suffix": "string",
+					"criteria": "string"
 				}
 			]
 		}
@@ -114,7 +124,7 @@
 			"statement": "string"
 		}
 	],
-	"DELETE_DBACTIONS": [{ "id": "number" }],
+	"DELETE_DBACTIONS": [{ "id": "number", "name": "string" }],
 
 	"ADD_ACTIONS": [
 		{
@@ -132,6 +142,13 @@
 					"dmlActionsIds": [
 					  "number"
 				  ]
+				}, 
+				{
+					"type": "SEND_EMAILS",
+					"to": "string",
+					"subject": "string",
+					"bodyContent": "string",
+					"query": "string"
 				}
 			]
 		}
@@ -153,6 +170,13 @@
 					"dmlActionsIds": [
 					  "number"
 					]
+				}, 
+				{
+					"type": "SEND_EMAILS",
+					"to": "string",
+					"subject": "string",
+					"bodyContent": "string",
+					"query": "string"
 				}
 			]
 		}
@@ -202,7 +226,7 @@
 	"DELETE_DETAILS_MODAL": [{ "id": "number" }],
 	"DELETE_TAB_DETAILS_MODAL": [{ "id": "number" }],
 
-	"DELETE_COMPONENT": [{ "id": "number" }],
+	"DELETE_COMPONENT": [{ "id": "number", "name": "BUTTON | LABEL | IMAGE | IMAGEM | TABLE | GRAPH | CRUD_LIST | LIST | KANBAN | INPUT | SELECTOR | HTML | CONTAINER" }],
 	"ADD_COMPONENT_TABLE": [
 		{
 			"query": "string",
@@ -518,7 +542,6 @@
 			"itemKeyField": "string",
 			"itemKeyTable": "string",
 			"columnKeyField": "string",
-			"columnKeyTable": "string",
 			"columnFilterQuery": "string",
 			"interaction": {
 				"screenName": "string",
@@ -548,7 +571,6 @@
 			"itemKeyField": "string",
 			"itemKeyTable": "string",
 			"columnKeyField": "string",
-			"columnKeyTable": "string",
 			"columnFilterQuery": "string",
 			"interaction": {
 				"screenName": "string",
@@ -660,8 +682,9 @@
 			"w": "number",
 			"h": "number",
 			"query": "string",
-			"keyField": "string",
 			"cellHeight": "number",
+			"cellWidth": "number",
+			"orientation": "HORIZONTAL | VERTICAL | GRID",
 			"components": [
 				{
 					"x": "number",
