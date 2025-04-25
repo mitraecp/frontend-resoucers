@@ -18,7 +18,9 @@
 			"name": "string",
 			"isMobile": "true | false", 
 			"isHtml": "true | false",
-			"html": "string"
+			"html": "string", 
+			"isPublish": "true | false",
+			"isHomeScreen": "true | false"
 		}
 	],
 	"ALT_TELAS": [
@@ -28,7 +30,8 @@
 			"isMobile": "true | false",
 			"isPublish": "true | false",
 			"isHtml": "true | false",
-			"html": "string"
+			"html": "string", 
+			"isHomeScreen": "true | false"
 		}
 	],
 	"DELETE_TELAS": [
