@@ -142,6 +142,13 @@
 					"dmlActionsIds": [
 					  "number"
 				  ]
+				}, 
+				{
+					"type": "SEND_EMAILS",
+					"to": "string",
+					"subject": "string",
+					"bodyContent": "string",
+					"query": "string"
 				}
 			]
 		}
@@ -163,6 +170,13 @@
 					"dmlActionsIds": [
 					  "number"
 					]
+				}, 
+				{
+					"type": "SEND_EMAILS",
+					"to": "string",
+					"subject": "string",
+					"bodyContent": "string",
+					"query": "string"
 				}
 			]
 		}
