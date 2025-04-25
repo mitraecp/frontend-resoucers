@@ -421,6 +421,7 @@
 			"itemKeyField": "string",
 			"itemKeyTable": "string",
 			"columnKeyField": "string",
+			"columnKeyTable": "string",
 			"columnFilterQuery": "string",
 			"interaction": {
 				"screenName": "string",
@@ -450,6 +451,7 @@
 			"itemKeyField": "string",
 			"itemKeyTable": "string",
 			"columnKeyField": "string",
+			"columnKeyTable": "string",
 			"columnFilterQuery": "string",
 			"interaction": {
 				"screenName": "string",
