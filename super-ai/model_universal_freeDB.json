@@ -329,7 +329,7 @@
 			"fontColor": "string",
 			"interactionForm": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"screenName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number"
@@ -352,7 +352,7 @@
 			"fontColor": "string",
 			"interactionForm": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"screenName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number"
@@ -482,6 +482,7 @@
 			"contentQuery": "string",
 			"placeHolder": "string",
 			"inputType": "TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT",
+			"linkedVariableName": "string",
 			"dmlInteraction": {
 				"type": "DBACTION",
 				"id": "string"
@@ -501,6 +502,7 @@
 			"contentQuery": "string",
 			"placeHolder": "string",
 			"inputType": "TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT",
+			"linkedVariableName": "string",
 			"dmlInteraction": {
 				"type": "DBACTION",
 				"id": "string"

@@ -450,7 +450,7 @@
 			"fontColor": "string",
 			"interactionForm": {
 				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"screenName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number"
@@ -473,7 +473,7 @@
 			"fontColor": "string",
 			"interactionForm": {
 				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"screenName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number"
