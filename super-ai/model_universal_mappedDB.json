@@ -243,6 +243,7 @@
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -268,6 +269,7 @@
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -323,6 +325,7 @@
 				"modalWidth": "number",
 				"modalHeight": "number",
 				"screenName": "string",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -337,6 +340,7 @@
 				"modalWidth": "number",
 				"modalHeight": "number",
 				"screenName": "string",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -364,6 +368,7 @@
 				"modalWidth": "number",
 				"modalHeight": "number",
 				"screenName": "string",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -378,6 +383,7 @@
 				"modalWidth": "number",
 				"modalHeight": "number",
 				"screenName": "string",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -453,7 +459,8 @@
 				"id": "number",
 				"screenName": "string",
 				"modalWidth": "number",
-				"modalHeight": "number"
+				"modalHeight": "number",
+				"closeOnReloading": "true | false"
 			}
 		}
 	],
@@ -476,7 +483,8 @@
 				"id": "number",
 				"screenName": "string",
 				"modalWidth": "number",
-				"modalHeight": "number"
+				"modalHeight": "number",
+				"closeOnReloading": "true | false"
 			}
 		}
 	],
@@ -550,6 +558,7 @@
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -579,6 +588,7 @@
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -701,6 +711,7 @@
 						"keyColumnName": "string",
 						"modalWidth": "number",
 						"modalHeight": "number",
+						"closeOnReloading": "true | false",
 						"variables": [
 							{
 								"name": "string",
