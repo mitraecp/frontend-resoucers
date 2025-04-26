@@ -72,6 +72,16 @@
 					"subject": "string",
 					"bodyContent": "string",
 					"query": "string"
+				},
+				{
+					"type": "HTTP_REQUEST",
+					"method": "string",
+					"url": "string",
+					"headers": "string",
+					"hasHttpBody": "true | false",
+					"httpBody": "string",
+					"query": "string",
+					"variable": "string"
 				}
 			]
 		}
@@ -82,24 +92,39 @@
 			"name": "string",
 			"steps": [
 				{
+					"id": "number",
 					"type": "GOTO_SCREEN",
 					"screenName": "string"
 				},
 				{
+					"id": "number",
 					"type": "REFRESH_SCREEN"
 				},
 				{
+					"id": "number",
 					"type": "DB_ACTION",
 					"dmlActionsIds": [
 					  "number"
 					]
 				}, 
 				{
+					"id": "number",
 					"type": "SEND_EMAILS",
 					"to": "string",
 					"subject": "string",
 					"bodyContent": "string",
 					"query": "string"
+				}, 
+				{
+					"id": "number",
+					"type": "HTTP_REQUEST",
+					"method": "string",
+					"url": "string",
+					"headers": "string",
+					"hasHttpBody": "true | false",
+					"httpBody": "string",
+					"query": "string",
+					"variable": "string"
 				}
 			]
 		}
