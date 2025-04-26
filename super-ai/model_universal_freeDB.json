@@ -363,7 +363,7 @@
 				"screenName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
-				"closeOnReloading": "true | false",
+				"closeOnReloading": "true | false"
 			}
 		}
 	],
