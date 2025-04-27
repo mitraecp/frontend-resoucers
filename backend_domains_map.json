@@ -1,43 +1,50 @@
 {
-  "beta": [],
-  "release": [
-    "https://clientes5.mitrasheet.com:8080",
-    "https://websummit2.mitrasheet.com:8080",
-    "https://multitenantrelease.mitraecp.com:6022",
-    "https://apresentacaomerge.mitrasheet.com:4999",
-    "https://multitenantbispoalimentos.mitraecp.com:4050",
-    "https://sankhyamitrabi.mitrasheet.com:8080",
-    "https://analytics2.mitrasheet.com:4431",
-    "https://analytics2.mitrasheet.com:4432",
-    "https://analytics2homologacao.mitrasheet.com",
-    "https://api.mitrasheet.com:4088",
-    "https://analytics2demo.mitrasheet.com:4331",
-    "https://castronaves.mitrasheet.com:8080",
-    "https://api0.mitraecp.com:12360",
-    "https://analytics2.mitrasheet.com:4433",
-    "https://prod2.mitrasheet.com:8080",
-    "https://prod2.mitrasheet.com",
-    "https://vmtest.mitrasheet.com",
-    "https://api.mitrasheet.com:7500",
-    "https://castronaves.mitrasheet.com",
-    "https://analytics2demo.mitrasheet.com:4430",
-    "https://juncomultitenant.mitrasheet.com:8080",
-    "https://analytics2.mitrasheet.com:4434",
-    "https://melquilocal.mitrasheet.com:4088",
-    "https://cpd1.mitraecp.com:6517",
-    "https://devlocal.mitrasheet.com:4088",
-    "https://api.mitrasheet.com:5541",
-    "https://api.mitrasheet.com:1001",
-    "https://analytics2.mitrasheet.com:4435",
-    "https://analytics2.mitrasheet.com:4436",
-    "https://vmprod3.mitrasheet.com:8080"
-  ],
-  "preview": ["https://vmprod3.mitrasheet.com:8080"],
-  "validacao": [
-    "https://api0.mitraecp.com:1005",
-    "https://api0.mitraecp.com:1004",
-    "https://melquilocal.mitrasheet.com:4088",
-    "https://devlocal.mitrasheet.com:4088"
-  ],
-  "validacao2": ["https://api.mitrasheet.com:1001"]
+    "beta": [],
+    "release": [
+        "https://clientes5.mitrasheet.com:8080",
+        "https://websummit2.mitrasheet.com:8080",
+        "https://multitenantrelease.mitraecp.com:6022",
+        "https://apresentacaomerge.mitrasheet.com:4999",
+        "https://multitenantbispoalimentos.mitraecp.com:4050",
+        "https://sankhyamitrabi.mitrasheet.com:8080",
+        "https://analytics2.mitrasheet.com:4431",
+        "https://analytics2.mitrasheet.com:4432",
+        "https://analytics2homologacao.mitrasheet.com",
+        "https://api.mitrasheet.com:4088",
+        "https://analytics2demo.mitrasheet.com:4331",
+        "https://castronaves.mitrasheet.com:8080",
+        "https://api0.mitraecp.com:12360",
+        "https://analytics2.mitrasheet.com:4433",
+        "https://prod2.mitrasheet.com:8080",
+        "https://prod2.mitrasheet.com",
+        "https://vmtest.mitrasheet.com",
+        "https://api.mitrasheet.com:7500",
+        "https://castronaves.mitrasheet.com",
+        "https://analytics2demo.mitrasheet.com:4430",
+        "https://juncomultitenant.mitrasheet.com:8080",
+        "https://analytics2.mitrasheet.com:4434",
+        "https://melquilocal.mitrasheet.com:4088",
+        "https://cpd1.mitraecp.com:6517",
+        "https://devlocal.mitrasheet.com:4088",
+        "https://api.mitrasheet.com:5541",
+        "https://api.mitrasheet.com:1001",
+        "https://analytics2.mitrasheet.com:4435",
+        "https://analytics2.mitrasheet.com:4436",
+        "https://vmprod3.mitrasheet.com:8080"
+    ],
+    "preview": [
+        "https://vmprod3.mitrasheet.com:8080"
+    ],
+    "prod3": [
+        "https://vmprod3.mitrasheet.com:8080"
+    ],
+    "validacao": [
+        "https://api0.mitraecp.com:1005",
+        "https://api0.mitraecp.com:1004",
+        "https://melquilocal.mitrasheet.com:4088",
+        "https://devlocal.mitrasheet.com:4088"
+    ],
+    "validacao2": [
+        "https://api.mitrasheet.com:1001"
+    ]
 }
