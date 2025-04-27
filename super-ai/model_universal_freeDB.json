@@ -17,8 +17,6 @@
 		{
 			"name": "string",
 			"isMobile": "true | false", 
-			"isHtml": "true | false",
-			"html": "string", 
 			"isPublish": "true | false",
 			"isHomeScreen": "true | false"
 		}
@@ -29,8 +27,6 @@
 			"name": "string",
 			"isMobile": "true | false",
 			"isPublish": "true | false",
-			"isHtml": "true | false",
-			"html": "string", 
 			"isHomeScreen": "true | false"
 		}
 	],
