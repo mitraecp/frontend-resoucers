@@ -314,6 +314,21 @@
 				"topRight": "number",
 				"bottomLeft": "number",
 				"bottomRight": "number"
+			}, 
+			"interaction": {
+				"screenName": "string",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
+				"id": "number",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"closeOnReloading": "true | false",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
 			}
 		}
 	],
@@ -338,6 +353,21 @@
 				"topRight": "number",
 				"bottomLeft": "number",
 				"bottomRight": "number"
+			}, 
+			"interaction": {
+				"screenName": "string",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
+				"id": "number",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"closeOnReloading": "true | false",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
 			}
 		}
 	],
