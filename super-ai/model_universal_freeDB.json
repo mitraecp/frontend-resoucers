@@ -73,7 +73,12 @@
 					"type": "HTTP_REQUEST",
 					"method": "string",
 					"url": "string",
-					"headers": "string",
+					"headers": [
+						{
+							"key":"string",
+							"value":"string"
+						}
+					],
 					"hasHttpBody": "true | false",
 					"httpBody": "string",
 					"query": "string",
@@ -116,7 +121,12 @@
 					"type": "HTTP_REQUEST",
 					"method": "string",
 					"url": "string",
-					"headers": "string",
+					"headers": [
+						{
+							"key":"string",
+							"value":"string"
+						}
+					]
 					"hasHttpBody": "true | false",
 					"httpBody": "string",
 					"query": "string",
