@@ -33,7 +33,8 @@
         "https://vmprod3.mitrasheet.com:8080"
     ],
     "preview": [
-        "https://vmprod3.mitrasheet.com:8080"
+        "https://vmprod3.mitrasheet.com:8080",
+        "https://api.mitrasheet.com:1001"
     ],
     "prod3": [
         "https://vmprod3.mitrasheet.com:8080"
