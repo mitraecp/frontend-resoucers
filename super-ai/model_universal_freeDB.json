@@ -666,5 +666,47 @@
 				}
 			]
 		}
+	],
+	"ALT_COMPONENT_LIST": [
+		{
+			"screenComponentId": "number",
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"query": "string",
+			"cellHeight": "number",
+			"cellWidth": "number",
+			"orientation": "HORIZONTAL | VERTICAL | GRID",
+			"components": [
+				{
+					"screenComponentId": "number",
+					"x": "number",
+					"y": "number",
+					"z": "number",
+					"w": "number",
+					"h": "number",
+					"type": "LABEL | IMAGE | BUTTON",
+					"text": "string",
+					"interaction": {
+						"screenName": "string",
+						"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
+						"id": "number",
+						"keyColumnName": "string",
+						"modalWidth": "number",
+						"modalHeight": "number",
+						"closeOnReloading": "true | false",
+						"variables": [
+							{
+								"name": "string",
+								"columnName": "string"
+							}
+						]
+					}
+				}
+			]
+		}
 	]
 }
