@@ -462,12 +462,13 @@
 			"h": "number",
 			"image": "string",
 			"query": "string",
-			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES"
+			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES", 
+			"iconFillColor":"string"
 		}
 	],
 	"ALT_COMPONENT_IMAGEM": [
 		{
-			"screenComponentId": "string",
+			"screenComponentId": "number",
 			"x": "number",
 			"y": "number",
 			"z": "number",
@@ -475,7 +476,8 @@
 			"h": "number",
 			"image": "string",
 			"query": "string",
-			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES"
+			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES", 
+			"iconFillColor":"string"
 		}
 	],
 	"ADD_COMPONENT_KANBAN": [
