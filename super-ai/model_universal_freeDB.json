@@ -126,7 +126,7 @@
 							"key":"string",
 							"value":"string"
 						}
-					]
+					],
 					"hasHttpBody": "true | false",
 					"httpBody": "string",
 					"query": "string",
