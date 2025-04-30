@@ -730,7 +730,7 @@
 			"z": "number",
 			"w": "number",
 			"h": "number",
-			"html": "string"
+			"react": "string"
 		}
 	],
 	"ALT_COMPONENT_REACT": [
@@ -741,7 +741,7 @@
 			"z": "number",
 			"w": "number",
 			"h": "number",
-			"html": "string"
+			"react": "string"
 		}
 	],
 
