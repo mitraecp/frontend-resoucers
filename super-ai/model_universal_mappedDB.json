@@ -722,6 +722,29 @@
 		}
 	],
 
+	"ADD_COMPONENT_REACT": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"html": "string"
+		}
+	],
+	"ALT_COMPONENT_REACT": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"html": "string"
+		}
+	],
+
 	"ADD_COMPONENT_SELECTOR": [
 		{
 			"screenName": "string",
