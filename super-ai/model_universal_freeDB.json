@@ -1,4 +1,9 @@
 {
+	"ADD_WIDGET": [
+		{
+			"query": "string"
+		}
+	],
 	"RUN_DML": [{ "statement": "string" }],
 	"RUN_DDL": [{ "statement": "string" }],
 

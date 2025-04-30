@@ -1,4 +1,9 @@
 {
+	"ADD_WIDGET": [
+		{
+			"query": "string"
+		}
+	],
 	"ADD_TABELAS_DB": [
 		{
 			"name": "string",
