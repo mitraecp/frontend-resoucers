@@ -1,7 +1,8 @@
 {
 	"ADD_WIDGET": [
 		{
-			"query": "string"
+			"query": "string",
+			"componentType": "TABLE | BAR | PIE"
 		}
 	],
 	"ADD_TABELAS_DB": [
