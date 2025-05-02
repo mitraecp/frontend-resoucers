@@ -397,7 +397,43 @@
 			"query": "string",
 			"chartType": "PIE | BAR",
 			"enableSlider": "boolean",
-			"enableLegend": "boolean"
+			"enableLegend": "boolean", 
+			"seriesTableName":"string",
+			"blocks": [
+				{
+					"name":"string", 
+					"order":"string",
+					"hidden":"true | false",
+					"totalize":"true | false",
+					"type":"CUBE | ALGORITHM | RELATIONSHIP",
+					"referenceTableName":"string",
+					"formula":"string",
+					"prefix":"string",
+					"suffix":"string",
+					"decimals":"number",
+					"chartType": "BAR | LINE | TOOLTIP",
+					"stackOrden":"number",
+					"marker":"true | false",
+					"markerPosition":"TOP | BOTTOM",
+					"color":"string",
+					"filters":[
+						{
+							"tableName":"string",
+							"contentIds":[
+								"string"
+							]
+						}
+					]
+				}
+			], 
+			"filters":[
+				{
+					"tableName":"string",
+					"contentIds":[
+							"string"
+					]
+				}
+			]
 		}
 	],
 	"ALT_COMPONENT_GRAPH": [
@@ -411,7 +447,43 @@
 			"query": "string",
 			"chartType": "PIE | BAR",
 			"enableSlider": "boolean",
-			"enableLegend": "boolean"
+			"enableLegend": "boolean", 
+			"seriesTableName":"string",
+			"blocks": [
+				{
+					"name":"string", 
+					"order":"string",
+					"hidden":"true | false",
+					"totalize":"true | false",
+					"type":"CUBE | ALGORITHM | RELATIONSHIP",
+					"referenceTableName":"string",
+					"formula":"string",
+					"prefix":"string",
+					"suffix":"string",
+					"decimals":"number",
+				        "chartType": "BAR | LINE | TOOLTIP",
+					"stackOrden":"number",
+					"marker":"true | false",
+					"markerPosition":"TOP | BOTTOM",
+					"color":"string",
+					"filters":[
+						{
+							"tableName":"string",
+							"contentIds":[
+								"string"
+							]
+						}
+					]
+				}
+			], 
+			"filters":[
+				{
+					"tableName":"string",
+					"contentIds":[
+							"string"
+					]
+				}
+			]
 		}
 	],
 	"ADD_COMPONENT_CRUD_LIST": [
