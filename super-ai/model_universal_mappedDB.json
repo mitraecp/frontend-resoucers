@@ -291,11 +291,10 @@
 				]
 			}, 
 			"seriesTableNames":[
-				"number"
+				"string"
 			],
 			"blocks": [
 				{
-					"id":"number",
 					"name":"string", 
 					"order":"string",
 					"hidden":"true | false",
@@ -349,7 +348,40 @@
 						"columnName": "string"
 					}
 				]
-			}
+			},
+			"seriesTableNames":[
+				"string"
+			],
+			"blocks": [
+				{
+					"name":"string", 
+					"order":"string",
+					"hidden":"true | false",
+					"totalize":"true | false",
+					"type":"CUBE | ALGORITHM | RELATIONSHIP",
+					"referenceTableName":"string",
+					"formula":"string",
+					"prefix":"string",
+					"suffix":"string",
+					"decimals":"number",
+					"filters":[
+						{
+							"tableName":"string",
+							"contentIds":[
+								"string"
+							]
+						}
+					]
+				}
+			], 
+			"filters":[
+				{
+					"tableName":"string",
+					"contentIds":[
+							"string"
+					]
+				}
+			]
 		}
 	],
 	"ADD_COMPONENT_GRAPH": [
