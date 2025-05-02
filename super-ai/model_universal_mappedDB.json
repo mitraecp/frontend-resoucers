@@ -73,7 +73,8 @@
 			"isMobile": "true | false", 
 			"isPublish": "true | false",
 			"isHomeScreen": "true | false",
-			"height": "number"
+			"height": "number",
+			"isDashMode":"true | false"
 		}
 	],
 	"ALT_TELAS": [
@@ -83,7 +84,8 @@
 			"isMobile": "true | false",
 			"isPublish": "true | false",
 			"isHomeScreen": "true | false",
-			"height": "number"
+			"height": "number", 
+			"isDashMode":"true | false"
 		}
 	],
 	"DELETE_TELAS": [
