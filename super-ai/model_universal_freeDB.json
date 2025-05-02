@@ -1,10 +1,4 @@
 {
-	"ADD_WIDGET": [
-		{
-			"query": "string",
-			"componentType": "TABLE | BAR | PIE"
-		}
-	],
 	"RUN_DML": [{ "statement": "string" }],
 	"RUN_DDL": [{ "statement": "string" }],
 
