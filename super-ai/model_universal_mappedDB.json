@@ -411,11 +411,15 @@
 					"prefix":"string",
 					"suffix":"string",
 					"decimals":"number",
-					"chartType": "BAR | LINE | TOOLTIP",
+					"stackType": "BAR | LINE | TOOLTIP",
 					"stackOrden":"number",
 					"marker":"true | false",
 					"markerPosition":"TOP | BOTTOM",
 					"color":"string",
+					"axisPosition":"number",
+					"toolTipBlockNames":[
+						"string"
+					],
 					"filters":[
 						{
 							"tableName":"string",
@@ -461,11 +465,15 @@
 					"prefix":"string",
 					"suffix":"string",
 					"decimals":"number",
-				        "chartType": "BAR | LINE | TOOLTIP",
+				        "stackType": "BAR | LINE | TOOLTIP",
 					"stackOrden":"number",
 					"marker":"true | false",
 					"markerPosition":"TOP | BOTTOM",
 					"color":"string",
+					"axisPosition":"number",
+					"toolTipBlockNames":[
+						"string"
+					],
 					"filters":[
 						{
 							"tableName":"string",
