@@ -1,0 +1,773 @@
+import asyncio
+import json5 as json
+import re
+import tempfile
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+
+import aiofiles
+import aiofiles.os as aiofiles_os
+import httpx
+import validators
+
+from langflow.base.curl.parse import parse_context
+from langflow.custom import Component
+from langflow.io import (
+    BoolInput,
+    DataInput,
+    DropdownInput,
+    FloatInput,
+    IntInput,
+    MessageTextInput,
+    MultilineInput,
+    Output,
+    StrInput,
+    TableInput,
+)
+from langflow.schema import Data
+from langflow.schema.dotdict import dotdict
+
+class MiddlewareMitraUniversal(Component):
+    display_name = "Middleware Mitra - Universal"
+    description = (
+        "Make HTTP requests to handle database, attributes, components, forms, screens and others operations using JSON format in body"
+        "se o usuario fizer uma pergunta sobre os dados dele, você deve usar apenas o ADD_WIDGET"
+    )
+    icon = "Globe"
+    name = "MiddlewareMitraUniversal"
+
+    default_keys = ["urls", "method", "query_params"]
+
+    inputs = [
+        MessageTextInput(
+            name="urls",
+            display_name="URLs",
+            list=True,
+            info="Enter one or more URLs, separated by commas.",
+            advanced=False,
+            tool_mode=False,
+        ),
+        MultilineInput(
+            name="curl",
+            display_name="cURL",
+            info=(
+                "Paste a curl command to populate the fields. "
+                "This will fill in the dictionary fields for headers and body."
+            ),
+            advanced=True,
+            real_time_refresh=True,
+            tool_mode=False,
+        ),
+        DropdownInput(
+            name="method",
+            display_name="Method",
+            options=["GET", "POST", "PATCH", "PUT", "DELETE"],
+            info="The HTTP method to use.",
+            real_time_refresh=True,
+            tool_mode=False,
+        ),
+        BoolInput(
+            name="use_curl",
+            display_name="Use cURL",
+            value=False,
+            info="Enable cURL mode to populate fields from a cURL command.",
+            real_time_refresh=True,
+            tool_mode=False,
+        ),
+        DataInput(
+            name="query_params",
+            display_name="Query Parameters",
+            info="The query parameters to append to the URL.",
+            advanced=True,
+            tool_mode=False,
+        ),
+        DataInput(
+            name="body",
+            display_name="Body",
+            info=(
+                "JSON format for database operations. Use the following format:" + json.dumps({"ADD_WIDGET":[{"query":"string","componentType":"TABLE | BAR | PIE"}],"ADD_TABELAS_DB":[{"name":"string","idDataType":"AUTO_INCREMENT | INT | VARCHAR","attributes":[{"attributeType":"VARCHAR | DOUBLE | DATE | FOREIGN_KEY","name":"string","foreignKeyTableOrEntityName":"string"}]}],"ALT_TABELAS_DB":[{"tableOrEntityName":"string","name":"string","idDataType":"AUTO_INCREMENT | INT | VARCHAR"}],"DELETE_TABELAS_DB":[{"tableOrEntityName":"string"}],"ADD_ATRIBUTES_DB":[{"tableOrEntityName":"string","name":"string","attributeType":"VARCHAR | DOUBLE | DATE | FOREIGN_KEY","foreignKeyTableOrEntityName":"string"}],"ALT_ATRIBUTES_DB":[{"tableOrEntityName":"string","name":"string","newName":"string","attributeType":"VARCHAR | DOUBLE | DATE | FOREIGN_KEY","foreignKeyTableOrEntityName":"string"}],"DELETE_ATRIBUTES_DB":[{"tableOrEntityName":"string","name":"string","attributeType":"VARCHAR | DOUBLE | DATE | FOREIGN_KEY"}],"RUN_DML":[{"statement":"string"}],"ADD_VARIAVEIS":[{"name":"string"}],"DELETE_VARIAVEIS":[{"name":"string"}],"ADD_TELAS":[{"name":"string","isMobile":"true | false","isPublish":"true | false","isHomeScreen":"true | false"}],"ALT_TELAS":[{"id":"number","name":"string","isMobile":"true | false","isPublish":"true | false","isHomeScreen":"true | false"}],"DELETE_TELAS":[{"id":"number","name":"string"}],"ADD_FORMS":[{"name":"string","tableOrEntityName":"string"}],"ALT_FORMS":[{"id":"number","name":"string","fields":[{"name":"string","type":"string","alias":"string","visibility":"EDIT | BLOCK | MANDATORY | HIDDEN","fillType":"FIXED | SEARCH","fixDefaultValue":"string","maskType":"DEFAULT | CPF | PHONE | CNPJ | CEP | TIME","prefix":"string","suffix":"string","criteria":"string"}]}],"DELETE_FORMS":[{"id":"number"}],"ADD_DBACTIONS":[{"name":"string","statement":"string"}],"DELETE_DBACTIONS":[{"id":"number","name":"string"}],"ADD_ACTIONS":[{"name":"string","steps":[{"type":"GOTO_SCREEN","screenName":"string"},{"type":"REFRESH_SCREEN"},{"type":"DB_ACTION","dmlActionsIds":["number"]},{"type":"SEND_EMAILS","to":"string","subject":"string","bodyContent":"string","query":"string"},{"type":"HTTP_REQUEST","method":"string","url":"string","headers":[{"key":"string","value":"string"}],"hasHttpBody":"true | false","httpBody":"string","query":"string","variable":"string"}]}],"ALT_ACTIONS":[{"id":"number","name":"string","steps":[{"id":"number","type":"GOTO_SCREEN","screenName":"string"},{"id":"number","type":"REFRESH_SCREEN"},{"id":"number","type":"DB_ACTION","dmlActionsIds":["number"]},{"id":"number","type":"SEND_EMAILS","to":"string","subject":"string","bodyContent":"string","query":"string"},{"id":"number","type":"HTTP_REQUEST","method":"string","url":"string","headers":[{"key":"string","value":"string"}],"hasHttpBody":"true | false","httpBody":"string","query":"string","variable":"string"}]}],"ADD_DETAILS_MODAL":[{"name":"string","tableOrEntityName":"string","tabs":[{"name":"string","type":"SCREEN","referenceId":"number","screenName":"string"}],"fields":[{"name":"string","alias":"string"}]}],"ALT_DETAILS_MODAL":[{"id":"number","name":"string","tableOrEntityName":"string","tabs":[{"name":"string","type":"SCREEN","referenceId":"number","screenName":"string"}],"fields":[{"name":"string","alias":"string"}]}],"DELETE_DETAILS_MODAL":[{"id":"number"}],"DELETE_TAB_DETAILS_MODAL":[{"id":"number"}],"DELETE_COMPONENT":[{"id":"number","name":"BUTTON | LABEL | IMAGE | IMAGEM | TABLE | GRAPH | CRUD_LIST | LIST | KANBAN | INPUT | SELECTOR | HTML | REACT | CONTAINER"}],"ADD_COMPONENT_TABLE":[{"query":"string","screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","interaction":{"screenName":"string","type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}],"ALT_COMPONENT_TABLE":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","query":"string","interaction":{"screenName":"string","type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}],"ADD_COMPONENT_GRAPH":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","query":"string","chartType":"PIE | BAR","enableSlider":"boolean","enableLegend":"boolean"}],"ALT_COMPONENT_GRAPH":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","query":"string","chartType":"PIE | BAR","enableSlider":"boolean","enableLegend":"boolean"}],"ADD_COMPONENT_CRUD_LIST":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","query":"string","keyField":"string","cellKeyField":"string","deleteInteraction":{"type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","screenName":"string","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]},"editInteraction":{"type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","screenName":"string","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}],"ALT_COMPONENT_CRUD_LIST":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","query":"string","keyField":"string","cellKeyField":"string","deleteInteraction":{"type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","screenName":"string","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]},"editInteraction":{"type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","screenName":"string","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}],"ADD_COMPONENT_LABEL":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","text":"string","fontSize":"number","query":"string","fontColor":"string","backgroundColor":"string","verticalAlignment":"TOP | CENTER | BOTTOM","horizontalAlignment":"LEFT | CENTER | RIGHT","enableHover":"boolean","borderRadius":{"topLeft":"number","topRight":"number","bottomLeft":"number","bottomRight":"number"},"interaction":{"screenName":"string","type":"DBACTION | MODAL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}],"ALT_COMPONENT_LABEL":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","text":"string","fontSize":"number","query":"string","fontColor":"string","backgroundColor":"string","verticalAlignment":"TOP | CENTER | BOTTOM","horizontalAlignment":"LEFT | CENTER | RIGHT","enableHover":"boolean","borderRadius":{"topLeft":"number","topRight":"number","bottomLeft":"number","bottomRight":"number"},"interaction":{"screenName":"string","type":"DBACTION | MODAL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}],"ADD_COMPONENT_BUTTON":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","text":"string","fontSize":"number","backgroundColor":"string","icon":"string","fontColor":"string","interactionForm":{"type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","screenName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false"}}],"ALT_COMPONENT_BUTTON":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","text":"string","fontSize":"number","textAlign":"string","backgroundColor":"string","icon":"string","fontColor":"string","interactionForm":{"type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","screenName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false"}}],"ADD_COMPONENT_CONTAINER":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","title":"string","fontSize":"number"}],"ALT_COMPONENT_CONTAINER":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","title":"string","fontSize":"number"}],"ADD_COMPONENT_IMAGEM":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","image":"string","query":"string","format":"DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES","iconFillColor":"string"}],"ALT_COMPONENT_IMAGEM":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","image":"string","query":"string","format":"DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES","iconFillColor":"string"}],"ADD_COMPONENT_KANBAN":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","itemQuery":"string","itemKeyField":"string","itemKeyTable":"string","columnKeyField":"string","columnFilterQuery":"string","interaction":{"screenName":"string","type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}],"ALT_COMPONENT_KANBAN":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","itemQuery":"string","itemKeyField":"string","itemKeyTable":"string","columnKeyField":"string","columnFilterQuery":"string","interaction":{"screenName":"string","type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}],"ADD_COMPONENT_INPUT":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","title":"string","initialContentQuery":"string","contentQuery":"string","placeHolder":"string","inputType":"TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT","dmlInteraction":{"type":"DBACTION","id":"string"}}],"ALT_COMPONENT_INPUT":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","title":"string","initialContentQuery":"string","contentQuery":"string","placeHolder":"string","inputType":"TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT","dmlInteraction":{"type":"DBACTION","id":"string"}}],"ADD_COMPONENT_HTML":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","html":"string"}],"ALT_COMPONENT_HTML":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","html":"string"}],"ADD_COMPONENT_REACT":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","react":"string"}],"ALT_COMPONENT_REACT":[{"screenComponentId":"string","x":"number","y":"number","z":"number","w":"number","h":"number","react":"string"}],"ADD_COMPONENT_SELECTOR":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","tableOrEntityName":"string","selectorType":"SINGLE | MULTIPLE"}],"ALT_COMPONENT_SELECTOR":[{"screenComponentId":"number","x":"number","y":"number","z":"number","w":"number","h":"number","tableOrEntityName":"string","selectorType":"SINGLE | MULTIPLE"}],"ADD_COMPONENT_LIST":[{"screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","query":"string","cellHeight":"number","cellWidth":"number","orientation":"HORIZONTAL | VERTICAL | GRID","components":[{"x":"number","y":"number","z":"number","w":"number","h":"number","type":"LABEL | IMAGE | BUTTON","text":"string","interaction":{"screenName":"string","type":"FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}]}],"ALT_COMPONENT_LIST":[{"screenComponentId":"number","screenName":"string","x":"number","y":"number","z":"number","w":"number","h":"number","query":"string","cellHeight":"number","cellWidth":"number","orientation":"HORIZONTAL | VERTICAL | GRID","components":[{"screenComponentId":"number","x":"number","y":"number","z":"number","w":"number","h":"number","type":"LABEL | IMAGE | BUTTON","text":"string","interaction":{"screenName":"string","type":"DBACTION | MODAL | ACTION | GO_TO_SCREEN","id":"number","keyColumnName":"string","modalWidth":"number","modalHeight":"number","closeOnReloading":"true | false","variables":[{"name":"string","columnName":"string"}]}}]}]}, indent=2, ensure_ascii=False)
+            ),
+            advanced=True,
+            tool_mode=True
+        ),
+        TableInput(
+            name="headers",
+            display_name="Headers",
+            info="The headers to send with the request as a dictionary.",
+            table_schema=[
+                {
+                    "name": "key",
+                    "display_name": "Header",
+                    "type": "str",
+                    "description": "Header name",
+                },
+                {
+                    "name": "value",
+                    "display_name": "Value",
+                    "type": "str",
+                    "description": "Header value",
+                },
+            ],
+            value=[],
+            advanced=True,
+            input_types=["Data"],
+        ),
+        IntInput(
+            name="timeout",
+            display_name="Timeout",
+            value=40,
+            info="The timeout to use for the request.",
+            advanced=True,
+        ),
+        BoolInput(
+            name="follow_redirects",
+            display_name="Follow Redirects",
+            value=True,
+            info="Whether to follow http redirects.",
+            advanced=True,
+        ),
+        BoolInput(
+            name="save_to_file",
+            display_name="Save to File",
+            value=False,
+            info="Save the API response to a temporary file",
+            advanced=True,
+        ),
+        BoolInput(
+            name="include_httpx_metadata",
+            display_name="Include HTTPx Metadata",
+            value=False,
+            info=(
+                "Include properties such as headers, status_code, response_headers, "
+                "and redirection_history in the output."
+            ),
+            advanced=True,
+        ),
+    ]
+
+    outputs = [
+        Output(display_name="Data", name="data", method="make_requests"),
+    ]
+
+    def _parse_json_value(self, value: Any) -> Any:
+        """Parse a value that might be a JSON string."""
+        if not isinstance(value, str):
+            return value
+
+        try:
+            parsed = json.loads(value)
+        except json.JSONDecodeError:
+            return value
+        else:
+            return parsed
+
+    def _process_body(self, body: Any) -> dict:
+        """Process the body input into a valid dictionary.
+
+        Args:
+            body: The body to process, can be dict, str, or list
+        Returns:
+            Processed dictionary
+        """
+        if body is None:
+            return {}
+        if isinstance(body, dict):
+            return self._process_dict_body(body)
+        if isinstance(body, str):
+            print("Body no Universal do tipo str, convertendo para dict...")
+            print("Body no Universal, String recebido: " + body)
+            return self._process_string_body(body)
+        if isinstance(body, list):
+            return self._process_list_body(body)
+
+        return {}
+
+    def _process_dict_body(self, body: dict) -> dict:
+        """Process dictionary body by parsing JSON values."""
+        return {k: self._parse_json_value(v) for k, v in body.items()}
+
+    def get_str_html_and_json(self, json_str: str) -> str | None:
+            match = json_str.split('"html":')
+            if len(match) > 1:
+                html_str = match[1].split('</html>')[0] + "</html>"
+                html_str = html_str.strip()
+                if html_str.startswith('"'):
+                    html_str = html_str[1:]
+                if html_str.endswith('"'):
+                    html_str = html_str[:-1]
+                # Remove escape characters from the HTML string
+                html_str = re.sub(r"\\\'", '\'', html_str)  # Remove backslashes
+                html_str = re.sub(r'\\\"', '"', html_str)  # Remove backslashes
+                html_str = html_str.replace('\"', '"')  # Remove backslashes
+                html_str = re.sub(r'\\+n', '$quebra_html', html_str)  
+                html_str = re.sub(r'\n', '$quebra_html', html_str)
+                html_str = re.sub(r'\n+', '$quebra_html', html_str)  # Remove multiple newlines
+                html_str = re.sub(r'(\\n|\n)+', '$quebra_html', html_str)
+                html_str = re.sub(r'\\`', '`', html_str)  # Remove backslashes
+                html_str = html_str.replace('\$', '$')  # Remove backslashes
+                html_str = html_str.replace('\\', '\\\\')  # Remove backslashes
+                
+                #Remove escapes characters
+                json_bebore_html = match[0]
+
+                
+                return html_str, json_bebore_html
+                #return html_str
+            return None
+        
+    def get_str_react_and_json(self, json_str: str) -> str | None:
+            match = json_str.split('"react":')
+            if len(match) > 1:
+                react_str = match[1].split('"')[0]
+                react_str = react_str.strip()
+                if react_str.startswith('"'):
+                    react_str = react_str[1:]
+                if react_str.endswith('"'):
+                    react_str = react_str[:-1]
+                # Remove escape characters from the REACT string
+                react_str = re.sub(r"\\\'", '\'', react_str)  # Remove backslashes
+                react_str = re.sub(r'\\\"', '"', react_str)  # Remove backslashes
+                react_str = react_str.replace('\"', '"')  # Remove backslashes
+                react_str = re.sub(r'\\+n', '$quebra_react', react_str)  
+                react_str = re.sub(r'\n', '$quebra_react', react_str)
+                react_str = re.sub(r'\n+', '$quebra_react', react_str)  # Remove multiple newlines
+                react_str = re.sub(r'(\\n|\n)+', '$quebra_react', react_str)
+                react_str = re.sub(r'\\`', '`', react_str)  # Remove backslashes
+                react_str = react_str.replace('\$', '$')  # Remove backslashes
+                react_str = react_str.replace('\\', '\\\\')  # Remove backslashes
+                
+                #Remove escapes characters
+                json_bebore_react = match[0]
+
+                
+                return react_str, json_bebore_react
+                #return react_str
+            return None
+        
+    def process_html_string(self, body: str) -> str:
+        print("Processando componente HTML...")
+        try:
+            if body.__contains__('"ADD_COMPONENT_HTML":') or body.__contains__('"ALT_COMPONENT_HTML":'):
+                html_processed, json_processed = self.get_str_html_and_json(body)
+            else:
+                json_processed = body
+            json_processed = re.sub(r'\\', '', json_processed)
+            json_processed = re.sub(r'\n', '$quebra_json', json_processed)
+            json_processed = re.sub(r'\\\"', '\"', json_processed)
+            if json_processed.__contains__('"ADD_COMPONENT_HTML":') or json_processed.__contains__('"ALT_COMPONENT_HTML":') :
+                if html_processed:
+                    while html_processed.startswith('"'):
+                        html_processed = html_processed[1:]
+                    while html_processed.endswith('"'):
+                        html_processed = html_processed[:-1]
+                    while html_processed.startswith('\"'):
+                        html_processed = html_processed[1:]
+                    json_processed = json_processed + '"html":' + '"' + html_processed.replace('"', '\\"') + '"' + '}]}'
+                    print("HTML processado com sucesso.")
+            print("JSON processado: " + json_processed)
+            return json_processed.replace('$quebra_json', '\n').replace('$quebra_html', '\\n')
+        except Exception as e:
+            print("Erro ao processar HTML: " + str(e))
+            return None
+
+    def process_react_string(self, body: str) -> str:
+        print("Processando componente REACT...")
+        try:
+            if body.__contains__('"ADD_COMPONENT_REACT":') or body.__contains__('"ALT_COMPONENT_REACT":'):
+                react_processed, json_processed = self.get_str_react_and_json(body)
+            else:
+                json_processed = body
+            json_processed = re.sub(r'\\', '', json_processed)
+            json_processed = re.sub(r'\n', '$quebra_json', json_processed)
+            json_processed = re.sub(r'\\\"', '\"', json_processed)
+            if json_processed.__contains__('"ADD_COMPONENT_REACT":') or json_processed.__contains__('"ALT_COMPONENT_REACT":') :
+                if react_processed:
+                    while react_processed.startswith('"'):
+                        react_processed = react_processed[1:]
+                    while react_processed.endswith('"'):
+                        react_processed = react_processed[:-1]
+                    while react_processed.startswith('\"'):
+                        react_processed = react_processed[1:]
+                    json_processed = json_processed + '"react":' + '"' + react_processed.replace('"', '\\"') + '"' + '}]}'
+                    print("React processado com sucesso.")
+            print("JSON processado: " + json_processed)
+            return json_processed.replace('$quebra_json', '\n').replace('$quebra_react', '\\n')
+        except Exception as e:
+            print("Erro ao processar React: " + str(e))
+            return None
+
+    def _process_string_body(self, body: str) -> dict:
+        """Process string body by attempting JSON parse."""
+        try:
+            if isinstance(body, dict):
+                return body
+            if body.__contains__('"ADD_COMPONENT_HTML":') or body.__contains__('"ALT_COMPONENT_HTML":'):
+                corrected_str = self.process_html_string(body)
+                if corrected_str:
+                    body = corrected_str
+            return json.loads(body)
+        except Exception as e:
+            json_error_return = {
+                "error": "Erro ao decodificar JSON retornado pela IA. Requisição não processada.",
+                "error_message": str(e)
+            }
+            return json_error_return
+    def _process_string_body_react(self, body: str) -> dict:
+        """Process string body by attempting JSON parse."""
+        try:
+            if isinstance(body, dict):
+                return body
+            if body.__contains__('"ADD_COMPONENT_REACT":') or body.__contains__('"ALT_COMPONENT_REACT":'):
+                corrected_str = self.process_react_string(body)
+                if corrected_str:
+                    body = corrected_str
+            return json.loads(body)
+        except Exception as e:
+            json_error_return = {
+                "error": "Erro ao decodificar JSON retornado pela IA. Requisição não processada.",
+                "error_message": str(e)
+            }
+            return json_error_return
+    
+    def _process_list_body(self, body: list) -> dict:
+        """Process list body by converting to key-value dictionary."""
+        processed_dict = {}
+
+        try:
+            for item in body:
+                if not self._is_valid_key_value_item(item):
+                    continue
+
+                key = item["key"]
+                value = self._parse_json_value(item["value"])
+                processed_dict[key] = value
+
+        except (KeyError, TypeError, ValueError) as e:
+            self.log(f"Failed to process body list: {e}")
+            return {}  # Return empty dictionary instead of None
+
+        return processed_dict
+
+    def _is_valid_key_value_item(self, item: Any) -> bool:
+        """Check if an item is a valid key-value dictionary."""
+        return isinstance(item, dict) and "key" in item and "value" in item
+
+    def parse_curl(self, curl: str, build_config: dotdict) -> dotdict:
+        """Parse a cURL command and update build configuration.
+
+        Args:
+            curl: The cURL command to parse
+            build_config: The build configuration to update
+        Returns:
+            Updated build configuration
+        """
+        try:
+            parsed = parse_context(curl)
+
+            # Update basic configuration
+            build_config["urls"]["value"] = [parsed.url]
+            build_config["method"]["value"] = parsed.method.upper()
+            build_config["headers"]["advanced"] = True
+            build_config["body"]["advanced"] = True
+
+            # Process headers
+            headers_list = [{"key": k, "value": v} for k, v in parsed.headers.items()]
+            build_config["headers"]["value"] = headers_list
+
+            if headers_list:
+                build_config["headers"]["advanced"] = False
+
+            # Process body data
+            if not parsed.data:
+                build_config["body"]["value"] = []
+            elif parsed.data:
+                try:
+                    json_data = json.loads(parsed.data)
+                    if isinstance(json_data, dict):
+                        body_list = [
+                            {"key": k, "value": json.dumps(v) if isinstance(v, dict | list) else str(v)}
+                            for k, v in json_data.items()
+                        ]
+                        build_config["body"]["value"] = body_list
+                        build_config["body"]["advanced"] = False
+                    else:
+                        build_config["body"]["value"] = [{"key": "data", "value": json.dumps(json_data)}]
+                        build_config["body"]["advanced"] = False
+                except json.JSONDecodeError:
+                    build_config["body"]["value"] = [{"key": "data", "value": parsed.data}]
+                    build_config["body"]["advanced"] = False
+
+        except Exception as exc:
+            msg = f"Error parsing curl: {exc}"
+            self.log(msg)
+            raise ValueError(msg) from exc
+
+        return build_config
+
+    def update_build_config(self, build_config: dotdict, field_value: Any, field_name: str | None = None) -> dotdict:
+        if field_name == "use_curl":
+            build_config = self._update_curl_mode(build_config, use_curl=field_value)
+
+            # Fields that should not be reset
+            preserve_fields = {"timeout", "follow_redirects", "save_to_file", "include_httpx_metadata", "use_curl"}
+
+            # Mapping between input types and their reset values
+            type_reset_mapping = {
+                TableInput: [],
+                BoolInput: False,
+                IntInput: 0,
+                FloatInput: 0.0,
+                MessageTextInput: "",
+                StrInput: "",
+                MultilineInput: "",
+                DropdownInput: "GET",
+                DataInput: {},
+            }
+
+            for input_field in self.inputs:
+                # Only reset if field is not in preserve list
+                if input_field.name not in preserve_fields:
+                    reset_value = type_reset_mapping.get(type(input_field), None)
+                    build_config[input_field.name]["value"] = reset_value
+                    self.log(f"Reset field {input_field.name} to {reset_value}")
+        elif field_name == "method" and not self.use_curl:
+            build_config = self._update_method_fields(build_config, field_value)
+        elif field_name == "curl" and self.use_curl and field_value:
+            build_config = self.parse_curl(field_value, build_config)
+        return build_config
+
+    def _update_curl_mode(self, build_config: dotdict, *, use_curl: bool) -> dotdict:
+        always_visible = ["method", "use_curl"]
+
+        for field in self.inputs:
+            field_name = field.name
+            field_config = build_config.get(field_name)
+            if isinstance(field_config, dict):
+                if field_name in always_visible:
+                    field_config["advanced"] = False
+                elif field_name == "urls":
+                    field_config["advanced"] = use_curl
+                elif field_name == "curl":
+                    field_config["advanced"] = not use_curl
+                    field_config["real_time_refresh"] = use_curl
+                elif field_name in ["body", "headers"]:
+                    field_config["advanced"] = True  # Always keep body and headers in advanced when use_curl is False
+                else:
+                    field_config["advanced"] = use_curl
+            else:
+                self.log(f"Expected dict for build_config[{field_name}], got {type(field_config).__name__}")
+
+        if not use_curl:
+            current_method = build_config.get("method", {}).get("value", "GET")
+            build_config = self._update_method_fields(build_config, current_method)
+
+        return build_config
+
+    def _update_method_fields(self, build_config: dotdict, method: str) -> dotdict:
+        common_fields = [
+            "urls",
+            "method",
+            "use_curl",
+        ]
+
+        always_advanced_fields = [
+            "body",
+            "headers",
+            "timeout",
+            "follow_redirects",
+            "save_to_file",
+            "include_httpx_metadata",
+        ]
+
+        body_fields = ["body"]
+
+        for field in self.inputs:
+            field_name = field.name
+            field_config = build_config.get(field_name)
+            if isinstance(field_config, dict):
+                if field_name in common_fields:
+                    field_config["advanced"] = False
+                elif field_name in body_fields:
+                    field_config["advanced"] = method not in ["POST", "PUT", "PATCH"]
+                elif field_name in always_advanced_fields:
+                    field_config["advanced"] = True
+                else:
+                    field_config["advanced"] = True
+            else:
+                self.log(f"Expected dict for build_config[{field_name}], got {type(field_config).__name__}")
+
+        return build_config
+
+    async def make_request(
+        self,
+        client: httpx.AsyncClient,
+        method: str,
+        url: str,
+        headers: dict | None = None,
+        body: Any = None,
+        timeout: int = 5,
+        *,
+        follow_redirects: bool = True,
+        save_to_file: bool = False,
+        include_httpx_metadata: bool = False,
+    ) -> Data:
+        method = method.upper()
+        if method not in {"GET", "POST", "PATCH", "PUT", "DELETE"}:
+            msg = f"Unsupported method: {method}"
+            raise ValueError(msg)
+
+        # Process body using the new helper method
+        processed_body = self._process_body(body)
+
+        try:
+            response = await client.request(
+                method,
+                url,
+                headers=headers,
+                json=processed_body,
+                timeout=timeout,
+                follow_redirects=follow_redirects,
+            )
+
+            redirection_history = [
+                {
+                    "url": redirect.headers.get("Location", str(redirect.url)),
+                    "status_code": redirect.status_code,
+                }
+                for redirect in response.history
+            ]
+
+            is_binary, file_path = await self._response_info(response, with_file_path=save_to_file)
+            response_headers = self._headers_to_dict(response.headers)
+
+            metadata: dict[str, Any] = {
+                "source": url,
+            }
+
+            if save_to_file:
+                mode = "wb" if is_binary else "w"
+                encoding = response.encoding if mode == "w" else None
+                if file_path:
+                    # Ensure parent directory exists
+                    await aiofiles_os.makedirs(file_path.parent, exist_ok=True)
+                    if is_binary:
+                        async with aiofiles.open(file_path, "wb") as f:
+                            await f.write(response.content)
+                            await f.flush()
+                    else:
+                        async with aiofiles.open(file_path, "w", encoding=encoding) as f:
+                            await f.write(response.text)
+                            await f.flush()
+                    metadata["file_path"] = str(file_path)
+
+                if include_httpx_metadata:
+                    metadata.update(
+                        {
+                            "headers": headers,
+                            "status_code": response.status_code,
+                            "response_headers": response_headers,
+                            **({"redirection_history": redirection_history} if redirection_history else {}),
+                        }
+                    )
+                return Data(data=metadata)
+
+            if is_binary:
+                result = response.content
+            else:
+                try:
+                    result = response.json()
+                except json.JSONDecodeError:
+                    self.log("Failed to decode JSON response")
+                    result = response.text.encode("utf-8")
+
+            metadata.update({"result": result})
+
+            if include_httpx_metadata:
+                metadata.update(
+                    {
+                        "headers": headers,
+                        "status_code": response.status_code,
+                        "response_headers": response_headers,
+                        **({"redirection_history": redirection_history} if redirection_history else {}),
+                    }
+                )
+            return Data(data=metadata)
+        except httpx.TimeoutException:
+            return Data(
+                data={
+                    "source": url,
+                    "headers": headers,
+                    "status_code": 408,
+                    "error": "Request timed out",
+                },
+            )
+        except Exception as exc:  # noqa: BLE001
+            self.log(f"Error making request to {url}")
+            return Data(
+                data={
+                    "source": url,
+                    "headers": headers,
+                    "status_code": 500,
+                    "error": str(exc),
+                    **({"redirection_history": redirection_history} if redirection_history else {}),
+                },
+            )
+
+    def add_query_params(self, url: str, params: dict) -> str:
+        url_parts = list(urlparse(url))
+        query = dict(parse_qsl(url_parts[4]))
+        query.update(params)
+        url_parts[4] = urlencode(query)
+        return urlunparse(url_parts)
+
+    async def make_requests(self) -> list[Data]:
+        method = self.method
+        urls = [url.strip() for url in self.urls if url.strip()]
+        headers = self.headers or {}
+        body = self.body or {}
+        timeout = self.timeout
+        follow_redirects = self.follow_redirects
+        save_to_file = self.save_to_file
+        include_httpx_metadata = self.include_httpx_metadata
+
+        if self.use_curl and self.curl:
+            self._build_config = self.parse_curl(self.curl, dotdict())
+
+        invalid_urls = [url for url in urls if not validators.url(url)]
+        if invalid_urls:
+            msg = f"Invalid URLs provided: {invalid_urls}"
+            raise ValueError(msg)
+
+        if isinstance(self.query_params, str):
+            query_params = dict(parse_qsl(self.query_params))
+        else:
+            query_params = self.query_params.data if self.query_params else {}
+
+        # Process headers here
+        headers = self._process_headers(headers)
+
+        # Process body
+        body = self._process_body(body)
+
+        bodies = [body] * len(urls)
+
+        urls = [self.add_query_params(url, query_params) for url in urls]
+
+        async with httpx.AsyncClient() as client:
+            results = await asyncio.gather(
+                *[
+                    self.make_request(
+                        client,
+                        method,
+                        u,
+                        headers,
+                        rec,
+                        timeout,
+                        follow_redirects=follow_redirects,
+                        save_to_file=save_to_file,
+                        include_httpx_metadata=include_httpx_metadata,
+                    )
+                    for u, rec in zip(urls, bodies, strict=False)
+                ]
+            )
+        self.status = results
+        return results
+
+    async def _response_info(
+        self, response: httpx.Response, *, with_file_path: bool = False
+    ) -> tuple[bool, Path | None]:
+        """Determine the file path and whether the response content is binary.
+
+        Args:
+            response (Response): The HTTP response object.
+            with_file_path (bool): Whether to save the response content to a file.
+
+        Returns:
+            Tuple[bool, Path | None]:
+                A tuple containing a boolean indicating if the content is binary and the full file path (if applicable).
+        """
+        content_type = response.headers.get("Content-Type", "")
+        is_binary = "application/octet-stream" in content_type or "application/binary" in content_type
+
+        if not with_file_path:
+            return is_binary, None
+
+        component_temp_dir = Path(tempfile.gettempdir()) / self.__class__.__name__
+
+        # Create directory asynchronously
+        await aiofiles_os.makedirs(component_temp_dir, exist_ok=True)
+
+        filename = None
+        if "Content-Disposition" in response.headers:
+            content_disposition = response.headers["Content-Disposition"]
+            filename_match = re.search(r'filename="(.+?)"', content_disposition)
+            if filename_match:
+                extracted_filename = filename_match.group(1)
+                filename = extracted_filename
+
+        # Step 3: Infer file extension or use part of the request URL if no filename
+        if not filename:
+            # Extract the last segment of the URL path
+            url_path = urlparse(str(response.request.url) if response.request else "").path
+            base_name = Path(url_path).name  # Get the last segment of the path
+            if not base_name:  # If the path ends with a slash or is empty
+                base_name = "response"
+
+            # Infer file extension
+            content_type_to_extension = {
+                "text/plain": ".txt",
+                "application/json": ".json",
+                "image/jpeg": ".jpg",
+                "image/png": ".png",
+                "application/octet-stream": ".bin",
+            }
+            extension = content_type_to_extension.get(content_type, ".bin" if is_binary else ".txt")
+            filename = f"{base_name}{extension}"
+
+        # Step 4: Define the full file path
+        file_path = component_temp_dir / filename
+
+        # Step 5: Check if file exists asynchronously and handle accordingly
+        try:
+            # Try to create the file exclusively (x mode) to check existence
+            async with aiofiles.open(file_path, "x") as _:
+                pass  # File created successfully, we can use this path
+        except FileExistsError:
+            # If file exists, append a timestamp to the filename
+            timestamp = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S%f")
+            file_path = component_temp_dir / f"{timestamp}-{filename}"
+
+        return is_binary, file_path
+
+    def _headers_to_dict(self, headers: httpx.Headers) -> dict[str, str]:
+        """Convert HTTP headers to a dictionary with lowercased keys."""
+        return {k.lower(): v for k, v in headers.items()}
+
+    def _process_headers(self, headers: Any) -> dict:
+        """Process the headers input into a valid dictionary.
+
+        Args:
+            headers: The headers to process, can be dict, str, or list
+        Returns:
+            Processed dictionary
+        """
+        if headers is None:
+            return {}
+        if isinstance(headers, dict):
+            return headers
+        if isinstance(headers, list):
+            processed_headers = {}
+            try:
+                for item in headers:
+                    if not self._is_valid_key_value_item(item):
+                        continue
+                    key = item["key"]
+                    value = item["value"]
+                    processed_headers[key] = value
+            except (KeyError, TypeError, ValueError) as e:
+                self.log(f"Failed to process headers list: {e}")
+                return {}  # Return empty dictionary instead of None
+            return processed_headers
+        return {}

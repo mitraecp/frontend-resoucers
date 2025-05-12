@@ -17,10 +17,9 @@
 		{
 			"name": "string",
 			"isMobile": "true | false", 
-			"isHtml": "true | false",
-			"html": "string", 
 			"isPublish": "true | false",
-			"isHomeScreen": "true | false"
+			"isHomeScreen": "true | false",
+			"height": "number"
 		}
 	],
 	"ALT_TELAS": [
@@ -29,9 +28,8 @@
 			"name": "string",
 			"isMobile": "true | false",
 			"isPublish": "true | false",
-			"isHtml": "true | false",
-			"html": "string", 
-			"isHomeScreen": "true | false"
+			"isHomeScreen": "true | false",
+			"height": "number"
 		}
 	],
 	"DELETE_TELAS": [
@@ -72,6 +70,21 @@
 					"subject": "string",
 					"bodyContent": "string",
 					"query": "string"
+				},
+				{
+					"type": "HTTP_REQUEST",
+					"method": "string",
+					"url": "string",
+					"headers": [
+						{
+							"key":"string",
+							"value":"string"
+						}
+					],
+					"hasHttpBody": "true | false",
+					"httpBody": "string",
+					"query": "string",
+					"variable": "string"
 				}
 			]
 		}
@@ -82,24 +95,44 @@
 			"name": "string",
 			"steps": [
 				{
+					"id": "number",
 					"type": "GOTO_SCREEN",
 					"screenName": "string"
 				},
 				{
+					"id": "number",
 					"type": "REFRESH_SCREEN"
 				},
 				{
+					"id": "number",
 					"type": "DB_ACTION",
 					"dmlActionsIds": [
 					  "number"
 					]
 				}, 
 				{
+					"id": "number",
 					"type": "SEND_EMAILS",
 					"to": "string",
 					"subject": "string",
 					"bodyContent": "string",
 					"query": "string"
+				}, 
+				{
+					"id": "number",
+					"type": "HTTP_REQUEST",
+					"method": "string",
+					"url": "string",
+					"headers": [
+						{
+							"key":"string",
+							"value":"string"
+						}
+					],
+					"hasHttpBody": "true | false",
+					"httpBody": "string",
+					"query": "string",
+					"variable": "string"
 				}
 			]
 		}
@@ -118,10 +151,11 @@
 			"interaction": {
 				"screenName": "string",
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -143,10 +177,11 @@
 			"interaction": {
 				"screenName": "string",
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -197,11 +232,12 @@
 			"cellKeyField": "string",
 			"deleteInteraction": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
 				"screenName": "string",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -211,11 +247,12 @@
 			},
 			"editInteraction": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
 				"screenName": "string",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -238,10 +275,11 @@
 			"cellKeyField": "string",
 			"deleteInteraction": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"closeOnReloading": "true | false",
 				"screenName": "string",
 				"variables": [
 					{
@@ -252,11 +290,12 @@
 			},
 			"editInteraction": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
 				"screenName": "string",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -287,6 +326,21 @@
 				"topRight": "number",
 				"bottomLeft": "number",
 				"bottomRight": "number"
+			}, 
+			"interaction": {
+				"screenName": "string",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
+				"id": "number",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"closeOnReloading": "true | false",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
 			}
 		}
 	],
@@ -311,6 +365,21 @@
 				"topRight": "number",
 				"bottomLeft": "number",
 				"bottomRight": "number"
+			}, 
+			"interaction": {
+				"screenName": "string",
+				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
+				"id": "number",
+				"keyColumnName": "string",
+				"modalWidth": "number",
+				"modalHeight": "number",
+				"closeOnReloading": "true | false",
+				"variables": [
+					{
+						"name": "string",
+						"columnName": "string"
+					}
+				]
 			}
 		}
 	],
@@ -329,10 +398,11 @@
 			"fontColor": "string",
 			"interactionForm": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"screenName": "string",
 				"modalWidth": "number",
-				"modalHeight": "number"
+				"modalHeight": "number",
+				"closeOnReloading": "true | false"
 			}
 		}
 	],
@@ -352,10 +422,11 @@
 			"fontColor": "string",
 			"interactionForm": {
 				"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"screenName": "string",
 				"modalWidth": "number",
-				"modalHeight": "number"
+				"modalHeight": "number",
+				"closeOnReloading": "true | false"
 			}
 		}
 	],
@@ -393,12 +464,13 @@
 			"h": "number",
 			"image": "string",
 			"query": "string",
-			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES"
+			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES", 
+			"iconFillColor":"string"
 		}
 	],
 	"ALT_COMPONENT_IMAGEM": [
 		{
-			"screenComponentId": "string",
+			"screenComponentId": "number",
 			"x": "number",
 			"y": "number",
 			"z": "number",
@@ -406,7 +478,8 @@
 			"h": "number",
 			"image": "string",
 			"query": "string",
-			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES"
+			"format": "DEFAULT | COVER | CIRCLE | SQUARE | SQUARE_EDGES", 
+			"iconFillColor":"string"
 		}
 	],
 	"ADD_COMPONENT_KANBAN": [
@@ -421,12 +494,14 @@
 			"itemKeyField": "string",
 			"itemKeyTable": "string",
 			"columnKeyField": "string",
+			"columnKeyTable": "string",
 			"columnFilterQuery": "string",
 			"interaction": {
 				"screenName": "string",
 				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
+				"closeOnReloading": "true | false",
 				"modalWidth": "number",
 				"modalHeight": "number",
 				"variables": [
@@ -450,14 +525,16 @@
 			"itemKeyField": "string",
 			"itemKeyTable": "string",
 			"columnKeyField": "string",
+			"columnKeyTable": "string",
 			"columnFilterQuery": "string",
 			"interaction": {
 				"screenName": "string",
 				"type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
-				"id": "string",
+				"id": "number",
 				"keyColumnName": "string",
 				"modalWidth": "number",
 				"modalHeight": "number",
+				"closeOnReloading": "true | false",
 				"variables": [
 					{
 						"name": "string",
@@ -480,6 +557,7 @@
 			"contentQuery": "string",
 			"placeHolder": "string",
 			"inputType": "TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT",
+			"linkedVariableName": "string",
 			"dmlInteraction": {
 				"type": "DBACTION",
 				"id": "string"
@@ -499,6 +577,7 @@
 			"contentQuery": "string",
 			"placeHolder": "string",
 			"inputType": "TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT",
+			"linkedVariableName": "string",
 			"dmlInteraction": {
 				"type": "DBACTION",
 				"id": "string"
@@ -525,6 +604,28 @@
 			"w": "number",
 			"h": "number",
 			"html": "string"
+		}
+	],
+	"ADD_COMPONENT_REACT": [
+		{
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"react": "string"
+		}
+	],
+	"ALT_COMPONENT_REACT": [
+		{
+			"screenComponentId": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"react": "string"
 		}
 	],
 
@@ -576,10 +677,53 @@
 					"interaction": {
 						"screenName": "string",
 						"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
-						"id": "string",
+						"id": "number",
 						"keyColumnName": "string",
 						"modalWidth": "number",
 						"modalHeight": "number",
+						"closeOnReloading": "true | false",
+						"variables": [
+							{
+								"name": "string",
+								"columnName": "string"
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"ALT_COMPONENT_LIST": [
+		{
+			"screenComponentId": "number",
+			"screenName": "string",
+			"x": "number",
+			"y": "number",
+			"z": "number",
+			"w": "number",
+			"h": "number",
+			"query": "string",
+			"cellHeight": "number",
+			"cellWidth": "number",
+			"orientation": "HORIZONTAL | VERTICAL | GRID",
+			"components": [
+				{
+					"screenComponentId": "number",
+					"x": "number",
+					"y": "number",
+					"z": "number",
+					"w": "number",
+					"h": "number",
+					"type": "LABEL | IMAGE | BUTTON",
+					"text": "string",
+					"interaction": {
+						"screenName": "string",
+						"type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
+						"id": "number",
+						"keyColumnName": "string",
+						"modalWidth": "number",
+						"modalHeight": "number",
+						"closeOnReloading": "true | false",
 						"variables": [
 							{
 								"name": "string",
