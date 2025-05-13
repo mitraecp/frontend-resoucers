@@ -7,6 +7,10 @@
       "link": "https://api0.mitraecp.com:2406/"
     },
     {
+      "name": "preview",
+      "link": "https://api2.mitrasheet.com:4130/"
+    },
+    {
       "name": "validacao",
       "link": "https://api0.mitraecp.com:1005/"
     },
@@ -29,6 +33,10 @@
       "link": "https://skw.mitralab.io"
     },
     {
+      "name": "preview",
+      "link": "https://ai.mitralab.io"
+    },
+    {
       "name": "validacao",
       "link": "https://skw-homologation.mitralab.io/"
     }
@@ -41,6 +49,10 @@
     {
       "name": "master",
       "link": "https://merge.mitralab.io/"
+    },
+    {
+      "name": "preview",
+      "link": "https://mergepreview.mitralab.io"
     },
     {
       "name": "validacao",
