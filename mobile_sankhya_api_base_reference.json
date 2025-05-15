@@ -15,6 +15,10 @@
       "link": "https://api0.mitraecp.com:1005/"
     },
     {
+      "name": "validacao2",
+      "link": "https://api0.mitraecp.com:2410/"
+    },
+    {
       "name": "master",
       "link": "https://api.mitrasheet.com:4028/"
     },
@@ -39,6 +43,10 @@
     {
       "name": "validacao",
       "link": "https://skw-homologation.mitralab.io/"
+    },
+    {
+      "name": "validacao2",
+      "link": "https://validacao2.mitralab.io"
     }
   ],
   "listIframe1Dot0FrontLink": [
@@ -57,6 +65,10 @@
     {
       "name": "validacao",
       "link": "https://mergevalidacao.mitralab.io"
+    },
+    {
+      "name": "validacao2",
+      "link": "https://merge-validacao-2.mitralab.io"
     }
   ]
 }
