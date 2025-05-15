@@ -288,8 +288,6 @@
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
         "keyColumnName": "string",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "closeOnReloading": "true | false",
         "variables": [
           {
@@ -364,11 +362,11 @@
       "h": "number",
       "query": "string",
       "keyField": "string",
+      "keyTable": "string",
       "cellKeyField": "string",
       "deleteInteraction": {
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "keyColumnName": "string",
         "modalWidth": "number",
         "modalHeight": "number",
         "screenName": "string",
@@ -383,7 +381,6 @@
       "editInteraction": {
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "keyColumnName": "string",
         "modalWidth": "number",
         "modalHeight": "number",
         "screenName": "string",
@@ -407,14 +404,13 @@
       "h": "number",
       "query": "string",
       "keyField": "string",
+      "keyTable": "string",
       "cellKeyField": "string",
       "deleteInteraction": {
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "keyColumnName": "string",
         "modalWidth": "number",
         "modalHeight": "number",
-        "screenName": "string",
         "closeOnReloading": "true | false",
         "variables": [
           {
@@ -426,7 +422,6 @@
       "editInteraction": {
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "keyColumnName": "string",
         "modalWidth": "number",
         "modalHeight": "number",
         "screenName": "string",
@@ -464,7 +459,7 @@
       },
       "interaction": {
         "screenName": "string",
-        "type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
+        "type": "FORM | DBACTION | MODAL | ACTION | GO_TO_SCREEN",
         "id": "number",
         "keyColumnName": "string",
         "modalWidth": "number",
@@ -503,7 +498,7 @@
       },
       "interaction": {
         "screenName": "string",
-        "type": "DBACTION | MODAL | ACTION | GO_TO_SCREEN",
+        "type": "FORM | DBACTION | MODAL | ACTION | GO_TO_SCREEN",
         "id": "number",
         "keyColumnName": "string",
         "modalWidth": "number",
@@ -605,7 +600,7 @@
   ],
   "ALT_COMPONENT_IMAGEM": [
     {
-      "screenComponentId": "string",
+      "screenComponentId": "number",
       "x": "number",
       "y": "number",
       "z": "number",
@@ -635,9 +630,9 @@
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
         "keyColumnName": "string",
+        "closeOnReloading": "true | false",
         "modalWidth": "number",
         "modalHeight": "number",
-        "closeOnReloading": "true | false",
         "variables": [
           {
             "name": "string",
@@ -690,8 +685,9 @@
       "contentQuery": "string",
       "placeHolder": "string",
       "inputType": "TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT",
+      "linkedVariableName": "string",
       "dmlInteraction": {
-        "type": "DBACTION",
+        "type": "FORM | DBACTION",
         "id": "string"
       }
     }
@@ -709,8 +705,9 @@
       "contentQuery": "string",
       "placeHolder": "string",
       "inputType": "TEXT | NUMBER | DATE | DROPDOWN | CHECKBOX | RADIO | ATTACHMENT | BUTTON | BIG_TEXT",
+      "linkedVariableName": "string",
       "dmlInteraction": {
-        "type": "DBACTION",
+        "type": "FORM | DBACTION",
         "id": "string"
       }
     }
