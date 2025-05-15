@@ -312,8 +312,6 @@
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
         "keyColumnName": "string",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "closeOnReloading": "true | false",
         "variables": [
           {
@@ -367,8 +365,6 @@
       "deleteInteraction": {
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "screenName": "string",
         "closeOnReloading": "true | false",
         "variables": [
@@ -381,8 +377,6 @@
       "editInteraction": {
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "screenName": "string",
         "closeOnReloading": "true | false",
         "variables": [
@@ -409,8 +403,6 @@
       "deleteInteraction": {
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "closeOnReloading": "true | false",
         "variables": [
           {
@@ -422,8 +414,6 @@
       "editInteraction": {
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "screenName": "string",
         "closeOnReloading": "true | false",
         "variables": [
@@ -461,9 +451,6 @@
         "screenName": "string",
         "type": "FORM | DBACTION | MODAL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "keyColumnName": "string",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "closeOnReloading": "true | false",
         "variables": [
           {
@@ -500,9 +487,6 @@
         "screenName": "string",
         "type": "FORM | DBACTION | MODAL | ACTION | GO_TO_SCREEN",
         "id": "number",
-        "keyColumnName": "string",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "closeOnReloading": "true | false",
         "variables": [
           {
@@ -530,8 +514,6 @@
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
         "screenName": "string",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "closeOnReloading": "true | false"
       }
     }
@@ -554,8 +536,6 @@
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
         "screenName": "string",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "closeOnReloading": "true | false"
       }
     }
@@ -631,8 +611,6 @@
         "id": "number",
         "keyColumnName": "string",
         "closeOnReloading": "true | false",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "variables": [
           {
             "name": "string",
@@ -660,8 +638,6 @@
         "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
         "id": "number",
         "keyColumnName": "string",
-        "modalWidth": "number",
-        "modalHeight": "number",
         "closeOnReloading": "true | false",
         "variables": [
           {
@@ -807,8 +783,6 @@
             "screenName": "string",
             "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
             "id": "number",
-            "modalWidth": "number",
-            "modalHeight": "number",
             "closeOnReloading": "true | false",
             "variables": [
               {
