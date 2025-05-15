@@ -698,6 +698,7 @@
       "cellHeight": "number",
       "cellWidth": "number",
       "orientation": "HORIZONTAL | VERTICAL | GRID",
+      "keyField": "string",
       "components": [
         {
           "x": "number",
@@ -711,7 +712,6 @@
             "screenName": "string",
             "type": "FORM | DBACTION | MODAL | ACTION | GO_TO_SCREEN",
             "id": "number",
-            "keyColumnName": "string",
             "modalWidth": "number",
             "modalHeight": "number",
             "closeOnReloading": "true | false",
@@ -739,6 +739,7 @@
       "cellHeight": "number",
       "cellWidth": "number",
       "orientation": "HORIZONTAL | VERTICAL | GRID",
+      "keyField": "string",
       "components": [
         {
           "screenComponentId": "number",
@@ -753,7 +754,6 @@
             "screenName": "string",
             "type": "FORM | DBACTION | MODAL | ACTION | GO_TO_SCREEN",
             "id": "number",
-            "keyColumnName": "string",
             "modalWidth": "number",
             "modalHeight": "number",
             "closeOnReloading": "true | false",
