@@ -265,7 +265,6 @@
       "h": "number",
       "query": "string",
       "keyField": "string",
-      "keyTable": "string",
       "cellKeyField": "string",
       "deleteInteraction": {
         "type": "FORM | DBACTION | MODAL | ACTION | GO_TO_SCREEN",
