@@ -1,4 +1,12 @@
 {
+  "ADD_CUBE": [
+    {
+      "id": "number",
+      "name": "string",
+      "compositePrimaryKeyReferenceTableNames": ["string"],
+      "dataType": "DOUBLE | DATE | VARCHAR | BLOB"
+    }
+  ],
   "ADD_TABELAS_DB": [
     {
       "name": "string",
