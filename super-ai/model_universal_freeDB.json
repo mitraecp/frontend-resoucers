@@ -57,7 +57,7 @@
       "fields": [
         {
           "name": "string",
-          "type": "string",
+          "type": "VARCHAR | DOUBLE | DATE | FOREIGN_KEY | INT | DESCR",
           "alias": "string",
           "visibility": "EDIT | BLOCK | MANDATORY | HIDDEN",
           "fillType": "FIXED | SEARCH",
