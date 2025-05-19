@@ -70,7 +70,7 @@
             "isPublish": "true | false",
             "isHomeScreen": "true | false",
             "height": "number",
-            "isDashMode":"true | false"
+            "isDashMode": "true | false"
         }
     ],
     "ALT_TELAS": [
@@ -81,7 +81,7 @@
             "isPublish": "true | false",
             "isHomeScreen": "true | false",
             "height": "number",
-            "isDashMode":"true | false"
+            "isDashMode": "true | false"
         }
     ],
     "DELETE_TELAS": [
@@ -282,6 +282,36 @@
     ],
     "ADD_COMPONENT_TABLE": [
         {
+            "blocks": [
+                {
+                    "decimals": "number",
+                    "filters": [
+                        {
+                            "contentIds": [
+                                "string"
+                            ],
+                            "tableName": "string"
+                        }
+                    ],
+                    "formula": "string",
+                    "hidden": "true | false",
+                    "name": "string",
+                    "order": "string",
+                    "prefix": "string",
+                    "referenceTableName": "string",
+                    "suffix": "string",
+                    "totalize": "true | false",
+                    "type": "CUBE | ALGORITHM | RELATIONSHIP"
+                }
+            ],
+            "filters": [
+                {
+                    "contentIds": [
+                        "string"
+                    ],
+                    "tableName": "string"
+                }
+            ],
             "query": "string",
             "jdbcConfigId": "number",
             "screenName": "string",
@@ -290,6 +320,9 @@
             "z": "number",
             "w": "number",
             "h": "number",
+            "seriesTableNames": [
+                "string"
+            ],
             "interaction": {
                 "screenName": "string",
                 "type": "FORM | DBACTION | MODAL | DETAIL | ACTION | GO_TO_SCREEN",
@@ -309,6 +342,39 @@
     ],
     "ALT_COMPONENT_TABLE": [
         {
+            "blocks": [
+                {
+                    "decimals": "number",
+                    "filters": [
+                        {
+                            "contentIds": [
+                                "string"
+                            ],
+                            "tableName": "string"
+                        }
+                    ],
+                    "formula": "string",
+                    "hidden": "true | false",
+                    "name": "string",
+                    "order": "string",
+                    "prefix": "string",
+                    "referenceTableName": "string",
+                    "suffix": "string",
+                    "totalize": "true | false",
+                    "type": "CUBE | ALGORITHM | RELATIONSHIP"
+                }
+            ],
+            "filters": [
+                {
+                    "contentIds": [
+                        "string"
+                    ],
+                    "tableName": "string"
+                }
+            ],
+            "seriesTableNames": [
+                "string"
+            ],
             "screenComponentId": "string",
             "jdbcConfigId": "number",
             "x": "number",
@@ -336,6 +402,46 @@
     ],
     "ADD_COMPONENT_GRAPH": [
         {
+            "blocks": [
+                {
+                    "axisPosition": "number",
+                    "color": "string",
+                    "decimals": "number",
+                    "filters": [
+                        {
+                            "contentIds": [
+                                "string"
+                            ],
+                            "tableName": "string"
+                        }
+                    ],
+                    "formula": "string",
+                    "hidden": "true | false",
+                    "marker": "true | false",
+                    "markerPosition": "TOP | BOTTOM",
+                    "name": "string",
+                    "order": "string",
+                    "prefix": "string",
+                    "referenceTableName": "string",
+                    "stackOrden": "number",
+                    "stackType": "BAR | LINE | TOOLTIP",
+                    "suffix": "string",
+                    "toolTipBlockNames": [
+                        "string"
+                    ],
+                    "totalize": "true | false",
+                    "type": "CUBE | ALGORITHM | RELATIONSHIP"
+                }
+            ],
+            "filters": [
+                {
+                    "contentIds": [
+                        "string"
+                    ],
+                    "tableName": "string"
+                }
+            ],
+            "seriesTableName": "string",
             "screenName": "string",
             "x": "number",
             "y": "number",
@@ -351,6 +457,45 @@
     ],
     "ALT_COMPONENT_GRAPH": [
         {
+            "blocks": [
+                {
+                    "axisPosition": "number",
+                    "color": "string",
+                    "decimals": "number",
+                    "filters": [
+                        {
+                            "contentIds": [
+                                "string"
+                            ],
+                            "tableName": "string"
+                        }
+                    ],
+                    "formula": "string",
+                    "hidden": "true | false",
+                    "marker": "true | false",
+                    "markerPosition": "TOP | BOTTOM",
+                    "name": "string",
+                    "order": "string",
+                    "prefix": "string",
+                    "referenceTableName": "string",
+                    "stackOrden": "number",
+                    "stackType": "BAR | LINE | TOOLTIP",
+                    "suffix": "string",
+                    "toolTipBlockNames": [
+                        "string"
+                    ],
+                    "totalize": "true | false",
+                    "type": "CUBE | ALGORITHM | RELATIONSHIP"
+                }
+            ],
+            "filters": [
+                {
+                    "contentIds": [
+                        "string"
+                    ],
+                    "tableName": "string"
+                }
+            ],
             "screenComponentId": "string",
             "x": "number",
             "y": "number",
@@ -361,7 +506,8 @@
             "jdbcConfigId": "number",
             "chartType": "PIE | BAR",
             "enableSlider": "boolean",
-            "enableLegend": "boolean"
+            "enableLegend": "boolean",
+            "seriesTableName": "string"
         }
     ],
     "ADD_COMPONENT_CRUD_LIST": [
@@ -877,6 +1023,12 @@
                     }
                 }
             ]
+        }
+    ],
+    "ADD_WIDGET": [
+        {
+            "componentType": "TABLE | BAR | PIE",
+            "query": "string"
         }
     ]
 }
