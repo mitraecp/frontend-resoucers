@@ -107,7 +107,14 @@
           "to": "string",
           "subject": "string",
           "bodyContent": "string",
-          "query": "string"
+          "query": "string", 
+          "screenName": "string",
+          "dynamicLinks": [
+            {
+              "variableName": "string",
+              "columnName": "string"
+            }
+          ]
         },
         {
           "type": "HTTP_REQUEST",
@@ -152,7 +159,14 @@
           "to": "string",
           "subject": "string",
           "bodyContent": "string",
-          "query": "string"
+          "query": "string",
+          "screenName": "string",
+          "dynamicLinks": [
+            {
+              "variableName": "string",
+              "columnName": "string"
+            }
+          ]
         },
         {
           "id": "number",
