@@ -1038,11 +1038,5 @@
                 }
             ]
         }
-    ],
-    "ADD_WIDGET": [
-        {
-            "componentType": "TABLE | BAR | PIE",
-            "query": "string"
-        }
     ]
 }
