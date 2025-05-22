@@ -308,14 +308,6 @@
             "blocks": [
                 {
                     "decimals": "number",
-                    "filters": [
-                        {
-                            "contentIds": [
-                                "string"
-                            ],
-                            "tableName": "string"
-                        }
-                    ],
                     "formula": "string",
                     "hidden": "true | false",
                     "name": "string",
@@ -325,14 +317,6 @@
                     "suffix": "string",
                     "totalize": "true | false",
                     "type": "CUBE | ALGORITHM | RELATIONSHIP"
-                }
-            ],
-            "filters": [
-                {
-                    "contentIds": [
-                        "string"
-                    ],
-                    "tableName": "string"
                 }
             ],
             "query": "string",
@@ -368,14 +352,6 @@
             "blocks": [
                 {
                     "decimals": "number",
-                    "filters": [
-                        {
-                            "contentIds": [
-                                "string"
-                            ],
-                            "tableName": "string"
-                        }
-                    ],
                     "formula": "string",
                     "hidden": "true | false",
                     "name": "string",
@@ -385,14 +361,6 @@
                     "suffix": "string",
                     "totalize": "true | false",
                     "type": "CUBE | ALGORITHM | RELATIONSHIP"
-                }
-            ],
-            "filters": [
-                {
-                    "contentIds": [
-                        "string"
-                    ],
-                    "tableName": "string"
                 }
             ],
             "seriesTableNames": [
@@ -430,14 +398,6 @@
                     "axisPosition": "number",
                     "color": "string",
                     "decimals": "number",
-                    "filters": [
-                        {
-                            "contentIds": [
-                                "string"
-                            ],
-                            "tableName": "string"
-                        }
-                    ],
                     "formula": "string",
                     "hidden": "true | false",
                     "marker": "true | false",
@@ -454,14 +414,6 @@
                     ],
                     "totalize": "true | false",
                     "type": "CUBE | ALGORITHM | RELATIONSHIP"
-                }
-            ],
-            "filters": [
-                {
-                    "contentIds": [
-                        "string"
-                    ],
-                    "tableName": "string"
                 }
             ],
             "seriesTableName": "string",
@@ -485,14 +437,6 @@
                     "axisPosition": "number",
                     "color": "string",
                     "decimals": "number",
-                    "filters": [
-                        {
-                            "contentIds": [
-                                "string"
-                            ],
-                            "tableName": "string"
-                        }
-                    ],
                     "formula": "string",
                     "hidden": "true | false",
                     "marker": "true | false",
@@ -509,14 +453,6 @@
                     ],
                     "totalize": "true | false",
                     "type": "CUBE | ALGORITHM | RELATIONSHIP"
-                }
-            ],
-            "filters": [
-                {
-                    "contentIds": [
-                        "string"
-                    ],
-                    "tableName": "string"
                 }
             ],
             "screenComponentId": "string",
