@@ -184,7 +184,7 @@
       "baseUrl_sql_en": "backup/store/s3mssqlskilluniversal/s3mssqlskilluniversal.zip",
       "baseUrl_sql_withData_en": "backup/store/s3demoskilluniversal/s3demoskilluniversal.zip",
       "baseUrl_sql_whitData_pt": "backup/store/s3demoskilluniversal/s3demoskilluniversal.zip",
-      "bucketSource": "mitra-multitenant-prod",
+      "bucketSource": "mitra-multitenant",
 
       "types": [
         {
