@@ -30,7 +30,8 @@
         "https://api.mitrasheet.com:1001",
         "https://analytics2.mitrasheet.com:4435",
         "https://analytics2.mitrasheet.com:4436",
-        "https://vmprod3.mitrasheet.com:8080"
+        "https://vmprod3.mitrasheet.com:8080",
+        "https://saga.mitrasheet.com"
     ],
     "preview": [
         "https://vmprod3.mitrasheet.com:8080",
