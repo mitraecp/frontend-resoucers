@@ -16,7 +16,7 @@
     },
     {
       "name": "preview",
-      "link": "https://api0.mitraecp.com:2410/"
+      "link": "https://api2.mitrasheet.com:4130/"
     },
     {
       "name": "validacao",
@@ -38,7 +38,7 @@
     },
     {
       "name": "preview",
-      "link": "https://validacao2.mitralab.io"
+      "link": "https://ai.mitralab.io"
     },
     {
       "name": "validacao",
@@ -60,7 +60,7 @@
     },
     {
       "name": "preview",
-      "link": "https://merge-validacao-2.mitralab.io"
+      "link": "https://mergepreview.mitralab.io"
     },
     {
       "name": "validacao",
