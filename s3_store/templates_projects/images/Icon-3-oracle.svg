@@ -1,16 +1,11 @@
 <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<linearGradient id="oracleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" style="stop-color:#c74633;stop-opacity:0.3" />
-<stop offset="50%" style="stop-color:#c74633;stop-opacity:0.6" />
-<stop offset="100%" style="stop-color:#c74633;stop-opacity:1" />
-</linearGradient>
 <radialGradient id="oracleRadial" cx="50%" cy="50%" r="50%">
 <stop offset="0%" style="stop-color:#c74633;stop-opacity:1" />
 <stop offset="100%" style="stop-color:#c74633;stop-opacity:0.4" />
 </radialGradient>
 </defs>
-<rect width="42" height="42" rx="8" fill="#FFFAEB"/>
+<rect width="42" height="42" rx="8" fill="#FBF0ED"/>
 <g opacity="0.4">
 <path d="M19 11C17.3453 11 17 11.3453 17 13C17 14.6547 17.3453 15 19 15H23C24.6547 15 25 14.6547 25 13C25 11.3453 24.6547 11 23 11H19Z" fill="#c74633"/>
 <path d="M19 27C17.3453 27 17 27.3453 17 29C17 30.6547 17.3453 31 19 31H23C24.6547 31 25 30.6547 25 29C25 27.3453 24.6547 27 23 27H19Z" fill="#c74633"/>
